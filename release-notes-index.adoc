@@ -47,7 +47,7 @@ Sehen Sie sich den vollständigen Satz der Versionshinweise für jeden einzelnen
 * https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["Cloud Tiering"^]
 * https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["Computing"^]
 * https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["Globaler Datei-Cache"^]
-* https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["Ransomware"^]
+* https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["Schutz Vor Ransomware"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/whats-new.html["Replizierung"^]
 
 
