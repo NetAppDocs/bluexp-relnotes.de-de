@@ -141,6 +141,31 @@ Durch die Möglichkeit, Azure NetApp Files direkt über Cloud Manager zu erstell
 
 
 
+=== 01 Januar 2023
+
+Sie können nun wählen, zu aktivieren link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["Automatisches Kapazitätsmanagement"^] Um inkrementellen Storage, je nach Bedarf, hinzuzufügen. Automatisches Kapazitätsmanagement fragt den Cluster in regelmäßigen Abständen ab, um den Bedarf zu bewerten und erhöht automatisch die Storage-Kapazität in Schritten von 10 % bis zu 80 % der maximalen Kapazität des Clusters.
+
+
+
+=== 18. September 2022
+
+Das ist jetzt möglich link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-storage-capacity-and-IOPS["Ändern Sie Storage-Kapazität und IOPS"^] Jederzeit nach der Erstellung der FSX für die ONTAP-Arbeitsumgebung.
+
+
+
+=== 31 Juli 2022
+
+* Wenn Sie zuvor Ihre AWS Zugangsdaten für Cloud Manager bereitgestellt haben, kann die neue Funktion *My Opportunities* FSX für ONTAP Dateisysteme automatisch erkennen und vorschlagen, mit Cloud Manager hinzuzufügen und zu managen. Sie können die verfügbaren Datendienste auch über die Registerkarte *Meine Chancen* überprüfen.
++
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["Entdecken Sie FSX für ONTAP mithilfe von My Opportunities"^]
+
+* Das ist jetzt möglich link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-throughput-capacity["Durchsatzkapazität ändern"^] Jederzeit nach der Erstellung der FSX für die ONTAP-Arbeitsumgebung.
+* Das ist jetzt möglich link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data["Datenreplizierung und -Synchronisierung"^] Zu lokalen Systemen und anderen FSX für ONTAP Systeme mit FSX für ONTAP als Quelle
+* Das ist jetzt möglich link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["Erstellen Sie iSCSI Volumes in FSX für ONTAP mit Cloud Manager"^].
+
+
+
+
 == Anwendungsvorlage
 
 

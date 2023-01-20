@@ -491,4 +491,18 @@
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">Sehen Sie alle Arten von personenbezogenen Daten an, die Data Sense in Ihren Daten identifizieren kann</block>
   <block id="21e575de9b2cf958293bb22c657eba7b" category="paragraph">Data Sense kann Dateien identifizieren und kategorisieren, die die japanische Einzelnummer enthalten (auch Meine Nummer genannt). Dazu gehört sowohl die persönliche als auch die Firmennummer.<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>.</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP Blogs</block>
+  <block id="5a0c953dba56aa463b4468d70bfc3feb" category="section-title">01 Januar 2023</block>
+  <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">Automatisches Kapazitätsmanagement</block>
+  <block id="380fe7c3627610af34c9936f46325923" category="paragraph">Sie können nun wählen, zu aktivieren <block ref="79658b4a46346ad9aa23a5f92d57dfaa" category="inline-link-macro-rx"></block> Um inkrementellen Storage, je nach Bedarf, hinzuzufügen. Automatisches Kapazitätsmanagement fragt den Cluster in regelmäßigen Abständen ab, um den Bedarf zu bewerten und erhöht automatisch die Storage-Kapazität in Schritten von 10 % bis zu 80 % der maximalen Kapazität des Clusters.</block>
+  <block id="3abe9a67eae0ad33b1c96ff4ae8b1eaa" category="inline-link-macro">Ändern Sie Storage-Kapazität und IOPS</block>
+  <block id="4054992d1ab241cf4542bc8cd502d679" category="paragraph">Das ist jetzt möglich <block ref="57fbdd5ba152894391c55cce5d9fe8f8" category="inline-link-macro-rx"></block> Jederzeit nach der Erstellung der FSX für die ONTAP-Arbeitsumgebung.</block>
+  <block id="dd15e63d013ad6e70302caae66b83f6d" category="list-text">Wenn Sie zuvor Ihre AWS Zugangsdaten für Cloud Manager bereitgestellt haben, kann die neue Funktion *My Opportunities* FSX für ONTAP Dateisysteme automatisch erkennen und vorschlagen, mit Cloud Manager hinzuzufügen und zu managen. Sie können die verfügbaren Datendienste auch über die Registerkarte *Meine Chancen* überprüfen.</block>
+  <block id="6ebe96f0162b363fd765e000afd1c4f0" category="inline-link-macro">Entdecken Sie FSX für ONTAP mithilfe von My Opportunities</block>
+  <block id="a83471208430f7fbd0630757d97c5142" category="paragraph"><block ref="a83471208430f7fbd0630757d97c5142" category="inline-link-macro-rx"></block></block>
+  <block id="e2399171d04de4904bc9ceb3e1c97260" category="inline-link-macro">Durchsatzkapazität ändern</block>
+  <block id="6cd901297cf29a4b459f2cc11e68c6d6" category="list-text">Das ist jetzt möglich <block ref="697a0d5ee189fb6da3b3bef50626dd94" category="inline-link-macro-rx"></block> Jederzeit nach der Erstellung der FSX für die ONTAP-Arbeitsumgebung.</block>
+  <block id="7699be7c50b8640b313d71cce9004797" category="inline-link-macro">Datenreplizierung und -Synchronisierung</block>
+  <block id="897d994d4d024883042e664eba152417" category="list-text">Das ist jetzt möglich <block ref="df556429a26e71fbf9e095a790447f2b" category="inline-link-macro-rx"></block> Zu lokalen Systemen und anderen FSX für ONTAP Systeme mit FSX für ONTAP als Quelle</block>
+  <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">Erstellen Sie iSCSI Volumes in FSX für ONTAP mit Cloud Manager</block>
+  <block id="cf648eb1e2c8b4986628f39a529b68f1" category="list-text">Das ist jetzt möglich <block ref="7c9b88630e88eb3d402b9bbec2515bca" category="inline-link-macro-rx"></block>.</block>
 </blocks>
