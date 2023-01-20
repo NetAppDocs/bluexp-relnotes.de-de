@@ -33,6 +33,54 @@ In diesem Abschnitt werden neue Funktionen in Bezug auf BlueXP-Verwaltungsfunkti
 
 
 
+=== 5 Februar 2023
+
+
+
+==== Anschluss 3.9.26
+
+* Auf der Seite *Anmelden* werden Sie jetzt aufgefordert, die mit Ihrem Login verknüpfte E-Mail-Adresse einzugeben. Nach dem Klicken auf *Next* werden Sie von BlueXP aufgefordert, sich mit der Authentifizierungsmethode zu authentifizieren, die mit Ihrem Login verknüpft ist:
++
+** Das Passwort für Ihre NetApp Cloud-Anmeldedaten
+** Ihre föderierten Identitätsinformationen
+** Ihre Zugangsdaten für die NetApp Support Site
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-login.png["Ein Screenshot der BlueXP-Anmeldeseite, auf der Sie aufgefordert werden, Ihre E-Mail-Adresse einzugeben."]
+
+* Wenn Sie neu bei BlueXP sind und über bereits vorhandene Zugangsdaten für die NetApp Support Site (NSS) verfügen, können Sie die Anmeldeseite überspringen und Ihre E-Mail-Adresse direkt auf der Anmeldeseite eingeben. BlueXP meldet Sie im Rahmen dieser ersten Anmeldung an.
+* Wenn Sie BlueXP über den Markt Ihres Cloud-Providers abonnieren, haben Sie nun die Möglichkeit, das vorhandene Abonnement für ein Konto durch das neue Abonnement zu ersetzen.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["Ein Screenshot, der die Abonnementzuweisung für ein BlueXP-Konto anzeigt."]
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["Verbinden Sie ein AWS Abonnement"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["Lesen Sie, wie Sie ein Azure-Abonnement zuordnen"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["So verknüpfen Sie ein Google Cloud-Abonnement"]
+
+
+* BlueXP benachrichtigt Sie nun, wenn Ihr Connector 14 Tage oder länger ausgeschaltet wurde.
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Erfahren Sie mehr über BlueXP-Benachrichtigungen"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["Erfahren Sie, warum die Anschlüsse weiterhin ausgeführt werden sollten"]
+
+
+* Wir haben die Connector-Richtlinie für Google Cloud aktualisiert, um eine erforderliche Erlaubnis zum Erstellen und Managen von Storage-VMs auf Cloud Volumes ONTAP HA-Paaren zu enthalten:
++
+compute.instances.updateNetworkInterface
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Zeigen Sie Google Cloud-Berechtigungen für den Connector an"].
+
+* Diese Version des Connectors enthält Cloud Volumes ONTAP-Verbesserungen.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP"^]
+
+
+
+
+
 === Januar 2023
 
 
@@ -60,30 +108,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1
 
 
 
-
-
-
-=== 6. November 2022
-
-
-
-==== Anschluss 3.9.23
-
-* Ihre PAYGO-Abonnements und Jahresverträge für BlueXP sind jetzt für die Anzeige und Verwaltung über das Digital Wallet verfügbar.
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-subscriptions.html["Hier erfahren Sie, wie Sie Ihre Abonnements verwalten"^]
-
-* Diese Version des Connectors enthält auch Cloud Volumes ONTAP-Verbesserungen.
-+
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#6-november-2022["Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP"^]
-
-
-
-
-
-=== November 2022
-
-Cloud Manager fordert Sie jetzt auf, die mit Ihren Accounts der NetApp Support Website verbundenen Anmeldeinformationen zu aktualisieren, wenn das mit Ihrem Konto verknüpfte Aktualisierungs-Token nach 3 Monaten abläuft. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["Erfahren Sie, wie Sie NSS-Konten verwalten"^]
 
 
 
@@ -499,6 +523,39 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-on
 
 
 
+=== Februar 5 2023
+
+
+
+==== Zusätzliche Unterstützung für Azure Data Lake Storage Gen2, ONTAP S3 Storage und NFS
+
+Cloud Sync unterstützt jetzt zusätzliche Synchronisierungsbeziehungen für ONTAP S3 Storage und NFS:
+
+* ONTAP S3 Storage zu NFS
+* NFS zu ONTAP S3 Storage
+
+
+Cloud Sync unterstützt zusätzlich Azure Data Lake Storage Gen2 als Quelle und Ziel für folgende Zwecke:
+
+* NFS-Server
+* SMB Server
+* ONTAP S3 Storage
+* StorageGRID
+* IBM Cloud Objekt-Storage
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["Weitere Informationen zu unterstützten Synchronisierungsbeziehungen"].
+
+
+
+==== Führen Sie ein Upgrade auf das Amazon Web Services Data Broker Betriebssystem durch
+
+Das Betriebssystem für AWS Data Broker wurde auf Amazon Linux 2022 aktualisiert.
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#details-about-the-data-broker-instance["Erfahren Sie mehr über die Instanz für Datenmanager in AWS"].
+
+
+
 === 3. Januar 2023
 
 
@@ -788,6 +845,36 @@ Wenn Sie den Mirror-Objektspeicher aus einer MetroCluster-Konfiguration entferne
 
 
 
+=== 5 Februar 2023
+
+Die folgenden Änderungen wurden mit der Version 3.9.26 des Connectors eingeführt.
+
+
+
+==== Erstellung von Platzierungsgruppen in AWS
+
+Für die Erstellung von Platzierungsgruppen ist jetzt eine neue Konfigurationseinstellung mit AWS HA-Implementierung in einer Verfügbarkeitszone (AZ) verfügbar. Jetzt können Kunden ausgefallene Platzierungsgruppen umgehen und die erfolgreiche Implementierung von AWS HA-einzelnen AZ ermöglichen.
+
+Ausführliche Informationen zum Konfigurieren der Einstellung für die Erstellung von Platzierungsgruppen finden Sie unter link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["Konfiguration der Erstellung von Platzierungsgruppen für AWS HA Single AZ"^].
+
+
+
+==== Aktualisierung der Konfiguration der privaten DNS-Zone
+
+Eine neue Konfigurationseinstellung ist jetzt verfügbar, sodass Sie bei der Verwendung von Azure Private Links vermeiden können, eine Verbindung zwischen einer privaten DNS-Zone und einem virtuellen Netzwerk zu erstellen. Die Erstellung ist standardmäßig aktiviert.
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["Stellen Sie BlueXP Einzelheiten zu Ihrem Azure Private DNS zur Verfügung"^]
+
+
+
+==== WORM-Storage und Daten-Tiering
+
+Sie können jetzt bei der Erstellung eines Cloud Volumes ONTAP 9.8 Systems oder höher sowohl Daten-Tiering als AUCH WORM-Storage gemeinsam aktivieren. Wenn Sie Daten-Tiering mit WORM-Storage aktivieren, können Sie die Daten auf einen Objektspeicher in der Cloud verschieben.
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-worm.html["Erfahren Sie mehr über WORM Storage."^]
+
+
+
 === Januar 2023
 
 Die folgenden Änderungen wurden mit der Version 3.9.25 des Connectors eingeführt.
@@ -819,18 +906,6 @@ Weitere Informationen zu den automatisch mit Cloud Volumes ONTAP installierten O
 BlueXP kann jetzt Cloud Volumes ONTAP 9.12.0 in AWS und Google Cloud implementieren und verwalten.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-9120-relnotes["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
-
-
-
-=== Bis 8. Dezember 2022
-
-
-
-==== Cloud Volumes ONTAP 9.12.1
-
-BlueXP kann jetzt Cloud Volumes ONTAP 9.12.1 implementieren und verwalten, was auch Unterstützung für neue Funktionen und zusätzliche Regionen von Cloud-Providern umfasst.
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^]
 
 
 
