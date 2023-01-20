@@ -236,6 +236,52 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["E
 
 
 
+=== 6 Februar 2023
+
+
+
+==== Möglichkeit, ältere Backup-Dateien von StorageGRID Systemen in Azure Archiv-Storage zu verschieben
+
+Jetzt können Sie ältere Backup-Dateien von StorageGRID Systemen auf Archiv-Storage in Azure abstufen. So können Sie auf Ihren StorageGRID Systemen Speicherplatz freigeben und Kosten sparen, indem Sie eine kostengünstige Storage-Klasse für alte Backup-Dateien verwenden.
+
+Diese Funktion ist verfügbar, wenn Ihr On-Premises-Cluster ONTAP 9.12.1 oder höher verwendet und Ihr StorageGRID-System mindestens 11.4 nutzt. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html#preparing-to-archive-older-backup-files-to-public-cloud-storage["Hier erfahren Sie mehr"^].
+
+
+
+==== DataLock und Ransomware-Schutz können für Backup-Dateien in Azure Blob konfiguriert werden
+
+DataLock und Ransomware Protection wird nun auch für Backup-Dateien unterstützt, die in Azure Blob gespeichert sind. Wenn Ihr Cloud Volumes ONTAP oder On-Premises ONTAP System ONTAP 9.12.1 oder höher ausgeführt wird, können Sie jetzt Ihre Backup-Dateien sperren und scannen, um mögliche Ransomware zu erkennen. https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["Erfahren Sie mehr darüber, wie Sie Ihre Backups mithilfe von DataLock und Ransomware-Schutz schützen können"^].
+
+
+
+==== Verbesserungen bei Backup und Restore von FlexGroup Volumes
+
+* Sie können nun mehrere Aggregate auswählen, wenn Sie ein FlexGroup Volume wiederherstellen. In der letzten Version konnten Sie nur ein einziges Aggregat auswählen.
+* Volume Restore von FlexGroup wird jetzt auf Systemen von Cloud Volumes ONTAP unterstützt. In der letzten Version war es nur möglich, Daten auf ONTAP-Systemen vor Ort wiederherzustellen.
+
+
+
+
+==== Mit Cloud Volumes ONTAP Systemen können ältere Backups auf einen Archiv-Storage von Google verschoben werden
+
+Sicherungsdateien werden zunächst in der Speicherklasse Google Standard erstellt. Durch Cloud Backup lassen sich ältere Backups nun auf Google-Archiv-Storage verschieben, um die Kosten weiter zu optimieren. In der letzten Version wurde diese Funktionalität nur mit On-Prem-ONTAP-Clustern unterstützt – jetzt werden Cloud Volumes ONTAP-Systeme in Google Cloud bereitgestellt.
+
+
+
+==== Bei den Vorgängen zur Volume-Wiederherstellung können Sie nun die SVM auswählen, auf der Sie Volume-Daten wiederherstellen möchten
+
+Stellen Sie jetzt Volume-Daten auf verschiedenen Storage VMs in Ihren ONTAP Clustern wieder her. In der Vergangenheit war es nicht möglich, die Storage-VM auszuwählen.
+
+
+
+==== Erweiterte Unterstützung für Volumes in MetroCluster Konfigurationen
+
+Wenn ONTAP 9.12.1 GA oder höher verwendet wird, wird das Backup jetzt unterstützt, wenn in einer MetroCluster-Konfiguration mit dem Primärsystem verbunden wird. Die gesamte Backup-Konfiguration wird auf das sekundäre System übertragen, sodass Backups in die Cloud nach dem Switchover automatisch fortgesetzt werden.
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#backup-limitations["Weitere Informationen finden Sie unter Backup-Einschränkungen"].
+
+
+
 === 9 Januar 2023
 
 
@@ -359,73 +405,6 @@ In älteren Versionen könnten Sie das Aggregat nur auswählen, wenn Sie Daten i
 
 
 
-=== November 2022
-
-
-
-==== Möglichkeit, ältere Snapshot Kopien in die Basis-Backup-Dateien zu exportieren
-
-Wenn es lokale Snapshot-Kopien für Volumes in Ihrer Arbeitsumgebung gibt, die Ihren Backup-Schedule-Etiketten (z. B. täglich, wöchentlich usw.) entsprechen, können Sie diese historischen Snapshots als Backup-Dateien in den Objekt-Storage exportieren. Damit können Sie Ihre Backups in die Cloud initialisieren, indem Sie ältere Snapshot-Kopien in die Basis-Backup-Kopie verschieben.
-
-Diese Option ist bei der Aktivierung von Cloud Backup für Ihre Arbeitsumgebungen verfügbar. Sie können diese Einstellung auch später im ändern https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-settings-ontap.html["Seite „Erweiterte Einstellungen“"].
-
-
-
-==== Cloud Backup kann nun für die Archivierung von Volumes verwendet werden, die Sie nicht mehr auf dem Quellsystem benötigen
-
-Nun können Sie die Backup-Beziehung für ein Volume löschen. Auf diese Weise erhalten Sie einen Archivierungsmechanismus, wenn Sie die Erstellung neuer Backup-Dateien beenden und das Quell-Volume löschen möchten, aber alle vorhandenen Backup-Dateien behalten möchten. So können Sie das Volume bei Bedarf später aus der Backup-Datei wiederherstellen und gleichzeitig Speicherplatz aus dem Quell-Storage-System löschen. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-volume-backup-relationships["Erfahren Sie, wie"].
-
-
-
-==== Unterstützung wurde hinzugefügt, um Cloud Backup-Benachrichtigungen per E-Mail und im Notification Center zu erhalten
-
-Cloud Backup wurde in den BlueXP Notification Service integriert. Sie können Cloud-Backup-Benachrichtigungen anzeigen, indem Sie in der Menüleiste von BlueXP auf die Benachrichtigungsglocke klicken. Sie können BlueXP auch so konfigurieren, dass Benachrichtigungen per E-Mail als Benachrichtigungen gesendet werden, damit Sie auch dann über wichtige Systemaktivitäten informiert werden können, wenn Sie nicht im System angemeldet sind. Die E-Mail kann an alle Empfänger gesendet werden, die auf Backup- und Wiederherstellungsaktivitäten achten müssen. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#use-the-job-monitor-to-view-backup-and-restore-job-status["Erfahren Sie, wie"].
-
-
-
-==== Mit der neuen Seite „Erweiterte Einstellungen“ können Sie Backup-Einstellungen auf Cluster-Ebene ändern
-
-Auf dieser neuen Seite können Sie viele Backup-Einstellungen auf Cluster-Ebene ändern, die Sie bei der Aktivierung von Cloud Backup für jedes ONTAP System festgelegt haben. Sie können auch einige Einstellungen ändern, die als „Standard“-Backup-Einstellungen angewendet werden. Die vollständigen Backup-Einstellungen, die Sie ändern können, umfassen:
-
-* Die Storage-Schlüssel, die Ihrem ONTAP System Zugriff auf Objekt-Storage gewähren
-* Die Netzwerkbandbreite, die dem Hochladen von Backups in den Objektspeicher zugewiesen ist
-* Die automatische Backup-Einstellung (und -Richtlinie) für zukünftige Volumes
-* Die Archiv-Storage-Klasse (nur AWS)
-* Gibt an, ob historische Snapshot-Kopien in den ersten Basis-Backup-Dateien enthalten sind
-* Gibt an, ob „jährliche“ Snapshots aus dem Quellsystem entfernt werden
-* ONTAP-IPspace, der mit dem Objekt-Storage verbunden ist (bei falscher Auswahl während der Aktivierung)
-
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-settings-ontap.html["Weitere Informationen zum Managen von Backup-Einstellungen auf Cluster-Ebene"].
-
-
-
-==== Sie können jetzt Backup-Dateien mithilfe von Search & Restore wiederherstellen, wenn Sie einen On-Premises Connector verwenden
-
-In der vorherigen Version wurde beim Einsatz des Connectors in Ihrer Umgebung Unterstützung beim Erstellen von Backup-Dateien in der Public Cloud erhalten. In dieser Version wurde mithilfe von Search & Restore weiterhin Unterstützung für die Wiederherstellung von Backups von Amazon S3 oder Azure Blob ermöglicht, wenn der Connector in Ihrer lokalen Umgebung implementiert wird. Search & Restore unterstützt jetzt auch die Wiederherstellung von Backups aus StorageGRID Systemen in ONTAP Systemen vor Ort.
-
-Derzeit muss der Connector in der Google Cloud Platform bereitgestellt werden, wenn Sie Search & Restore verwenden, um Backups von Google Cloud Storage wiederherzustellen.
-
-
-
-==== Die Seite Job-Überwachung wurde aktualisiert
-
-Die folgenden Aktualisierungen wurden an der vorgenommen https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html["Seite Job-Überwachung"]:
-
-* Es steht eine Spalte für „Workload“ zur Verfügung, damit Sie die Seite filtern können, um Jobs für die folgenden Backup-Services anzuzeigen: Volumes, Applikationen, Virtual Machines und Kubernetes.
-* Sie können neue Spalten für „Benutzername“ und „Jobtyp“ hinzufügen, wenn Sie diese Details für einen bestimmten Backup-Job anzeigen möchten.
-* Auf der Seite Jobdetails werden alle untergeordneten Jobs angezeigt, die ausgeführt werden, um den Hauptjob abzuschließen.
-* Die Seite wird automatisch alle 15 Minuten aktualisiert, sodass Sie immer die aktuellsten Ergebnisse des Jobstatus sehen. Und Sie können auf die Schaltfläche *Aktualisieren* klicken, um die Seite sofort zu aktualisieren.
-
-
-
-
-==== Kontoübergreifende Backup-Verbesserungen für AWS
-
-Wenn Sie ein anderes AWS Konto für Ihre Cloud Volumes ONTAP-Backups verwenden möchten als für die Quell-Volumes, müssen Sie die Zielanmeldeinformationen für AWS-Konto in BlueXP hinzufügen, und Sie müssen die Berechtigungen "s3:PutBucketPolicy" und "s3:PutBucketEigentümershipControls" zur IAM-Rolle hinzufügen, die BlueXP mit Berechtigungen versorgt. In der Vergangenheit mussten Sie zahlreiche Einstellungen in der AWS Console konfigurieren – dieser Wunsch brauchen Sie nicht mehr.
-
-
-
 == Cloud-Daten Sinnvoll
 
 
@@ -438,7 +417,7 @@ Wenn Sie ein anderes AWS Konto für Ihre Cloud Volumes ONTAP-Backups verwenden m
 
 In früheren Versionen von Cloud Data Sense können Sie E-Mail-Benachrichtigungen an BlueXP-Benutzer in Ihrem Konto senden, wenn bestimmte kritische Richtlinien Ergebnisse liefern. Mit dieser Funktion erhalten Sie Benachrichtigungen zum Schutz Ihrer Daten, wenn Sie nicht online sind. Jetzt können Sie auch E-Mail-Benachrichtigungen von Policies an andere Benutzer senden - bis zu 20 E-Mail-Adressen - die nicht in Ihrem BlueXP-Konto sind.
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["Erfahren Sie mehr über das Senden von E-Mail-Benachrichtigungen basierend auf Policy-Ergebnissen"].
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["Erfahren Sie mehr über das Senden von E-Mail-Benachrichtigungen basierend auf Policy-Ergebnissen"].
 
 
 
@@ -487,7 +466,7 @@ Es stehen neue Filter zur Verfügung, um die Ergebnisse zu verfeinern, die auf d
 * Mit dem Filter „Dateipfad“ können Sie nun Pfade festlegen, die Sie aus den gefilterten Abfrageergebnissen ausschließen möchten. Wenn Sie Pfade eingeben, um bestimmte Daten einzuschließen und auszuschließen, findet Data Sense zuerst alle Dateien in den enthaltenen Pfaden, dann werden Dateien aus ausgeschlossenen Pfaden entfernt und die Ergebnisse angezeigt.
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Sehen Sie sich die Liste aller Filter an, mit denen Sie Ihre Daten untersuchen können"].
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#filtering-data-in-the-data-investigation-page["Sehen Sie sich die Liste aller Filter an, mit denen Sie Ihre Daten untersuchen können"].
 
 
 
@@ -789,7 +768,7 @@ Der Standardmaschinentyp für den Datenvermittler in Google Cloud ist jetzt n2-S
 
 
 
-==== Erforderliche Änderungen am Endpunkt für ausgehende Internetzugriffe für Connector
+==== Änderungen an Endpunkten für ausgehenden Internetzugriff über den Anschluss
 
 Aufgrund einer Änderung des Cloud Tiering müssen Sie die folgenden Connector-Endpunkte für einen erfolgreichen Cloud Tiering-Betrieb ändern:
 
