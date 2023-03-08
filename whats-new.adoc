@@ -205,6 +205,20 @@ Das ist jetzt möglich link:https://docs.netapp.com/us-en/cloud-manager-fsx-onta
 
 
 
+== Amazon S3 Storage
+
+
+
+=== 5 März 2023
+
+
+
+==== Möglichkeit zum Hinzufügen neuer Buckets aus BlueXP
+
+Sie können Amazon S3 Buckets seit geraumer Zeit auf dem BlueXP Canvas anzeigen. Sie können jetzt neue Buckets hinzufügen und Eigenschaften für vorhandene Buckets direkt aus BlueXP ändern. https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["So fügen Sie neue Amazon S3 Buckets hinzu"^].
+
+
+
 == Anwendungsvorlage
 
 

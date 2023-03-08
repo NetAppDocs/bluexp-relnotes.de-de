@@ -572,4 +572,9 @@
   <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">7 März 2023</block>
   <block id="b20988b483bceb3fb63077025a07d023" category="section-title">Ein neues Ransomware Recovery Dashboard wurde hinzugefügt, um Ihr System nach einem Angriff wiederherzustellen</block>
   <block id="aa31096585d7d55e20d8a7b196ea1a2a" category="paragraph">Das Ransomware Recovery Dashboard bietet Optionen zur Wiederherstellung von Daten, die möglicherweise durch Ransomware infiziert wurden. So können Sie Ihre Systeme sehr schnell wieder in Betrieb nehmen. Derzeit ermöglicht die Recovery-Aktion, ein beschädigtes Volume durch eine Snapshot Kopie zu ersetzen, die nicht durch Ransomware beschädigt wurde.<block ref="736cade400f507ba8b7ce738b709d6e6" category="inline-link-rx"></block>.</block>
+  <block id="d79294e72dc3584cc12c98a7a931315d" category="inline-link">Amazon S3 Storage</block>
+  <block id="e27ba65d55db98b6fd6764580355edcf" category="list-text"><block ref="e27ba65d55db98b6fd6764580355edcf" category="inline-link-rx"></block></block>
+  <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">Möglichkeit zum Hinzufügen neuer Buckets aus BlueXP</block>
+  <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">So fügen Sie neue Amazon S3 Buckets hinzu</block>
+  <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">Sie können Amazon S3 Buckets seit geraumer Zeit auf dem BlueXP Canvas anzeigen. Sie können jetzt neue Buckets hinzufügen und Eigenschaften für vorhandene Buckets direkt aus BlueXP ändern.<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>.</block>
 </blocks>
