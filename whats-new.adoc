@@ -65,7 +65,7 @@ Wählen Sie zunächst *Arbeitsumgebung hinzufügen*, wählen Sie *Amazon Web Ser
 Wenn Sie zu *Einstellungen > Anmeldeinformationen* wechseln, können Sie die Anmeldeinformationen anzeigen, die Anmeldeinformationen aktualisieren und löschen. Wenn Sie beispielsweise das Passwort für diese Anmeldedaten ändern, müssen Sie das Passwort in BlueXP aktualisieren.
 
 +
-551a80734187b23f5368b6a5609f3de3
+link:task-manage-user-credentials.html["Erfahren Sie, wie Sie die Anmeldedaten von Benutzern verwalten"].
 
 * Anhänge können nun hochgeladen werden, wenn ein Support-Case erstellt oder die Fallhinweise für einen bestehenden Support-Case aktualisiert werden.
 +
@@ -850,6 +850,22 @@ Der Standardmaschinentyp für den Datenvermittler in Google Cloud ist jetzt n2-S
 
 
 
+=== Bis 3. April 2023
+
+
+
+==== 2e79231a13ecf62585403e20da2dea4a
+
+d4a0c23b533adffe42d63c23035edd5c
+
+
+
+==== 66a0b4752150538292b81c073ca0b83b
+
+10d9a166ad36cdda1e0585914ac18d5f
+
+
+
 === 5 März 2023
 
 
@@ -879,16 +895,6 @@ Aufgrund einer Änderung des Cloud Tiering müssen Sie die folgenden Connector-E
 | \https://*.cloudmanager.cloud.netapp.com | \https://*.api.bluexp.netapp.com 
 |===
 Hier finden Sie die vollständige Liste der Endpunkte für Ihr https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google Cloud"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure"^] Cloud-Umgebung.
-
-
-
-=== 6. November 2022
-
-
-
-==== Aktivieren Sie Cloud Tiering per Drag-and-Drop in Azure Blob, Google Cloud Storage und StorageGRID
-
-Wenn Azure Blob, Google Cloud Storage oder StorageGRID Tiering-Ziel als eine Arbeitsumgebung auf dem Canvas existiert, können Sie Ihre On-Prem ONTAP Arbeitsumgebung auf das Ziel ziehen, den Tiering Setup-Assistenten zu starten.
 
 
 
