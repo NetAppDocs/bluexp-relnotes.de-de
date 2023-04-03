@@ -603,4 +603,8 @@
   <block id="acef74218ad5e199582b5c76062e5559" category="paragraph"><block ref="acef74218ad5e199582b5c76062e5559" category="inline-link-macro-rx"></block></block>
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Deinstallieren Sie Astra Trident</block>
   <block id="ffb0a040d2831585e0b568e5514270de" category="list-text">Das ist jetzt möglich <block ref="16c9025f993808479cd22f07cd778a2c" category="inline-link-macro-rx"></block> Sie wurde über den Trident Operator oder BlueXP installiert.</block>
+  <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">Die Registerkarte „Lizenzierung“ wurde entfernt</block>
+  <block id="d4a0c23b533adffe42d63c23035edd5c" category="paragraph">Die Registerkarte Lizenzierung wurde aus der Cloud Tiering-Schnittstelle entfernt. Auf die gesamte Lizenzierung für PAYGO-Abonnements (Pay-as-you-go) kann jetzt über das Cloud Tiering On-Premises-Dashboard zugegriffen werden. Von dieser Seite aus besteht auch ein Link in das Digital Wallet, sodass Sie beliebige Cloud Tiering-Funktionen (BYOL, Bring-Your-Own-License) anzeigen und managen können.</block>
+  <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">Die Registerkarten „Tiering“ wurden umbenannt und enthalten aktualisierte Inhalte</block>
+  <block id="10d9a166ad36cdda1e0585914ac18d5f" category="paragraph">Die Registerkarte „Cluster Dashboard“ wurde in „Cluster“ umbenannt und die Registerkarte „On-Premises-Übersicht“ in „On-Premises-Dashboard“ umbenannt. Auf diesen Seiten wurden einige Informationen hinzugefügt, die Ihnen helfen, zu bewerten, ob Sie Ihren Speicherplatz mit zusätzlicher Tiering-Konfiguration optimieren können.</block>
 </blocks>
