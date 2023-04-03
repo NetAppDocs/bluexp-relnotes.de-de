@@ -33,6 +33,54 @@ In diesem Abschnitt werden neue Funktionen in Bezug auf BlueXP-Verwaltungsfunkti
 
 
 
+=== Bis 3. April 2023
+
+
+
+==== Anschluss 3.9.28
+
+* E-Mail-Benachrichtigungen werden jetzt mit Digital Wallet unterstützt.
++
+Wenn Sie Ihre Benachrichtigungseinstellungen konfigurieren, können Sie E-Mail-Benachrichtigungen erhalten, wenn Ihre BYOL-Lizenzen ablaufen (eine „Warnung“) oder wenn sie bereits abgelaufen sind (eine „Fehler“-Benachrichtigung).
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Hier erfahren Sie, wie Sie E-Mail-Benachrichtigungen einrichten"].
+
+* Der Connector wird nun in der Region Google Cloud Turin unterstützt.
++
+https://cloud.netapp.com/cloud-volumes-global-regions["Hier finden Sie die vollständige Liste der unterstützten Regionen"^]
+
+* Sie können jetzt VMware vCenter Server in BlueXP erkennen.
++
+Nachdem Sie einen VMware vCenter Server erkannt haben, der in AWS oder in Ihrem Unternehmen ausgeführt wird, können Sie die Arbeitsumgebung öffnen, um Details zu den Datastores und virtuellen Maschinen anzuzeigen, die mit dem Server verbunden sind.
+
++
+Die einzige Voraussetzung ist ein Connector, der eine Verbindung zu einem VMware vCenter Server hat, auf dem Version 7.0 oder höher ausgeführt wird.
+
++
+Wählen Sie zunächst *Arbeitsumgebung hinzufügen*, wählen Sie *Amazon Web Services* oder *On-Premises* aus und wählen Sie dann *VMware vCenter Server* aus. Geben Sie den Domänennamen oder die IP-Adresse für den Server ein, und geben Sie dann den Benutzernamen und das Kennwort für den Admin-Benutzer ein.
+
+* Sie können jetzt die Anmeldedaten für den Benutzer managen, die mit Ihrer BlueXP Anmeldung verknüpft sind: ONTAP Zugangsdaten und NSS Zugangsdaten (NetApp Support Site).
++
+Wenn Sie zu *Einstellungen > Anmeldeinformationen* wechseln, können Sie die Anmeldeinformationen anzeigen, die Anmeldeinformationen aktualisieren und löschen. Wenn Sie beispielsweise das Passwort für diese Anmeldedaten ändern, müssen Sie das Passwort in BlueXP aktualisieren.
+
++
+551a80734187b23f5368b6a5609f3de3
+
+* Anhänge können nun hochgeladen werden, wenn ein Support-Case erstellt oder die Fallhinweise für einen bestehenden Support-Case aktualisiert werden.
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["Erfahren Sie, wie Sie Support-Fälle erstellen und managen"].
+
+* Diese Version des Connectors enthält außerdem Cloud Volumes ONTAP-Verbesserungen und On-Premises-ONTAP-Cluster-Verbesserungen.
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["Die ONTAP-On-Premises-Cluster-Verbesserungen"^]
+
+
+
+
+
+
 === 5 März 2023
 
 
@@ -51,7 +99,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Lesen Sie die Systemanforderungen für den Konnektor"].
 
-* Der Connector wird jetzt in jeder Cloud-Umgebung unterstützt, die vollständig vom Internet isoliert ist. Anschließend können Sie die BlueXP Konsole, die auf dem Connector ausgeführt wird, verwenden, um Cloud Volumes ONTAP am selben Standort zu implementieren und lokale ONTAP-Cluster zu erkennen (wenn Sie eine Verbindung von Ihrer Cloud-Umgebung zu Ihrer On-Premises-Umgebung haben). Andere BlueXP Services werden in dieser Implementierung nicht unterstützt, außer Digital Wallet.
+* Der Connector wird jetzt in jeder Cloud-Umgebung unterstützt, die vollständig vom Internet isoliert ist. Anschließend können Sie die BlueXP Konsole, die auf dem Connector ausgeführt wird, verwenden, um Cloud Volumes ONTAP am selben Standort zu implementieren und lokale ONTAP-Cluster zu erkennen (wenn Sie eine Verbindung von Ihrer Cloud-Umgebung zu Ihrer On-Premises-Umgebung haben). Auch Cloud Volumes ONTAP Volumes in AWS und Azure Geschäftsregionen können mit Cloud Backup gesichert werden. Andere BlueXP Services werden in dieser Implementierung nicht unterstützt, außer Digital Wallet.
 +
 Die Cloud-Region kann eine Region für sichere US-Behörden wie AWS C2S/SC2S, Azure IL6 oder jede kommerzielle Region sein.
 
@@ -125,18 +173,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5
 
 
 
-=== Januar 2023
-
-
-
-==== Anschluss 3.9.25
-
-Diese Version des Connectors enthält Cloud Volumes ONTAP-Verbesserungen und Fehlerbehebungen.
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1-january-2023["Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP"^]
-
-
-
 == Azure NetApp Dateien
 
 
@@ -191,6 +227,14 @@ Durch die Möglichkeit, Azure NetApp Files direkt über Cloud Manager zu erstell
 
 
 
+=== Bis 02. April 2023
+
+* 9a2a26c33c1a0f6b14b7bb3a214dbaf0
+* 9af9b754c1d16f271c1e6f4b1b2c4f4d
+
+
+
+
 === 05 März 2023
 
 Die Benutzeroberfläche wurde verbessert und Screenshots wurden in der Dokumentation aktualisiert.
@@ -200,12 +244,6 @@ Die Benutzeroberfläche wurde verbessert und Screenshots wurden in der Dokumenta
 === 01 Januar 2023
 
 Sie können nun wählen, zu aktivieren link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["Automatisches Kapazitätsmanagement"^] Um inkrementellen Storage, je nach Bedarf, hinzuzufügen. Automatisches Kapazitätsmanagement fragt den Cluster in regelmäßigen Abständen ab, um den Bedarf zu bewerten und erhöht automatisch die Storage-Kapazität in Schritten von 10 % bis zu 80 % der maximalen Kapazität des Clusters.
-
-
-
-=== 18. September 2022
-
-Das ist jetzt möglich link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-storage-capacity-and-IOPS["Ändern Sie Storage-Kapazität und IOPS"^] Jederzeit nach der Erstellung der FSX für die ONTAP-Arbeitsumgebung.
 
 
 
@@ -285,9 +323,11 @@ Sie können jetzt Daten aus Cloud Volumes ONTAP Systemen in kommerziellen Region
 
 
 
-==== Job Monitor bietet erweiterte Filterfunktionen, um bestimmte Backup- oder Wiederherstellungsjobs zu finden
+==== Mehrere Verbesserungen am Job Monitor
 
-Die Seite Job Monitoring hat erweiterte Filterfunktionen hinzugefügt, mit denen Sie nach Backup- und Restore-Jobs nach Zeit, Workload (Volumes, Applikationen, Virtual Machines oder Kubernetes) suchen können. Jobtyp, Status, Arbeitsumgebung und Storage-VM. Sie können auch Freitext eingeben, um nach einer beliebigen Ressource zu suchen, z. B. „Application_3“.  https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#searching-and-filtering-the-list-of-jobs["Lesen Sie, wie Sie die erweiterten Filter verwenden"].
+* Die Seite Job Monitoring hat erweiterte Filterfunktionen hinzugefügt, mit denen Sie nach Backup- und Restore-Jobs nach Zeit, Workload (Volumes, Applikationen, Virtual Machines oder Kubernetes) suchen können. Jobtyp, Status, Arbeitsumgebung und Storage-VM. Sie können auch Freitext eingeben, um nach einer beliebigen Ressource zu suchen, z. B. „Application_3“.  https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#searching-and-filtering-the-list-of-jobs["Lesen Sie, wie Sie die erweiterten Filter verwenden"].
+* Sowohl vom Benutzer initiierte Sicherungs- und Wiederherstellungsvorgänge, die von der Cloud-Backup-Benutzeroberfläche und -API initiiert wurden, als auch systeminitiierte Jobs, wie z. B. laufende Sicherungsvorgänge, sind jetzt auf der Registerkarte *Jobüberwachung* für Cloud Volumes ONTAP-Systeme verfügbar, auf denen ONTAP 9.13.0 oder höher ausgeführt wird. Bei früheren Versionen von Cloud Volumes ONTAP Systemen und On-Premises-ONTAP-Systemen werden derzeit nur vom Benutzer initiierte Jobs angezeigt.
+
 
 
 
@@ -507,6 +547,32 @@ Data Sense kann Dateien identifizieren und kategorisieren, die die japanische Ei
 
 
 == Cloud-Synchronisierung
+
+
+
+=== c7326baf2ea51b61fafa4f4680d916c0
+
+
+
+==== 9c305cf5f9f8051acc945eda0fc8a1be
+
+61babc330ca2ea0af752965dd3965d41
+
+* Azure NetApp Dateien
+* Amazon FSX für ONTAP
+* Cloud Volumes ONTAP
+* a37b0a91d7c4d8ac6ce924a7f8e1ce5a
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["Weitere Informationen zu unterstützten Synchronisierungsbeziehungen"].
+
+
+
+==== ad5a82acd30f0d971a29fdb4632bd7d4
+
+b7395f4da221ab7779cce11224436fb3
+
+c73e2e476b1a94d1d032f8e0828dcd20
 
 
 
@@ -830,6 +896,64 @@ Wenn Azure Blob, Google Cloud Storage oder StorageGRID Tiering-Ziel als eine Arb
 
 
 
+=== Bis 3. April 2023
+
+2dfd965acb2426b281b13a70df99c06b
+
+
+
+==== 671e2a59b2bfa852def9660bf14badde
+
+d3ab2a9ddd985032aa120324e6da3710
+
+41ed2f596edd466ead9a03a4cdcb3b22
+
+
+
+==== 6ee7d527518e93562cc9e691d20fb1d5
+
+ac14eb6382fa5b619966ba72622ecd3f
+
+
+
+==== 231ea98554191e640c216736796158d5
+
+1cc55fcb982bea0e8f241a1271bda985
+
+23fbfdbb598644432ab089fa6e533405
+
+
+
+==== 6fff4762fc0aeb74dd0a918683c157ae
+
+8d40e6e8379382ee39fba2c4a1cb5629
+
+
+NOTE: 905d8520d584560b3995118b2a01f6c2
+
+ce46ac36501bd1de8616d715ef7ee1c2
+
+acef74218ad5e199582b5c76062e5559
+
+
+
+=== 13 März 2023
+
+
+
+==== Unterstützung der Region China
+
+Ab Cloud Volumes ONTAP 9.12.1 GA wird die Unterstützung für China-Regionen jetzt wie folgt in Azure unterstützt.
+
+* Cloud Volumes ONTAP wird in China Nord 3 unterstützt.
+* Systeme mit Single Node werden unterstützt.
+* Lizenzen, die direkt von NetApp erworben wurden, werden unterstützt.
+
+
+Informationen zur regionalen Verfügbarkeit finden Sie unter link:https://bluexp.netapp.com/cloud-volumes-global-regions["Karten für globale Regionen für Cloud Volumes ONTAP"^].
+
+
+
 === 5 März 2023
 
 Die folgenden Änderungen wurden mit der Version 3.9.27 des Connectors eingeführt.
@@ -841,14 +965,6 @@ Die folgenden Änderungen wurden mit der Version 3.9.27 des Connectors eingefüh
 BlueXP kann jetzt Cloud Volumes ONTAP 9.13.0 in AWS, Azure und Google Cloud implementieren und managen.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
-
-
-
-==== Unterstützung für 16 tib und 32 TIB in Azure
-
-Cloud Volumes ONTAP unterstützt jetzt 16 tib und 32 tib Festplatten für Hochverfügbarkeitsimplementierungen auf verwalteten Festplatten in Azure.
-
-Weitere Informationen zu https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#supported-disk-sizes["Unterstützte Festplattengrößen in Azure"^].
 
 
 
@@ -870,58 +986,6 @@ Cloud Volumes ONTAP wird jetzt in allen Cloud-Umgebungen unterstützt, die volls
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["Greifen Sie über den Connector auf die BlueXP Konsole zu"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Fügen Sie eine nicht zugewiesene Lizenz hinzu"^]
 
-
-
-
-=== 5 Februar 2023
-
-Die folgenden Änderungen wurden mit der Version 3.9.26 des Connectors eingeführt.
-
-
-
-==== Erstellung von Platzierungsgruppen in AWS
-
-Für die Erstellung von Platzierungsgruppen ist jetzt eine neue Konfigurationseinstellung mit AWS HA-Implementierung in einer Verfügbarkeitszone (AZ) verfügbar. Jetzt können Kunden ausgefallene Platzierungsgruppen umgehen und die erfolgreiche Implementierung von AWS HA-einzelnen AZ ermöglichen.
-
-Ausführliche Informationen zum Konfigurieren der Einstellung für die Erstellung von Platzierungsgruppen finden Sie unter link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["Konfiguration der Erstellung von Platzierungsgruppen für AWS HA Single AZ"^].
-
-
-
-==== Aktualisierung der Konfiguration der privaten DNS-Zone
-
-Eine neue Konfigurationseinstellung ist jetzt verfügbar, sodass Sie bei der Verwendung von Azure Private Links vermeiden können, eine Verbindung zwischen einer privaten DNS-Zone und einem virtuellen Netzwerk zu erstellen. Die Erstellung ist standardmäßig aktiviert.
-
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["Stellen Sie BlueXP Einzelheiten zu Ihrem Azure Private DNS zur Verfügung"^]
-
-
-
-==== WORM-Storage und Daten-Tiering
-
-Sie können jetzt bei der Erstellung eines Cloud Volumes ONTAP 9.8 Systems oder höher sowohl Daten-Tiering als AUCH WORM-Storage gemeinsam aktivieren. Wenn Sie Daten-Tiering mit WORM-Storage aktivieren, können Sie die Daten auf einen Objektspeicher in der Cloud verschieben.
-
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-worm.html["Erfahren Sie mehr über WORM Storage."^]
-
-
-
-=== Januar 2023
-
-Die folgenden Änderungen wurden mit der Version 3.9.25 des Connectors eingeführt.
-
-
-
-==== Lizenzierungspakete in Google Cloud verfügbar
-
-Optimierte und kapazitätsbasierte Edge Cache Lizenzpakete stehen für Cloud Volumes ONTAP im Google Cloud Marketplace als Pay-as-you-go-Angebot oder als Jahresvertrag zur Verfügung.
-
-Siehe link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Cloud Volumes ONTAP Lizenzierung"^].
-
-
-
-==== Standardkonfiguration für Cloud Volumes ONTAP
-
-Die MTEKM-Lizenz (Multi-Tenant Encryption Key Management) ist in neuen Cloud Volumes ONTAP Implementierungen nicht mehr enthalten.
-
-Weitere Informationen zu den automatisch mit Cloud Volumes ONTAP installierten ONTAP-Funktionslizenzen finden Sie unter link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-default-configs.html["Standardkonfiguration für Cloud Volumes ONTAP"^].
 
 
 
@@ -986,6 +1050,18 @@ Digital Advisor (ehemals Active IQ) ist jetzt vollständig in BlueXP integriert 
 Wenn Sie in BlueXP auf Digital Advisor zugreifen, werden Sie nun zur Eingabe Ihrer Anmeldedaten für die NetApp Support Site aufgefordert, damit Sie Daten zu Ihren Systemen anzeigen können. Das NSS-Konto, bei dem Sie sich anmelden, ist nur mit Ihrer Benutzeranmeldung verknüpft. Es ist nicht mit anderen Benutzern in Ihrem NetApp Konto verknüpft.
 
 Weitere Informationen zur Integration von Digital Advisor in BlueXP finden Sie unter https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor Dokumentation"^]
+
+
+
+== Wirtschaftliche Effizienz
+
+
+
+=== Bis 02. April 2023
+
+Der neue Service „Economic Efficiency“ erkennt Cluster mit derzeit oder mit prognostizierter niedriger Kapazität und gibt Empfehlungen für Daten-Tiering oder zusätzliche Kapazitäten für lokale AFF Systeme.
+
+link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.html["Erfahren Sie mehr über diesen neuen Service"].
 
 
 
@@ -1081,6 +1157,14 @@ Global File Cache Edge Software für Version 1.3.1 ist unter verfügbar https://
 
 
 
+=== Bis 02. April 2023
+
+* ffb0a040d2831585e0b568e5514270de
+* Die Benutzeroberfläche wurde verbessert und Screenshots wurden in der Dokumentation aktualisiert.
+
+
+
+
 === 05 März 2023
 
 * Kubernetes in BlueXP unterstützt jetzt Astra Trident 23.01.
@@ -1095,33 +1179,6 @@ Wenn link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-m
 
 
 
-=== 18. September 2022
-
-Selbst gemanagte OpenShift-Cluster können jetzt in Cloud Manager importiert werden.
-
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html["Anforderungen für Kubernetes-Cluster in OpenShift"]
-* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-add-openshift.html["Fügen Sie einem OpenShift-Cluster zu Cloud Manager hinzu"]
-
-
-
-
-=== 31 Juli 2022
-
-* Verwenden der neuen `- watch` Verb in der Storage-Klasse sowie Backup- und Restore-Konfigurationen von YAML kann Cloud Manager jetzt Kubernetes-Cluster auf Änderungen am Cluster-Backend überwachen und das Backup für neue persistente Volumes automatisch aktivieren, wenn auf dem Cluster ein automatisches Backup konfiguriert wurde.
-+
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["Anforderungen an Kubernetes-Cluster in AWS"]
-
-+
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Anforderungen an Kubernetes Cluster in Azure"]
-
-+
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Anforderungen für Kubernetes-Cluster in Google Cloud"]
-
-* Wenn link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["Definieren von Speicherklassen"], Sie können jetzt einen Dateisystemtyp (fstype) für Block Storage angeben.
-
-
-
-
 == Monitoring
 
 
@@ -1133,6 +1190,28 @@ Der Überwachungsdienst wurde am 1. November 2022 eingestellt. Sie finden jetzt 
 
 
 == ONTAP-Cluster vor Ort
+
+
+
+=== Bis 3. April 2023
+
+
+
+==== Einzelne Erkennungsoption über die BlueXP Konsole
+
+Wenn Sie ein On-Premises-ONTAP-Cluster über die BlueXP Konsole erkennen, erhalten Sie jetzt eine einzelne Option:
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-discover-on-prem-ontap.png["Ein Screenshot, der die Option On-Premises-ONTAP ermitteln anzeigt, die beim Erstellen einer Arbeitsumgebung verfügbar ist"]
+
+Zuvor gab es separate Ströme für die direkte Erkennung und für die Erkennung mit einem Connector. Beide Optionen sind weiterhin verfügbar, aber in einem einzigen Fluss zusammengefasst.
+
+Wenn Sie die Erkennung starten, erkennt BlueXP den Cluster wie folgt:
+
+* Wenn Sie über einen aktiven Connector verfügen, der mit Ihrem ONTAP-Cluster verbunden ist, verwendet BlueXP diesen Connector, um das Cluster zu erkennen und zu managen.
+* Wenn Sie keinen Connector haben oder Ihr Connector keine Verbindung zum ONTAP-Cluster hat, verwendet BlueXP automatisch die Option für direkte Erkennung und Management.
+
+
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Erfahren Sie mehr über die Erkennungs- und Managementoptionen"].
 
 
 
@@ -1182,7 +1261,7 @@ Die folgenden Änderungen wurden mit der Version 3.9.22 des Connectors eingefüh
 
 Mit der neuen Übersichtsseite möchten wir wichtige Details zu einem lokalen ONTAP Cluster bereitstellen. Beispielsweise können Sie jetzt Details wie Storage-Effizienz, Kapazitätsverteilung und Systeminformationen anzeigen.
 
-Sie können sich zudem Details zur Integration in andere NetApp Cloud-Services anzeigen lassen, die Daten-Tiering, Datenreplizierung und Backups ermöglichen.
+Sie können sich außerdem Details zur Integration mit anderen BlueXP Services anzeigen lassen, die Daten-Tiering, Datenreplizierung und Backups ermöglichen.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-overview.png["Ein Screenshot, der die Übersichtsseite für ein ONTAP-Cluster vor Ort anzeigt."]
 
@@ -1193,6 +1272,20 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 Die Seite Volumes wurde neu gestaltet, um eine Zusammenfassung der Volumes in einem Cluster zu bieten. Die Zusammenfassung gibt Ihnen die Gesamtzahl der Volumes, die Menge der bereitgestellten Kapazität, genutzte und reservierte Kapazität sowie die Menge der Tiered-Daten an.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-volumes.png["Ein Screenshot, der die Volume-Seite für ein On-Prem ONTAP-Cluster zeigt"]
+
+
+
+== Operative Ausfallsicherheit
+
+
+
+=== Bis 02. April 2023
+
+Mithilfe des neuen Operational Resiliency-Service und seiner automatisierten Vorschläge zur Behebung DES IT-Betriebsrisikos können Sie vorgeschlagene Korrekturmaßnahmen implementieren, bevor es zu einem Ausfall oder einem Ausfall kommt.
+
+Operational Resiliency ist eine Kategorie von Services, die Sie bei der Analyse von Warnungen und Ereignissen unterstützen, um den Zustand, die Uptime und die Performance von Services und Lösungen aufrechtzuerhalten.
+
+link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/intro.html["Erfahren Sie mehr über diesen neuen Service"].
 
 
 
