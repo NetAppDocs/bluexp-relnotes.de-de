@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp' 
 summary: Erfahren Sie mehr über die neuesten Änderungen an den Cloud-Services, die Teil der BlueXP Plattform sind. Weitere Informationen finden Sie in den vollständigen Versionshinweisen für jeden einzelnen Service. 
 ---
 = Aktuelle Änderungen in BlueXP
@@ -23,7 +23,7 @@ Erfahren Sie mehr über die neuesten Änderungen an den Cloud-Services, die Teil
 
 == Einführung von BlueXP
 
-Cloud Manager wurde am 1. November 2022 in BlueXP umbenannt. https://docs.netapp.com/us-en/cloud-manager-family/concept-overview.html["Erfahren Sie mehr über BlueXP"^]
+NetApp BlueXP wurde am 1. November 2022 eingeführt. BlueXP erweitert und verbessert die über Cloud Manager bereitgestellten Funktionen. https://docs.netapp.com/us-en/cloud-manager-family/concept-overview.html["Erfahren Sie mehr über die Einführung von BlueXP"^]
 
 
 
@@ -291,7 +291,7 @@ Es besteht jetzt die Möglichkeit, Daten von Cloud Volumes ONTAP Systemen zu sic
 
 ==== Möglichkeit zum Backup Ihrer On-Premises-ONTAP-Volumes in ONTAP S3 mithilfe der API
 
-f25c47eb7d9f3c638d89723bee6d2360
+Dank der neuen Funktionen der APIs können Sie Ihre Volume-Snapshots mithilfe von BlueXP Cloud Backup auf ONTAP S3 sichern. Diese Funktionalität ist derzeit nur für On-Premises-ONTAP-Systeme verfügbar. Detaillierte Anweisungen finden Sie im Blog https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-April-23-Updates/ba-p/443075#toc-hId--846533830["Integration in ONTAP S3 als Ziel (mithilfe VON REST-APIs)"^].
 
 
 
@@ -1047,9 +1047,31 @@ Sie können Ihre E-Series Storage-Systeme jetzt direkt von BlueXP entdecken. Die
 
 
 
-=== 24. Oktober 2022 (Version 2.1)
+=== e0feab0ee26165da9cddab198d1f1422
 
 Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["Probleme Wurden Behoben"]. Aktualisierte Softwarepakete finden Sie unter https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["Auf dieser Seite"].
+
+
+
+==== b1bdb4b30cdf01fdd4fc306c24b3e449
+
+a92c52030822934c670502facf8a8f31
+
+3a8f1f533494279acf2d044c11cf495a
+
+
+
+==== 89960279d43d6d504afb45e5a8dff137
+
+
+
+==== 402a1502f5c39fb55ca79d59e3184a34
+
+
+
+=== 24. Oktober 2022 (Version 2.1)
+
+Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["Probleme Wurden Behoben"].
 
 
 
@@ -1108,12 +1130,6 @@ Während der Lizenzkonfiguration sollte der License Management Server (LMS) Zugr
 
 
 ==== Die Edge Sync-Benutzeroberfläche in Optimus wurde erweitert, um die Liste der verbundenen Clients auf einem Koordinator Edge anzuzeigen
-
-
-
-=== 23. Juni 2022 (Version 1.3.1)
-
-Global File Cache Edge Software für Version 1.3.1 ist unter verfügbar https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["Auf dieser Seite"]. In dieser Version werden die in beschriebenen Probleme behoben https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["Probleme Wurden Behoben"].
 
 
 
