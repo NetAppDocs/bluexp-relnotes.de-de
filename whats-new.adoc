@@ -285,13 +285,13 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["E
 
 ==== Sicherung von Daten aus Cloud Volumes ONTAP Systemen in der Cloud mit „eingeschränktem“ Modus
 
-Es besteht jetzt die Möglichkeit, Daten von Cloud Volumes ONTAP Systemen zu sichern, die in kommerziellen Regionen AWS, Azure und GCP installiert sind, und zwar im „eingeschränkten“ Modus. Dies erfordert, dass Sie den Connector zunächst in der „eingeschränkten“ Handelsregion installieren. Siehe https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Sichern von Cloud Volumes ONTAP-Daten in Amazon S3"] Und https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Backup von Cloud Volumes ONTAP Daten in Azure Blob"].
+Es besteht jetzt die Möglichkeit, Daten von Cloud Volumes ONTAP Systemen zu sichern, die in kommerziellen Regionen AWS, Azure und GCP installiert sind, und zwar im „eingeschränkten“ Modus. Dies erfordert, dass Sie den Connector zunächst in der „eingeschränkten“ Handelsregion installieren. https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["Weitere Informationen zu den BlueXP Implementierungsmodi"^]. Siehe https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Sichern von Cloud Volumes ONTAP-Daten in Amazon S3"] Und https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Backup von Cloud Volumes ONTAP Daten in Azure Blob"].
 
 
 
 ==== Möglichkeit zum Backup Ihrer On-Premises-ONTAP-Volumes in ONTAP S3 mithilfe der API
 
-Dank der neuen Funktionen der APIs können Sie Ihre Volume-Snapshots mithilfe von BlueXP Cloud Backup auf ONTAP S3 sichern. Diese Funktionalität ist derzeit nur für On-Premises-ONTAP-Systeme verfügbar. Detaillierte Anweisungen finden Sie im Blog https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-April-23-Updates/ba-p/443075#toc-hId--846533830["Integration in ONTAP S3 als Ziel (mithilfe VON REST-APIs)"^].
+Dank der neuen Funktionen der APIs können Sie Ihre Volume-Snapshots mithilfe von BlueXP Cloud Backup auf ONTAP S3 sichern. Diese Funktionalität ist derzeit nur für On-Premises-ONTAP-Systeme verfügbar. Detaillierte Anweisungen finden Sie im Blog https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-April-23-Updates/ba-p/443075#toc-hId--846533830["Integration mit ONTAP S3 als Ziel"^].
 
 
 
@@ -400,7 +400,7 @@ Bei der Implementierung von Data Sense aus einem BlueXP Connector in einer AWS-U
 
 
 
-==== Eigenständiges Skript steht jetzt zur Verfügung, um zu testen, ob Ihr Linux-System für die Installation von Data Sense qualifiziert ist
+==== Eigenständiges Skript ist jetzt verfügbar, um Ihr Linux-System vor der Installation von Data Sense zu qualifizieren
 
 Wenn Sie unabhängig vom Ausführen der Data Sense-Installation prüfen möchten, ob Ihr Linux-System alle Voraussetzungen erfüllt, können Sie ein separates Skript herunterladen, das nur die Voraussetzungen prüft. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["Hier erfahren Sie, ob Ihr Linux-Host für die Installation von Data Sense bereit ist"].
 
@@ -852,7 +852,7 @@ Aufgrund einer Änderung des Cloud Tiering müssen Sie die folgenden Connector-E
 
 | \https://*.cloudmanager.cloud.netapp.com | \https://*.api.bluexp.netapp.com 
 |===
-Hier finden Sie die vollständige Liste der Endpunkte für Ihr https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google Cloud"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure"^] Cloud-Umgebung.
+Hier finden Sie die vollständige Liste der Endpunkte für Ihr https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] Cloud-Umgebung.
 
 
 
@@ -860,9 +860,27 @@ Hier finden Sie die vollständige Liste der Endpunkte für Ihr https://docs.neta
 
 
 
+=== Bis 4. April 2023
+
+Ab Cloud Volumes ONTAP 9.12.1 GA werden China-Regionen jetzt wie folgt in AWS unterstützt.
+
+* Systeme mit Single Node werden unterstützt.
+* Lizenzen, die direkt von NetApp erworben wurden, werden unterstützt.
+
+
+Informationen zur regionalen Verfügbarkeit finden Sie unter link:https://bluexp.netapp.com/cloud-volumes-global-regions["Karten für globale Regionen für Cloud Volumes ONTAP"^].
+
+
+
 === Bis 3. April 2023
 
 Die folgenden Änderungen wurden mit der Version 3.9.28 des Connectors eingeführt.
+
+
+
+==== Turin Region jetzt in Google Cloud unterstützt
+
+Die Region Turin wird jetzt in Google Cloud für Cloud Volumes ONTAP und dem Connector für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.
 
 
 
@@ -884,7 +902,7 @@ Mit diesem Release können Sie bei der Erstellung eines Cloud Volumes ONTAP Flex
 
 BlueXP hat jetzt eine neu gestaltete Benutzeroberfläche für die Seiten „Cloud Volumes ONTAP Übersicht“, „Volumes“ und „Aggregate“ überarbeitet. Das auf Kacheln basierende Design präsentiert umfassendere Informationen in jeder Kachel für eine bessere Benutzererfahrung.
 
-image:screenshot-resource-page-rn.png["Dieser Screenshot zeigt die neu gestaltete BlueXP Benutzeroberfläche auf der Cloud Volumes ONTAP Übersichtsseite. Verschiedene Kacheln zeigen Storage-Effizienz, Version, Kapazitätsverteilung, Informationen zur Cloud Volumes ONTAP Implementierung, Volumes, Aggregate, Replizierungen und Backups."]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["Dieser Screenshot zeigt die neu gestaltete BlueXP Benutzeroberfläche auf der Cloud Volumes ONTAP Übersichtsseite. Verschiedene Kacheln zeigen Storage-Effizienz, Version, Kapazitätsverteilung, Informationen zur Cloud Volumes ONTAP Implementierung, Volumes, Aggregate, Replizierungen und Backups."]
 
 
 
@@ -895,7 +913,7 @@ FlexGroup Volumes, die direkt über CLI oder System Manager erstellt wurden, sin
 
 NOTE: Derzeit können Sie vorhandene FlexGroup Volumes nur unter BlueXP anzeigen. Die Möglichkeit zum Erstellen von FlexGroup Volumes in BlueXP ist nicht verfügbar, aber für eine zukünftige Version geplant.
 
-image:screenshot-show-flexgroup-volume.png["Ein Screenshot, in dem das FlexGroup-Volume-Symbol angezeigt wird, zeigt den Mauszeiger über den Text unter der Kachel „Volumes“."]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["Ein Screenshot, in dem das FlexGroup-Volume-Symbol angezeigt wird, zeigt den Mauszeiger über den Text unter der Kachel „Volumes“."]
 
 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["Erfahren Sie mehr über das Anzeigen von erstellten FlexGroup Volumes."^]
 
@@ -915,41 +933,6 @@ Ab Cloud Volumes ONTAP 9.12.1 GA wird die Unterstützung für China-Regionen jet
 
 
 Informationen zur regionalen Verfügbarkeit finden Sie unter link:https://bluexp.netapp.com/cloud-volumes-global-regions["Karten für globale Regionen für Cloud Volumes ONTAP"^].
-
-
-
-=== 5 März 2023
-
-Die folgenden Änderungen wurden mit der Version 3.9.27 des Connectors eingeführt.
-
-
-
-==== Cloud Volumes ONTAP 9.13.0
-
-BlueXP kann jetzt Cloud Volumes ONTAP 9.13.0 in AWS, Azure und Google Cloud implementieren und managen.
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
-
-
-
-==== MTEKM-Lizenz
-
-Die MTEKM-Lizenz (Multi-Tenant Encryption Key Management) ist jetzt auch in neuen und bestehenden Cloud Volumes ONTAP Systemen mit Version 9.12.1 GA oder höher enthalten.
-
-Das mandantenfähige externe Verschlüsselungsmanagement ermöglicht individuelle Storage VMs (SVMs) beim Einsatz von NetApp Volume Encryption, ihre eigenen Schlüssel über einen KMIP Server beizubehalten.
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["So verschlüsseln Sie Volumes mit NetApp Verschlüsselungslösungen"^].
-
-
-
-==== Unterstützung für Umgebungen ohne Internet 
-
-Cloud Volumes ONTAP wird jetzt in allen Cloud-Umgebungen unterstützt, die vollständig vom Internet isoliert sind. In diesen Umgebungen wird nur Node-basierte Lizenzierung (BYOL) unterstützt. Kapazitätsbasierte Lizenzierung wird nicht unterstützt. Um zu beginnen, installieren Sie die Connector-Software manuell, melden Sie sich bei der BlueXP Konsole an, die auf dem Connector ausgeführt wird, fügen Sie Ihre BYOL-Lizenz in Digital Wallet hinzu und implementieren Sie dann Cloud Volumes ONTAP. 
-
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Installieren Sie den Connector an einem Ort ohne Internetzugang"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["Greifen Sie über den Connector auf die BlueXP Konsole zu"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Fügen Sie eine nicht zugewiesene Lizenz hinzu"^]
-
 
 
 
@@ -1023,7 +1006,7 @@ Weitere Informationen zur Integration von Digital Advisor in BlueXP finden Sie u
 
 === Bis 02. April 2023
 
-Der neue wirtschaftliche Effizienz-Service erkennt Cluster mit aktuell oder prognostizierten niedrigen Kapazitäten und gibt Empfehlungen für Daten-Tiering oder zusätzliche Kapazitäten für lokale AFF Systeme.
+Der neue wirtschaftliche Effizienz-Service erkennt Storage-Assets mit aktueller oder prognostizierter niedriger Kapazität und gibt Empfehlungen für Daten-Tiering oder zusätzliche Kapazitäten für lokale AFF Systeme.
 
 link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.html["Erfahren Sie mehr über diesen neuen Service"].
 

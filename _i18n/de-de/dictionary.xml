@@ -268,7 +268,6 @@
   <block id="dfe6b806f7dd136ec5c5baaaae335c21" category="list-text">ONTAP S3 Storage zu AWS S3</block>
   <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">Weitere Informationen zu unterstützten Synchronisierungsbeziehungen</block>
   <block id="623dda645e4d20988b8c1d61423da14e" category="paragraph"><block ref="f9c4f71cab183e7ba62e68df19c3dfe9" category="inline-link-rx"></block>.</block>
-  <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP</block>
   <block id="1f7138998459804601fc351f8d442e29" category="section-title">Januar 2023</block>
   <block id="eb75f7332becd8b3fbb2a59ea0bd0536" category="cell">Alter Endpunkt</block>
   <block id="afcce2fe2d959c0f4554e7815a50e8e4" category="cell">Neuer Endpunkt</block>
@@ -279,7 +278,6 @@
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="inline-link">AWS</block>
   <block id="56ef2682280ac110060b881925a87b80" category="inline-link">Google Cloud</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="inline-link">Azure</block>
-  <block id="0e40b9cba041560c9517bc49757da3c7" category="paragraph">Hier finden Sie die vollständige Liste der Endpunkte für Ihr<block ref="4c9e3e17ba20f553394e5bc78e402946" category="inline-link-rx"></block>,<block ref="cd3c6f623ccf3e34f9d46b28c47f2a3d" category="inline-link-rx"></block>, Oder<block ref="80755100f97c37f8aa8e3d999b0a43d9" category="inline-link-rx"></block> Cloud-Umgebung.</block>
   <block id="bfc6fe3f8d2577420634f29daac2cfe3" category="section-title">3. Januar 2023</block>
   <block id="2ce75b34222d130ea74078b75eb79cc0" category="section-title">Zeigt die lokale Konfiguration des Datenmaklers auf der UI an</block>
   <block id="88dcb8d0dd987f4f5606df5981050a8d" category="paragraph">Es gibt jetzt eine Option *Konfiguration anzeigen*, mit der Benutzer die lokale Konfiguration jedes Datenmakers auf der Benutzeroberfläche anzeigen können.</block>
@@ -417,14 +415,6 @@
   <block id="1a62d65b23b4f298f3e1310266bbfad4" category="list-text">Das Data Sense Installationsprogramm für Sites ohne Internetzugang (Dark Sites) führt jetzt eine Vorabprüfung durch, um sicherzustellen, dass Ihre System- und Netzwerkanforderungen für eine erfolgreiche Installation vorhanden sind.</block>
   <block id="64abb83963bf9db8126f2ee52cdc0390" category="list-text">Die Protokolldateien der Installationsaudits werden jetzt gespeichert und in geschrieben<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block>.</block>
   <block id="9a8e487c18ad9b8cacca43174094061d" category="section-title">Sie können jetzt persönliche Muster über die Data Sense UI hinzufügen</block>
-  <block id="eed8585d0b45afc4676b1c89f6f22a9a" category="paragraph">Die folgenden Änderungen wurden mit der Version 3.9.27 des Connectors eingeführt.</block>
-  <block id="1bbedbfdc08c3ed9498540dc734fa96a" category="section-title">MTEKM-Lizenz</block>
-  <block id="3cc0e97defd245de4dee36cae1e4c485" category="paragraph">Die MTEKM-Lizenz (Multi-Tenant Encryption Key Management) ist jetzt auch in neuen und bestehenden Cloud Volumes ONTAP Systemen mit Version 9.12.1 GA oder höher enthalten.</block>
-  <block id="c43a4aedaaa96e7a4c838a24978b6052" category="paragraph">Das mandantenfähige externe Verschlüsselungsmanagement ermöglicht individuelle Storage VMs (SVMs) beim Einsatz von NetApp Volume Encryption, ihre eigenen Schlüssel über einen KMIP Server beizubehalten.</block>
-  <block id="6b8afb72156ec7e5aff9808d22a9eb10" category="inline-link">So verschlüsseln Sie Volumes mit NetApp Verschlüsselungslösungen</block>
-  <block id="bc912dd00b6301509fad22d6a376560d" category="paragraph"><block ref="532112271454bf057b0a2415bb119744" category="inline-link-rx"></block>.</block>
-  <block id="93616689ecb546d3ff1261cf76e33109" category="section-title">Unterstützung für Umgebungen ohne Internet </block>
-  <block id="28f5f7b773a8085f5db45145fb774c27" category="paragraph">Cloud Volumes ONTAP wird jetzt in allen Cloud-Umgebungen unterstützt, die vollständig vom Internet isoliert sind. In diesen Umgebungen wird nur Node-basierte Lizenzierung (BYOL) unterstützt. Kapazitätsbasierte Lizenzierung wird nicht unterstützt. Um zu beginnen, installieren Sie die Connector-Software manuell, melden Sie sich bei der BlueXP Konsole an, die auf dem Connector ausgeführt wird, fügen Sie Ihre BYOL-Lizenz in Digital Wallet hinzu und implementieren Sie dann Cloud Volumes ONTAP. </block>
   <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">7 März 2023</block>
   <block id="b20988b483bceb3fb63077025a07d023" category="section-title">Ein neues Ransomware Recovery Dashboard wurde hinzugefügt, um Ihr System nach einem Angriff wiederherzustellen</block>
   <block id="aa31096585d7d55e20d8a7b196ea1a2a" category="paragraph">Das Ransomware Recovery Dashboard bietet Optionen zur Wiederherstellung von Daten, die möglicherweise durch Ransomware infiziert wurden. So können Sie Ihre Systeme sehr schnell wieder in Betrieb nehmen. Derzeit ermöglicht die Recovery-Aktion, ein beschädigtes Volume durch eine Snapshot Kopie zu ersetzen, die nicht durch Ransomware beschädigt wurde.<block ref="736cade400f507ba8b7ce738b709d6e6" category="inline-link-rx"></block>.</block>
@@ -448,9 +438,6 @@
   <block id="8663378959352a24f27c3d250a37cf3d" category="paragraph">Sie können jetzt AWS-Daten-Broker-Volumes mit einem KMS-Schlüssel in Ihrem Konto verschlüsseln.</block>
   <block id="f296e44bbf15ea94dfcce2d2a4649e6d" category="inline-link">Erfahren Sie mehr über die Erstellung eines Datenbrokers in AWS</block>
   <block id="d44d7e95c5eca613daa8fef0c12530ae" category="paragraph"><block ref="0c0a23f9985774f63451c32bdf4cbdeb" category="inline-link-rx"></block>.</block>
-  <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
-  <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">BlueXP kann jetzt Cloud Volumes ONTAP 9.13.0 in AWS, Azure und Google Cloud implementieren und managen.</block>
-  <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>.</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">Bis 3. April 2023</block>
   <block id="a62f3b1b0c4abf78f5d81609e7bdd908" category="section-title">Anschluss 3.9.28</block>
   <block id="a08572617e25a61e8569807ac103ab07" category="list-text">E-Mail-Benachrichtigungen werden jetzt mit Digital Wallet unterstützt.</block>
@@ -525,12 +512,10 @@
   <block id="231ea98554191e640c216736796158d5" category="section-title">Umgestaltung der Benutzeroberfläche von BlueXP für Cloud Volumes ONTAP Übersichtsseiten, Volumes und Aggregationsseiten</block>
   <block id="1cc55fcb982bea0e8f241a1271bda985" category="paragraph">BlueXP hat jetzt eine neu gestaltete Benutzeroberfläche für die Seiten „Cloud Volumes ONTAP Übersicht“, „Volumes“ und „Aggregate“ überarbeitet. Das auf Kacheln basierende Design präsentiert umfassendere Informationen in jeder Kachel für eine bessere Benutzererfahrung.</block>
   <block id="9000895c1e7c46e6e8fc9eb750dfb403" category="inline-image-macro">Dieser Screenshot zeigt die neu gestaltete BlueXP Benutzeroberfläche auf der Cloud Volumes ONTAP Übersichtsseite. Verschiedene Kacheln zeigen Storage-Effizienz, Version, Kapazitätsverteilung, Informationen zur Cloud Volumes ONTAP Implementierung, Volumes, Aggregate, Replizierungen und Backups.</block>
-  <block id="23fbfdbb598644432ab089fa6e533405" category="paragraph"><block ref="23fbfdbb598644432ab089fa6e533405" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6fff4762fc0aeb74dd0a918683c157ae" category="section-title">FlexGroup Volumes können mit Cloud Volumes ONTAP angezeigt werden</block>
   <block id="8d40e6e8379382ee39fba2c4a1cb5629" category="paragraph">FlexGroup Volumes, die direkt über CLI oder System Manager erstellt wurden, sind nun über die neu gestaltete Volume-Kachel in BlueXP sichtbar. Ähnlich wie bei FlexVol Volumes bietet BlueXP über eine dedizierte Volume-Kachel detaillierte Informationen zu erstellten FlexGroup Volumes.</block>
   <block id="905d8520d584560b3995118b2a01f6c2" category="admonition">Derzeit können Sie vorhandene FlexGroup Volumes nur unter BlueXP anzeigen. Die Möglichkeit zum Erstellen von FlexGroup Volumes in BlueXP ist nicht verfügbar, aber für eine zukünftige Version geplant.</block>
   <block id="91f0dcc3b5f3e7c2ced12a923ca3b92e" category="inline-image-macro">Ein Screenshot, in dem das FlexGroup-Volume-Symbol angezeigt wird, zeigt den Mauszeiger über den Text unter der Kachel „Volumes“.</block>
-  <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9f223d40f9c90f08d9cd6ef8cba648c3" category="inline-link-macro">Erfahren Sie mehr über das Anzeigen von erstellten FlexGroup Volumes.</block>
   <block id="acef74218ad5e199582b5c76062e5559" category="paragraph"><block ref="acef74218ad5e199582b5c76062e5559" category="inline-link-macro-rx"></block></block>
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Deinstallieren Sie Astra Trident</block>
@@ -549,9 +534,7 @@
   <block id="7196a94f4d2eb95bbda75c84fd8bbaa9" category="admonition">Die Einführung des eingeschränkten Modus ersetzt die Option zum Aktivieren oder Deaktivieren der SaaS-Plattform. Sie können den eingeschränkten Modus zum Zeitpunkt der Kontoerstellung aktivieren. Sie kann später nicht aktiviert oder deaktiviert werden.</block>
   <block id="830d9c74b9a0266753efa0c38f11ba15" category="paragraph"><block ref="b3303746b1f0c3c97f0d5584351ddef9" category="inline-link-rx"></block>.</block>
   <block id="40c193dda1b0a4df68695abe150f234a" category="section-title">Sicherung von Daten aus Cloud Volumes ONTAP Systemen in der Cloud mit „eingeschränktem“ Modus</block>
-  <block id="28e1f4495f1c7f5d7f7a5392a215c21a" category="paragraph">Es besteht jetzt die Möglichkeit, Daten von Cloud Volumes ONTAP Systemen zu sichern, die in kommerziellen Regionen AWS, Azure und GCP installiert sind, und zwar im „eingeschränkten“ Modus. Dies erfordert, dass Sie den Connector zunächst in der „eingeschränkten“ Handelsregion installieren. Siehe<block ref="0607f60a93455f62c98c67f333a631e0" category="inline-link-rx"></block> Und<block ref="d878e312b2f9cdcef2f8eccaa51619ee" category="inline-link-rx"></block>.</block>
   <block id="57c3b4ba3c60295d45a2554606080eef" category="section-title">Möglichkeit zum Backup Ihrer On-Premises-ONTAP-Volumes in ONTAP S3 mithilfe der API</block>
-  <block id="430a1b25bf435fd21376b7b1884b6999" category="inline-link">Integration in ONTAP S3 als Ziel (mithilfe VON REST-APIs)</block>
   <block id="720734599c08f49ea57d729ec9f12d53" category="section-title">Möglichkeit, den Zonenredundanz-Aspekt Ihres Azure Storage-Kontos von LRS zu ZRS zu ändern</block>
   <block id="95fa16fe802a71eca4c0ade2049c7325" category="inline-link">Ändern der Replizierung Ihres Storage-Kontos</block>
   <block id="d9f6af5f4e2b16940729f1ac7da86d7d" category="paragraph">Bei der Erstellung von Backups aus Cloud Volumes ONTAP Systemen in Azure Storage stellt Cloud Backup standardmäßig den Blob-Container mit lokaler Redundanz (LRS) zur Kostenoptimierung bereit. Sie können diese Einstellung auf Zoneredundanz (ZRS) ändern, wenn Ihre Daten zwischen verschiedenen Zonen repliziert werden sollen. Siehe Microsoft-Anweisungen für<block ref="c549763665cfbb93dbccfdbf667aa0f2" category="inline-link-rx"></block>.</block>
@@ -568,7 +551,6 @@
   <block id="67778bfe57cf94d953dd530babc8df46" category="section-title">Möglichkeit zur Implementierung von Data Sense auf kleineren Instanzen in der Cloud</block>
   <block id="3d81ce02b62771b2627fbe04a96419a1" category="inline-link">Anzeigen der verfügbaren Instanztypen und Einschränkungen</block>
   <block id="34590974cfa4c7d3c4258641c30ef959" category="paragraph">Bei der Implementierung von Data Sense aus einem BlueXP Connector in einer AWS-Umgebung können Sie nun aus zwei kleineren Instanztypen wählen, als bei der Standardinstanz verfügbar ist. Wenn Sie eine kleine Umgebung scannen, können Sie hier Cloud-Kosten sparen. Allerdings gibt es einige Einschränkungen bei der Verwendung der kleineren Instanz.<block ref="98ea36794454fcb53d0ac9a791bd6948" category="inline-link-rx"></block>.</block>
-  <block id="914d653aae79118a23517243079b88cb" category="section-title">Eigenständiges Skript steht jetzt zur Verfügung, um zu testen, ob Ihr Linux-System für die Installation von Data Sense qualifiziert ist</block>
   <block id="374deadc3a3b7f52c668078795f75e3a" category="inline-link">Hier erfahren Sie, ob Ihr Linux-Host für die Installation von Data Sense bereit ist</block>
   <block id="04659fbbded99230220bc3321874622f" category="paragraph">Wenn Sie unabhängig vom Ausführen der Data Sense-Installation prüfen möchten, ob Ihr Linux-System alle Voraussetzungen erfüllt, können Sie ein separates Skript herunterladen, das nur die Voraussetzungen prüft.<block ref="721973ab191f916be1f3432f173ac838" category="inline-link-rx"></block>.</block>
   <block id="e86989a1de71c911aa1dff7be51112bd" category="section-title">Neue empfohlene Maßnahmen zum Schutz Ihrer Daten vor Ransomware-Angriffen</block>
@@ -578,8 +560,6 @@
   <block id="8f0f57a606909986a57f6c9a3dcb68ef" category="paragraph"><block ref="3c293b78d34033676deb7d5c4a97ca37" category="inline-link-rx"></block>.</block>
   <block id="1d0a8122e5a250dbe5879cd7f8f5a495" category="inline-link">Erfahren Sie mehr über die Einführung von BlueXP</block>
   <block id="3214121f77d11d3720f824f6609986e1" category="paragraph">NetApp BlueXP wurde am 1. November 2022 eingeführt. BlueXP erweitert und verbessert die über Cloud Manager bereitgestellten Funktionen.<block ref="f53c3e09f5dc895df05d3b248da7799e" category="inline-link-rx"></block></block>
-  <block id="f25c47eb7d9f3c638d89723bee6d2360" category="paragraph">Dank der neuen Funktionen der APIs können Sie Ihre Volume-Snapshots mithilfe von BlueXP Cloud Backup auf ONTAP S3 sichern. Diese Funktionalität ist derzeit nur für On-Premises-ONTAP-Systeme verfügbar. Detaillierte Anweisungen finden Sie im Blog<block ref="50f757899df464a10b489edfac75ae5d" category="inline-link-rx"></block>.</block>
-  <block id="754eb66320ee2d41917d70a6a0cd125b" category="paragraph">Der neue wirtschaftliche Effizienz-Service erkennt Cluster mit aktuell oder prognostizierten niedrigen Kapazitäten und gibt Empfehlungen für Daten-Tiering oder zusätzliche Kapazitäten für lokale AFF Systeme.</block>
   <block id="e0feab0ee26165da9cddab198d1f1422" category="section-title">5. April 2023 (Version 2.2)</block>
   <block id="b1bdb4b30cdf01fdd4fc306c24b3e449" category="section-title">Unterstützung für Global File Cache auf Cloud Volumes ONTAP Systemen in Google Cloud</block>
   <block id="a92c52030822934c670502facf8a8f31" category="paragraph">Zur Implementierung eines Cloud Volumes ONTAP Systems in Google Cloud ist eine neue „Edge Cache“ Lizenz verfügbar. Sie können ein Global File Cache Edge System für jeweils 3 tib erworbener Kapazität auf dem Cloud Volumes ONTAP System implementieren.</block>
@@ -589,4 +569,16 @@
   <block id="d3d5bae1dc5637cc2d16caf23d0426d2" category="paragraph">Mithilfe des neuen Service für betriebliche Ausfallsicherheit und seiner automatisierten Vorschläge zur Behebung DES IT-Betriebsrisikos können Sie vorgeschlagene Korrekturmaßnahmen implementieren, bevor es zu einem Ausfall oder einem Ausfall kommt.</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">Operational Resiliency ist ein Service, mit dem Sie Alarme und Ereignisse analysieren können, um den Zustand, die Uptime und die Performance von Services und Lösungen aufrechtzuerhalten.</block>
   <block id="10b9ce0cb6b2f607e0c7df6e246cfe67" category="paragraph"><block ref="8a7bc1e5ebe0f732b7f8c57cc7b088b6" category="inline-link-rx"></block>.</block>
+  <block id="42d7d856cc8f6a2f82ed10cd8356e7d2" category="inline-link">Weitere Informationen zu den BlueXP Implementierungsmodi</block>
+  <block id="ed84e3ec0d45db682853810ea96888fd" category="paragraph">Es besteht jetzt die Möglichkeit, Daten von Cloud Volumes ONTAP Systemen zu sichern, die in kommerziellen Regionen AWS, Azure und GCP installiert sind, und zwar im „eingeschränkten“ Modus. Dies erfordert, dass Sie den Connector zunächst in der „eingeschränkten“ Handelsregion installieren.<block ref="18611796b9b4332697b6f9bb72b16e0b" category="inline-link-rx"></block>. Siehe<block ref="0607f60a93455f62c98c67f333a631e0" category="inline-link-rx"></block> Und<block ref="d878e312b2f9cdcef2f8eccaa51619ee" category="inline-link-rx"></block>.</block>
+  <block id="d7cfe6967f3004ef3386a27fe99a4610" category="inline-link">Integration mit ONTAP S3 als Ziel</block>
+  <block id="987075beb2d571b76448b0f6477c4423" category="paragraph">Dank der neuen Funktionen der APIs können Sie Ihre Volume-Snapshots mithilfe von BlueXP Cloud Backup auf ONTAP S3 sichern. Diese Funktionalität ist derzeit nur für On-Premises-ONTAP-Systeme verfügbar. Detaillierte Anweisungen finden Sie im Blog<block ref="8bfab3c14784f20047e4459b814ebfe4" category="inline-link-rx"></block>.</block>
+  <block id="c1fe7e1d533d99b367d348052b2d15b2" category="section-title">Eigenständiges Skript ist jetzt verfügbar, um Ihr Linux-System vor der Installation von Data Sense zu qualifizieren</block>
+  <block id="c395006d6063b66336be768382280c9e" category="paragraph">Hier finden Sie die vollständige Liste der Endpunkte für Ihr<block ref="684a3f4234dd7d8f8b7d90e00da95138" category="inline-link-rx"></block>,<block ref="fd66fc554da543d0f7f94dcde36b2a2f" category="inline-link-rx"></block>, Oder<block ref="2484264a704a749bc992bec76f43f13d" category="inline-link-rx"></block> Cloud-Umgebung.</block>
+  <block id="ebef32c1ba0aec7a39eb2ce8370a97d5" category="paragraph">Ab Cloud Volumes ONTAP 9.12.1 GA werden China-Regionen jetzt wie folgt in AWS unterstützt.</block>
+  <block id="7ce52c94db42646098e71a61d9836b73" category="section-title">Turin Region jetzt in Google Cloud unterstützt</block>
+  <block id="84030861d628cd7238a62da972a260f4" category="paragraph">Die Region Turin wird jetzt in Google Cloud für Cloud Volumes ONTAP und dem Connector für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.</block>
+  <block id="77b63f391cd8d8277d8d106f03ad5d8f" category="paragraph"><block ref="77b63f391cd8d8277d8d106f03ad5d8f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="78f9ca50556d02ff8700efd01af0d528" category="paragraph"><block ref="78f9ca50556d02ff8700efd01af0d528" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b0d4aa7122dfc7ff627e44c134e7141e" category="paragraph">Der neue wirtschaftliche Effizienz-Service erkennt Storage-Assets mit aktueller oder prognostizierter niedriger Kapazität und gibt Empfehlungen für Daten-Tiering oder zusätzliche Kapazitäten für lokale AFF Systeme.</block>
 </blocks>
