@@ -588,4 +588,5 @@
   <block id="402a1502f5c39fb55ca79d59e3184a34" category="section-title">Verbesserter Optimus PSM zur Konfiguration der Edge Sync-Funktionen</block>
   <block id="d3d5bae1dc5637cc2d16caf23d0426d2" category="paragraph">Mithilfe des neuen Service für betriebliche Ausfallsicherheit und seiner automatisierten Vorschläge zur Behebung DES IT-Betriebsrisikos können Sie vorgeschlagene Korrekturmaßnahmen implementieren, bevor es zu einem Ausfall oder einem Ausfall kommt.</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">Operational Resiliency ist ein Service, mit dem Sie Alarme und Ereignisse analysieren können, um den Zustand, die Uptime und die Performance von Services und Lösungen aufrechtzuerhalten.</block>
+  <block id="10b9ce0cb6b2f607e0c7df6e246cfe67" category="paragraph"><block ref="8a7bc1e5ebe0f732b7f8c57cc7b088b6" category="inline-link-rx"></block>.</block>
 </blocks>
