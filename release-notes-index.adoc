@@ -19,6 +19,12 @@ Sehen Sie sich den vollständigen Satz der Versionshinweise für jeden einzelnen
 
 
 
+== Administration
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html["Einrichtung und Administration"^]
+
+
+
 == Storage
 
 * https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/whats-new.html["Azure NetApp Dateien"^]
@@ -47,16 +53,10 @@ Sehen Sie sich den vollständigen Satz der Versionshinweise für jeden einzelnen
 * https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html["Cloud-Synchronisierung"^]
 * https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["Cloud Tiering"^]
 * https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["Computing"^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["Digitale Brieftasche"^]
 * https://docs.netapp.com/us-en/bluexp-economic-efficiency/index.html["Wirtschaftliche Effizienz"^]
 * https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["Globaler Datei-Cache"^]
 * https://docs.netapp.com/us-en/bluexp-operational-resiliency/index.html["Operative Ausfallsicherheit"^]
 * https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["Schutz Vor Ransomware"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/whats-new.html["Replizierung"^]
-
-
-
-
-== Administration
-
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html["Einrichtung und Administration"^]
 
