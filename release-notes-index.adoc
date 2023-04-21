@@ -47,16 +47,16 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html["Einricht
 
 == Datenservices
 
-* https://docs.netapp.com/us-en/cloud-manager-app-template/whats-new.html["AppTemplate"^]
-* https://docs.netapp.com/us-en/cloud-manager-backup-restore/whats-new.html["Cloud-Backup"^]
-* https://docs.netapp.com/us-en/cloud-manager-data-sense/whats-new.html["Cloud-Daten Sinnvoll"^]
-* https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html["Cloud-Synchronisierung"^]
-* https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["Cloud Tiering"^]
-* https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["Computing"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/whats-new.html["Backup und Recovery"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/whats-new.html["Klassifizierung"^]
+* https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["Cloud-Betrieb"^]
+* https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html["Kopieren und Synchronisieren"^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["Digitale Brieftasche"^]
 * https://docs.netapp.com/us-en/bluexp-economic-efficiency/index.html["Wirtschaftliche Effizienz"^]
-* https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["Globaler Datei-Cache"^]
+* https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["Edge-Caching"^]
 * https://docs.netapp.com/us-en/bluexp-operational-resiliency/index.html["Operative Ausfallsicherheit"^]
-* https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["Schutz Vor Ransomware"^]
+* https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["Schutz durch Ransomware"^]
+* https://docs.netapp.com/us-en/cloud-manager-app-template/whats-new.html["Korrekturmaßnahmen"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/whats-new.html["Replizierung"^]
+* https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["Tiering"^]
 
