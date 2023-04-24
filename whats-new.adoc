@@ -59,7 +59,7 @@ NOTE: Die Einführung des eingeschränkten Modus ersetzt die Option zum Aktivier
 
 ==== Anschluss 3.9.28
 
-* d128bda2634e1051cc984231da065144
+* Das Digital Wallet von BlueXP unterstützt jetzt E-Mail-Benachrichtigungen.
 +
 Wenn Sie Ihre Benachrichtigungseinstellungen konfigurieren, können Sie E-Mail-Benachrichtigungen erhalten, wenn Ihre BYOL-Lizenzen ablaufen (eine „Warnung“) oder wenn sie bereits abgelaufen sind (eine „Fehler“-Benachrichtigung).
 
@@ -119,12 +119,12 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Lesen Sie die Systemanforderungen für den Konnektor"].
 
-* d2792d178cbdf6c41f2b8f2ae64424ed
+* Der Connector wird jetzt in jeder Cloud-Umgebung unterstützt, die vollständig vom Internet isoliert ist. Anschließend können Sie die BlueXP Konsole, die auf dem Connector ausgeführt wird, verwenden, um Cloud Volumes ONTAP am selben Standort zu implementieren und lokale ONTAP-Cluster zu erkennen (wenn Sie eine Verbindung von Ihrer Cloud-Umgebung zu Ihrer On-Premises-Umgebung haben). Auch Backup und Recovery mit BlueXP können Sie Cloud Volumes ONTAP Volumes in AWS und Azure kommerziellen Regionen sichern. Andere BlueXP Services werden bei dieser Implementierung nicht unterstützt, außer beim BlueXP Digital Wallet.
 +
 Die Cloud-Region kann eine Region für sichere US-Behörden wie AWS C2S/SC2S, Azure IL6 oder jede kommerzielle Region sein.
 
 +
-75327cdc175eca204abf0a4aa66413b3
+Um zu beginnen, installieren Sie die Connector Software manuell, melden Sie sich bei der BlueXP Konsole an, die auf dem Connector ausgeführt wird, fügen Sie Ihre BYOL-Lizenz zur BlueXP Digital Wallet hinzu und implementieren Sie dann Cloud Volumes ONTAP.
 
 +
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Installieren Sie den Connector an einem Ort ohne Internetzugang"^]
@@ -936,6 +936,8 @@ Digital Advisor (ehemals Active IQ) ist jetzt vollständig in BlueXP integriert 
 
 Wenn Sie den BlueXP Digital Advisor aufrufen, werden Sie jetzt aufgefordert, Ihre Anmeldedaten für die NetApp Support Site einzugeben, damit Daten zu Ihren Systemen angezeigt werden. Das NSS-Konto, bei dem Sie sich anmelden, ist nur mit Ihrer Benutzeranmeldung verknüpft. Es ist nicht mit anderen Benutzern in Ihrem NetApp Konto verknüpft.
 
+https://docs.netapp.com/us-en/active-iq/index.html["Erfahren Sie mehr über den BlueXP Digital Advisor"^]
+
 
 
 == Digital Wallet
@@ -948,7 +950,7 @@ Wenn Sie den BlueXP Digital Advisor aufrufen, werden Sie jetzt aufgefordert, Ihr
 
 ==== E-Mail-Benachrichtigungen
 
-d128bda2634e1051cc984231da065144
+Das Digital Wallet von BlueXP unterstützt jetzt E-Mail-Benachrichtigungen.
 
 Wenn Sie Ihre Benachrichtigungseinstellungen konfigurieren, können Sie E-Mail-Benachrichtigungen erhalten, wenn Ihre BYOL-Lizenzen ablaufen (eine „Warnung“) oder wenn sie bereits abgelaufen sind (eine „Fehler“-Benachrichtigung).
 
@@ -958,7 +960,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operatio
 
 ==== Lizenzierte Kapazität für Marketplace-Abonnements
 
-016c818ed3128119f94a31cbec32bf1f
+Bei der Anzeige der kapazitätsbasierten Lizenzierung für Cloud Volumes ONTAP wird in der Digital Wallet von BlueXP die lizenzierte Kapazität angezeigt, die Sie mit privaten Marketplace-Angeboten erworben haben.
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Erfahren Sie, wie Sie die verbrauchte Kapazität in Ihrem Konto anzeigen"].
 
@@ -970,7 +972,7 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 ==== Abonnements und Jahresverträge
 
-b3e680bd6b6b80e2fd4f5bd19f3ad015
+Ihre PAYGO-Abonnements und Jahresverträge für BlueXP können jetzt über das Digital Wallet von BlueXP betrachtet und gemanagt werden.
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html["Hier erfahren Sie, wie Sie Ihre Abonnements verwalten"].
 
@@ -982,17 +984,11 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.ht
 
 ==== Optimierte I/O- und WORM-Kapazität
 
-dfc3d3012360c41f119ce032ebb3ed8b
+Das Digital Wallet von BlueXP zeigt Ihnen jetzt eine Zusammenfassung des optimierten I/O-Lizenzpakets und der bereitgestellten WORM-Kapazität für Cloud Volumes ONTAP Systeme auf Ihrem gesamten Konto.
 
 Mit diesen Angaben können Sie besser verstehen, wie abgerechnet wird und ob Sie zusätzliche Kapazität erwerben müssen.
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Erfahren Sie, wie Sie die verbrauchte Kapazität in Ihrem Konto anzeigen"].
-
-
-
-== Wirtschaftliche Effizienz
-
-https://docs.netapp.com/us-en/active-iq/index.html["Erfahren Sie mehr über den BlueXP Digital Advisor"^]
 
 
 
@@ -1324,7 +1320,7 @@ Die vorhandene Unterstützung zur Erstellung einer Cloud Volumes ONTAP-Arbeitsum
 
 Mithilfe der neuen Aktion „Ressource suchen“ können Sie alle Volumes identifizieren, auf denen Sie Cloud Backup aktivieren möchten. Anschließend können Sie die Aktion „Cloud Backup“ verwenden, um das Backup auf diesen Volumes zu aktivieren.
 
-Aktuelle Unterstützung bieten Volumes auf Cloud Volumes ONTAP und lokalen ONTAP Systemen. https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#find-existing-volumes-and-activate-cloud-backup["Weitere Informationen finden Sie hier"].
+Aktuelle Unterstützung bieten Volumes auf Cloud Volumes ONTAP und lokalen ONTAP Systemen. https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#find-existing-volumes-and-activate-bluexp-backup-and-recovery["Weitere Informationen finden Sie hier"].
 
 
 
