@@ -225,7 +225,7 @@ Wenn eine Backup-Datei mit DataLock- und Ransomware-Schutz konfiguriert wurde od
 
 ==== Bei der Sicherung von Volumes in der Google Cloud werden regionsübergreifende und projektübergreifende, vom Kunden gemanagte Schlüssel unterstützt
 
-Jetzt können Sie einen Bucket auswählen, der sich in einem anderen Projekt befindet als das Projekt Ihrer vom Kunden verwalteten Verschlüsselungsschlüssel (CMEK).
+Jetzt können Sie einen Bucket auswählen, der sich in einem anderen Projekt befindet als das Projekt Ihrer vom Kunden verwalteten Verschlüsselungsschlüssel (CMEK). https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-gcp.html#preparing-google-cloud-storage-for-backups["Erfahren Sie mehr über die Einrichtung Ihrer eigenen vom Kunden verwalteten kryptographischen Schlüssel"].
 
 
 
@@ -528,9 +528,9 @@ Die Region Turin wird jetzt in Google Cloud für Cloud Volumes ONTAP und dem Con
 
 
 
-==== Digital-Wallet-Erweiterung
+==== Erweiterung der digitalen Wallet von BlueXP
 
-Digital Wallet zeigt jetzt die lizenzierte Kapazität an, die Sie mit den privaten Angeboten von Marketplace erworben haben.
+Das Digital Wallet von BlueXP zeigt jetzt die lizenzierte Kapazität an, die Sie mit privaten Marketplace-Angeboten erworben haben.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Erfahren Sie, wie Sie die verbrauchte Kapazität in Ihrem Konto anzeigen"^].
 
@@ -923,6 +923,25 @@ Der Überwachungsdienst wurde am 1. November 2022 eingestellt. Sie finden jetzt 
 
 
 
+=== 4 Mai 2023
+
+
+
+==== BlueXP Backup und Recovery ermöglichen
+
+Ab ONTAP 9.13.1 können Sie System Manager (erweiterte Ansicht) verwenden, um BlueXP Backup und Recovery zu aktivieren, wenn Sie das Cluster über einen Connector erkannt haben. link:https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html["Erfahren Sie mehr über die Unterstützung von BlueXP Backup und Recovery"^]
+
+
+
+==== Upgrade des ONTAP Versions-Images und der Hardware-Firmware
+
+Ab ONTAP 9.10.1 können Sie System Manager (erweiterte Ansicht) verwenden, um das ONTAP Versions-Image und die Hardware-Firmware zu aktualisieren. Sie können automatische Upgrades erhalten, um auf dem neuesten Stand zu bleiben, oder manuelle Updates von Ihrem lokalen Computer oder einem Server durchführen, auf den über BlueXP zugegriffen werden kann. link:https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update["Erfahren Sie mehr über Upgrades von ONTAP und Firmware"^]
+
+
+NOTE: Wenn Sie über einen Connector verfügen, können Sie keine Updates von Ihrem lokalen Rechner aus vornehmen, nur von einem Server, auf den Sie mit BlueXP zugreifen können.
+
+
+
 === Bis 3. April 2023
 
 
@@ -951,57 +970,9 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 ==== ONTAP-Anmeldedaten speichern
 
-Wenn Sie eine lokale ONTAP-Arbeitsumgebung öffnen, die direkt ohne Connector erkannt wurde, haben Sie nun die Möglichkeit, Ihre ONTAP-Cluster-Anmeldedaten zu speichern, damit Sie sie nicht jedes Mal eingeben müssen, wenn Sie die Arbeitsumgebung öffnen.
+Wenn Sie eine lokale ONTAP-Arbeitsumgebung öffnen, die direkt ohne die Verwendung eines Connectors erkannt wurde, haben Sie jetzt die Möglichkeit, Ihre ONTAP-Cluster-Anmeldeinformationen zu speichern, sodass Sie sie nicht jedes Mal eingeben müssen, wenn Sie die Arbeitsumgebung öffnen.
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-direct.html["Weitere Informationen zu dieser Option."]
-
-
-
-=== Bis 4. Dezember 2022
-
-Die folgenden Änderungen wurden mit der Version 3.9.24 des Connectors eingeführt.
-
-
-
-==== Neue Möglichkeit zur Erkennung von ONTAP Clustern vor Ort
-
-Sie können Ihre On-Premises-ONTAP-Cluster jetzt direkt über einen Connector erkennen. Diese Option ermöglicht das Cluster Management nur über System Manager. In dieser Arbeitsumgebung können Sie keine BlueXP-Datenservices aktivieren.
-
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Erfahren Sie mehr über diese Option zur Erkennung und Verwaltung"].
-
-
-
-==== FlexGroup Volumes
-
-Bei On-Prem-ONTAP-Clustern, die über einen Connector erkannt werden, zeigt die Standardansicht in BlueXP jetzt die FlexGroup-Volumes an, die über den System Manager oder die ONTAP-CLI erstellt wurden. Sie können diese Volumes auch verwalten, indem Sie sie klonen, ihre Einstellungen bearbeiten und löschen.
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-flexgroup-volumes.png["Ein Screenshot, der ein FlexGroup-Volume auf der Seite „Volumes“ für ein ONTAP-Cluster vor Ort zeigt"]
-
-BlueXP unterstützt das Erstellen von FlexGroup Volumes nicht. Zum Erstellen von FlexGroup Volumes müssen Sie weiterhin System Manager oder die CLI verwenden.
-
-
-
-=== 18. September 2022
-
-Die folgenden Änderungen wurden mit der Version 3.9.22 des Connectors eingeführt.
-
-
-
-==== Neue Übersichtsseite
-
-Mit der neuen Übersichtsseite möchten wir wichtige Details zu einem lokalen ONTAP Cluster bereitstellen. Beispielsweise können Sie jetzt Details wie Storage-Effizienz, Kapazitätsverteilung und Systeminformationen anzeigen.
-
-Sie können sich außerdem Details zur Integration mit anderen BlueXP Services anzeigen lassen, die Daten-Tiering, Datenreplizierung und Backups ermöglichen.
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-overview.png["Ein Screenshot, der die Übersichtsseite für ein ONTAP-Cluster vor Ort anzeigt."]
-
-
-
-==== Seite „neu gestaltete Volumes“
-
-Die Seite Volumes wurde neu gestaltet, um eine Zusammenfassung der Volumes in einem Cluster zu bieten. Die Zusammenfassung gibt Ihnen die Gesamtzahl der Volumes, die Menge der bereitgestellten Kapazität, genutzte und reservierte Kapazität sowie die Menge der Tiered-Daten an.
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-volumes.png["Ein Screenshot, der die Volume-Seite für ein On-Prem ONTAP-Cluster zeigt"]
 
 
 
