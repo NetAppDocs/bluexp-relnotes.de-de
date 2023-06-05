@@ -33,6 +33,36 @@ In diesem Abschnitt werden neue Funktionen in Bezug auf BlueXP-Verwaltungsfunkti
 
 
 
+=== 2 Juli 2023
+
+
+
+==== Anschluss 3.9.31
+
+* Sie können jetzt On-Premises-ONTAP-Cluster über die Registerkarte *My estate* (vorher *Meine Möglichkeiten*) entdecken.
++
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["Erfahren Sie auf der Seite My Estate, wie Sie Cluster erkennen"].
+
+* Wenn Sie den Connector in einer Azure Government-Region verwenden, sollten Sie sicherstellen, dass der Connector den folgenden Endpunkt erreichen kann:
++
+\https://occmclientinfragov.azurecr.us
+
++
+Dieser Endpunkt ist erforderlich, um den Connector manuell zu installieren und den Connector und seine Docker-Komponenten zu aktualisieren.
+
++
+Aufgrund dieser Änderung kontaktiert ein Connector in einer Azure-Regierungsregion nicht mehr den folgenden Endpunkt:
+
++
+\https://cloudmanagerinfraprod.azurecr.io
+
++
+Beachten Sie, dass dieser Endpunkt weiterhin für alle anderen Konfigurationen mit eingeschränktem Modus und für den Standardmodus erforderlich ist.
+
+
+
+
+
 === 4 Juni 2023
 
 
@@ -116,26 +146,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["Hier finden Sie die volls
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023["Erfahren Sie mehr über Verbesserungen bei Cloud Volumes ONTAP"^]
 
 
-
-
-
-=== Bis 4. April 2023
-
-
-
-==== Bereitstellungsmodi
-
-Mit BlueXP _Implementierungsmodi_ können Sie BlueXP entsprechend Ihren geschäftlichen und Sicherheitsanforderungen einsetzen. Sie können zwischen drei Modi wählen:
-
-* Standardmodus
-* Eingeschränkter Modus
-* Privater Modus
-
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Erfahren Sie mehr über diese Bereitstellungsmodi"].
-
-
-NOTE: Die Einführung des eingeschränkten Modus ersetzt die Option zum Aktivieren oder Deaktivieren der SaaS-Plattform. Sie können den eingeschränkten Modus zum Zeitpunkt der Kontoerstellung aktivieren. Sie kann später nicht aktiviert oder deaktiviert werden.
 
 
 
