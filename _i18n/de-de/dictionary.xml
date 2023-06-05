@@ -123,24 +123,13 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp Community</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Cloud-Webinare</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Alle BlueXP-Dokumentationen</block>
-  <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">Bis 6. Dezember 2022</block>
   <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">Weitere Informationen zu unterstützten Synchronisierungsbeziehungen</block>
-  <block id="eb75f7332becd8b3fbb2a59ea0bd0536" category="cell">Alter Endpunkt</block>
-  <block id="afcce2fe2d959c0f4554e7815a50e8e4" category="cell">Neuer Endpunkt</block>
-  <block id="115781a0043a85f8707c5c99fd02dc75" category="cell">\https://cloudmanager.cloud.netapp.com</block>
-  <block id="e1095ff19466581c5274f67123c95036" category="cell">\https://api.bluexp.netapp.com</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">\https://*.cloudmanager.cloud.netapp.com</block>
-  <block id="37ba276f010f4ea07f1196b487811443" category="cell">\https://*.api.bluexp.netapp.com</block>
-  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="inline-link">AWS</block>
-  <block id="56ef2682280ac110060b881925a87b80" category="inline-link">Google Cloud</block>
-  <block id="3a580f142203677f1f0bc30898f63f53" category="inline-link">Azure</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP Blogs</block>
   <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">5 Februar 2023</block>
   <block id="de7ceda1f3ad5462ebeba9b4e49bf946" category="section-title">Möglichkeit, Richtlinien festzulegen, anhand derer die Daten identifiziert werden, die Sie als geschäftskritisch betrachten</block>
   <block id="5bba5081ab3b5a554fbba4b798a66e4f" category="inline-link">Erfahren Sie mehr über die Seite geschäftskritische Daten</block>
   <block id="c1d1220273fe79d481c41539bea31710" category="paragraph">Jetzt greifen Sie über das Menü der linken Navigation von BlueXP auf diesen Service zu, indem Sie *Governance &gt; Ransomware-Schutz* wählen.</block>
   <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">Diese Version des Connectors enthält Cloud Volumes ONTAP-Verbesserungen.</block>
-  <block id="433c1ccd6c6d5af5fc78b729975e5f20" category="section-title">Änderungen an Endpunkten für ausgehenden Internetzugriff über den Anschluss</block>
   <block id="6beb41a356d9287866f0b22c4b4eadcb" category="paragraph">Erfahren Sie mehr über die neuesten Änderungen an den Cloud-Services, die Teil der BlueXP Plattform sind. Weitere Informationen erhalten Sie im <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> Für jeden einzelnen Service.</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 März 2023</block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">05 März 2023</block>
@@ -283,7 +272,6 @@
   <block id="7c446b3d2b5f39a022c6af3569a59a1f" category="paragraph">BlueXP Ransomware-Schutz bietet jetzt eine neue Seite für geschäftskritische Daten. Auf dieser Seite können Sie alle Richtlinien anzeigen, die in der BlueXP Klassifizierung definiert wurden. Sie können Richtlinien auswählen, die Daten identifizieren, die für Ihr Unternehmen entscheidend sind, sodass das BlueXP Dashboard für den Ransomware-Schutz und andere Ransomware-Bereiche basierend auf Ihren wichtigsten Daten potenzielle Probleme darstellen.</block>
   <block id="6b501182c10867e7258fc2278cf3d451" category="paragraph">Eine neue empfohlene Aktion namens „Konfigurieren Sie Ihre geschäftskritischen Daten“ wird im Bereich „Empfohlene Maßnahmen“ angezeigt, wenn Sie keine dieser Richtlinien für den BlueXP Ransomware-Schutzservice aktiviert haben.</block>
   <block id="e90b826155dae219948b9b2fca9feca3" category="section-title">Der Ransomware-Schutz von BlueXP hat sich von der Kategorie Schutz in die Kategorie Governance verlagert</block>
-  <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">Aufgrund einer Änderung des BlueXP Tiering müssen Sie die folgenden Connector-Endpunkte für einen erfolgreichen BlueXP Tiering-Betrieb ändern:</block>
   <block id="d128bda2634e1051cc984231da065144" category="list-text">Das Digital Wallet von BlueXP unterstützt jetzt E-Mail-Benachrichtigungen.</block>
   <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">Bei der Anzeige der kapazitätsbasierten Lizenzierung für Cloud Volumes ONTAP wird in der Digital Wallet von BlueXP die lizenzierte Kapazität angezeigt, die Sie mit privaten Marketplace-Angeboten erworben haben.</block>
   <block id="b3e680bd6b6b80e2fd4f5bd19f3ad015" category="paragraph">Ihre PAYGO-Abonnements und Jahresverträge für BlueXP können jetzt über das Digital Wallet von BlueXP betrachtet und gemanagt werden.</block>
@@ -414,7 +402,6 @@
   <block id="c3f9f5f3154c847ae51038b02652e769" category="paragraph"><block ref="ebf81513d87da0002a3ac7ea6ee056cb" category="inline-link-rx"></block>.</block>
   <block id="51959da1122b405c90c18be52282f18f" category="paragraph"><block ref="1bc1e485e9f9d41e344f0d10f6ad3511" category="inline-link-rx"></block>.</block>
   <block id="af39bae06861b3074eed6e997f9a3ebf" category="paragraph">Sie können einen Bericht von der Seite „Tiering Volumes“ herunterladen, damit Sie den Tiering-Status aller Volumes auf den gemanagten Clustern überprüfen können. BlueXP Tiering generiert eine CSV-Datei, die Sie nach Bedarf anderen Personen in Ihrem Unternehmen senden und prüfen können.<block ref="aaab920374e84f87020f8ba8578ab877" category="inline-link-rx"></block>.</block>
-  <block id="fa2934d386823619966e2cc6e222496c" category="paragraph">Hier finden Sie die vollständige Liste der Endpunkte für Ihr<block ref="42eb7f749d4ba3adb326aa0a5756ba02" category="inline-link-rx"></block>,<block ref="96a9d4916fc49c8f082f1cb217b818c4" category="inline-link-rx"></block>, Oder<block ref="4f16be4d60318c8ffb97ef574631956d" category="inline-link-rx"></block> Cloud-Umgebung.</block>
   <block id="2b3e8f910d66604cd77f93b333670468" category="inline-link">Azure Blob Storage</block>
   <block id="a1182a2fefa3fdd8128a983a3d666611" category="list-text"><block ref="a1182a2fefa3fdd8128a983a3d666611" category="inline-link-rx"></block></block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="inline-link">Migrationsberichte</block>
@@ -548,4 +535,24 @@
   <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">Aufgrund dieser Änderung kontaktiert ein Connector in einer Azure-Regierungsregion nicht mehr den folgenden Endpunkt:</block>
   <block id="9dcb0a1d3281e001a6085626a264be49" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io</block>
   <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">Beachten Sie, dass dieser Endpunkt weiterhin für alle anderen Konfigurationen mit eingeschränktem Modus und für den Standardmodus erforderlich ist.</block>
+  <block id="51276db22ab007bf8378ddc5150c089e" category="section-title">04 Juli 2023</block>
+  <block id="91abdc8faafafce1c7b76b1ecb8b37a6" category="list-text">SAP HANA Systeme</block>
+  <block id="bd8b9d76d990f261019903335a2c9e94" category="list-text">Unterstützt das Verbinden und Kopieren von nicht-Daten-Volumes und globalen nicht-Daten-Volumes mit sekundärem Azure NetApp Files-Schutz</block>
+  <block id="0ba30ac65d6a9a5888d4dc02307879d6" category="list-text">Unterstützt die Wiederherstellung von Oracle Datenbanken auf Azure NetApp Files an einem alternativen Speicherort</block>
+  <block id="699e0e6ae8fec9f5e5e383a17f5ec630" category="list-text">Unterstützt Oracle Recovery Manager (RMAN) Katalogisierung von Backups von Oracle-Datenbanken auf Azure NetApp Files</block>
+  <block id="02794f70b3a16972197aaf346fca198e" category="list-text">Ermöglicht es Ihnen, den Datenbank-Host in den Wartungsmodus zu versetzen, um Wartungsaufgaben durchzuführen</block>
+  <block id="d7d2579b3be99740443be180188dedfc" category="list-text">Unterstützt die Wiederherstellung an einem alternativen Speicherort</block>
+  <block id="b0e856a98075908a96697bb21ab6fe32" category="list-text">Ermöglicht das Mounten von Backups von Oracle-Datenbanken</block>
+  <block id="9e9fa16d2206e067234a9dad53361ff4" category="list-text">Unterstützt das Verschieben von Backups von GCP auf Archiv-Tier</block>
+  <block id="e0d4183564323d306658a92b138bac87" category="section-title">Verbesserungen bei BlueXP Backup und Recovery für Virtual Machines (Hybrid)</block>
+  <block id="64870b941ab2700a64f496038bfb77a9" category="list-text">Unterstützt den Schutz von NFS- und VMFS-Datenspeichern</block>
+  <block id="c54bd2b10766a492ae36855e868d61eb" category="list-text">Ermöglicht Ihnen, die Registrierung des SnapCenter-Plug-ins für den VMware vSphere-Host aufzuheben</block>
+  <block id="08c34207830d8869e05cd28a4543f5dc" category="list-text">Unterstützt die Aktualisierung und Erkennung der neuesten Datastores und Backups</block>
+  <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">4 Juli 2023</block>
+  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">Jetzt können Sie die Bandbreite anpassen, die zum Hochladen inaktiver Daten in den Objektspeicher verwendet wird</block>
+  <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">Bei der Aktivierung von BlueXP Tiering kann ONTAP eine unbegrenzte Menge an Netzwerkbandbreite verwenden, um die inaktiven Daten von den Volumes im Cluster auf Objekt-Storage zu übertragen. Wenn Sie bemerken, dass der Tiering Traffic normale Benutzer-Workloads beeinträchtigt, können Sie die Bandbreite, die während der Übertragung verwendet werden kann, drosseln.<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>.</block>
+  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">Das Tiering-Ereignis für „Low Tiering“ wird im Benachrichtigungscenter angezeigt</block>
+  <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">Das Tiering-Ereignis „Tiering zusätzlicher Daten von Cluster &lt;name&gt; auf Objekt-Storage zur Steigerung der Storage-Effizienz“ wird nun als Benachrichtigung angezeigt, wenn ein Cluster weniger als 20 % seiner kalten Daten Tiering durchführt – einschließlich Clustern, die keine Daten Tiering nutzen.</block>
+  <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">BlueXP Tiering-Rechner für Gesamtbetriebskosten und Einsparungen</block>
+  <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">Diese Mitteilung ist eine „Empfehlung“, mit der Sie Ihre Systeme effizienter gestalten und Storage-Kosten einsparen können. Sie enthält einen Link zum<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> Zur Berechnung Ihrer Kosteneinsparungen.</block>
 </blocks>
