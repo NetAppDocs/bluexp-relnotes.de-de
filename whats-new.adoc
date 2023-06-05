@@ -663,6 +663,26 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 11 Juni 2023
+
+
+
+==== Unterstützung für automatischen Abbruch innerhalb von Minuten
+
+Aktive Synchronisierungen, die nicht abgeschlossen wurden, können jetzt mit der Funktion *Sync Timeout* nach 15 Minuten abgebrochen werden.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Erfahren Sie mehr über die Einstellung für die Zeitüberschreitung beim Synchronisieren"].
+
+
+
+==== Metadaten der Zugriffszeit kopieren
+
+In Beziehungen, einschließlich eines Dateisystems, kopiert die Funktion *Copy for Objects* nun Metadaten zur Zugriffszeit.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Erfahren Sie mehr über die Einstellung für Objekte kopieren"].
+
+
+
 === 8 Mai 2023
 
 
@@ -722,18 +742,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships
 Zusätzlich zum Filtern von Verzeichnissen nach Namen können Sie nun Verzeichnisse nach ihrem vollständigen Pfad filtern.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Erfahren Sie mehr über die Einstellung „Verzeichnisse ausschließen“"].
-
-
-
-=== 7 März 2023
-
-
-
-==== EBS-Verschlüsselung für AWS-Datenmanager
-
-Sie können jetzt AWS-Daten-Broker-Volumes mit einem KMS-Schlüssel in Ihrem Konto verschlüsseln.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["Erfahren Sie mehr über die Erstellung eines Datenbrokers in AWS"].
 
 
 

@@ -177,9 +177,6 @@
   <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">Sie können Amazon S3 Buckets seit geraumer Zeit auf dem BlueXP Canvas anzeigen. Sie können jetzt neue Buckets hinzufügen und Eigenschaften für vorhandene Buckets direkt aus BlueXP ändern.<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>.</block>
   <block id="9d811f8ab4335c82eeb7d1477874bc1c" category="inline-link-macro">Sichern von Cloud Volumes ONTAP-Daten in Amazon S3</block>
   <block id="a5e6246728060cb5f413df6fa5adbf0c" category="inline-link-macro">Backup von Cloud Volumes ONTAP Daten in Azure Blob</block>
-  <block id="a19f14c281dd654ce355a7e0b63146b5" category="section-title">EBS-Verschlüsselung für AWS-Datenmanager</block>
-  <block id="8663378959352a24f27c3d250a37cf3d" category="paragraph">Sie können jetzt AWS-Daten-Broker-Volumes mit einem KMS-Schlüssel in Ihrem Konto verschlüsseln.</block>
-  <block id="f296e44bbf15ea94dfcce2d2a4649e6d" category="inline-link">Erfahren Sie mehr über die Erstellung eines Datenbrokers in AWS</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">Bis 3. April 2023</block>
   <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">Wenn Sie Ihre Benachrichtigungseinstellungen konfigurieren, können Sie E-Mail-Benachrichtigungen erhalten, wenn Ihre BYOL-Lizenzen ablaufen (eine „Warnung“) oder wenn sie bereits abgelaufen sind (eine „Fehler“-Benachrichtigung).</block>
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Hier erfahren Sie, wie Sie E-Mail-Benachrichtigungen einrichten</block>
@@ -435,7 +432,6 @@
   <block id="ce907128271b3f13161731af69efdb83" category="paragraph"><block ref="7d45213b584f83e1010772ef58d497ad" category="inline-link-rx"></block>.</block>
   <block id="791d072486b9f4524702996962f5cb1d" category="paragraph"><block ref="525fcee9e0cdf0ea236cb2377cb58f7b" category="inline-link-rx"></block>.</block>
   <block id="4e0e0be812e0732ff08c371803f4157c" category="paragraph"><block ref="aabef2d7a8f8ee536d1fe9fe0f22b561" category="inline-link-rx"></block>.</block>
-  <block id="48938ec2ae208dc89827f9e55c8f1c41" category="paragraph"><block ref="42f00e873b388cac01d84d3ba1605497" category="inline-link-rx"></block>.</block>
   <block id="10dc1eee3d75610cc244de50455508d3" category="paragraph">Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>. Aktualisierte Softwarepakete finden Sie unter<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>.</block>
   <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
   <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>.</block>
@@ -548,4 +544,13 @@
   <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">Erfahren Sie, wie Sie neue Azure-Storage-Konten in Ihren Azure-Abonnements von BlueXP hinzufügen</block>
   <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>.</block>
   <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04 wurde als unterstütztes Betriebssystem für die BlueXP Klassifizierung qualifiziert. Sie können die BlueXP-Klassifizierung auf einem Ubuntu Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud installieren, wenn Sie Version 1.23 des Installers verwenden.<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>.</block>
+  <block id="9b7d935c674579c8c8e305e2dcadc1b9" category="section-title">11 Juni 2023</block>
+  <block id="b18ac5fa90a568a24f98c73b9192cb6d" category="section-title">Unterstützung für automatischen Abbruch innerhalb von Minuten</block>
+  <block id="33c110842a0fe3f7891980d750e48fa2" category="paragraph">Aktive Synchronisierungen, die nicht abgeschlossen wurden, können jetzt mit der Funktion *Sync Timeout* nach 15 Minuten abgebrochen werden.</block>
+  <block id="44856e8753e0c19c0341499a434c7c97" category="inline-link">Erfahren Sie mehr über die Einstellung für die Zeitüberschreitung beim Synchronisieren</block>
+  <block id="3266d16b8714caecb4f4231dca5dae65" category="paragraph"><block ref="bfd432c58dd0bb0c71b937c5a3336867" category="inline-link-rx"></block>.</block>
+  <block id="69540ae9a9da395711f1e900d88e4cc5" category="section-title">Metadaten der Zugriffszeit kopieren</block>
+  <block id="a706d4045e92e504f4aa9e79191d81f5" category="paragraph">In Beziehungen, einschließlich eines Dateisystems, kopiert die Funktion *Copy for Objects* nun Metadaten zur Zugriffszeit.</block>
+  <block id="bac04a3b125486e43e5adcb9275b0cb7" category="inline-link">Erfahren Sie mehr über die Einstellung für Objekte kopieren</block>
+  <block id="b9101f79b22863de2373d338b3f2fd49" category="paragraph"><block ref="61cd45fc857d1053eae8b58e970eda27" category="inline-link-rx"></block>.</block>
 </blocks>
