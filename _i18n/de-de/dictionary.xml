@@ -155,7 +155,6 @@
   <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">So fügen Sie neue Amazon S3 Buckets hinzu</block>
   <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">Sie können Amazon S3 Buckets seit geraumer Zeit auf dem BlueXP Canvas anzeigen. Sie können jetzt neue Buckets hinzufügen und Eigenschaften für vorhandene Buckets direkt aus BlueXP ändern.<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>.</block>
   <block id="9d811f8ab4335c82eeb7d1477874bc1c" category="inline-link-macro">Sichern von Cloud Volumes ONTAP-Daten in Amazon S3</block>
-  <block id="a5e6246728060cb5f413df6fa5adbf0c" category="inline-link-macro">Backup von Cloud Volumes ONTAP Daten in Azure Blob</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">Bis 3. April 2023</block>
   <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">Wenn Sie Ihre Benachrichtigungseinstellungen konfigurieren, können Sie E-Mail-Benachrichtigungen erhalten, wenn Ihre BYOL-Lizenzen ablaufen (eine „Warnung“) oder wenn sie bereits abgelaufen sind (eine „Fehler“-Benachrichtigung).</block>
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Hier erfahren Sie, wie Sie E-Mail-Benachrichtigungen einrichten</block>
@@ -185,11 +184,6 @@
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Deinstallieren Sie Astra Trident</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">Die Registerkarte „Lizenzierung“ wurde entfernt</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">Die Registerkarten „Tiering“ wurden umbenannt und enthalten aktualisierte Inhalte</block>
-  <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">Bis 4. April 2023</block>
-  <block id="40c193dda1b0a4df68695abe150f234a" category="section-title">Sicherung von Daten aus Cloud Volumes ONTAP Systemen in der Cloud mit „eingeschränktem“ Modus</block>
-  <block id="57c3b4ba3c60295d45a2554606080eef" category="section-title">Möglichkeit zum Backup Ihrer On-Premises-ONTAP-Volumes in ONTAP S3 mithilfe der API</block>
-  <block id="720734599c08f49ea57d729ec9f12d53" category="section-title">Möglichkeit, den Zonenredundanz-Aspekt Ihres Azure Storage-Kontos von LRS zu ZRS zu ändern</block>
-  <block id="95fa16fe802a71eca4c0ade2049c7325" category="inline-link">Ändern der Replizierung Ihres Storage-Kontos</block>
   <block id="a7393f4b2940dc4b2ad20a62564d25be" category="section-title">Verbesserungen am Job Monitor</block>
   <block id="f42926ae5eb2834453e4706e43354d5c" category="section-title">3. April 2023 (Version 1.22)</block>
   <block id="e4279e9f497576fcde3caeb67ed0f96d" category="section-title">Neuer Data Discovery Assessment Report</block>
@@ -205,8 +199,6 @@
   <block id="89960279d43d6d504afb45e5a8dff137" category="section-title">Der Setup-Assistent und die Benutzeroberfläche für die GFC-Konfiguration wurden erweitert, um die NetApp Lizenzregistrierung durchzuführen</block>
   <block id="402a1502f5c39fb55ca79d59e3184a34" category="section-title">Verbesserter Optimus PSM zur Konfiguration der Edge Sync-Funktionen</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">Operational Resiliency ist ein Service, mit dem Sie Alarme und Ereignisse analysieren können, um den Zustand, die Uptime und die Performance von Services und Lösungen aufrechtzuerhalten.</block>
-  <block id="42d7d856cc8f6a2f82ed10cd8356e7d2" category="inline-link">Weitere Informationen zu den BlueXP Implementierungsmodi</block>
-  <block id="d7cfe6967f3004ef3386a27fe99a4610" category="inline-link">Integration mit ONTAP S3 als Ziel</block>
   <block id="6d924727c00a77a63749e2f8aa0860d4" category="summary">In diesen Versionshinweisen werden die neuesten Verbesserungen der Cloud-Services beschrieben, die Teil von BlueXP sind. Für jeden einzelnen Service stehen Links zu allen Versionshinweisen zur Verfügung.</block>
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">Einrichtung und Administration</block>
   <block id="2049421a4e8e45e83cd7cf18ffc00a12" category="inline-link">Digitale Brieftasche</block>
@@ -226,21 +218,9 @@
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="inline-link">Schutz durch Ransomware</block>
   <block id="282baca6aef56652f503adce6afa9f07" category="inline-link">Korrekturmaßnahmen</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">Tiering</block>
-  <block id="256c6643ca1c733f72685d5a161161f5" category="section-title">Bis 14. April 2023</block>
   <block id="197747cde80c31576877de78be696240" category="section-title">Verbesserungen bei BlueXP Backup und Recovery für Applikationen (Cloud-nativ)</block>
-  <block id="0a286ad90f3a25f45e443367036a8789" category="list-text">SAP HANA Datenbanken</block>
-  <block id="c0c906f83c940d4d16ffb433d7a368ca" category="list-text">Unterstützt skriptbasierte Systemaktualisierung</block>
-  <block id="b53bbb0902c6b7a25e7c1ac484d9fec2" category="list-text">Unterstützt Single-File-Snapshot-Restore, wenn Azure NetApp Files-Backup konfiguriert ist</block>
-  <block id="14860ef57cb4190ea449b13f7f0c8ea1" category="list-text">Unterstützt Plug-in-Upgrades</block>
   <block id="5ffbe0deb5b41148dc58e63a20df8411" category="list-text">Oracle Datenbanken</block>
-  <block id="b24979dddd1ccc913b0f29f30c981677" category="list-text">Verbesserungen bei der Plug-in-Bereitstellung durch Vereinfachung der nicht-Root-Sudo-Benutzerkonfiguration</block>
-  <block id="ab5eec0b36e1c0d7a8538ce2f367515c" category="list-text">Unterstützt automatische Erkennung und richtliniengesteuerten Schutz von Oracle Datenbanken auf Azure NetApp Files</block>
-  <block id="d21798a5d9e370e5fbb0150023dfaa38" category="list-text">Unterstützt die Wiederherstellung der Oracle Datenbank an ihrem ursprünglichen Speicherort mit granularer Recovery</block>
   <block id="a1501619265b99c9d02aefcdb1128d6d" category="section-title">Verbesserungen bei BlueXP Backup und Recovery für Applikationen (Hybrid)</block>
-  <block id="abfdb85669faee0a0fe78a3ddd25158b" category="list-text">Die Hybrid-REST-APIs wurden an Cloud-native APIs angepasst.</block>
-  <block id="91dd9ae8b3342cf7e40f497897ce70d7" category="list-text">Unterstützt E-Mail-Benachrichtigungen</block>
-  <block id="ef08fc33d8b9b410529dc05986b2e248" category="paragraph">Dank der neuen Funktionen der APIs können Sie Ihre Volume-Snapshots mithilfe von BlueXP Backup und Recovery auf ONTAP S3 sichern. Diese Funktionalität ist derzeit nur für On-Premises-ONTAP-Systeme verfügbar. Detaillierte Anweisungen finden Sie im Blog<block ref="8bfab3c14784f20047e4459b814ebfe4" category="inline-link-rx"></block>.</block>
-  <block id="bcd4bdef20ff7dec0587f35facdeb7be" category="paragraph">Bei der Erstellung von Backups aus Cloud Volumes ONTAP Systemen in Azure Storage stellt BlueXP Backup und Recovery standardmäßig den Blob-Container mit lokaler Redundanz (LRS) zur Kostenoptimierung bereit. Sie können diese Einstellung auf Zoneredundanz (ZRS) ändern, wenn Ihre Daten zwischen verschiedenen Zonen repliziert werden sollen. Siehe Microsoft-Anweisungen für<block ref="c549763665cfbb93dbccfdbf667aa0f2" category="inline-link-rx"></block>.</block>
   <block id="4788963de19a5204a352f3308b0395d8" category="inline-link">Prüfen Sie alle Warnmeldungen, die BlueXP Backup und Recovery senden können</block>
   <block id="21db17f88f41dcd13f48cc90aced1d74" category="section-title">Möglichkeit zur Implementierung der BlueXP Klassifizierung auf kleineren Instanzen in der Cloud</block>
   <block id="cb608d54d750eeb9d266241b5a1d63c7" category="section-title">Eigenständiges Skript steht jetzt zur Verfügung, um Ihr Linux-System vor der Installation der BlueXP Klassifizierung zu qualifizieren</block>
@@ -316,7 +296,6 @@
   <block id="679a2d98f8c7c05c4944b0d161a6d567" category="section-title">AWS China-Regionen werden jetzt für Backup-Dateien unterstützt</block>
   <block id="aad236ec8e2b61a79fb4bb3a416a2e06" category="paragraph">Die Regionen AWS China Beijing (cn-North-1) und Ningxia (cn-Northwest-1) werden nun als Ziele für Ihre Sicherungsdateien unterstützt, wenn auf dem Cluster ONTAP 9.12.1 oder höher ausgeführt wird.</block>
   <block id="c93bfe725726f47fe3bfcc0e95f8ec7d" category="inline-link">Sichern von On-Premises-ONTAP-Daten in Amazon S3</block>
-  <block id="4d5789e8f025b3895d94f1b6a7225e4a" category="list-text">BlueXP Backup und Recovery für Applikationen (Hybrid) basiert auf der SaaS-Kontrollebene</block>
   <block id="2652537da62e22a06b22374119e6c40f" category="section-title">Hardlink-Funktionen</block>
   <block id="74b59acd161d1704c8c78879dc8fba01" category="paragraph">Benutzer können nun feste Links für Synchronisierungen in ungesicherten NFS- zu NFS-Beziehungen einfügen.</block>
   <block id="689dbd8363b6599ce07ff94a27510e99" category="inline-link">Erfahren Sie mehr über die Einstellung Dateitypen</block>
@@ -367,8 +346,6 @@
   <block id="46ce6a634ad58fa667690e7f5c151b26" category="list-text">Optional können Sie <block ref="2af1713063b9a7e50c1f5e13c7671bae" category="inline-link-macro-rx"></block> Und <block ref="013335dc35ce07c311c673e8a99c88f9" category="inline-link-macro-rx"></block> tags zum Kategorisieren von Volumes.</block>
   <block id="c55a4ed0f55f8209574960c04bd36597" category="paragraph">Jetzt können Sie einen Bucket auswählen, der sich in einem anderen Projekt befindet als das Projekt Ihrer vom Kunden verwalteten Verschlüsselungsschlüssel (CMEK).<block ref="2425c9129a22c7135ee8a04ae0dae970" category="inline-link-rx"></block>.</block>
   <block id="cfc826b330f7a25cc3c4e115a9fcca13" category="paragraph">Beachten Sie, dass die dem BlueXP Connector zugewiesenen IAM-Richtlinien den AWS-Ressourcennamen „arn“ unter allen _Resource_-Abschnitten von „aws“ in „aws-cn“ ändern müssen, z. B. „arn:aws-cn:s3:::netapp-Backup-*“. Siehe<block ref="17dde2a04d27e7ad2a9f0a451a7a0e90" category="inline-link-rx"></block> Und<block ref="bb86d78b7593b3e1252f277b7dd6e017" category="inline-link-rx"></block> Entsprechende Details.</block>
-  <block id="3f95b7ff004c9ea7ba2c076aa81ddbd8" category="list-text">Neben der Möglichkeit, eine CSV-Datei für die Berichterstattung über alle Jobs herunterzuladen, können Sie jetzt auch eine JSON-Datei für einen einzelnen Job herunterladen und die zugehörigen Details anzeigen.<block ref="c5e8ac86e60de65889ee067b8ca8ac22" category="inline-link-rx"></block>.</block>
-  <block id="aca6a48e798dafa8a873544468b60e06" category="list-text">Es wurden zwei neue Warnmeldungen für Sicherungsjobs hinzugefügt: „Geplante Jobfehler“ und „Wiederherstellungsauftrag wird abgeschlossen, aber mit Warnungen“.<block ref="a4848a9ae757d04f84e693376feb04c0" category="inline-link-rx"></block>.</block>
   <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">Der Data Discovery Assessment Report bietet eine allgemeine Analyse Ihrer gescannten Umgebung, um die Ergebnisse des Systems hervorzuheben und Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen. Ziel dieses Berichts ist es, ein Bewusstsein für Bedenken im Zusammenhang mit der Data Governance, Schwachstellen bei der Datensicherheit und Lücken in der Daten-Compliance in Ihrem Datensatz zu schaffen.<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>.</block>
   <block id="38e8bfeb390cec6e72d97323084e18cc" category="paragraph">Bei der Implementierung der BlueXP Klassifizierung aus einem BlueXP Connector in einer AWS-Umgebung können Sie nun zwischen zwei kleineren Instanztypen wählen als bei der Standardinstanz. Wenn Sie eine kleine Umgebung scannen, können Sie hier Cloud-Kosten sparen. Allerdings gibt es einige Einschränkungen bei der Verwendung der kleineren Instanz.<block ref="d8ef680ce45b86e2a6afe2805a7e5562" category="inline-link-rx"></block>.</block>
   <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">Wenn Sie unabhängig von der Ausführung der BlueXP Klassifizierungssysteminstallation überprüfen möchten, ob Ihr Linux-System alle Voraussetzungen erfüllt, steht Ihnen ein separates Skript zur Verfügung, das nur die Voraussetzungen testet.<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>.</block>
@@ -474,8 +451,6 @@
   <block id="809c5429fbc9708f2c659ca056b2c098" category="paragraph"><block ref="1fa18ad5aa31d9e300f41aa2d9a59bdd" category="inline-link-rx"></block>.</block>
   <block id="5a4b2cac486281ad2280371043da8170" category="section-title">Automatisches Backup kritischer BlueXP Backup- und Recovery-Dateien an Dark Sites</block>
   <block id="7109418f2cd9c52748bb2a769336a1d0" category="paragraph">Wenn Sie BlueXP Backup und Recovery an einem Standort ohne Internetzugang nutzen, auch bekannt als „Private-Mode“-Implementierung, werden die Backup- und Recovery-Informationen von BlueXP nur auf dem lokalen Connector-System gespeichert. Diese neue Funktion sichert wichtige Backup- und Recovery-Daten von BlueXP automatisch in einem Bucket auf Ihrem verbundenen StorageGRID-System, sodass Sie diese Daten bei Bedarf auf einem neuen Connector wiederherstellen können.<block ref="7987fffb3d9d5da865ce1f589e4bd463" category="inline-link-rx"></block></block>
-  <block id="813935edc5ac8e9f2c18c722e28dddf8" category="paragraph">Jetzt können Daten von Cloud Volumes ONTAP Systemen, die in AWS, Azure und GCP-Geschäftsregionen installiert sind, im „eingeschränkten Modus“ gesichert werden. Dies erfordert, dass Sie den Connector zunächst in der „eingeschränkten“ Handelsregion installieren.<block ref="0eb8533d49e65dbfdd979d6ceb88ebff" category="inline-link-rx"></block>. Siehe<block ref="17dde2a04d27e7ad2a9f0a451a7a0e90" category="inline-link-rx"></block> Und<block ref="e88a100423dadabfc9781439f925633d" category="inline-link-rx"></block>.</block>
-  <block id="f1a109ae8d953da8e05cf5534df6b22b" category="list-text">Sowohl vom Benutzer initiierte Backup- und Wiederherstellungsvorgänge, die von der BlueXP Backup- und Recovery-Benutzeroberfläche und -API initiiert wurden, als auch systeminitiierte Jobs, wie z. B. laufende Backup-Vorgänge, sind jetzt auf der Registerkarte *Jobüberwachung* für Cloud Volumes ONTAP-Systeme mit ONTAP 9.13.0 oder höher verfügbar. Frühere ONTAP-Versionen zeigen nur vom Benutzer initiierte Jobs an.</block>
   <block id="96828273826a07fdc4f42f4998e536b2" category="section-title">6. Juni 2023 (Version 1.23)</block>
   <block id="04e04c61cd37ca8f12b83c892c2c46ea" category="section-title">Japanisch wird jetzt bei der Suche nach Datenfachnamen unterstützt</block>
   <block id="3a3337f232548d40f54052862077499b" category="inline-link">Bericht für Anforderung von Datenfachzugriff</block>
@@ -555,4 +530,20 @@
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">Das Tiering-Ereignis „Tiering zusätzlicher Daten von Cluster &lt;name&gt; auf Objekt-Storage zur Steigerung der Storage-Effizienz“ wird nun als Benachrichtigung angezeigt, wenn ein Cluster weniger als 20 % seiner kalten Daten Tiering durchführt – einschließlich Clustern, die keine Daten Tiering nutzen.</block>
   <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">BlueXP Tiering-Rechner für Gesamtbetriebskosten und Einsparungen</block>
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">Diese Mitteilung ist eine „Empfehlung“, mit der Sie Ihre Systeme effizienter gestalten und Storage-Kosten einsparen können. Sie enthält einen Link zum<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> Zur Berechnung Ihrer Kosteneinsparungen.</block>
+  <block id="f717b8ed4d751174af9f9438951b9a4f" category="section-title">6 Juli 2023</block>
+  <block id="10ffd42b58d1ced7127bffaff7185e32" category="section-title">BlueXP Backup und Recovery bietet nun die Möglichkeit, Snapshot Kopien und replizierte Volumes zu planen und zu erstellen</block>
+  <block id="a2e06093d677add4ecd73d26ade99d66" category="paragraph">Mit BlueXP Backup und Recovery können Sie jetzt eine 3-2-1-1-Strategie implementieren. Dabei können Sie 3 Kopien Ihrer Quelldaten auf 2 verschiedenen Storage-Systemen sowie 1 Kopie in der Cloud aufbewahren. Nach der Aktivierung erhalten Sie:</block>
+  <block id="4dfb74d83687d8ca40ab05bac1885b0a" category="list-text">Snapshot Kopie des Volumes auf dem Quellsystem</block>
+  <block id="00b4fe156d0b170f5196995dd8889b0d" category="list-text">Repliziertes Volume auf einem anderen Storage-System</block>
+  <block id="809b026ec469d1b8bfa79721e15f539b" category="list-text">Backup des Volumes im Objektspeicher</block>
+  <block id="4ae5ef4008b68e98ae1878294a66c9d1" category="inline-link">Erfahren Sie mehr über die neuen Backup- und Restore-Funktionen für das gesamte Spektrum</block>
+  <block id="e1ddbe5fcbded46fffd577b7a64c82ef" category="paragraph"><block ref="c0ade183535ec842bf30c511bd86bbf6" category="inline-link-rx"></block>.</block>
+  <block id="1afa76124f2d71427832cd0846eefa31" category="paragraph">Diese neue Funktion gilt auch für Wiederherstellungsvorgänge. Sie können Wiederherstellungsvorgänge von einer Snapshot Kopie, von einem replizierten Volume oder von einer Backup-Datei in der Cloud ausführen. Dadurch haben Sie die Flexibilität, die Backup-Datei auszuwählen, die Ihre Recovery-Anforderungen erfüllt, einschließlich der Kosten und der Geschwindigkeit von Recovery.</block>
+  <block id="6d50e6cd9c195849ff4bcb523527fb42" category="paragraph">Beachten Sie, dass diese neue Funktion und Benutzeroberfläche nur für Cluster mit ONTAP 9.8 oder höher unterstützt wird. Wenn Ihr Cluster über eine frühere Softwareversion verfügt, können Sie die vorherige Version von BlueXP Backup und Recovery weiter verwenden. Wir empfehlen Ihnen jedoch, ein Upgrade auf eine unterstützte Version von ONTAP durchzuführen, um die neuesten Funktionen zu erhalten. Gehen Sie wie folgt vor, um die ältere Version der Software weiterhin zu verwenden:</block>
+  <block id="fb74ece6972051de48e476af9e1e3b61" category="list-text">Wählen Sie auf der Registerkarte *Volumes* die Option *Backup-Einstellungen* aus.</block>
+  <block id="cbce457a0f1d693a7ec8fdef080284e8" category="list-text">Klicken Sie auf der Seite _Backup Settings_ auf das Optionsfeld für *die vorherige BlueXP Backup- und Recovery-Version anzeigen*.</block>
+  <block id="6ad80584a8fba3d1fc876fd412e2b184" category="paragraph">Anschließend können Sie Ihre älteren Cluster mit der vorherigen Softwareversion verwalten.</block>
+  <block id="098acc7a6e2aef2e0ffd66cabdde369e" category="section-title">Möglichkeit zum Erstellen von Buckets für Backups in Objekt-Storage</block>
+  <block id="7882c4532e24f1cac41cc043cde436b7" category="paragraph">Wenn Sie Backup-Dateien im Objekt-Storage erstellen, werden vom Backup- und Recovery-Service standardmäßig die Buckets im Objekt-Storage für Sie erstellt. Sie können die Buckets selbst erstellen, wenn Sie einen bestimmten Namen verwenden oder besondere Eigenschaften zuweisen möchten. Wenn Sie Ihren eigenen Bucket erstellen möchten, müssen Sie ihn erstellen, bevor Sie den Aktivierungsassistenten starten.</block>
+  <block id="ea600ff03360da539b9cf2f109798fac" category="paragraph">Diese Funktion wird derzeit beim Erstellen von Backup-Dateien auf StorageGRID-Systemen nicht unterstützt.</block>
 </blocks>

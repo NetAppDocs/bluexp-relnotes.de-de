@@ -259,6 +259,42 @@ Sie können Amazon S3 Buckets seit geraumer Zeit auf dem BlueXP Canvas anzeigen.
 
 
 
+=== 6 Juli 2023
+
+
+
+==== BlueXP Backup und Recovery bietet nun die Möglichkeit, Snapshot Kopien und replizierte Volumes zu planen und zu erstellen
+
+Mit BlueXP Backup und Recovery können Sie jetzt eine 3-2-1-1-Strategie implementieren. Dabei können Sie 3 Kopien Ihrer Quelldaten auf 2 verschiedenen Storage-Systemen sowie 1 Kopie in der Cloud aufbewahren. Nach der Aktivierung erhalten Sie:
+
+* Snapshot Kopie des Volumes auf dem Quellsystem
+* Repliziertes Volume auf einem anderen Storage-System
+* Backup des Volumes im Objektspeicher
+
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html["Erfahren Sie mehr über die neuen Backup- und Restore-Funktionen für das gesamte Spektrum"].
+
+Diese neue Funktion gilt auch für Wiederherstellungsvorgänge. Sie können Wiederherstellungsvorgänge von einer Snapshot Kopie, von einem replizierten Volume oder von einer Backup-Datei in der Cloud ausführen. Dadurch haben Sie die Flexibilität, die Backup-Datei auszuwählen, die Ihre Recovery-Anforderungen erfüllt, einschließlich der Kosten und der Geschwindigkeit von Recovery.
+
+Beachten Sie, dass diese neue Funktion und Benutzeroberfläche nur für Cluster mit ONTAP 9.8 oder höher unterstützt wird. Wenn Ihr Cluster über eine frühere Softwareversion verfügt, können Sie die vorherige Version von BlueXP Backup und Recovery weiter verwenden. Wir empfehlen Ihnen jedoch, ein Upgrade auf eine unterstützte Version von ONTAP durchzuführen, um die neuesten Funktionen zu erhalten. Gehen Sie wie folgt vor, um die ältere Version der Software weiterhin zu verwenden:
+
+. Wählen Sie auf der Registerkarte *Volumes* die Option *Backup-Einstellungen* aus.
+. Klicken Sie auf der Seite _Backup Settings_ auf das Optionsfeld für *die vorherige BlueXP Backup- und Recovery-Version anzeigen*.
++
+Anschließend können Sie Ihre älteren Cluster mit der vorherigen Softwareversion verwalten.
+
+
+
+
+
+==== Möglichkeit zum Erstellen von Buckets für Backups in Objekt-Storage
+
+Wenn Sie Backup-Dateien im Objekt-Storage erstellen, werden vom Backup- und Recovery-Service standardmäßig die Buckets im Objekt-Storage für Sie erstellt. Sie können die Buckets selbst erstellen, wenn Sie einen bestimmten Namen verwenden oder besondere Eigenschaften zuweisen möchten. Wenn Sie Ihren eigenen Bucket erstellen möchten, müssen Sie ihn erstellen, bevor Sie den Aktivierungsassistenten starten.
+
+Diese Funktion wird derzeit beim Erstellen von Backup-Dateien auf StorageGRID-Systemen nicht unterstützt.
+
+
+
 === 04 Juli 2023
 
 
@@ -362,71 +398,6 @@ Beachten Sie, dass die dem BlueXP Connector zugewiesenen IAM-Richtlinien den AWS
 ==== Verbesserungen am Job Monitor
 
 Systeminitiierte Jobs, wie laufende Sicherungsvorgänge, stehen jetzt auf der Registerkarte *Jobüberwachung* für On-Premises-ONTAP-Systeme mit ONTAP 9.13.1 oder höher zur Verfügung. Frühere ONTAP-Versionen zeigen nur vom Benutzer initiierte Jobs an.
-
-
-
-=== Bis 14. April 2023
-
-
-
-==== Verbesserungen bei BlueXP Backup und Recovery für Applikationen (Cloud-nativ)
-
-* SAP HANA Datenbanken
-+
-** Unterstützt skriptbasierte Systemaktualisierung
-** Unterstützt Single-File-Snapshot-Restore, wenn Azure NetApp Files-Backup konfiguriert ist
-** Unterstützt Plug-in-Upgrades
-
-
-* Oracle Datenbanken
-+
-** Verbesserungen bei der Plug-in-Bereitstellung durch Vereinfachung der nicht-Root-Sudo-Benutzerkonfiguration
-** Unterstützt Plug-in-Upgrades
-** Unterstützt automatische Erkennung und richtliniengesteuerten Schutz von Oracle Datenbanken auf Azure NetApp Files
-** Unterstützt die Wiederherstellung der Oracle Datenbank an ihrem ursprünglichen Speicherort mit granularer Recovery
-
-
-
-
-
-
-==== Verbesserungen bei BlueXP Backup und Recovery für Applikationen (Hybrid)
-
-* BlueXP Backup und Recovery für Applikationen (Hybrid) basiert auf der SaaS-Kontrollebene
-* Die Hybrid-REST-APIs wurden an Cloud-native APIs angepasst.
-* Unterstützt E-Mail-Benachrichtigungen
-
-
-
-
-=== Bis 4. April 2023
-
-
-
-==== Sicherung von Daten aus Cloud Volumes ONTAP Systemen in der Cloud mit „eingeschränktem“ Modus
-
-Jetzt können Daten von Cloud Volumes ONTAP Systemen, die in AWS, Azure und GCP-Geschäftsregionen installiert sind, im „eingeschränkten Modus“ gesichert werden. Dies erfordert, dass Sie den Connector zunächst in der „eingeschränkten“ Handelsregion installieren. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Weitere Informationen zu den BlueXP Implementierungsmodi"^]. Siehe https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html["Sichern von Cloud Volumes ONTAP-Daten in Amazon S3"] Und https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-azure.html["Backup von Cloud Volumes ONTAP Daten in Azure Blob"].
-
-
-
-==== Möglichkeit zum Backup Ihrer On-Premises-ONTAP-Volumes in ONTAP S3 mithilfe der API
-
-Dank der neuen Funktionen der APIs können Sie Ihre Volume-Snapshots mithilfe von BlueXP Backup und Recovery auf ONTAP S3 sichern. Diese Funktionalität ist derzeit nur für On-Premises-ONTAP-Systeme verfügbar. Detaillierte Anweisungen finden Sie im Blog https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-April-23-Updates/ba-p/443075#toc-hId--846533830["Integration mit ONTAP S3 als Ziel"^].
-
-
-
-==== Möglichkeit, den Zonenredundanz-Aspekt Ihres Azure Storage-Kontos von LRS zu ZRS zu ändern
-
-Bei der Erstellung von Backups aus Cloud Volumes ONTAP Systemen in Azure Storage stellt BlueXP Backup und Recovery standardmäßig den Blob-Container mit lokaler Redundanz (LRS) zur Kostenoptimierung bereit. Sie können diese Einstellung auf Zoneredundanz (ZRS) ändern, wenn Ihre Daten zwischen verschiedenen Zonen repliziert werden sollen. Siehe Microsoft-Anweisungen für https://learn.microsoft.com/en-us/azure/storage/common/redundancy-migration?tabs=portal["Ändern der Replizierung Ihres Storage-Kontos"^].
-
-
-
-==== Verbesserungen am Job Monitor
-
-* Sowohl vom Benutzer initiierte Backup- und Wiederherstellungsvorgänge, die von der BlueXP Backup- und Recovery-Benutzeroberfläche und -API initiiert wurden, als auch systeminitiierte Jobs, wie z. B. laufende Backup-Vorgänge, sind jetzt auf der Registerkarte *Jobüberwachung* für Cloud Volumes ONTAP-Systeme mit ONTAP 9.13.0 oder höher verfügbar. Frühere ONTAP-Versionen zeigen nur vom Benutzer initiierte Jobs an.
-* Neben der Möglichkeit, eine CSV-Datei für die Berichterstattung über alle Jobs herunterzuladen, können Sie jetzt auch eine JSON-Datei für einen einzelnen Job herunterladen und die zugehörigen Details anzeigen. https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["Weitere Informationen ."].
-* Es wurden zwei neue Warnmeldungen für Sicherungsjobs hinzugefügt: „Geplante Jobfehler“ und „Wiederherstellungsauftrag wird abgeschlossen, aber mit Warnungen“. https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["Prüfen Sie alle Warnmeldungen, die BlueXP Backup und Recovery senden können"].
-
 
 
 
