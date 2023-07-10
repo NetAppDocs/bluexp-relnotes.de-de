@@ -287,9 +287,9 @@ Anschließend können Sie Ihre älteren Cluster mit der vorherigen Softwareversi
 
 
 
-==== Möglichkeit zum Erstellen von Buckets für Backups in Objekt-Storage
+==== Möglichkeit, Ihren Storage-Container für Backups in Objekt-Storage zu erstellen
 
-Wenn Sie Backup-Dateien im Objekt-Storage erstellen, werden vom Backup- und Recovery-Service standardmäßig die Buckets im Objekt-Storage für Sie erstellt. Sie können die Buckets selbst erstellen, wenn Sie einen bestimmten Namen verwenden oder besondere Eigenschaften zuweisen möchten. Wenn Sie Ihren eigenen Bucket erstellen möchten, müssen Sie ihn erstellen, bevor Sie den Aktivierungsassistenten starten.
+Wenn Sie Backup-Dateien im Objekt-Storage erstellen, werden vom Backup- und Recovery-Service standardmäßig die Buckets im Objekt-Storage für Sie erstellt. Sie können die Buckets selbst erstellen, wenn Sie einen bestimmten Namen verwenden oder besondere Eigenschaften zuweisen möchten. Wenn Sie Ihren eigenen Bucket erstellen möchten, müssen Sie ihn erstellen, bevor Sie den Aktivierungsassistenten starten. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["Erfahren Sie, wie Sie Ihre Objekt-Storage-Buckets erstellen"].
 
 Diese Funktion wird derzeit beim Erstellen von Backup-Dateien auf StorageGRID-Systemen nicht unterstützt.
 
@@ -405,6 +405,40 @@ Systeminitiierte Jobs, wie laufende Sicherungsvorgänge, stehen jetzt auf der Re
 
 
 
+=== 17. Juli 2023 (Version 1.24)
+
+
+
+==== Zwei neue Arten deutscher personenbezogener Daten werden durch die BlueXP Klassifizierung identifiziert
+
+Mit der BlueXP Klassifizierung können Dateien identifiziert und kategorisiert werden, die die folgenden Datentypen enthalten:
+
+* Personalausweisnummer
+* Sozialversicherungsnummer
+
+
+https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Hier können Sie alle Arten von personenbezogenen Daten einsehen, die durch die BlueXP Klassifizierung in Ihren Daten identifiziert werden können"].
+
+
+
+==== Rocky Linux 9 ist jetzt eine unterstützte Linux-Distribution, auf der Sie die BlueXP-Klassifizierung installieren können
+
+Rocky Linux 9 (9.0, 9.1 und 9.2) wurde als unterstütztes Betriebssystem für die BlueXP Klassifizierung qualifiziert. Sie können die BlueXP Klassifizierung auf einem Rocky Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud installieren, wenn Sie Version 1.24 des Installers verwenden. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Erfahren Sie, wie Sie die BlueXP Klassifizierung auf einem Host installieren, auf dem Rocky Linux installiert ist"].
+
+
+
+==== Die BlueXP Klassifizierung wird im eingeschränkten und privaten Modus vollständig unterstützt
+
+Die BlueXP Klassifizierung wird jetzt vollständig auf Websites ohne Internetzugang (privater Modus) und mit eingeschränktem Outbound-Internetzugang (eingeschränkter Modus) unterstützt. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Weitere Informationen zu den BlueXP Implementierungsmodi für den Connector"^].
+
+
+
+==== Fähigkeit zum überspringen von Versionen beim Upgrade einer Installation von BlueXP Klassifizierung im Private-Modus
+
+Sie können jetzt ein Upgrade auf eine neuere Version der BlueXP Klassifizierung durchführen, auch wenn diese nicht sequenziell ist. Das heißt, die aktuelle Einschränkung für das Upgrade der BlueXP Klassifizierung um jeweils eine Version ist nicht mehr erforderlich. Diese Funktion ist ab Version 1.24 relevant.
+
+
+
 === 6. Juni 2023 (Version 1.23)
 
 
@@ -458,65 +492,6 @@ Bei der Implementierung der BlueXP Klassifizierung aus einem BlueXP Connector in
 ==== Eigenständiges Skript steht jetzt zur Verfügung, um Ihr Linux-System vor der Installation der BlueXP Klassifizierung zu qualifizieren
 
 Wenn Sie unabhängig von der Ausführung der BlueXP Klassifizierungssysteminstallation überprüfen möchten, ob Ihr Linux-System alle Voraussetzungen erfüllt, steht Ihnen ein separates Skript zur Verfügung, das nur die Voraussetzungen testet. https://docs.netapp.com/us-en/bluexp-classification/task-test-linux-system.html["Erfahren Sie, wie Sie überprüfen können, ob Ihr Linux-Host bereit ist, die BlueXP Klassifizierung zu installieren"].
-
-
-
-=== 7. März 2023 (Version 1.21)
-
-
-
-==== Neue Funktionen, mit denen Sie Ihre eigenen benutzerdefinierten Kategorien von der BlueXP Klassifizierungs-UI hinzufügen können
-
-Mit der BlueXP Klassifizierung können Sie jetzt Ihre eigenen benutzerdefinierten Kategorien hinzufügen, sodass die Dateien nach der BlueXP Klassifizierung ermittelt werden, die zu diesen Kategorien passen. Die BlueXP Klassifizierung hat viele https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-categories["Vordefinierte Kategorien"]Diese Funktion ermöglicht es Ihnen, benutzerdefinierte Kategorien hinzuzufügen, um zu ermitteln, wo Informationen, die für Ihre Organisation einzigartig sind, in Ihren Daten gefunden werden.
-
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-categories["Weitere Informationen ."^].
-
-
-
-==== Sie können jetzt benutzerdefinierte Schlüsselwörter aus der BlueXP Klassifizierungs-UI hinzufügen
-
-Mit der BlueXP Klassifizierung konnten benutzerdefinierte Schlüsselwörter hinzugefügt werden, die durch die BlueXP Klassifizierung bei zukünftigen Scans ab und an identifiziert werden. Sie mussten sich jedoch beim BlueXP Klassifizierungs-Linux-Host anmelden und eine Befehlszeilenschnittstelle verwenden, um die Schlüsselwörter hinzuzufügen. In dieser Version können benutzerdefinierte Schlüsselwörter in der BlueXP Klassifizierungs-UI hinzugefügt werden. Dies macht es sehr einfach, diese Schlüsselwörter hinzuzufügen und zu bearbeiten.
-
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-keywords-from-a-list-of-words["Weitere Informationen zum Hinzufügen benutzerdefinierter Schlüsselwörter finden Sie in der BlueXP Klassifizierungs-UI"^].
-
-
-
-==== Möglichkeit zur BlueXP Klassifizierung *nicht* von Dateien, wenn die „Uhrzeit des letzten Zugriffs“ geändert wird
-
-Wenn die BlueXP Klassifizierung keine ausreichenden „Schreib“-Berechtigungen besitzt, scannt das System standardmäßig keine Dateien in Ihren Volumes, da die BlueXP Klassifizierung die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen jedoch egal ist, ob die letzte Zugriffszeit in Ihren Dateien auf die ursprüngliche Uhrzeit zurückgesetzt wird, können Sie dieses Verhalten auf der Konfigurationsseite außer Kraft setzen, damit die BlueXP Klassifizierung die Volumes unabhängig von den Berechtigungen scannt.
-
-In Verbindung mit dieser Funktion steht nun ein neuer Filter namens „Scan Analysis Event“ zur Verfügung, mit dem Sie die Dateien anzeigen können, die nicht klassifiziert wurden, weil die BlueXP Klassifizierung den Zeitpunkt des letzten Zugriffs nicht rückgängig machen konnte, oder die Dateien, die klassifiziert wurden, obwohl die BlueXP Klassifizierung beim letzten Zugriff nicht rückgängig gemacht wurde.
-
-https://docs.netapp.com/us-en/bluexp-classification/reference-collected-metadata.html#last-access-time-timestamp["Erfahren Sie mehr über den „Zeitstempel des letzten Zugriffs“ und die Berechtigungen, die die BlueXP Klassifizierung erfordert"].
-
-
-
-==== Drei neue Arten von personenbezogenen Daten werden durch die BlueXP Klassifizierung identifiziert
-
-Mit der BlueXP Klassifizierung können Dateien identifiziert und kategorisiert werden, die die folgenden Datentypen enthalten:
-
-* Botswana Identity Card (Omang)-Nummer
-* Botswana Passnummer
-* Personalausweis für die nationale Registrierung in Singapur (NRIC)
-
-
-https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Hier können Sie alle Arten von personenbezogenen Daten einsehen, die durch die BlueXP Klassifizierung in Ihren Daten identifiziert werden können"].
-
-
-
-==== Aktualisierte Funktionalität für Verzeichnisse
-
-* Die Option „leichter CSV-Bericht“ für Datenuntersuchungsberichte enthält jetzt Informationen aus Verzeichnissen.
-* Der Zeitfilter „Letzter Zugriff“ zeigt jetzt die zuletzt verwendete Zeit für Dateien und Verzeichnisse an.
-
-
-
-
-==== Installationsverbesserungen führen zu
-
-* Der BlueXP Klassifizierungs-Installer für Standorte ohne Internetzugang (Dark Sites) führt jetzt eine Vorabprüfung durch, um sicherzustellen, dass Ihre System- und Netzwerkanforderungen für eine erfolgreiche Installation bestehen.
-* Die Protokolldateien der Installationsaudits werden jetzt gespeichert und in geschrieben `/ops/netapp/install_logs`.
-
 
 
 
