@@ -255,6 +255,161 @@ Sie können Amazon S3 Buckets seit geraumer Zeit auf dem BlueXP Canvas anzeigen.
 
 
 
+=== August 2023
+
+[IMPORTANT]
+====
+Aufgrund einer wichtigen Verbesserung der Sicherheit benötigt Ihr Connector nun ausgehenden Internetzugang auf einen zusätzlichen Endpunkt, um Backup- und Recovery-Ressourcen in Ihrer Public Cloud-Umgebung zu verwalten. Wenn dieser Endpunkt nicht zur Liste „zulässig“ in Ihrer Firewall hinzugefügt wurde, wird in der Benutzeroberfläche ein Fehler bezüglich „Dienst nicht verfügbar“ oder „Dienststatus konnte nicht ermittelt werden“ angezeigt:
+
+\https://netapp-cloud-account.auth0.com
+
+====
+
+
+==== Zum Backup von Volumes in Buckets auf S3-konfigurierten ONTAP Systemen wurde Support hinzugefügt
+
+Mithilfe eines ONTAP Systems, das für den Simple Storage Service (S3) konfiguriert wurde, können Sie jetzt Volumes im Objekt-Storage sichern. Dies wird sowohl für lokale ONTAP Systeme als auch für Cloud Volumes ONTAP Systeme unterstützt. Diese Konfiguration wird in Cloud-Implementierungen und On-Premises-Standorten ohne Internetzugang unterstützt (eine Implementierung im „privaten“ Modus).
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["Weitere Informationen ."].
+
+
+
+==== Jetzt können Sie vorhandene Snapshots von einem geschützten Volume in Ihre Backup-Dateien aufnehmen
+
+In der Vergangenheit hatten Sie die Möglichkeit, vorhandene Snapshot-Kopien von Lese- und Schreib-Volumes in den anfänglichen Backup-Datei- zum Objekt-Storage einzubeziehen (anstatt mit der aktuellsten Snapshot-Kopie zu beginnen). Vorhandene Snapshot-Kopien von schreibgeschützten Volumes (Datensicherungs-Volumes) wurden nicht in die Backup-Datei aufgenommen. Jetzt haben Sie die Wahl, ältere Snapshot-Kopien in die Backup-Datei für „DP“ Volumes aufzunehmen.
+
+Der Backup-Assistent zeigt am Ende der Backup-Schritte eine Eingabeaufforderung an, in der Sie diese „vorhandenen Snapshots“ auswählen können.
+
+
+
+==== BlueXP Backup und Recovery unterstützt künftig keine automatischen Backups von Volumes mehr
+
+Zuvor können Sie im Backup-Assistenten ein Kontrollkästchen aktivieren, um die ausgewählte Backup-Richtlinie auf alle zukünftigen Volumes anzuwenden, die dem Cluster hinzugefügt werden. Diese Funktion wurde aufgrund von Benutzerfeedback und mangelnder Verwendung dieser Funktion entfernt. Sie müssen die Backups für alle neuen Volumes, die dem Cluster hinzugefügt werden, manuell aktivieren.
+
+
+
+==== Die Seite Jobüberwachung wurde mit neuen Funktionen aktualisiert
+
+Auf der Seite Job Monitoring finden Sie jetzt weitere Informationen zur Backup-Strategie 3-2-1. Der Service bietet auch zusätzliche Benachrichtigungen bezüglich der Backup-Strategie.
+
+Der Filter „Backup Lifecycle“ wurde in „Retention“ umbenannt. Verwenden Sie diesen Filter, um den Backup-Lebenszyklus zu verfolgen und den Ablauf aller Backup-Kopien zu identifizieren. Der Jobtyp „Aufbewahrung“ erfasst alle Snapshot Löschjobs, die auf einem Volume initiiert werden, das durch BlueXP Backup und Recovery geschützt ist.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["Erfahren Sie mehr über den aktualisierten Job Monitor"].
+
+
+
+=== 6 Juli 2023
+
+
+
+==== BlueXP Backup und Recovery bietet nun die Möglichkeit, Snapshot Kopien und replizierte Volumes zu planen und zu erstellen
+
+Mit BlueXP Backup und Recovery können Sie jetzt eine 3-2-1-1-Strategie implementieren. Dabei können Sie 3 Kopien Ihrer Quelldaten auf 2 verschiedenen Storage-Systemen sowie 1 Kopie in der Cloud aufbewahren. Nach der Aktivierung erhalten Sie:
+
+* Snapshot Kopie des Volumes auf dem Quellsystem
+* Repliziertes Volume auf einem anderen Storage-System
+* Backup des Volumes im Objektspeicher
+
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html["Erfahren Sie mehr über die neuen Backup- und Restore-Funktionen für das gesamte Spektrum"].
+
+Diese neue Funktion gilt auch für Wiederherstellungsvorgänge. Sie können Wiederherstellungsvorgänge von einer Snapshot Kopie, von einem replizierten Volume oder von einer Backup-Datei in der Cloud ausführen. Dadurch haben Sie die Flexibilität, die Backup-Datei auszuwählen, die Ihre Recovery-Anforderungen erfüllt, einschließlich der Kosten und der Geschwindigkeit von Recovery.
+
+Beachten Sie, dass diese neue Funktion und Benutzeroberfläche nur für Cluster mit ONTAP 9.8 oder höher unterstützt wird. Wenn Ihr Cluster über eine frühere Softwareversion verfügt, können Sie die vorherige Version von BlueXP Backup und Recovery weiter verwenden. Wir empfehlen Ihnen jedoch, ein Upgrade auf eine unterstützte Version von ONTAP durchzuführen, um die neuesten Funktionen zu erhalten. Gehen Sie wie folgt vor, um die ältere Version der Software weiterhin zu verwenden:
+
+. Wählen Sie auf der Registerkarte *Volumes* die Option *Backup-Einstellungen* aus.
+. Klicken Sie auf der Seite _Backup Settings_ auf das Optionsfeld für *die vorherige BlueXP Backup- und Recovery-Version anzeigen*.
++
+Anschließend können Sie Ihre älteren Cluster mit der vorherigen Softwareversion verwalten.
+
+
+
+
+
+==== Möglichkeit, Ihren Storage-Container für Backups in Objekt-Storage zu erstellen
+
+Wenn Sie Backup-Dateien im Objekt-Storage erstellen, werden vom Backup- und Recovery-Service standardmäßig die Buckets im Objekt-Storage für Sie erstellt. Sie können die Buckets selbst erstellen, wenn Sie einen bestimmten Namen verwenden oder besondere Eigenschaften zuweisen möchten. Wenn Sie Ihren eigenen Bucket erstellen möchten, müssen Sie ihn erstellen, bevor Sie den Aktivierungsassistenten starten. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["Erfahren Sie, wie Sie Ihre Objekt-Storage-Buckets erstellen"].
+
+Diese Funktion wird derzeit beim Erstellen von Backup-Dateien auf StorageGRID-Systemen nicht unterstützt.
+
+
+
+=== 04 Juli 2023
+
+
+
+==== Verbesserungen bei BlueXP Backup und Recovery für Applikationen (Cloud-nativ)
+
+* SAP HANA Systeme
++
+** Unterstützt das Verbinden und Kopieren von nicht-Daten-Volumes und globalen nicht-Daten-Volumes mit sekundärem Azure NetApp Files-Schutz
+
+
+* Oracle Datenbanken
++
+** Unterstützt die Wiederherstellung von Oracle Datenbanken auf Azure NetApp Files an einem alternativen Speicherort
+** Unterstützt Oracle Recovery Manager (RMAN) Katalogisierung von Backups von Oracle-Datenbanken auf Azure NetApp Files
+** Ermöglicht es Ihnen, den Datenbank-Host in den Wartungsmodus zu versetzen, um Wartungsaufgaben durchzuführen
+
+
+
+
+
+
+==== Verbesserungen bei BlueXP Backup und Recovery für Applikationen (Hybrid)
+
+* Unterstützt die Wiederherstellung an einem alternativen Speicherort
+* Ermöglicht das Mounten von Backups von Oracle-Datenbanken
+* Unterstützt das Verschieben von Backups von GCP auf Archiv-Tier
+
+
+
+
+==== Verbesserungen bei BlueXP Backup und Recovery für Virtual Machines (Hybrid)
+
+* Unterstützt den Schutz von NFS- und VMFS-Datenspeichern
+* Ermöglicht Ihnen, die Registrierung des SnapCenter-Plug-ins für den VMware vSphere-Host aufzuheben
+* Unterstützt die Aktualisierung und Erkennung der neuesten Datastores und Backups
+
+
+
+
+=== 5 Juni 2023
+
+
+
+==== FlexGroup Volumes können mittels DataLock und Ransomware-Schutz gesichert und geschützt werden
+
+Backup-Richtlinien für FlexGroup Volumes können jetzt DataLock- und Ransomware-Schutz verwenden, wenn auf dem Cluster ONTAP 9.13.1 oder höher ausgeführt wird.
+
+
+
+==== Neue Berichterstellungsfunktionen
+
+Es gibt jetzt eine Registerkarte Berichte, auf der Sie einen Bericht zum Backup-Inventar erstellen können, der alle Backups für ein bestimmtes Konto, eine Arbeitsumgebung oder einen SVM-Bestand enthält. Sie können auch einen Aktivitätsbericht zu Datensicherungsjobs erstellen, der Informationen zu Snapshot-, Backup-, Klon- und Wiederherstellungsvorgängen bietet, die Ihnen bei der Überwachung von Service-Level-Agreements helfen können. Siehe https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html["Berichte zur Datensicherung"].
+
+
+
+==== Verbesserungen für Job Monitor
+
+Sie können jetzt _Backup Lifecycle_ als Jobtyp auf der Seite Job Monitor überprüfen und so den gesamten Backup-Lebenszyklus verfolgen. Außerdem werden Details zu allen Vorgängen in der BlueXP Zeitachse angezeigt. Siehe https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["Überwachen des Status von Backup- und Wiederherstellungsjobs"].
+
+
+
+==== Zusätzliche Benachrichtigung bei nicht übereinstimmenden Richtlinienbeschriftungen
+
+Eine neue Backup-Warnmeldung wurde hinzugefügt: „Backup-Dateien wurden nicht erstellt, da die Snapshot-Richtlinienbeschriftungen nicht übereinstimmen“. Wenn das in einer Backup-Richtlinie definierte _Label_ in der Snapshot-Richtlinie kein passendes _Label_ enthält, wird keine Sicherungsdatei erstellt. Sie müssen System Manager oder die ONTAP CLI verwenden, um der Snapshot-Richtlinie des Volumes das fehlende Label hinzuzufügen.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["Prüfen Sie alle Warnmeldungen, die BlueXP Backup und Recovery senden können"].
+
+
+
+==== Automatisches Backup kritischer BlueXP Backup- und Recovery-Dateien an Dark Sites
+
+Wenn Sie BlueXP Backup und Recovery an einem Standort ohne Internetzugang nutzen, auch bekannt als „Private-Mode“-Implementierung, werden die Backup- und Recovery-Informationen von BlueXP nur auf dem lokalen Connector-System gespeichert. Diese neue Funktion sichert wichtige Backup- und Recovery-Daten von BlueXP automatisch in einem Bucket auf Ihrem verbundenen StorageGRID-System, sodass Sie diese Daten bei Bedarf auf einem neuen Connector wiederherstellen können. https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["Weitere Informationen ."]
+
+
+
 == Klassifizierung
 
 
@@ -297,9 +452,7 @@ Sie können jetzt ein Upgrade auf eine neuere Version der BlueXP Klassifizierung
 
 Mithilfe der BlueXP Klassifizierungs-API können Sie Aktionen durchführen, Abfragen erstellen und Informationen zu den zu scannenden Daten exportieren. Die interaktive Dokumentation ist über Swagger verfügbar. Die Dokumentation ist in mehrere Kategorien unterteilt, darunter Untersuchung, Compliance, Governance und Konfiguration. Jede Kategorie dient als Verweis auf die Registerkarten in der BlueXP Klassifizierungs-UI.
 
-Um in Swagger zu kommen, benötigen Sie die IP-Adresse der BlueXP Klassifizierungsinstanz. Bei einer Cloud-Bereitstellung verwenden Sie die öffentliche IP-Adresse. Dann müssen Sie zu diesem Endpunkt gelangen:
-
-https://<classification_ip>/documentation[]
+https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["Erfahren Sie mehr über die BlueXP Klassifizierungs-APIs"].
 
 
 
