@@ -88,18 +88,7 @@
   <block id="dac6d17442feba1d57f29d8031c05963" category="paragraph">Eine einzige globale File Cache Edge Instanz kann bis zu 500 Benutzer pro dedizierter physischer Edge Instanz sowie bis zu 300 Benutzer für dedizierte virtuelle Bereitstellungen bereitstellen. Die maximale Anzahl von Benutzern war bisher 400 bzw. 200.</block>
   <block id="7954886e5818e91e397e0ca331d15d48" category="section-title">Verbesserter Optimus-PSM für die Konfiguration der Cloud-Lizenzierung</block>
   <block id="3bf86cee85be3992be11d6813b4f6b14" category="section-title">Erweitert die Edge Sync-Funktion in Optimus UI (Edge Configuration), um alle verbundenen Clients anzuzeigen</block>
-  <block id="a207f0479f1471fc5336b474cf75c28a" category="section-title">25. Juli 2022 (Version 2.0)</block>
-  <block id="40ede24da7e93db6d61cd94c084008e7" category="section-title">Neues kapazitätsbasiertes Lizenzmodell für Global File Cache über Azure Marketplace</block>
-  <block id="70dc5565ba7814d08bd68476e5fb76ff" category="paragraph">Eine neue Lizenz für „Edge Cache“ verfügt über dieselben Funktionen wie die Lizenz „CVO Professional“, bietet jedoch auch Unterstützung für Global File Cache. Sie sehen diese Option bei der Implementierung eines neuen Cloud Volumes ONTAP Systems in Azure. Sie haben Anspruch auf die Bereitstellung eines globalen File Cache Edge-Systems für jeweils 3 tib bereitgestellte Kapazität auf dem Cloud Volumes ONTAP System. Es sollten mindestens 30 tib bereitgestellt werden. Der GFC License Manager Service wurde erweitert und bietet kapazitätsbasierte Lizenzierung.</block>
   <block id="6a749e3d1bafd02cdf9a303ba6375e66" category="inline-link">Erfahren Sie mehr über das Edge Cache Lizenzpaket.</block>
-  <block id="b7b58b4424e766ec66e0ab4ea9c812b8" category="section-title">Global File Cache ist jetzt in Cloud Insights integriert</block>
-  <block id="15b783a23e5291e1ffb9f638317d4bcb" category="inline-link">NetApp Global File Cache User Guide</block>
-  <block id="cf7c224c7b8d702f6384270dadb22ca0" category="paragraph">NetApp Cloud Insights (CI) bietet einen vollständigen Überblick über Ihre Infrastruktur und Applikationen. Global File Cache ist nun in CI integriert. Dies ermöglicht eine vollständige Transparenz aller Kanten und Kerne sowie die Überwachung von Prozessen, die auf den Instanzen ausgeführt werden. Verschiedene Metriken für Global File Cache werden zur CI weitergeleitet, um einen vollständigen Überblick über das CI Dashboard zu geben. Siehe Kapitel 11 im<block ref="2cde0a8e9bca45f9b9d7b53c9b2941a5" category="inline-link-rx"></block></block>
-  <block id="902eaec7802b7e6292febf1b6526a6b5" category="inline-link">Weitere Informationen zu Cloud Insights</block>
-  <block id="6d7b1d6577d8e6bfc5f78e821377a7d4" category="paragraph"><block ref="6d7b1d6577d8e6bfc5f78e821377a7d4" category="inline-link-rx"></block></block>
-  <block id="1f56bc157b53331171e2209738abd411" category="section-title">Lizenzverwaltungsserver wurde erweitert, um in sehr restriktiven Umgebungen betrieben zu werden</block>
-  <block id="706163f56e3d19088d2a54cd0451269e" category="paragraph">Während der Lizenzkonfiguration sollte der License Management Server (LMS) Zugriff auf das Internet haben, um die Lizenzdetails von NetApp/Zuora zu erfassen. Sobald die Konfiguration erfolgreich ist, kann das LMS auch weiterhin im Offline-Modus arbeiten und Lizenzmöglichkeiten bereitstellen, obwohl es sich um restriktive Umgebungen handelt.</block>
-  <block id="1b66d26240c6a01df03ec7dc4a6d1a2b" category="section-title">Die Edge Sync-Benutzeroberfläche in Optimus wurde erweitert, um die Liste der verbundenen Clients auf einem Koordinator Edge anzuzeigen</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">06. November 2022</block>
   <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">Definieren von Speicherklassen</block>
@@ -116,7 +105,6 @@
   <block id="dc8bb8905a6984d0c45a4ada9e618ace" category="section-title">Unterstützung von StorageGRID</block>
   <block id="0b17baeba205d071cc0142cf4aba9b76" category="paragraph">Sie können Ihre StorageGRID-Systeme jetzt direkt bei BlueXP entdecken. Die Entdeckung von StorageGRID verschafft Ihnen eine vollständige Übersicht über die Daten in Ihrer gesamten Hybrid-Multi-Cloud.</block>
   <block id="dcf4ee5c8f297d1f5e0da7b22e359023" category="sidebar">Neueste Änderungen</block>
-  <block id="ed8f5e7e321372398aae23788c3243a0" category="sidebar">BlueXP-Index</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Was ist neu</block>
   <block id="f5f7a4d1535be1d0940e398b2997dfc0" category="sidebar">Versionshinweise nach Service</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs Community</block>
@@ -132,8 +120,6 @@
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 März 2023</block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">05 März 2023</block>
   <block id="3aea41413b60d0894823e739f01efcbb" category="paragraph">Die Benutzeroberfläche wurde verbessert und Screenshots wurden in der Dokumentation aktualisiert.</block>
-  <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">Jetzt können Sie einen Tiering-Bericht für Ihre Volumes generieren</block>
-  <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">Hier erfahren Sie, wie Sie den Tiering-Bericht herunterladen</block>
   <block id="ed9855757b31d516a4fa8f955edec2eb" category="list-text">Kubernetes in BlueXP unterstützt jetzt Astra Trident 23.01.</block>
   <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">7 März 2023</block>
   <block id="b20988b483bceb3fb63077025a07d023" category="section-title">Ein neues Ransomware Recovery Dashboard wurde hinzugefügt, um Ihr System nach einem Angriff wiederherzustellen</block>
@@ -153,7 +139,6 @@
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">Operative Ausfallsicherheit</block>
   <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
-  <block id="d1624b8f3b686e981a178c03616a370b" category="inline-link">Erfahren Sie mehr über die Einstellung „Verzeichnisse ausschließen“</block>
   <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">Erfahren Sie, wie Sie die verbrauchte Kapazität in Ihrem Konto anzeigen</block>
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Deinstallieren Sie Astra Trident</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">Die Registerkarte „Lizenzierung“ wurde entfernt</block>
@@ -215,11 +200,6 @@
   <block id="d128bda2634e1051cc984231da065144" category="list-text">Das Digital Wallet von BlueXP unterstützt jetzt E-Mail-Benachrichtigungen.</block>
   <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">Bei der Anzeige der kapazitätsbasierten Lizenzierung für Cloud Volumes ONTAP wird in der Digital Wallet von BlueXP die lizenzierte Kapazität angezeigt, die Sie mit privaten Marketplace-Angeboten erworben haben.</block>
   <block id="71bff2737bdd059023a4784358e71a64" category="section-title">7 Mai 2023</block>
-  <block id="a018fc35c6be59c0e9c90d4bd464dc47" category="section-title">07 Mai 2023</block>
-  <block id="b3aad9775f9ce61fe67c9745594b96f0" category="inline-link-macro">Erstellen Sie eine Sicherheitsgruppe</block>
-  <block id="beee5e54063eb4d710db752896c928c8" category="inline-link-macro">Erfordert zusätzliche Berechtigungen</block>
-  <block id="34ec78fcc91ffb1e54cd85e4a0924332" category="inline-link-macro">Zusatz</block>
-  <block id="8f45a2644508b5282f57fe129f62d19a" category="inline-link-macro">Ändern</block>
   <block id="060a6559f6065c5058aca6b22d897bce" category="section-title">Google Cloud-Angebote</block>
   <block id="bfe876190faa5e7a4cd6d5029395b658" category="paragraph">Das BlueXP Digital Wallet identifiziert jetzt Google Cloud Marketplace Abonnements, die mit einem privaten Angebot verbunden sind, sowie Enddatum und Laufzeit des Abonnements. Durch diese Erweiterung können Sie überprüfen, ob Sie das private Angebot erfolgreich angenommen haben, und die Bedingungen bestätigen.</block>
   <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">Aufladeaufschlüsselung</block>
@@ -235,17 +215,6 @@
   <block id="679a2d98f8c7c05c4944b0d161a6d567" category="section-title">AWS China-Regionen werden jetzt für Backup-Dateien unterstützt</block>
   <block id="aad236ec8e2b61a79fb4bb3a416a2e06" category="paragraph">Die Regionen AWS China Beijing (cn-North-1) und Ningxia (cn-Northwest-1) werden nun als Ziele für Ihre Sicherungsdateien unterstützt, wenn auf dem Cluster ONTAP 9.12.1 oder höher ausgeführt wird.</block>
   <block id="c93bfe725726f47fe3bfcc0e95f8ec7d" category="inline-link">Sichern von On-Premises-ONTAP-Daten in Amazon S3</block>
-  <block id="2652537da62e22a06b22374119e6c40f" category="section-title">Hardlink-Funktionen</block>
-  <block id="74b59acd161d1704c8c78879dc8fba01" category="paragraph">Benutzer können nun feste Links für Synchronisierungen in ungesicherten NFS- zu NFS-Beziehungen einfügen.</block>
-  <block id="689dbd8363b6599ce07ff94a27510e99" category="inline-link">Erfahren Sie mehr über die Einstellung Dateitypen</block>
-  <block id="b37e1d04fbc8f3ac1aa4b71252cc4d4b" category="section-title">Möglichkeit zum Hinzufügen von Benutzerzertifikaten für Datenmanager in sicheren NFS-Beziehungen</block>
-  <block id="fad605010f8f29a3a10f7062fe2cd4e9" category="paragraph">Benutzer können nun bei der Erstellung einer sicheren NFS-Beziehung ein eigenes Zertifikat für den Zieldatenmanager festlegen. Dabei müssen sie einen Servernamen festlegen und einen privaten Schlüssel und eine Zertifikat-ID angeben. Diese Funktion ist für alle Daten-Broker verfügbar.</block>
-  <block id="3bf0932004501be46156880cfe858e8f" category="section-title">Verlängerter Ausschlusszeitraum für kürzlich geänderte Dateien</block>
-  <block id="72293cd7eff96e1e45510dc52f4ef25e" category="paragraph">Benutzer können jetzt Dateien ausschließen, die bis zu 365 Tage vor der geplanten Synchronisierung geändert wurden.</block>
-  <block id="87ca8046e9c8a782bd5c06267e7f93f7" category="inline-link">Erfahren Sie mehr über die Einstellung „Kürzlich geänderte Dateien“</block>
-  <block id="e03b4aafcead6edb397ccbf7e180255f" category="section-title">Beziehungen in der UI nach Beziehungs-ID filtern</block>
-  <block id="aca73b993cefdbe81afe166bf8692c50" category="paragraph">Benutzer, die die RESTful API verwenden, können nun Beziehungen mithilfe von Beziehungs-IDs filtern.</block>
-  <block id="37a616e16a0f4d18ac25d57ddb913bf8" category="inline-link">Weitere Informationen zur Verwendung der RESTful API mit BlueXP Kopier- und Synchronisierungsfunktion</block>
   <block id="6e3d9df489c437a2601f627a5b8935c9" category="paragraph">Die Registerkarte Lizenzierung wurde aus der BlueXP Tiering-Schnittstelle entfernt. Auf alle Lizenzen für PAYGO-Abonnements (Pay-as-you-go) kann jetzt über das BlueXP Tiering On-Premises-Dashboard zugegriffen werden. Über diesen Link gelangen Sie auch zur Digital Wallet von BlueXP, sodass Sie beliebige BlueXP Tiering-Lizenzen (BYOL, Bring-Your-Own-License) anzeigen und managen können.</block>
   <block id="f6e3b39522072e9cb3b0ffb8cecf9b0b" category="paragraph">Die Registerkarte „Cluster Dashboard“ wurde in „Cluster“ umbenannt und die Registerkarte „On-Premises-Übersicht“ wurde in „On-Premises-Dashboard“ umbenannt. Auf diesen Seiten wurden einige Informationen hinzugefügt, die Ihnen helfen, zu bewerten, ob Sie Ihren Speicherplatz mit zusätzlicher Tiering-Konfiguration optimieren können.</block>
   <block id="5afb323d4a36e6ab79cd9d765c5934f7" category="inline-link">Erfahren Sie mehr über die Einrichtung Ihrer eigenen vom Kunden verwalteten kryptographischen Schlüssel</block>
@@ -280,8 +249,6 @@
   <block id="a80baf4fa5d71b9ef418edfcaebd2759" category="list-text"><block ref="a80baf4fa5d71b9ef418edfcaebd2759" category="inline-link-rx"></block></block>
   <block id="45ee83d3cd24c8a79ff15330399da6a7" category="list-text"><block ref="45ee83d3cd24c8a79ff15330399da6a7" category="inline-link-rx"></block></block>
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>.</block>
-  <block id="b6f1ebb155eaf4c6e07d7a105b1d5a53" category="list-text">Wenn Sie eine Arbeitsumgebung erstellen, ist jetzt auch BlueXP möglich <block ref="3ba2cfc3ef2a3c163fc4910682cfb7d6" category="inline-link-macro-rx"></block> Damit ist nur der Datenverkehr innerhalb der ausgewählten VPC möglich. Dieser Funktion <block ref="097f8dd60847dad6062ac7ea2bd09c06" category="inline-link-macro-rx"></block>.</block>
-  <block id="46ce6a634ad58fa667690e7f5c151b26" category="list-text">Optional können Sie <block ref="2af1713063b9a7e50c1f5e13c7671bae" category="inline-link-macro-rx"></block> Und <block ref="013335dc35ce07c311c673e8a99c88f9" category="inline-link-macro-rx"></block> tags zum Kategorisieren von Volumes.</block>
   <block id="c55a4ed0f55f8209574960c04bd36597" category="paragraph">Jetzt können Sie einen Bucket auswählen, der sich in einem anderen Projekt befindet als das Projekt Ihrer vom Kunden verwalteten Verschlüsselungsschlüssel (CMEK).<block ref="2425c9129a22c7135ee8a04ae0dae970" category="inline-link-rx"></block>.</block>
   <block id="cfc826b330f7a25cc3c4e115a9fcca13" category="paragraph">Beachten Sie, dass die dem BlueXP Connector zugewiesenen IAM-Richtlinien den AWS-Ressourcennamen „arn“ unter allen _Resource_-Abschnitten von „aws“ in „aws-cn“ ändern müssen, z. B. „arn:aws-cn:s3:::netapp-Backup-*“. Siehe<block ref="17dde2a04d27e7ad2a9f0a451a7a0e90" category="inline-link-rx"></block> Und<block ref="bb86d78b7593b3e1252f277b7dd6e017" category="inline-link-rx"></block> Entsprechende Details.</block>
   <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">Der Data Discovery Assessment Report bietet eine allgemeine Analyse Ihrer gescannten Umgebung, um die Ergebnisse des Systems hervorzuheben und Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen. Ziel dieses Berichts ist es, ein Bewusstsein für Bedenken im Zusammenhang mit der Data Governance, Schwachstellen bei der Datensicherheit und Lücken in der Daten-Compliance in Ihrem Datensatz zu schaffen.<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>.</block>
@@ -290,14 +257,8 @@
   <block id="7e1e73ad7e6d01345f57dc84d7cd2c47" category="paragraph"><block ref="8ab3022f8d373945c172f9e89b554e84" category="inline-link-rx"></block>.</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>.</block>
   <block id="16364877a101c1787c34f2fe604ef9e9" category="paragraph"><block ref="16364877a101c1787c34f2fe604ef9e9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1a7214a3217999e62943b6eb9a186e66" category="paragraph"><block ref="9bf8313a7db211679a844402f240b32a" category="inline-link-rx"></block>.</block>
-  <block id="5b1faa5c627185bd8774ba759dbbcf1d" category="paragraph"><block ref="528a28b28e8f5d9df665a229e7a7fa63" category="inline-link-rx"></block>.</block>
-  <block id="ce907128271b3f13161731af69efdb83" category="paragraph"><block ref="7d45213b584f83e1010772ef58d497ad" category="inline-link-rx"></block>.</block>
-  <block id="791d072486b9f4524702996962f5cb1d" category="paragraph"><block ref="525fcee9e0cdf0ea236cb2377cb58f7b" category="inline-link-rx"></block>.</block>
-  <block id="10dc1eee3d75610cc244de50455508d3" category="paragraph">Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>. Aktualisierte Softwarepakete finden Sie unter<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>.</block>
   <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
   <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>.</block>
-  <block id="f5f78956220294d550567ec883fe45c6" category="paragraph"><block ref="f5f78956220294d550567ec883fe45c6" category="inline-link-rx"></block></block>
   <block id="4e4ff5b7850bf0aae4966bf2353d2764" category="list-text">Das ist jetzt möglich <block ref="79330a9a9d35860d426f0d48c9f654a7" category="inline-link-macro-rx"></block> Sie wurde über den Trident Operator oder BlueXP installiert.</block>
   <block id="08dbc554156c2764d1696fe55d768aed" category="paragraph">Wenn <block ref="c5aa031d705396e63c7e52a97cf56f86" category="inline-link-macro-rx"></block>, Sie können jetzt Storage-Klasse Economy für Block- oder Dateisystem-Speicher aktivieren.</block>
   <block id="6b5123d10bcaa20aedf265862fd00988" category="paragraph"><block ref="b8d5a3f5bf3c3f09de7cacb30a8225fd" category="inline-link-rx"></block>.</block>
@@ -308,7 +269,6 @@
   <block id="3ce8031a2a5efd8807d29dc5391ac03a" category="paragraph">Aktuelle Unterstützung bieten Volumes auf Cloud Volumes ONTAP und lokalen ONTAP Systemen.<block ref="71acbc1e86413ca32a85c458baf53529" category="inline-link-rx"></block>.</block>
   <block id="c3f9f5f3154c847ae51038b02652e769" category="paragraph"><block ref="ebf81513d87da0002a3ac7ea6ee056cb" category="inline-link-rx"></block>.</block>
   <block id="51959da1122b405c90c18be52282f18f" category="paragraph"><block ref="1bc1e485e9f9d41e344f0d10f6ad3511" category="inline-link-rx"></block>.</block>
-  <block id="af39bae06861b3074eed6e997f9a3ebf" category="paragraph">Sie können einen Bericht von der Seite „Tiering Volumes“ herunterladen, damit Sie den Tiering-Status aller Volumes auf den gemanagten Clustern überprüfen können. BlueXP Tiering generiert eine CSV-Datei, die Sie nach Bedarf anderen Personen in Ihrem Unternehmen senden und prüfen können.<block ref="aaab920374e84f87020f8ba8578ab877" category="inline-link-rx"></block>.</block>
   <block id="2b3e8f910d66604cd77f93b333670468" category="inline-link">Azure Blob Storage</block>
   <block id="a1182a2fefa3fdd8128a983a3d666611" category="list-text"><block ref="a1182a2fefa3fdd8128a983a3d666611" category="inline-link-rx"></block></block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="inline-link">Migrationsberichte</block>
@@ -542,4 +502,53 @@
   <block id="dfc9f0f0920c102b079fd1c513fccdde" category="list-text"><block ref="dfc9f0f0920c102b079fd1c513fccdde" category="inline-link-rx"></block></block>
   <block id="bbcffd6476036994102e5ec1c5571f64" category="inline-link">Was ist ein FlexGroup Volume</block>
   <block id="a33a2b4a40f0a01a71b97f709ac14074" category="list-text"><block ref="a33a2b4a40f0a01a71b97f709ac14074" category="inline-link-rx"></block></block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Rechtliche Hinweise</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Rechtliche Hinweise ermöglichen den Zugriff auf Copyright-Erklärungen, Marken, Patente und mehr.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Urheberrecht</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marken</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, das NETAPP Logo und die auf der NetApp Markenseite aufgeführten Marken sind Marken von NetApp Inc. Andere Firmen- und Produktnamen können Marken der jeweiligen Eigentümer sein.</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Patente</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Eine aktuelle Liste der NetApp Patente finden Sie unter:</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Datenschutzrichtlinie</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open Source</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.</block>
+  <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">Hinweis für BlueXP</block>
+  <block id="52ba8ac12050d2494572b940a0d65b25" category="paragraph"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
+  <block id="30fee46958559c602b944cc387c72292" category="paragraph">Kunden können jetzt Amazon FSX for NetApp ONTAP-Dateisysteme in drei neuen AWS-Regionen erstellen: Europa (Zürich), Europa (Spanien) und Asien-Pazifik (Hyderabad).</block>
+  <block id="4a105824b6f84a35559612caf12c452d" category="inline-link-macro">Amazon FSX for NetApp ONTAP ist jetzt in drei weiteren Regionen verfügbar</block>
+  <block id="e1203bb3756aaddbc1d40b7033d44bd1" category="paragraph">Siehe <block ref="2ffac1c1fc93e8203aa3ebf9b3a6ff2d" category="inline-link-macro-rx"></block> Vollständige Informationen.</block>
+  <block id="c77d5103bf67167dd667762d984e1e14" category="section-title">Die BlueXP Klassifizierungs-API ist jetzt verfügbar</block>
+  <block id="95eaa41c2e7025ac80bcfafd1710ff57" category="paragraph">Mithilfe der BlueXP Klassifizierungs-API können Sie Aktionen durchführen, Abfragen erstellen und Informationen zu den zu scannenden Daten exportieren. Die interaktive Dokumentation ist über Swagger verfügbar. Die Dokumentation ist in mehrere Kategorien unterteilt, darunter Untersuchung, Compliance, Governance und Konfiguration. Jede Kategorie dient als Verweis auf die Registerkarten in der BlueXP Klassifizierungs-UI.</block>
+  <block id="af16b996606b35cb0f77fe07ba2e556a" category="paragraph">Um in Swagger zu kommen, benötigen Sie die IP-Adresse der BlueXP Klassifizierungsinstanz. Bei einer Cloud-Bereitstellung verwenden Sie die öffentliche IP-Adresse. Dann müssen Sie zu diesem Endpunkt gelangen:</block>
+  <block id="254092d1402121eb76375744912fcb31" category="paragraph"><block ref="76abae69818f3dbdee10e3bc86ddf426" category="inline-link-rx"></block></block>
+  <block id="a57bb636c3624bebb972f007b21fd8fb" category="section-title">6 August 2023</block>
+  <block id="56a559acc9f9bd2fc9cf51154aef7ce5" category="section-title">Verwenden Sie vorhandene Azure Sicherheitsgruppen, wenn Sie einen Daten-Broker erstellen</block>
+  <block id="bf4bc301ccb8b2b21ef394a22e4afef6" category="paragraph">Benutzer haben nun die Möglichkeit, vorhandene Azure Sicherheitsgruppen zu verwenden, wenn sie einen Daten-Broker erstellen.</block>
+  <block id="fd514a292e754d2839b0e90da5ac3514" category="paragraph">Das Dienstkonto, das beim Erstellen des Datenbrokers verwendet wird, muss über folgende Berechtigungen verfügen:</block>
+  <block id="40ab692bf1bd50c2b8af00a0f842eae1" category="list-text">„Microsoft.Network/networkSecurityGroups/securityRules/read"</block>
+  <block id="382fee949ad334bb4c7112f8925c1a73" category="list-text">„Microsoft.Network/networkSecurityGroups/read"</block>
+  <block id="223263a27baa6e1ed1653cabb17bae1a" category="inline-link">Erfahren Sie mehr über die Erstellung eines Datenbrokers in Azure.</block>
+  <block id="dd28ab2cc4abd312627d50ae74f70a47" category="paragraph"><block ref="dd28ab2cc4abd312627d50ae74f70a47" category="inline-link-rx"></block></block>
+  <block id="523a4e14cf869e980cae59f341235b4d" category="section-title">Verschlüsseln Sie Daten bei der Synchronisierung mit Google Storage</block>
+  <block id="f30fd3a2e1153daad9771810719ad64c" category="paragraph">Benutzer haben nun die Möglichkeit, beim Erstellen einer Synchronisierungsbeziehung zu einem Google Storage-Bucket als Ziel einen vom Kunden gemanagten Schlüssel anzugeben. Sie können Ihren Schlüssel manuell eingeben oder aus einer Liste Ihrer Schlüssel in einer Region auswählen.</block>
+  <block id="822dcaf9e20737313f761f80cc25031f" category="list-text">Cloudkms.cryptkeys.list</block>
+  <block id="67c2b48a02a1206b0cf882e5b8d15ad2" category="list-text">Cloudkms.Schlüsselanhänger.list</block>
+  <block id="2f582d8c48ea99c7b932fa712f18e592" category="inline-link">Erfahren Sie mehr über die Anforderungen von Google Cloud Storage Buckets.</block>
+  <block id="32a658d78cdd354c1492f2b54191e16d" category="paragraph"><block ref="32a658d78cdd354c1492f2b54191e16d" category="inline-link-rx"></block></block>
+  <block id="924b35617c7b4bb0713e5eedb1777802" category="section-title">August 2023 (Version 2.3)</block>
+  <block id="4dbe51f9893020550dd4c70ac9a71474" category="paragraph">In dieser Version werden die in beschriebenen Probleme behoben<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>. Aktualisierte Softwarepakete finden Sie unter<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>.</block>
+  <block id="4bca0fdcdafed1e5f31435f4b19c8738" category="section-title">9 August 2023</block>
+  <block id="b839d32c555694a5245fa2fa33d17d88" category="section-title">Verwenden Sie ein benutzerdefiniertes Präfix für den Bucket-Namen, unter dem Tiering-Daten gespeichert werden</block>
+  <block id="6eb4429639db75cb3b56cc38a3fb8785" category="paragraph">In der Vergangenheit mussten Sie bei der Definition des Bucket-Namens das Standard-Präfix „Fabric-Pool“ verwenden, z. B. _Fabric-Pool-bucket1_. Jetzt können Sie beim Benennen Ihres Buckets ein benutzerdefiniertes Präfix verwenden. Diese Funktion ist nur beim Daten-Tiering zu Amazon S3 verfügbar.<block ref="3e8270d3bc816ce30c7c11fe6d073535" category="inline-link-rx"></block>.</block>
+  <block id="2d81e61b650e87c484f1701ff4c00053" category="section-title">Suchen Sie nach einem Cluster in allen BlueXP Connectors</block>
+  <block id="6a3a27c0cd9c23985f6e8260846d58bc" category="paragraph">Wenn Sie mehrere Connectors zur Verwaltung aller Speichersysteme in Ihrer Umgebung verwenden, befinden sich einige Cluster, auf denen Sie Tiering implementieren möchten, möglicherweise in verschiedenen Connectors. Wenn Sie sich nicht sicher sind, welcher Connector einen bestimmten Cluster managt, können Sie über alle Connectors hinweg mithilfe von BlueXP Tiering suchen.<block ref="017b0207cc8469b6ea246adade89f8e1" category="inline-link-rx"></block>.</block>
 </blocks>
