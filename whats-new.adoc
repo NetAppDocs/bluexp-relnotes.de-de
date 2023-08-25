@@ -718,17 +718,46 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 
 
-=== November 2022
-
-Digital Advisor (ehemals Active IQ) ist jetzt vollständig in BlueXP integriert und bietet eine bessere Anmeldung.
-
-Wenn Sie den BlueXP Digital Advisor aufrufen, werden Sie jetzt aufgefordert, Ihre Anmeldedaten für die NetApp Support Site einzugeben, damit Daten zu Ihren Systemen angezeigt werden. Das NSS-Konto, bei dem Sie sich anmelden, ist nur mit Ihrer Benutzeranmeldung verknüpft. Es ist nicht mit anderen Benutzern in Ihrem NetApp Konto verknüpft.
-
-https://docs.netapp.com/us-en/active-iq/index.html["Erfahren Sie mehr über den BlueXP Digital Advisor"^]
+=== 16 Juli 2023
 
 
 
-== Digital Wallet
+==== Storage-Effizienz
+
+* Das Label *Storage Efficiency*, welches das Effizienzverhältnis anzeigt, wird in *Data Reduction* umbenannt.
+* Das Label *Data Saved by Storage Efficiency* wird umbenannt in *Data Reduction Savings*.
+* Der Toggle *Savings without Snapshot Backups* wird mit einer Änderung seiner Funktionalität in *with Snapshot copies* umbenannt. link:https://docs.netapp.com/us-en/active-iq/reference_aiq_faq.html#storage-efficiency["Weitere Informationen ."].
+
+
+
+
+=== 21 Juni 2023
+
+
+
+==== Dashboard zur Nachhaltigkeit
+
+Das Sustainability Dashboard bietet wertvolle Einblicke in die ökologische Nachhaltigkeit Ihres Storage-Systems. Sie können die Informationen wie Nachhaltigkeitsbewertung, CO2-Minderung, prognostizierte Nutzung von Energie, direkter Kohlenstoff und Wärme anzeigen. Sie können den Prozentsatz der CO2-Minderung für bestimmte Standorte anpassen. Sie können die Nachhaltigkeitsbewertung auch auf Cluster-Ebene anzeigen. Wenn Sie das Ergebnis für die Nachhaltigkeit bewerten, können Sie die Gesamteffizienz Ihres Storage-Systems beurteilen und das System an den von NetApp empfohlenen Maßnahmen zur Steigerung der Nachhaltigkeit ausrichten. link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["Weitere Informationen ."].
+
+
+
+=== 22 Februar 2023
+
+
+
+==== Performance-Diagramme
+
+Sie können die durchschnittlichen Lese-, Schreib- und sonstigen Vorgänge im Diagramm „Volume IOPS“ anzeigen.
+
+
+
+==== Storage-Effizienz
+
+SAN- und NAS-Storage-Effizienz ist auf Node-Ebene für ONTAP Systeme verfügbar, einschließlich AFF A-Series, AFF C190, All SAN Array und FAS500 mit ONTAP 9.10 und höher.
+
+
+
+== Digitale Brieftasche
 
 
 
