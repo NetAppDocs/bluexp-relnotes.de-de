@@ -140,10 +140,6 @@
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Deinstallieren Sie Astra Trident</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">Die Registerkarte „Lizenzierung“ wurde entfernt</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">Die Registerkarten „Tiering“ wurden umbenannt und enthalten aktualisierte Inhalte</block>
-  <block id="f42926ae5eb2834453e4706e43354d5c" category="section-title">3. April 2023 (Version 1.22)</block>
-  <block id="e4279e9f497576fcde3caeb67ed0f96d" category="section-title">Neuer Data Discovery Assessment Report</block>
-  <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">Erfahren Sie, wie Sie den Data Discovery Assessment Report erstellen und verwenden</block>
-  <block id="3d81ce02b62771b2627fbe04a96419a1" category="inline-link">Anzeigen der verfügbaren Instanztypen und Einschränkungen</block>
   <block id="e86989a1de71c911aa1dff7be51112bd" category="section-title">Neue empfohlene Maßnahmen zum Schutz Ihrer Daten vor Ransomware-Angriffen</block>
   <block id="51ad14036a828a2a993258fe95046128" category="list-text">Eine neue empfohlene Aktion zum Aktivieren von Cyberspeicherkonfigurationen für Datenquellen ermittelt, ob sechs ONTAP-Funktionen, die zur Datensicherung beitragen, aktiviert oder deaktiviert sind. Sie sollten diese Funktionen auf allen lokalen ONTAP- und Cloud Volumes ONTAP-Systemen aktivieren.</block>
   <block id="dced9da708bc7f04e84ad156297f2b2a" category="inline-link">Siehe die Liste aller empfohlenen Maßnahmen</block>
@@ -168,9 +164,6 @@
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="inline-link">Schutz durch Ransomware</block>
   <block id="282baca6aef56652f503adce6afa9f07" category="inline-link">Korrekturmaßnahmen</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">Tiering</block>
-  <block id="21db17f88f41dcd13f48cc90aced1d74" category="section-title">Möglichkeit zur Implementierung der BlueXP Klassifizierung auf kleineren Instanzen in der Cloud</block>
-  <block id="cb608d54d750eeb9d266241b5a1d63c7" category="section-title">Eigenständiges Skript steht jetzt zur Verfügung, um Ihr Linux-System vor der Installation der BlueXP Klassifizierung zu qualifizieren</block>
-  <block id="e75f898f4dbad5388881095e9582c693" category="inline-link">Erfahren Sie, wie Sie überprüfen können, ob Ihr Linux-Host bereit ist, die BlueXP Klassifizierung zu installieren</block>
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">Mit der BlueXP Klassifizierung können Dateien identifiziert und kategorisiert werden, die die folgenden Datentypen enthalten:</block>
   <block id="22b67d0a50677e01d48389e716223457" category="inline-link">Hier können Sie alle Arten von personenbezogenen Daten einsehen, die durch die BlueXP Klassifizierung in Ihren Daten identifiziert werden können</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">Digitaler Berater</block>
@@ -227,9 +220,6 @@
   <block id="a80baf4fa5d71b9ef418edfcaebd2759" category="list-text"><block ref="a80baf4fa5d71b9ef418edfcaebd2759" category="inline-link-rx"></block></block>
   <block id="45ee83d3cd24c8a79ff15330399da6a7" category="list-text"><block ref="45ee83d3cd24c8a79ff15330399da6a7" category="inline-link-rx"></block></block>
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>.</block>
-  <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">Der Data Discovery Assessment Report bietet eine allgemeine Analyse Ihrer gescannten Umgebung, um die Ergebnisse des Systems hervorzuheben und Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen. Ziel dieses Berichts ist es, ein Bewusstsein für Bedenken im Zusammenhang mit der Data Governance, Schwachstellen bei der Datensicherheit und Lücken in der Daten-Compliance in Ihrem Datensatz zu schaffen.<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>.</block>
-  <block id="38e8bfeb390cec6e72d97323084e18cc" category="paragraph">Bei der Implementierung der BlueXP Klassifizierung aus einem BlueXP Connector in einer AWS-Umgebung können Sie nun zwischen zwei kleineren Instanztypen wählen als bei der Standardinstanz. Wenn Sie eine kleine Umgebung scannen, können Sie hier Cloud-Kosten sparen. Allerdings gibt es einige Einschränkungen bei der Verwendung der kleineren Instanz.<block ref="d8ef680ce45b86e2a6afe2805a7e5562" category="inline-link-rx"></block>.</block>
-  <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">Wenn Sie unabhängig von der Ausführung der BlueXP Klassifizierungssysteminstallation überprüfen möchten, ob Ihr Linux-System alle Voraussetzungen erfüllt, steht Ihnen ein separates Skript zur Verfügung, das nur die Voraussetzungen testet.<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>.</block>
   <block id="7e1e73ad7e6d01345f57dc84d7cd2c47" category="paragraph"><block ref="8ab3022f8d373945c172f9e89b554e84" category="inline-link-rx"></block>.</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>.</block>
   <block id="16364877a101c1787c34f2fe604ef9e9" category="paragraph"><block ref="16364877a101c1787c34f2fe604ef9e9" category="inline-image-macro-rx" type="image"></block></block>
@@ -386,7 +376,6 @@
   <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">Die BlueXP Klassifizierung wird jetzt vollständig auf Websites ohne Internetzugang (privater Modus) und mit eingeschränktem Outbound-Internetzugang (eingeschränkter Modus) unterstützt.<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>.</block>
   <block id="8dd6a265487e54146fb2bdfb3e5174a5" category="section-title">Fähigkeit zum überspringen von Versionen beim Upgrade einer Installation von BlueXP Klassifizierung im Private-Modus</block>
   <block id="241957d9f6c696915858d43476112454" category="paragraph">Sie können jetzt ein Upgrade auf eine neuere Version der BlueXP Klassifizierung durchführen, auch wenn diese nicht sequenziell ist. Das heißt, die aktuelle Einschränkung für das Upgrade der BlueXP Klassifizierung um jeweils eine Version ist nicht mehr erforderlich. Diese Funktion ist ab Version 1.24 relevant.</block>
-  <block id="9d5f9909bec8cf71910a31c50878914c" category="section-title">Juli 30</block>
   <block id="167693b239be0e2939d61376cd3a5487" category="section-title">Anschluss 3.9.32</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">Sie können jetzt die BlueXP Audit-Service-API für den Export von Audit-Protokollen verwenden.</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">Erfahren Sie mehr über die Verwendung der Audit-Service-API</block>
@@ -578,4 +567,26 @@
   <block id="e10f6958064ae5f36e8b132d4142e626" category="section-title">Performance-Diagramme</block>
   <block id="1c6ca21b0d3e6f38c91e416032c3b178" category="paragraph">Sie können die durchschnittlichen Lese-, Schreib- und sonstigen Vorgänge im Diagramm „Volume IOPS“ anzeigen.</block>
   <block id="80a2eb22b09cbe781077565f06b74dbf" category="paragraph">SAN- und NAS-Storage-Effizienz ist auf Node-Ebene für ONTAP Systeme verfügbar, einschließlich AFF A-Series, AFF C190, All SAN Array und FAS500 mit ONTAP 9.10 und höher.</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">10 September 2023</block>
+  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">Anschluss 3.9.33</block>
+  <block id="d8465669650730f887acd3754f3dea9f" category="list-text">Wenn Sie einen Connector in AWS von BlueXP erstellen, können Sie nun im Feld Schlüsselpaar suchen, um das Schlüsselpaar, das Sie mit der Connector-Instanz verwenden möchten, einfacher zu finden.</block>
+  <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">Ein Screenshot der Suchoption im Feld Schlüsselpaar, das beim Erstellen eines Connectors in AWS aus BlueXP auf der Seite Netzwerk angezeigt wird.</block>
+  <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">Dieses Update enthält auch Fehlerbehebungen.</block>
+  <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">September 5 (Version 1.25)</block>
+  <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">Verwenden Sie Tags auf bis zu 100,000 Elemente auf der Seite Untersuchungsergebnisse</block>
+  <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">Erfahren Sie, wie</block>
+  <block id="6d37cd3f2b76637efa533f6623bf7ceb" category="paragraph">In der Vergangenheit konnten Sie auf der Seite Untersuchungsergebnisse (20 Elemente) jeweils nur Tags auf eine Seite anwenden. Jetzt können Sie *alle* Elemente auf den Seiten Untersuchungsergebnisse auswählen und Tags auf alle Elemente anwenden - bis zu 100,000 Elemente gleichzeitig. <block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>.</block>
+  <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="section-title">Identifizieren Sie duplizierte Dateien mit einer Mindestdateigröße von 1 MB</block>
+  <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">Mit der BlueXP Klassifizierung werden duplizierte Dateien nur bei Dateien identifiziert, die 50 MB oder mehr betragen. Nun können duplizierte Dateien, die mit 1 MB beginnen, identifiziert werden. Sie können die Filter der Untersuchungsseite „Dateigröße“ zusammen mit „Duplikate“ verwenden, um zu sehen, welche Dateien einer bestimmten Größe in Ihrer Umgebung dupliziert werden.</block>
+  <block id="18cf4605db6670514e116119da7de0a0" category="section-title">3 September 2023</block>
+  <block id="84a4e9be01e1e0b2123f0992743bb3be" category="section-title">Dateien durch regex ausschließen</block>
+  <block id="8a2aa0d6caae0bb9fe34491d59f66a36" category="paragraph">Benutzer haben nun die Möglichkeit, Dateien mit regex auszuschließen.</block>
+  <block id="1f3154fef8201e2bc88bd5111528535c" category="inline-link">Erfahren Sie mehr über die Funktion *Exclude File Extensions*.</block>
+  <block id="8ca7330f80b3c6b405f94cdadf97a80c" category="paragraph"><block ref="8ca7330f80b3c6b405f94cdadf97a80c" category="inline-link-rx"></block></block>
+  <block id="f32e3be81b145c34740db00a44c46e93" category="section-title">Fügen Sie bei der Erstellung des Azure Daten-Brokers S3 Schlüssel hinzu</block>
+  <block id="7631c04fd88511e09fd26f0ce9f65ce1" category="paragraph">Benutzer können jetzt bei der Erstellung eines Azure Datenbrokers AWS S3 Zugriffsschlüssel und geheime Schlüssel hinzufügen.</block>
+  <block id="0aa08047034186671d34875b5617b057" category="paragraph"><block ref="0aa08047034186671d34875b5617b057" category="inline-link-rx"></block></block>
+  <block id="d687b97df8e082fb1a95e853c70aa1c2" category="section-title">03 September 2023</block>
+  <block id="a0c145fadd8b464775a61d2f1a2e0474" category="paragraph">Der aktualisierte BlueXP Migrations-Reports-Service bietet Updates für die Berichtsdaten. Berichte enthalten jetzt die zugewiesene Kapazität.</block>
 </blocks>
