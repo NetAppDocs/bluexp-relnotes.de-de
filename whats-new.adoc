@@ -270,6 +270,34 @@ Sie können Amazon S3 Buckets seit geraumer Zeit auf dem BlueXP Canvas anzeigen.
 
 
 
+=== 11 September 2023
+
+
+
+==== Management neuer Richtlinien für ONTAP Daten
+
+Dieser Release bietet die Möglichkeit innerhalb der Benutzeroberfläche, benutzerdefinierte Snapshot-Richtlinien, Replizierungsrichtlinien und Richtlinien für Backups in Objekt-Storage für ONTAP Daten zu erstellen.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["Erfahren Sie mehr über Richtlinien"].
+
+
+
+==== Unterstützung für die Wiederherstellung von Dateien und Ordnern von Volumes in ONTAP S3 Objekt-Storage
+
+Bisher konnten Sie beim Backup von Volumes auf ONTAP S3 Objekt-Storage keine Dateien und Ordner mithilfe der Funktion „Durchsuchen und Wiederherstellen“ wiederherstellen. Mit dieser Version wird diese Einschränkung beseitigt.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["Weitere Informationen zum Wiederherstellen von Daten"].
+
+
+
+==== Zusätzliche Unterstützung für das Backup und die Wiederherstellung von SnapLock Volumes
+
+Backup und Recovery können jetzt sowohl FlexVol als auch FlexGroup Volumes sichern, die entweder im SnapLock Compliance- oder im SnapLock Enterprise-Sicherungsmodus konfiguriert sind. Ihre Cluster müssen ONTAP 9.14 oder höher verwenden, um diese Unterstützung zu ermöglichen. Das Sichern von FlexVol Volumes mit dem SnapLock Enterprise-Modus wird seit ONTAP Version 9.11.1 unterstützt. Frühere ONTAP Versionen bieten keine Unterstützung für Backups von SnapLock Protection Volumes.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Erfahren Sie mehr zum Schutz von ONTAP Daten"].
+
+
+
 === August 2023
 
 [IMPORTANT]
@@ -346,82 +374,6 @@ Anschließend können Sie Ihre älteren Cluster mit der vorherigen Softwareversi
 Wenn Sie Backup-Dateien im Objekt-Storage erstellen, werden vom Backup- und Recovery-Service standardmäßig die Buckets im Objekt-Storage für Sie erstellt. Sie können die Buckets selbst erstellen, wenn Sie einen bestimmten Namen verwenden oder besondere Eigenschaften zuweisen möchten. Wenn Sie Ihren eigenen Bucket erstellen möchten, müssen Sie ihn erstellen, bevor Sie den Aktivierungsassistenten starten. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["Erfahren Sie, wie Sie Ihre Objekt-Storage-Buckets erstellen"].
 
 Diese Funktion wird derzeit beim Erstellen von Backup-Dateien auf StorageGRID-Systemen nicht unterstützt.
-
-
-
-=== 04 Juli 2023
-
-
-
-==== Verbesserungen bei BlueXP Backup und Recovery für Applikationen (Cloud-nativ)
-
-* SAP HANA Systeme
-+
-** Unterstützt das Verbinden und Kopieren von nicht-Daten-Volumes und globalen nicht-Daten-Volumes mit sekundärem Azure NetApp Files-Schutz
-
-
-* Oracle Datenbanken
-+
-** Unterstützt die Wiederherstellung von Oracle Datenbanken auf Azure NetApp Files an einem alternativen Speicherort
-** Unterstützt Oracle Recovery Manager (RMAN) Katalogisierung von Backups von Oracle-Datenbanken auf Azure NetApp Files
-** Ermöglicht es Ihnen, den Datenbank-Host in den Wartungsmodus zu versetzen, um Wartungsaufgaben durchzuführen
-
-
-
-
-
-
-==== Verbesserungen bei BlueXP Backup und Recovery für Applikationen (Hybrid)
-
-* Unterstützt die Wiederherstellung an einem alternativen Speicherort
-* Ermöglicht das Mounten von Backups von Oracle-Datenbanken
-* Unterstützt das Verschieben von Backups von GCP auf Archiv-Tier
-
-
-
-
-==== Verbesserungen bei BlueXP Backup und Recovery für Virtual Machines (Hybrid)
-
-* Unterstützt den Schutz von NFS- und VMFS-Datenspeichern
-* Ermöglicht Ihnen, die Registrierung des SnapCenter-Plug-ins für den VMware vSphere-Host aufzuheben
-* Unterstützt die Aktualisierung und Erkennung der neuesten Datastores und Backups
-
-
-
-
-=== 5 Juni 2023
-
-
-
-==== FlexGroup Volumes können mittels DataLock und Ransomware-Schutz gesichert und geschützt werden
-
-Backup-Richtlinien für FlexGroup Volumes können jetzt DataLock- und Ransomware-Schutz verwenden, wenn auf dem Cluster ONTAP 9.13.1 oder höher ausgeführt wird.
-
-
-
-==== Neue Berichterstellungsfunktionen
-
-Es gibt jetzt eine Registerkarte Berichte, auf der Sie einen Bericht zum Backup-Inventar erstellen können, der alle Backups für ein bestimmtes Konto, eine Arbeitsumgebung oder einen SVM-Bestand enthält. Sie können auch einen Aktivitätsbericht zu Datensicherungsjobs erstellen, der Informationen zu Snapshot-, Backup-, Klon- und Wiederherstellungsvorgängen bietet, die Ihnen bei der Überwachung von Service-Level-Agreements helfen können. Siehe https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html["Berichte zur Datensicherung"].
-
-
-
-==== Verbesserungen für Job Monitor
-
-Sie können jetzt _Backup Lifecycle_ als Jobtyp auf der Seite Job Monitor überprüfen und so den gesamten Backup-Lebenszyklus verfolgen. Außerdem werden Details zu allen Vorgängen in der BlueXP Zeitachse angezeigt. Siehe https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["Überwachen des Status von Backup- und Wiederherstellungsjobs"].
-
-
-
-==== Zusätzliche Benachrichtigung bei nicht übereinstimmenden Richtlinienbeschriftungen
-
-Eine neue Backup-Warnmeldung wurde hinzugefügt: „Backup-Dateien wurden nicht erstellt, da die Snapshot-Richtlinienbeschriftungen nicht übereinstimmen“. Wenn das in einer Backup-Richtlinie definierte _Label_ in der Snapshot-Richtlinie kein passendes _Label_ enthält, wird keine Sicherungsdatei erstellt. Sie müssen System Manager oder die ONTAP CLI verwenden, um der Snapshot-Richtlinie des Volumes das fehlende Label hinzuzufügen.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["Prüfen Sie alle Warnmeldungen, die BlueXP Backup und Recovery senden können"].
-
-
-
-==== Automatisches Backup kritischer BlueXP Backup- und Recovery-Dateien an Dark Sites
-
-Wenn Sie BlueXP Backup und Recovery an einem Standort ohne Internetzugang nutzen, auch bekannt als „Private-Mode“-Implementierung, werden die Backup- und Recovery-Informationen von BlueXP nur auf dem lokalen Connector-System gespeichert. Diese neue Funktion sichert wichtige Backup- und Recovery-Daten von BlueXP automatisch in einem Bucket auf Ihrem verbundenen StorageGRID-System, sodass Sie diese Daten bei Bedarf auf einem neuen Connector wiederherstellen können. https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["Weitere Informationen ."]
 
 
 
@@ -525,6 +477,21 @@ Sie können jetzt Ihre Data Sense BYOL-Lizenz in das Digital Wallet von BlueXP a
 
 
 
+=== 10 September 2023
+
+Die folgenden Änderungen wurden mit der Version 3.9.33 des Connectors eingeführt.
+
+
+
+==== Unterstützung für VMs der Lsv3-Serie in Azure
+
+Die Instanztypen L48s_v3 und L64s_v3 werden nun mit Cloud Volumes ONTAP in Azure unterstützt. Dies gilt für Single-Node- und Hochverfügbarkeitspaare-Implementierungen mit gemeinsam genutzten verwalteten Festplatten in einzelnen und mehreren Verfügbarkeitszonen, beginnend mit Version 9.13.1. Diese Instanztypen unterstützen Flash Cache.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Zeigen Sie unterstützte Konfigurationen für Cloud Volumes ONTAP in Azure an"]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Storage-Limits für Cloud Volumes ONTAP in Azure anzeigen"]
+
+
+
 === 30 Juli 2023
 
 Die folgenden Änderungen wurden mit der Version 3.9.32 des Connectors eingeführt.
@@ -574,20 +541,6 @@ Die folgenden Änderungen wurden mit der Version 3.9.31 des Connectors eingefüh
 BlueXP kann jetzt die Cloud Volumes ONTAP 9.13.1 General Availability Version in AWS, Azure und Google Cloud implementieren und managen.
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
-
-
-
-=== 2 Juli 2023
-
-Die folgenden Änderungen wurden mit der Version 3.9.31 des Connectors eingeführt.
-
-
-
-==== Unterstützung für HA-Implementierungen mit mehreren Verfügbarkeitszonen in Azure
-
-Der japanische Osten und Korea Zentral in Azure unterstützen jetzt HA-Implementierungen mit mehreren Verfügbarkeitszonen für Cloud Volumes ONTAP 9.12.1 GA und höher.
-
-Eine Liste aller Regionen, die mehrere Verfügbarkeitszonen unterstützen, finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Azure"^].
 
 
 
@@ -1099,54 +1052,6 @@ Mithilfe des neuen BlueXP Service für betriebliche Ausfallsicherheit und seiner
 Operational Resiliency ist ein Service, mit dem Sie Alarme und Ereignisse analysieren können, um den Zustand, die Uptime und die Performance von Services und Lösungen aufrechtzuerhalten.
 
 link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/intro.html["Erfahren Sie mehr über die betriebliche Ausfallsicherheit von BlueXP"].
-
-
-
-== Schutz durch Ransomware
-
-
-
-=== Bis 3. April 2023
-
-
-
-==== Neue empfohlene Maßnahmen zum Schutz Ihrer Daten vor Ransomware-Angriffen
-
-* In der neuen empfohlenen Aktion „Backup von geschäftskritischen Dateien in Datenquellen“ wird ermittelt, wie Sie Ihre wichtigsten Datenkategorien durch Backup von Volumes mit BlueXP Backup und Recovery schützen können. Dies ist wichtig für den Fall, dass Sie aufgrund eines Ransomware-Angriffs alle Daten wiederherstellen müssen. Die Empfehlung leitet Sie zur Backup- und Recovery-Schnittstelle von BlueXP um, damit Sie Backups auf den erforderlichen Volumes ermöglichen können.
-* Eine neue empfohlene Aktion zum Aktivieren von Cyberspeicherkonfigurationen für Datenquellen ermittelt, ob sechs ONTAP-Funktionen, die zur Datensicherung beitragen, aktiviert oder deaktiviert sind. Sie sollten diese Funktionen auf allen lokalen ONTAP- und Cloud Volumes ONTAP-Systemen aktivieren.
-
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-analyze-ransomware-data.html#list-of-recommended-actions["Siehe die Liste aller empfohlenen Maßnahmen"].
-
-
-
-=== 7 März 2023
-
-
-
-==== Ein neues Ransomware Recovery Dashboard wurde hinzugefügt, um Ihr System nach einem Angriff wiederherzustellen
-
-Das Ransomware Recovery Dashboard bietet Optionen zur Wiederherstellung von Daten, die möglicherweise durch Ransomware infiziert wurden. So können Sie Ihre Systeme sehr schnell wieder in Betrieb nehmen. Derzeit ermöglicht die Recovery-Aktion, ein beschädigtes Volume durch eine Snapshot Kopie zu ersetzen, die nicht durch Ransomware beschädigt wurde. https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-ransomware-recovery.html["Weitere Informationen ."].
-
-
-
-=== 5 Februar 2023
-
-
-
-==== Möglichkeit, Richtlinien festzulegen, anhand derer die Daten identifiziert werden, die Sie als geschäftskritisch betrachten
-
-BlueXP Ransomware-Schutz bietet jetzt eine neue Seite für geschäftskritische Daten. Auf dieser Seite können Sie alle Richtlinien anzeigen, die in der BlueXP Klassifizierung definiert wurden. Sie können Richtlinien auswählen, die Daten identifizieren, die für Ihr Unternehmen entscheidend sind, sodass das BlueXP Dashboard für den Ransomware-Schutz und andere Ransomware-Bereiche basierend auf Ihren wichtigsten Daten potenzielle Probleme darstellen.
-
-Eine neue empfohlene Aktion namens „Konfigurieren Sie Ihre geschäftskritischen Daten“ wird im Bereich „Empfohlene Maßnahmen“ angezeigt, wenn Sie keine dieser Richtlinien für den BlueXP Ransomware-Schutzservice aktiviert haben.
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-select-business-critical-policies.html["Erfahren Sie mehr über die Seite geschäftskritische Daten"^].
-
-
-
-==== Der Ransomware-Schutz von BlueXP hat sich von der Kategorie Schutz in die Kategorie Governance verlagert
-
-Jetzt greifen Sie über das Menü der linken Navigation von BlueXP auf diesen Service zu, indem Sie *Governance > Ransomware-Schutz* wählen.
 
 
 
