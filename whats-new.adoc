@@ -700,6 +700,22 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 
 
+=== 27 September 2023
+
+
+
+==== Upgrade Advisor
+
+Sie können über die auf die Seite Upgrade Advisor für Ihre Standardliste oder Ihr Dashboard zugreifen link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor"^] Verlinken: Wenn Sie nicht über eine Standardliste oder ein Dashboard verfügen, werden Sie durch Klicken auf den Link zur Seite „Suchen“ weitergeleitet.
+
+
+
+==== Upgrade-Plan
+
+Der Upgrade-Plan wurde optimiert, um redundante Upgrade-Schritte zu entfernen, Informationen und Warnungen zu ändern und den Backout-Plan zu vereinfachen. Die gemeinsamen Schritte aller Knoten in einem Cluster sind konsolidiert und stehen im Abschnitt Allgemeine Informationen zur Verfügung. Um den verbesserten Plan anzuzeigen, erstellen Sie den Upgrade-Plan anhand der in genannten Schritte link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["Aktualisieren Sie die ONTAP-Version mithilfe des Upgrade-Plans"].
+
+
+
 === 16 Juli 2023
 
 
@@ -720,22 +736,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 ==== Dashboard zur Nachhaltigkeit
 
 Das Sustainability Dashboard bietet wertvolle Einblicke in die ökologische Nachhaltigkeit Ihres Storage-Systems. Sie können die Informationen wie Nachhaltigkeitsbewertung, CO2-Minderung, prognostizierte Nutzung von Energie, direkter Kohlenstoff und Wärme anzeigen. Sie können den Prozentsatz der CO2-Minderung für bestimmte Standorte anpassen. Sie können die Nachhaltigkeitsbewertung auch auf Cluster-Ebene anzeigen. Wenn Sie das Ergebnis für die Nachhaltigkeit bewerten, können Sie die Gesamteffizienz Ihres Storage-Systems beurteilen und das System an den von NetApp empfohlenen Maßnahmen zur Steigerung der Nachhaltigkeit ausrichten. link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["Weitere Informationen ."].
-
-
-
-=== 22 Februar 2023
-
-
-
-==== Performance-Diagramme
-
-Sie können die durchschnittlichen Lese-, Schreib- und sonstigen Vorgänge im Diagramm „Volume IOPS“ anzeigen.
-
-
-
-==== Storage-Effizienz
-
-SAN- und NAS-Storage-Effizienz ist auf Node-Ebene für ONTAP Systeme verfügbar, einschließlich AFF A-Series, AFF C190, All SAN Array und FAS500 mit ONTAP 9.10 und höher.
 
 
 
