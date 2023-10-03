@@ -33,6 +33,16 @@ In diesem Abschnitt werden neue Funktionen in Bezug auf BlueXP-Verwaltungsfunkti
 
 
 
+=== 6 Oktober 2023
+
+
+
+==== Anschluss 3.9.34
+
+Diese Version enthält kleinere Verbesserungen und Fehlerbehebungen.
+
+
+
 === 10 September 2023
 
 
@@ -461,6 +471,20 @@ https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["Erf
 
 
 
+=== 6 Oktober 2023
+
+Die folgenden Änderungen wurden mit der Version 3.9.34 des Connectors eingeführt.
+
+
+
+==== Cloud Volumes ONTAP 9.14.0
+
+BlueXP kann jetzt die Cloud Volumes ONTAP 9.14.0 General Availability Version in AWS, Azure und Google Cloud implementieren und managen.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
+
+
+
 === 10 September 2023
 
 Die folgenden Änderungen wurden mit der Version 3.9.33 des Connectors eingeführt.
@@ -511,20 +535,6 @@ Verschiedene Verbesserungen der angezeigten Informationen in den Nutzungsbericht
 
 
 Weitere Informationen zu Nutzungsberichten finden Sie unter link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["Nutzungsberichte herunterladen"^].
-
-
-
-=== 26 Juli 2023
-
-Die folgenden Änderungen wurden mit der Version 3.9.31 des Connectors eingeführt.
-
-
-
-==== Cloud Volumes ONTAP 9.13.1 GA
-
-BlueXP kann jetzt die Cloud Volumes ONTAP 9.13.1 General Availability Version in AWS, Azure und Google Cloud implementieren und managen.
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
 
 
 
@@ -690,13 +700,9 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 ==== Upgrade Advisor
 
-Sie können über die auf die Seite Upgrade Advisor für Ihre Standardliste oder Ihr Dashboard zugreifen link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor"^] Verlinken: Wenn Sie nicht über eine Standardliste oder ein Dashboard verfügen, werden Sie durch Klicken auf den Link zur Seite „Suchen“ weitergeleitet.
+* Über die können Sie auf die Seite Upgrade Advisor für Ihre Standard-Watchlist zugreifen link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor"^] Verlinken:
+* Der Upgrade-Plan wurde optimiert, um redundante Upgrade-Schritte zu entfernen und den Backout-Plan zu vereinfachen. Die allgemeinen Schritte aller Nodes in einem Cluster werden konsolidiert und stehen im Abschnitt „Allgemeine Informationen“ des Upgrade-Plans zur Verfügung. link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["Erfahren Sie, wie Sie einen Upgrade-Plan erstellen und anzeigen"].
 
-
-
-==== Upgrade-Plan
-
-Der Upgrade-Plan wurde optimiert, um redundante Upgrade-Schritte zu entfernen, Informationen und Warnungen zu ändern und den Backout-Plan zu vereinfachen. Die gemeinsamen Schritte aller Knoten in einem Cluster sind konsolidiert und stehen im Abschnitt Allgemeine Informationen zur Verfügung. Um den verbesserten Plan anzuzeigen, erstellen Sie den Upgrade-Plan anhand der in genannten Schritte link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["Aktualisieren Sie die ONTAP-Version mithilfe des Upgrade-Plans"].
 
 
 
@@ -719,7 +725,7 @@ Der Upgrade-Plan wurde optimiert, um redundante Upgrade-Schritte zu entfernen, I
 
 ==== Dashboard zur Nachhaltigkeit
 
-Das Sustainability Dashboard bietet wertvolle Einblicke in die ökologische Nachhaltigkeit Ihres Storage-Systems. Sie können die Informationen wie Nachhaltigkeitsbewertung, CO2-Minderung, prognostizierte Nutzung von Energie, direkter Kohlenstoff und Wärme anzeigen. Sie können den Prozentsatz der CO2-Minderung für bestimmte Standorte anpassen. Sie können die Nachhaltigkeitsbewertung auch auf Cluster-Ebene anzeigen. Wenn Sie das Ergebnis für die Nachhaltigkeit bewerten, können Sie die Gesamteffizienz Ihres Storage-Systems beurteilen und das System an den von NetApp empfohlenen Maßnahmen zur Steigerung der Nachhaltigkeit ausrichten. link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["Weitere Informationen ."].
+Ein NachhaltigkeitsDashboard bietet wertvolle Einblicke in die ökologische Nachhaltigkeit Ihres Storage-Systems. Sie können die Informationen wie Nachhaltigkeitsbewertung, CO2-Minderung, prognostizierte Nutzung von Energie, direkter Kohlenstoff und Wärme anzeigen. Sie können den Prozentsatz der CO2-Minderung für bestimmte Standorte anpassen. Sie können die Nachhaltigkeitsbewertung auch auf Cluster-Ebene anzeigen. Basierend auf dem Ergebnis für die Nachhaltigkeit können Sie die Gesamteffizienz Ihres Storage-Systems beurteilen und das System an den von NetApp empfohlenen Maßnahmen zur Steigerung der Nachhaltigkeit ausrichten. link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["Weitere Informationen ."].
 
 
 
