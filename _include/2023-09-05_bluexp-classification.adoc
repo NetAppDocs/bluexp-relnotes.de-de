@@ -1,0 +1,21 @@
+= Kleine und mittlere Bereitstellungen sind vorübergehend nicht verfügbar
+:allow-uri-read: 
+
+
+
+
+=== Kleine und mittlere Bereitstellungen sind vorübergehend nicht verfügbar
+
+Wenn Sie eine Instanz der BlueXP Klassifizierung in AWS implementieren, ist die Option *Deploy > Configuration* und die Auswahl einer kleinen oder mittelgroßen Instanz derzeit nicht verfügbar. Sie können die Instanz weiterhin mit der Größe der großen Instanz bereitstellen, indem Sie *Deploy > Deploy* auswählen.
+
+
+
+=== Verwenden Sie Tags auf bis zu 100,000 Elemente auf der Seite Untersuchungsergebnisse
+
+In der Vergangenheit konnten Sie auf der Seite Untersuchungsergebnisse (20 Elemente) jeweils nur Tags auf eine Seite anwenden. Jetzt können Sie *alle* Elemente auf den Seiten Untersuchungsergebnisse auswählen und Tags auf alle Elemente anwenden - bis zu 100,000 Elemente gleichzeitig. https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["Erfahren Sie, wie"].
+
+
+
+=== Identifizieren Sie duplizierte Dateien mit einer Mindestdateigröße von 1 MB
+
+Mit der BlueXP Klassifizierung werden duplizierte Dateien nur bei Dateien identifiziert, die 50 MB oder mehr betragen. Nun können duplizierte Dateien, die mit 1 MB beginnen, identifiziert werden. Sie können die Filter der Untersuchungsseite „Dateigröße“ zusammen mit „Duplikate“ verwenden, um zu sehen, welche Dateien einer bestimmten Größe in Ihrer Umgebung dupliziert werden.

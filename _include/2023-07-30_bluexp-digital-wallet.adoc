@@ -1,0 +1,19 @@
+= Verbesserte Nutzungsberichte
+:allow-uri-read: 
+
+
+
+
+=== Verbesserte Nutzungsberichte
+
+Die Berichte zur Cloud Volumes ONTAP-Nutzung wurden nun um einige Verbesserungen verbessert:
+
+* Die tib-Einheit ist jetzt im Namen der Spalten enthalten.
+* Ein neues _Node(s)_-Feld für Seriennummern ist nun enthalten.
+* Im Bericht zur Auslastung von Storage-VMs wird jetzt eine neue Spalte „_Workload Type_“ angezeigt.
+* Die Namen der Arbeitsumgebung sind jetzt in den Berichten zu Storage-VMs und Volume-Nutzung enthalten.
+* Der Datenträgertyp _file_ wird nun mit _Primary (Read/Write)_ beschriftet.
+* Der Datenträgertyp _secondary_ wird jetzt mit _secondary (DP)_ bezeichnet.
+
+
+Weitere Informationen zu Nutzungsberichten finden Sie unter https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["Nutzungsberichte herunterladen"].

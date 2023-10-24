@@ -1,0 +1,14 @@
+= Unterstützung für VMs der Lsv3-Serie in Azure
+:allow-uri-read: 
+
+
+Die folgenden Änderungen wurden mit der Version 3.9.33 des Connectors eingeführt.
+
+
+
+=== Unterstützung für VMs der Lsv3-Serie in Azure
+
+Die Instanztypen L48s_v3 und L64s_v3 werden nun mit Cloud Volumes ONTAP in Azure unterstützt. Dies gilt für Single-Node- und Hochverfügbarkeitspaare-Implementierungen mit gemeinsam genutzten verwalteten Festplatten in einzelnen und mehreren Verfügbarkeitszonen, beginnend mit Version 9.13.1. Diese Instanztypen unterstützen Flash Cache.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Zeigen Sie unterstützte Konfigurationen für Cloud Volumes ONTAP in Azure an"^]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Storage-Limits für Cloud Volumes ONTAP in Azure anzeigen"^]

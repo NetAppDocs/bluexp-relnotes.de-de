@@ -1,0 +1,23 @@
+= Unterstützung neuer Regionen für HA-Implementierungen mit mehreren Verfügbarkeitszonen in Azure
+:allow-uri-read: 
+
+
+Die folgenden Änderungen wurden mit der Version 3.9.34 des Connectors eingeführt.
+
+
+
+=== Unterstützung neuer Regionen für HA-Implementierungen mit mehreren Verfügbarkeitszonen in Azure
+
+Die folgenden Regionen in Azure unterstützen jetzt hochverfügbare Implementierungen mit mehreren Verfügbarkeitszonen für Cloud Volumes ONTAP 9.14.0 und höher:
+
+* Australien Ost
+* Ostasien
+* Frankreich, Mitte
+* Nordeuropa
+* Qatar Central
+* Schweden, Mitte
+* Westeuropa
+* West USA 2
+
+
+Eine Liste aller Regionen, die mehrere Verfügbarkeitszonen unterstützen, finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Azure"^].

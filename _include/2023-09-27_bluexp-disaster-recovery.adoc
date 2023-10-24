@@ -1,0 +1,38 @@
+= 
+:allow-uri-read: 
+
+
+Diese Vorschauversion des Disaster Recovery von BlueXP enthält die folgenden Updates:
+
+* *Dashboard-Updates*: Sie können nun in die Optionen auf dem Dashboard klicken, was es Ihnen erleichtert, die Informationen schnell zu überprüfen. Darüber hinaus wird im Dashboard jetzt der Status von Failover und Migrationen angezeigt.
++
+Siehe https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/dashboard-view.html["Zeigen Sie den Zustand Ihrer Disaster-Recovery-Pläne auf dem Dashboard an"].
+
+* *Aktualisierungen des Replikationsplans*:
++
+** *RPO*: Sie können jetzt im Abschnitt Datastores des Replikationsplans den Wiederherstellungspunkt Objective (RPO) und Retention Count eingeben. Zeigt die Datenmenge an, die nicht älter als die eingestellte Zeit sein muss. Wenn Sie beispielsweise die Einstellung auf 5 Minuten festlegen, kann das System bei einem Zwischenfall bis zu 5 Minuten an Daten verlieren, ohne dass dies geschäftskritische Anforderungen beeinträchtigt.
++
+Siehe https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
+
+** *Netzwerkverbesserungen*: Wenn Sie im Abschnitt „virtuelle Maschinen“ des Replikationsplans Netzwerke zwischen Quell- und Zielorten zuordnen, bietet BlueXP Disaster Recovery jetzt zwei Optionen: DHCP oder statische IP. Zuvor wurde nur DHCP unterstützt. Für statische IPs konfigurieren Sie die Subnetz-, Gateway- und DNS-Server. Darüber hinaus können Sie jetzt Anmeldeinformationen für virtuelle Maschinen eingeben.
++
+Siehe https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
+
+** *Zeitpläne bearbeiten*: Sie können jetzt Replikationspläne aktualisieren.
++
+Siehe https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Ressourcen managen"].
+
+** *SnapMirror-Automatisierung*: Während Sie den Replizierungsplan in diesem Release erstellen, können Sie die SnapMirror Beziehung zwischen Quell- und Ziel-Volumes in einer der folgenden Konfigurationen definieren:
++
+*** 1 zu 1
+*** 1 zu vielen in einer Fanout-Architektur
+*** Von vielen zu 1 als Konsistenzgruppe
+*** Von vielen auf viele
++
+Siehe https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
+
+
+
+
+
+

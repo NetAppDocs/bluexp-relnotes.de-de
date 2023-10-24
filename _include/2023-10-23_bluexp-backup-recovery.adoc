@@ -1,0 +1,21 @@
+= 3-2-1 Erstellen der Backup-Richtlinie während der Backup-Aktivierung
+:allow-uri-read: 
+
+
+
+
+=== 3-2-1 Erstellen der Backup-Richtlinie während der Backup-Aktivierung
+
+Zuvor mussten benutzerdefinierte Richtlinien erstellt werden, bevor Sie einen Snapshot, eine Replizierung oder ein Backup initiiert haben. Sie können jetzt mithilfe der BlueXP Backup- und Recovery-UI eine Richtlinie während des Backup-Aktivierungsprozesses erstellen.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["Erfahren Sie mehr über Richtlinien"].
+
+
+
+=== Unterstützung für schnelle On-Demand Restores von ONTAP Volumes
+
+Mit BlueXP Backup und Recovery lassen sich Volumes nun schnell von Cloud-Storage auf ein Cloud Volumes ONTAP System wiederherstellen. Die schnelle Wiederherstellung ist ideal für Disaster Recovery-Situationen, in denen Sie so schnell wie möglich Zugriff auf ein Volume gewährleisten müssen. Bei einer schnellen Wiederherstellung werden die Metadaten aus der Backup-Datei auf einem Volume wiederhergestellt, anstatt die gesamte Backup-Datei wiederherzustellen.
+
+Auf dem Cloud Volumes ONTAP Zielsystem muss ONTAP Version 9.13.0 oder höher ausgeführt werden. https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["Weitere Informationen zum Wiederherstellen von Daten"].
+
+Der BlueXP Backup- und Recovery Job Monitor zeigt auch Informationen zum Fortschritt schneller Wiederherstellungsaufträge an.
