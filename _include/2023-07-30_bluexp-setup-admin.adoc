@@ -1,10 +1,6 @@
-= Anschluss 3.9.32
+= 
 :allow-uri-read: 
 
-
-
-
-=== Anschluss 3.9.32
 
 * Sie können jetzt die BlueXP Audit-Service-API für den Export von Audit-Protokollen verwenden.
 +

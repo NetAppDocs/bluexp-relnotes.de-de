@@ -1,10 +1,6 @@
-= Anschluss 3.9.33
+= 
 :allow-uri-read: 
 
-
-
-
-=== Anschluss 3.9.33
 
 * Wenn Sie einen Connector in AWS von BlueXP erstellen, können Sie nun im Feld Schlüsselpaar suchen, um das Schlüsselpaar, das Sie mit der Connector-Instanz verwenden möchten, einfacher zu finden.
 +
