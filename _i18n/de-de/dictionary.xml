@@ -122,8 +122,6 @@
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">Bis 3. April 2023</block>
   <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">Wenn Sie Ihre Benachrichtigungseinstellungen konfigurieren, können Sie E-Mail-Benachrichtigungen erhalten, wenn Ihre BYOL-Lizenzen ablaufen (eine „Warnung“) oder wenn sie bereits abgelaufen sind (eine „Fehler“-Benachrichtigung).</block>
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Hier erfahren Sie, wie Sie E-Mail-Benachrichtigungen einrichten</block>
-  <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">Hier finden Sie die vollständige Liste der unterstützten Regionen</block>
-  <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
   <block id="723ffd15eb7b4453afd0fa0af42c04c3" category="section-title">Wirtschaftliche Effizienz</block>
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">Bis 02. April 2023</block>
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">Operative Ausfallsicherheit</block>
@@ -152,8 +150,6 @@
   <block id="ba695b3cf8b635f89946173735838948" category="inline-link">Edge-Caching</block>
   <block id="282baca6aef56652f503adce6afa9f07" category="inline-link">Korrekturmaßnahmen</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">Tiering</block>
-  <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">Mit der BlueXP Klassifizierung können Dateien identifiziert und kategorisiert werden, die die folgenden Datentypen enthalten:</block>
-  <block id="22b67d0a50677e01d48389e716223457" category="inline-link">Hier können Sie alle Arten von personenbezogenen Daten einsehen, die durch die BlueXP Klassifizierung in Ihren Daten identifiziert werden können</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">Digitaler Berater</block>
   <block id="35c28a4f1250fc5c59dd5bfa5d9993ce" category="paragraph">Der neue BlueXP Service für wirtschaftliche Effizienz erkennt Storage-Assets mit aktueller oder prognostizierter niedriger Kapazität und gibt Empfehlungen zu Daten-Tiering oder zusätzlicher Kapazität für lokale AFF Systeme.</block>
   <block id="345d0e0aeae5ae7cbf8cdd1fc138e5e6" category="inline-link-macro">Erfahren Sie mehr über die wirtschaftliche Effizienz von BlueXP</block>
@@ -203,7 +199,6 @@
   <block id="a80baf4fa5d71b9ef418edfcaebd2759" category="list-text"><block ref="a80baf4fa5d71b9ef418edfcaebd2759" category="inline-link-rx"></block></block>
   <block id="45ee83d3cd24c8a79ff15330399da6a7" category="list-text"><block ref="45ee83d3cd24c8a79ff15330399da6a7" category="inline-link-rx"></block></block>
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>.</block>
-  <block id="7e1e73ad7e6d01345f57dc84d7cd2c47" category="paragraph"><block ref="8ab3022f8d373945c172f9e89b554e84" category="inline-link-rx"></block>.</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>.</block>
   <block id="16364877a101c1787c34f2fe604ef9e9" category="paragraph"><block ref="16364877a101c1787c34f2fe604ef9e9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
@@ -221,35 +216,7 @@
   <block id="476789449c1574e5469c7d767f062c16" category="list-text"><block ref="476789449c1574e5469c7d767f062c16" category="inline-link-rx"></block></block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="inline-link">Volume-Caching</block>
   <block id="1f3a8f72ba10116898e7bad8ce6779d9" category="list-text"><block ref="1f3a8f72ba10116898e7bad8ce6779d9" category="inline-link-rx"></block></block>
-  <block id="381c003443d0dbcf14a51f216a4e01dc" category="section-title">4 Juni 2023</block>
-  <block id="5440676d566a261de836cdd1b9ea4e50" category="section-title">Anschluss 3.9.30</block>
-  <block id="390bbe3d279d4d842ce6e1afdbef9cac" category="list-text">Wenn Sie einen NetApp Support-Fall über das Support Dashboard öffnen, eröffnet BlueXP nun den Fall über das Konto auf der NetApp Support Website, das mit Ihren BlueXP Anmeldedaten verknüpft ist. BlueXP hat zuvor das NetApp Support Site Konto genutzt, das dem gesamten BlueXP Konto zugeordnet ist.</block>
-  <block id="cf4de1590dec786ba89a784b76abf972" category="paragraph">Im Rahmen dieser Änderung erfolgt die Support-Registrierung für ein BlueXP Konto jetzt über das NetApp Support Site Konto, das mit den BlueXP Anmeldedaten eines Benutzers verknüpft ist. Zuvor wurde der Support über ein NSS-Konto registriert, das dem gesamten BlueXP Konto zugeordnet ist. Daher werden andere BlueXP Benutzer denselben Support-Registrierungsstatus nicht sehen, wenn sie kein NetApp Support Site Konto mit ihrer BlueXP Anmeldung verknüpft haben. Wenn Sie Ihr BlueXP Konto bereits für Support registriert haben, ist Ihr Registrierungsstatus weiterhin gültig. Sie müssen nur ein NSS-Konto auf Benutzerebene hinzufügen, um den Status anzuzeigen.</block>
-  <block id="d0b3c9ce9c494292be2aeea8cdac5477" category="inline-link">Erfahren Sie, wie Sie mit dem NetApp-Support einen Fall erstellen</block>
-  <block id="250213b0170f8e0eeb3d961c487c6b3a" category="list-text"><block ref="250213b0170f8e0eeb3d961c487c6b3a" category="inline-link-rx"></block></block>
-  <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">Managen Sie Zugangsdaten für Ihre BlueXP Anmeldung</block>
-  <block id="6f8efc0a43a600cb013d99abebf16ab9" category="list-text"><block ref="6f8efc0a43a600cb013d99abebf16ab9" category="inline-link-rx"></block></block>
-  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link">Erfahren Sie, wie Sie sich für Support registrieren</block>
-  <block id="bb61baa9c30235edb535db843a463603" category="list-text"><block ref="bb61baa9c30235edb535db843a463603" category="inline-link-rx"></block></block>
-  <block id="1f6fb1fa08cb08df7303b38688c4c6b3" category="list-text">Sie können jetzt in BlueXP nach Dokumentation suchen. Suchergebnisse enthalten nun Links zu Inhalten auf docs.netapp.com und kb.netapp.com, die Ihnen bei der Beantwortung Ihrer Frage helfen könnten.</block>
-  <block id="73984711a5ba4c8d6f613d3ef2426680" category="inline-image-macro">Ein Screenshot der BlueXP Suche, die oben in der Konsole verfügbar ist</block>
-  <block id="ab5bec8a233948d36856ccc404fd3c23" category="paragraph"><block ref="ab5bec8a233948d36856ccc404fd3c23" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="11df2099d9f6c939c0429c564ec675f4" category="list-text">Der Connector wird nun in den folgenden AWS Regionen unterstützt:</block>
-  <block id="8f234407e396ab34fbd89b8c5353cb7b" category="list-text">Hyderabad (AP-Süd-2)</block>
-  <block id="f8d001ab701ae408b7ff0bc7d7b4512e" category="list-text">Melbourne (AP-Südost-4)</block>
-  <block id="6f54a802584839b859866ceb5261cb0e" category="list-text">Spanien (eu-Süd-2)</block>
-  <block id="dd6d0b9c4a235603cc3dfd4485247c08" category="list-text">VAE (ME-Central-1)</block>
-  <block id="4a23b3b65c9e625c9c42d143e90f5ac1" category="list-text">Zürich (eu-Zentral-2)</block>
-  <block id="076b622c9d5055ea3d4f198f43cf14ae" category="list-text">Der Connector wird nun in den folgenden Azure-Regionen unterstützt:</block>
-  <block id="47b9af39407829080e9cfeee3607c39c" category="list-text">Brasilien Süd</block>
-  <block id="e43a7f2cdea7d32ec2a39ac3429f6b21" category="list-text">Frankreich Süd</block>
-  <block id="325f36b59bf936f690e2f1bb30dd035e" category="list-text">Jio India Central</block>
-  <block id="e1b23a90559a8f5be2ef065bba5568bc" category="list-text">Jio Indien Westen</block>
-  <block id="26b4bdc11dfead08029a688129c42cf9" category="list-text">Polen, Mitte</block>
   <block id="055ffb1451e38deb0c8ac651e32d77ec" category="list-text">Qatar Central</block>
-  <block id="0a6b76c04095167ad3b2e08901195ca3" category="list-text">Der Connector wird nun in folgenden Google Cloud Regionen unterstützt:</block>
-  <block id="db760e7471192daa123eed31bfba312d" category="list-text">Columbus (USA-öst5)</block>
-  <block id="ad6033c8e4eda00017eca167a149ced4" category="list-text">Dallas (USA-Süd-1)</block>
   <block id="3bec690d07df1a3a36c8a3122654fc24" category="section-title">5 Juni 2023</block>
   <block id="f9037e3eb23130835367334e3aa5a34b" category="section-title">Hinzufügen neuer Storage-Konten von BlueXP möglich</block>
   <block id="a39e8d6ee8bc43ef75656b419fe7a86e" category="inline-link">Hier erfahren Sie, wie Sie neue Azure Blob Storage-Konten hinzufügen</block>
@@ -269,9 +236,6 @@
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">Mit BlueXP Volume-Caching verfügen Sie über Caching-Funktionen für die Cloud, insbesondere für Amazon FSX for NetApp ONTAP, Cloud Volumes ONTAP und On-Premises als Arbeitsumgebungen.</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">Weitere Informationen zum Volume-Caching von BlueXP</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>.</block>
-  <block id="26e3ab611e399c831d813cdff5745975" category="list-text">Mit Connector können Sie jetzt Azure Storage-Konten von BlueXP hinzufügen und managen.</block>
-  <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">Erfahren Sie, wie Sie neue Azure-Storage-Konten in Ihren Azure-Abonnements von BlueXP hinzufügen</block>
-  <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>.</block>
   <block id="9b7d935c674579c8c8e305e2dcadc1b9" category="section-title">11 Juni 2023</block>
   <block id="b18ac5fa90a568a24f98c73b9192cb6d" category="section-title">Unterstützung für automatischen Abbruch innerhalb von Minuten</block>
   <block id="33c110842a0fe3f7891980d750e48fa2" category="paragraph">Aktive Synchronisierungen, die nicht abgeschlossen wurden, können jetzt mit der Funktion *Sync Timeout* nach 15 Minuten abgebrochen werden.</block>
@@ -291,14 +255,6 @@
   <block id="4573c689742769edc01e3f45205fd784" category="paragraph">Sie können jetzt On-Premises-ONTAP-Cluster unter *Canvas &gt; My estate* erkennen, indem Sie einen Cluster auswählen, den BlueXP basierend auf den ONTAP-Clustern vorentdeckt hat, die mit der E-Mail-Adresse für Ihre BlueXP-Anmeldung verknüpft sind.</block>
   <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">Erfahren Sie auf der Seite My Estate, wie Sie Cluster erkennen</block>
   <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>.</block>
-  <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">Anschluss 3.9.31</block>
-  <block id="9f1d24d5ab10dd326cb52dffc172eea5" category="list-text">Sie können jetzt On-Premises-ONTAP-Cluster über die Registerkarte *My estate* (vorher *Meine Möglichkeiten*) entdecken.</block>
-  <block id="6bdb2baa8fe05cff12c22f9f6f8e9e7f" category="list-text">Wenn Sie den Connector in einer Azure Government-Region verwenden, sollten Sie sicherstellen, dass der Connector den folgenden Endpunkt erreichen kann:</block>
-  <block id="1f29f58c7cdabd46095c6ad242933991" category="paragraph">\https://occmclientinfragov.azurecr.us</block>
-  <block id="7cbd2e15c5d25612181f48c177cab04b" category="paragraph">Dieser Endpunkt ist erforderlich, um den Connector manuell zu installieren und den Connector und seine Docker-Komponenten zu aktualisieren.</block>
-  <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">Aufgrund dieser Änderung kontaktiert ein Connector in einer Azure-Regierungsregion nicht mehr den folgenden Endpunkt:</block>
-  <block id="9dcb0a1d3281e001a6085626a264be49" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io</block>
-  <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">Beachten Sie, dass dieser Endpunkt weiterhin für alle anderen Konfigurationen mit eingeschränktem Modus und für den Standardmodus erforderlich ist.</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">4 Juli 2023</block>
   <block id="f955a076eeae4df4466469593ff635ca" category="section-title">Jetzt können Sie die Bandbreite anpassen, die zum Hochladen inaktiver Daten in den Objektspeicher verwendet wird</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">Bei der Aktivierung von BlueXP Tiering kann ONTAP eine unbegrenzte Menge an Netzwerkbandbreite verwenden, um die inaktiven Daten von den Volumes im Cluster auf Objekt-Storage zu übertragen. Wenn Sie bemerken, dass der Tiering Traffic normale Benutzer-Workloads beeinträchtigt, können Sie die Bandbreite, die während der Übertragung verwendet werden kann, drosseln.<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>.</block>
@@ -323,16 +279,6 @@
   <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">Das Hinzufügen neuer Buckets und das Management vorhandener Buckets aus BlueXP ist möglich</block>
   <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">So fügen Sie neue Google Cloud Storage Buckets hinzu</block>
   <block id="71d86d6b260e92b047d7453cd653bd4c" category="paragraph">Sie haben nun schon lange die Möglichkeit, Google Cloud Storage Buckets auf dem BlueXP Canvas anzuzeigen. Sie können jetzt neue Buckets hinzufügen und Eigenschaften für vorhandene Buckets direkt aus BlueXP ändern.<block ref="df1f25cc6ac4c2f26feeca1367b4ae92" category="inline-link-rx"></block>.</block>
-  <block id="0494d69152dc144f6691315fabf9af4d" category="section-title">17. Juli 2023 (Version 1.24)</block>
-  <block id="025b17159c4d2dd28926bdc5b13436e2" category="section-title">Zwei neue Arten deutscher personenbezogener Daten werden durch die BlueXP Klassifizierung identifiziert</block>
-  <block id="e2f64dc02ab3f9d3b659d24b9503b545" category="list-text">Personalausweisnummer</block>
-  <block id="ac01084f4d5a1af5de639eaf04ad94ff" category="list-text">Sozialversicherungsnummer</block>
-  <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="section-title">Die BlueXP Klassifizierung wird im eingeschränkten und privaten Modus vollständig unterstützt</block>
-  <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link">Weitere Informationen zu den BlueXP Implementierungsmodi für den Connector</block>
-  <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">Die BlueXP Klassifizierung wird jetzt vollständig auf Websites ohne Internetzugang (privater Modus) und mit eingeschränktem Outbound-Internetzugang (eingeschränkter Modus) unterstützt.<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>.</block>
-  <block id="8dd6a265487e54146fb2bdfb3e5174a5" category="section-title">Fähigkeit zum überspringen von Versionen beim Upgrade einer Installation von BlueXP Klassifizierung im Private-Modus</block>
-  <block id="241957d9f6c696915858d43476112454" category="paragraph">Sie können jetzt ein Upgrade auf eine neuere Version der BlueXP Klassifizierung durchführen, auch wenn diese nicht sequenziell ist. Das heißt, die aktuelle Einschränkung für das Upgrade der BlueXP Klassifizierung um jeweils eine Version ist nicht mehr erforderlich. Diese Funktion ist ab Version 1.24 relevant.</block>
-  <block id="167693b239be0e2939d61376cd3a5487" category="section-title">Anschluss 3.9.32</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">Sie können jetzt die BlueXP Audit-Service-API für den Export von Audit-Protokollen verwenden.</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">Erfahren Sie mehr über die Verwendung der Audit-Service-API</block>
   <block id="23822bdcf5039c31a637229d8ca51ffa" category="paragraph"><block ref="23822bdcf5039c31a637229d8ca51ffa" category="inline-link-rx"></block></block>
@@ -399,8 +345,6 @@
   <block id="30fee46958559c602b944cc387c72292" category="paragraph">Kunden können jetzt Amazon FSX for NetApp ONTAP-Dateisysteme in drei neuen AWS-Regionen erstellen: Europa (Zürich), Europa (Spanien) und Asien-Pazifik (Hyderabad).</block>
   <block id="4a105824b6f84a35559612caf12c452d" category="inline-link-macro">Amazon FSX for NetApp ONTAP ist jetzt in drei weiteren Regionen verfügbar</block>
   <block id="e1203bb3756aaddbc1d40b7033d44bd1" category="paragraph">Siehe <block ref="2ffac1c1fc93e8203aa3ebf9b3a6ff2d" category="inline-link-macro-rx"></block> Vollständige Informationen.</block>
-  <block id="c77d5103bf67167dd667762d984e1e14" category="section-title">Die BlueXP Klassifizierungs-API ist jetzt verfügbar</block>
-  <block id="95eaa41c2e7025ac80bcfafd1710ff57" category="paragraph">Mithilfe der BlueXP Klassifizierungs-API können Sie Aktionen durchführen, Abfragen erstellen und Informationen zu den zu scannenden Daten exportieren. Die interaktive Dokumentation ist über Swagger verfügbar. Die Dokumentation ist in mehrere Kategorien unterteilt, darunter Untersuchung, Compliance, Governance und Konfiguration. Jede Kategorie dient als Verweis auf die Registerkarten in der BlueXP Klassifizierungs-UI.</block>
   <block id="a57bb636c3624bebb972f007b21fd8fb" category="section-title">6 August 2023</block>
   <block id="56a559acc9f9bd2fc9cf51154aef7ce5" category="section-title">Verwenden Sie vorhandene Azure Sicherheitsgruppen, wenn Sie einen Daten-Broker erstellen</block>
   <block id="bf4bc301ccb8b2b21ef394a22e4afef6" category="paragraph">Benutzer haben nun die Möglichkeit, vorhandene Azure Sicherheitsgruppen zu verwenden, wenn sie einen Daten-Broker erstellen.</block>
@@ -439,8 +383,6 @@
   <block id="04afa98530b9fa98eb8d1adf9da08f7f" category="paragraph">Der Filter „Backup Lifecycle“ wurde in „Retention“ umbenannt. Verwenden Sie diesen Filter, um den Backup-Lebenszyklus zu verfolgen und den Ablauf aller Backup-Kopien zu identifizieren. Der Jobtyp „Aufbewahrung“ erfasst alle Snapshot Löschjobs, die auf einem Volume initiiert werden, das durch BlueXP Backup und Recovery geschützt ist.</block>
   <block id="751f8afbc94898745cc6e2ea8a5ccd4c" category="inline-link">Erfahren Sie mehr über den aktualisierten Job Monitor</block>
   <block id="bf6c8f020a512a9accf77240c1333a16" category="paragraph"><block ref="f412c2e0203811d72b16f88cf9eb5d19" category="inline-link-rx"></block>.</block>
-  <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">Erfahren Sie mehr über die BlueXP Klassifizierungs-APIs</block>
-  <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>.</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="inline-link">Disaster Recovery</block>
   <block id="86e83f14193f6e90a917a08348a9b031" category="list-text"><block ref="86e83f14193f6e90a917a08348a9b031" category="inline-link-rx"></block></block>
   <block id="51c5a515e45f0732a46aadb31105d3df" category="list-text"><block ref="51c5a515e45f0732a46aadb31105d3df" category="inline-link-rx"></block></block>
@@ -584,4 +526,17 @@
   <block id="25d037b5df7f2e04a4d6a1a3bc33caa7" category="paragraph">BlueXP Disaster Recovery ist ein Cloud-basierter Disaster Recovery Service, der Disaster Recovery Workflows automatisiert. Mit der BlueXP Disaster-Recovery-Vorschau können Sie zunächst Ihre lokalen NFS-basierten VMware-Workloads schützen, die NetApp Storage in VMware Cloud (VMC) auf AWS mit Amazon FSX for ONTAP ausführen.</block>
   <block id="8060a341461a61edc489285d4c464062" category="paragraph">Ihre E-Series Systeme können jetzt direkt aus BlueXP heraus erkannt werden. Die Entdeckung von E-Series Systemen eröffnet Ihnen eine vollständige Ansicht der Daten in Ihrer Hybrid-Multi-Cloud.</block>
   <block id="75cbcf1dd82ddd4349696999b639377f" category="paragraph"><block ref="75cbcf1dd82ddd4349696999b639377f" category="inline-link-macro-rx"></block></block>
+  <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">Bis 8. November 2023</block>
+  <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">Anschluss 3.9.35</block>
+  <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">Diese Version enthält kleinere Sicherheitsverbesserungen und Fehlerbehebungen.</block>
+  <block id="abff2804f60c6da51fe02e78167abad1" category="section-title">November 6 (Version 1.26.3)</block>
+  <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">Die folgenden Probleme wurden in dieser Version behoben</block>
+  <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">Es wurde eine Inkonsistenz bei der Darstellung der Anzahl der vom System gescannten Dateien in Dashboards behoben.</block>
+  <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">Verbesserte das Scanverhalten durch die Handhabung und Berichterstattung von Dateien und Verzeichnissen mit Sonderzeichen im Namen und Metadaten.</block>
+  <block id="499efcb2be11e80e5bdfc003278352e3" category="section-title">November 2023</block>
+  <block id="992f57af99811ae146ed6df67eccc26f" category="section-title">Saudi-Arabien Region jetzt in Google Cloud unterstützt</block>
+  <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">Die Region Saudi-Arabien wird jetzt in Google Cloud für Cloud Volumes ONTAP und dem Connector für Cloud Volumes ONTAP 9.12.1 GA und später unterstützt.</block>
+  <block id="2bc724993144e8002899059117620062" category="inline-link">Karte der globalen Regionen unter Google Cloud</block>
+  <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">Eine Liste aller Regionen finden Sie im<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>.</block>
+  <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Die folgenden Regionen in Azure unterstützen jetzt hochverfügbare Implementierungen mit mehreren Verfügbarkeitszonen für Cloud Volumes ONTAP 9.12.1 GA und höher:</block>
 </blocks>
