@@ -549,4 +549,9 @@
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">Die folgende Änderung wurde mit der Version 3.9.34 des Connectors eingeführt.</block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">Bis 08. November 2023</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">Diese Version der wirtschaftlichen Effizienz von BlueXP enthält eine neue Option, mit der Sie Ihre Assets bewerten und feststellen können, ob eine Technologieaktualisierung empfohlen wird. Der Service umfasst eine neue Option zur technischen Aktualisierung in der linken Navigation, neue Seiten, auf denen Sie eine Bewertung Ihrer aktuellen Workloads und Ressourcen vornehmen können, sowie einen Bericht mit Empfehlungen für Sie.</block>
+  <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">Unterstützung für geplante Jobs im Job Monitor</block>
+  <block id="314b40130d46a229c3a19dc5e2e23aa4" category="paragraph">Der BlueXP Backup- und Recovery Job Monitor überwachte zuvor geplante Backup- und Restore-Jobs von Volumes zu Objektspeichern, jedoch keine lokalen Snapshot-, Replizierungs-, Backup- und Restore-Jobs, die über die UI oder die API geplant wurden.</block>
+  <block id="04c6b318fe9c7f19ae925a90e52c6569" category="paragraph">Der BlueXP Backup- und Recovery Job Monitor umfasst jetzt geplante Jobs für lokale Snapshots, Replizierungen und Backups in Objekt-Storage.</block>
+  <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">Bis 13. November 2023</block>
+  <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">Sie können jetzt Berichte für Volumes erstellen, die das SMB/CIFS-Protokoll verwenden.</block>
 </blocks>

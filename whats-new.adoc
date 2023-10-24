@@ -200,6 +200,16 @@ Der BlueXP Backup- und Recovery Job Monitor zeigt auch Informationen zum Fortsch
 
 
 
+==== Unterstützung für geplante Jobs im Job Monitor
+
+Der BlueXP Backup- und Recovery Job Monitor überwachte zuvor geplante Backup- und Restore-Jobs von Volumes zu Objektspeichern, jedoch keine lokalen Snapshot-, Replizierungs-, Backup- und Restore-Jobs, die über die UI oder die API geplant wurden.
+
+Der BlueXP Backup- und Recovery Job Monitor umfasst jetzt geplante Jobs für lokale Snapshots, Replizierungen und Backups in Objekt-Storage.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["Erfahren Sie mehr über den aktualisierten Job Monitor"].
+
+
+
 === 13 Oktober 2023
 
 
@@ -897,6 +907,12 @@ Wenn link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-s
 
 
 == Migrationsberichte
+
+
+
+=== Bis 13. November 2023
+
+Sie können jetzt Berichte für Volumes erstellen, die das SMB/CIFS-Protokoll verwenden.
 
 
 
