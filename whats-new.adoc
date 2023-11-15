@@ -5,15 +5,12 @@ keywords: 'what"s new, features, new, release notes, enhancements, fixes, new fe
 summary: Erfahren Sie mehr über die neuesten Änderungen an den Cloud-Services, die Teil der BlueXP Plattform sind. Weitere Informationen finden Sie in den vollständigen Versionshinweisen für jeden einzelnen Service. 
 ---
 = Aktuelle Änderungen in BlueXP
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

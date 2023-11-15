@@ -5,15 +5,12 @@ keywords: release notes
 summary: Sehen Sie sich den vollständigen Satz der Versionshinweise für jeden einzelnen Service an. 
 ---
 = Versionshinweisen – Index
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

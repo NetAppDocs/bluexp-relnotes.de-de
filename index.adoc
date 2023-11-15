@@ -6,14 +6,11 @@ lead: These release notes describe recent enhancements to the cloud services tha
 summary: In diesen Versionshinweisen werden die neuesten Verbesserungen der Cloud-Services beschrieben, die Teil von BlueXP sind. Für jeden einzelnen Service stehen Links zu allen Versionshinweisen zur Verfügung. 
 ---
 = Versionshinweise zu BlueXP
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
