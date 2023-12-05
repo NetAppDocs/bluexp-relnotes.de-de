@@ -30,6 +30,23 @@ In diesem Abschnitt werden neue Funktionen in Bezug auf BlueXP-Verwaltungsfunkti
 
 
 
+=== Bis 5. Dezember 2023
+
+
+
+==== Freigabe des privaten Modus
+
+Für BlueXP ist jetzt eine neue Version des privaten Modus verfügbar. Diese Version enthält Version 3.9.35 des Connectors sowie Versionen der BlueXP Services, die ab Oktober 2023 im Privatmodus unterstützt werden.
+
+Diese neue Version kann von der NetApp Support-Website heruntergeladen werden.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["Informieren Sie sich über die im Private-Mode enthaltenen BlueXP Services"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Erfahren Sie mehr über die ersten Schritte mit BlueXP im privaten Modus"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren"]
+
+
+
+
 === Bis 8. November 2023
 
 
@@ -47,21 +64,6 @@ Diese Version enthält kleinere Sicherheitsverbesserungen und Fehlerbehebungen.
 ==== Anschluss 3.9.34
 
 Diese Version enthält kleinere Verbesserungen und Fehlerbehebungen.
-
-
-
-=== 10 September 2023
-
-
-
-==== Anschluss 3.9.33
-
-* Wenn Sie einen Connector in AWS von BlueXP erstellen, können Sie nun im Feld Schlüsselpaar suchen, um das Schlüsselpaar, das Sie mit der Connector-Instanz verwenden möchten, einfacher zu finden.
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["Ein Screenshot der Suchoption im Feld Schlüsselpaar, das beim Erstellen eines Connectors in AWS aus BlueXP auf der Seite Netzwerk angezeigt wird."]
-
-* Dieses Update enthält auch Fehlerbehebungen.
-
 
 
 
@@ -475,6 +477,32 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== Bis 26. November 2023
+
+
+
+==== Unterstützung für Cold-Storage-Klassen für Azure Blob
+
+Azure Blob Cold-Storage-Tier ist jetzt beim Erstellen einer Sync-Beziehung verfügbar.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["Erfahren Sie mehr über das Erstellen einer Synchronisierungsbeziehung."]
+
+
+
+==== Unterstützung für die Region Tel Aviv bei AWS-Datenmaklern
+
+Tel Aviv ist jetzt eine unterstützte Region, wenn er einen Daten-Broker in AWS erstellt.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["Erfahren Sie mehr über die Erstellung eines Datenbrokers in AWS"].
+
+
+
+==== Aktualisieren Sie auf die Node-Version für Daten-Broker
+
+Alle neuen Daten-Broker verwenden jetzt Node-Version 21.2.0. Daten-Broker, die mit diesem Update nicht kompatibel sind, wie CentOS 7.0 und Ubuntu Server 18.0, funktionieren nicht mehr mit der BlueXP Kopier- und Synchronisierungsfunktion.
+
+
+
 === 3 September 2023
 
 
@@ -527,53 +555,25 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#googl
 
 
 
-=== 9 Juli 2023
-
-
-
-==== Entfernen Sie mehrere Synchronisierungsbeziehungen auf einmal
-
-Benutzer können jetzt mehrere Synchronisierungsbeziehungen gleichzeitig in der Benutzeroberfläche löschen.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#deleting-relationships["Erfahren Sie mehr über das Löschen von Synchronisierungsrelelationen."]
-
-
-
-==== Nur ACL kopieren
-
-Benutzer haben jetzt zusätzliche Optionen zum Kopieren von ACL-Informationen in CIF- und NFS-Beziehungen. Beim Erstellen oder Verwalten einer Synchronisierungsbeziehung können Sie nur Dateien kopieren, nur ACL-Informationen kopieren oder Dateien und ACL-Informationen kopieren.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-copying-acls.html["Weitere Informationen zum Kopieren von ACLs."]
-
-
-
-==== Aktualisiert auf Node.js 20
-
-Copy and Sync hat auf Node.js 20 aktualisiert. Alle verfügbaren Daten-Broker werden aktualisiert. Betriebssysteme, die mit diesem Update nicht kompatibel sind, können nicht installiert werden, und inkompatible vorhandene Systeme können Leistungsprobleme haben.
-
-
-
-=== 11 Juni 2023
-
-
-
-==== Unterstützung für automatischen Abbruch innerhalb von Minuten
-
-Aktive Synchronisierungen, die nicht abgeschlossen wurden, können jetzt mit der Funktion *Sync Timeout* nach 15 Minuten abgebrochen werden.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Erfahren Sie mehr über die Einstellung für die Zeitüberschreitung beim Synchronisieren"].
-
-
-
-==== Metadaten der Zugriffszeit kopieren
-
-In Beziehungen, einschließlich eines Dateisystems, kopiert die Funktion *Copy for Objects* nun Metadaten zur Zugriffszeit.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Erfahren Sie mehr über die Einstellung für Objekte kopieren"].
-
-
-
 == Digitaler Berater
+
+
+
+=== Bis 16. November 2023
+
+
+
+=== Watchlist
+
+Sie können jetzt maximal 100 Watchlisten erstellen.
+
+
+
+==== Widget „Planung“
+
+* Empfehlungen zur Technologieaktualisierung sind jetzt in Dashboards für die Watchlist, die Site und die Gruppe verfügbar.
+* Sie können jetzt potenzielle Kandidaten für Technologieaktualisierungen anzeigen, wenn die Empfehlungen zur Technologieaktualisierung null sind.
+
 
 
 
@@ -583,7 +583,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 ==== Widget „Planung“
 
-Die Anzahl der Empfehlungen für Tech Refresh ist im Planungs-Widget des Dashboard auf Kundenebene enthalten. Diese Empfehlungen unterstützen die Planung von Aktualisierungen der Hardware-Technologie, wenn die Hardware nicht mehr unterstützt wird oder sich dem Ende des Supports nähert.
+Die Anzahl der Empfehlungen für Technologieaktualisierungen ist im Planungs-Widget des Dashboard auf Kundenebene enthalten. Diese Empfehlungen unterstützen die Planung von Aktualisierungen der Hardware-Technologie, wenn die Hardware nicht mehr unterstützt wird oder sich dem Ende des Supports nähert.
 
 
 
@@ -595,19 +595,6 @@ Die Anzahl der Empfehlungen für Tech Refresh ist im Planungs-Widget des Dashboa
 
 * Über die können Sie auf die Seite Upgrade Advisor für Ihre Standard-Watchlist zugreifen link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor"^] Verlinken:
 * Der Upgrade-Plan wurde optimiert, um redundante Upgrade-Schritte zu entfernen und den Backout-Plan zu vereinfachen. Die allgemeinen Schritte aller Nodes in einem Cluster werden konsolidiert und stehen im Abschnitt „Allgemeine Informationen“ des Upgrade-Plans zur Verfügung. link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["Erfahren Sie, wie Sie einen Upgrade-Plan erstellen und anzeigen"].
-
-
-
-
-=== 16 Juli 2023
-
-
-
-==== Storage-Effizienz
-
-* Das Label *Storage Efficiency*, welches das Effizienzverhältnis anzeigt, wird in *Data Reduction* umbenannt.
-* Das Label *Data Saved by Storage Efficiency* wird umbenannt in *Data Reduction Savings*.
-* Der Toggle *Savings without Snapshot Backups* wird mit einer Änderung seiner Funktionalität in *with Snapshot copies* umbenannt. link:https://docs.netapp.com/us-en/active-iq/reference_aiq_faq.html#storage-efficiency["Weitere Informationen ."].
 
 
 
