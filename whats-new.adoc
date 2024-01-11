@@ -566,7 +566,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#googl
 
 
 
-=== Upgrade Advisor
+==== Upgrade Advisor
 
 Upgrade Advisor wurde erweitert und ermöglicht automatisierte, unterbrechungsfreie Upgrade-Pläne für ein einzelnes Cluster und mehrere Cluster. Sie können die Upgrade-Empfehlung nur für ein einzelnes Cluster anzeigen. Dazu gehören eine Risikoübersicht, ein Prüfbericht vor dem Upgrade sowie Informationen zu neuen Funktionen und Verbesserungen. link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["Erfahren Sie, wie Sie die Upgrade-Empfehlung anzeigen und einen Upgrade-Plan erstellen."]
 
@@ -576,7 +576,7 @@ Upgrade Advisor wurde erweitert und ermöglicht automatisierte, unterbrechungsfr
 
 
 
-=== Watchlist
+==== Watchlist
 
 Sie können jetzt maximal 100 Watchlisten erstellen.
 
