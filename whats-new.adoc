@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud, disaster recovery' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters' 
 summary: Erfahren Sie mehr über die neuesten Änderungen an den Cloud-Services, die Teil der BlueXP Plattform sind. Weitere Informationen finden Sie in den vollständigen Versionshinweisen für jeden einzelnen Service. 
 ---
 = Aktuelle Änderungen in BlueXP
@@ -30,6 +30,20 @@ In diesem Abschnitt werden neue Funktionen in Bezug auf BlueXP-Verwaltungsfunkti
 
 
 
+=== 11 Januar 2024
+
+
+
+==== Anschluss 3.9.36
+
+Diese Version enthält kleinere Verbesserungen, Fehlerbehebungen und Unterstützung für den Connector in den folgenden Cloud-Regionen:
+
+* Der Region Israel (Tel Aviv) in AWS
+* Die Region Saudi-Arabien in Google Cloud
+
+
+
+
 === Bis 5. Dezember 2023
 
 
@@ -54,16 +68,6 @@ Diese neue Version kann von der NetApp Support-Website heruntergeladen werden.
 ==== Anschluss 3.9.35
 
 Diese Version enthält kleinere Sicherheitsverbesserungen und Fehlerbehebungen.
-
-
-
-=== 6 Oktober 2023
-
-
-
-==== Anschluss 3.9.34
-
-Diese Version enthält kleinere Verbesserungen und Fehlerbehebungen.
 
 
 
@@ -177,6 +181,39 @@ Sie können Amazon S3 Buckets seit geraumer Zeit auf dem BlueXP Canvas anzeigen.
 
 
 
+=== Bis 15. Dezember 2023
+
+
+
+==== Berichte für lokale Snapshot- und Replikations-Snapshot-Kopien verfügbar
+
+Bisher konnten Sie nur Berichte zu Sicherungskopien erstellen. Jetzt können Sie Berichte auch zu lokalen Snapshot Kopien und Snapshot Kopien der Replizierung erstellen.
+
+Mit diesen Berichten haben Sie folgende Möglichkeiten:
+
+* Stellen Sie sicher, dass kritische Daten gemäß den Richtlinien Ihres Unternehmens geschützt sind.
+* Für eine Volume-Gruppe lassen sich Backups reibungslos durchführen.
+* Stellen Sie einen Nachweis für Ihre Produktionsdaten bereit.
+
+
+Siehe https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html["Berichte zur Datensicherung"].
+
+
+
+==== Benutzerdefiniertes Tagging auf Volumes zum Sortieren und Filtern verfügbar
+
+Ab ONTAP 9.13.1 können Sie Volumes nun benutzerdefinierte Tags hinzufügen, sodass Sie Volumes innerhalb und über mehrere Arbeitsumgebungen hinweg gruppieren können. So können Sie Volumes auf den BlueXP Backup- und Recovery-UI-Seiten sortieren und Berichte einfiltern.
+
+
+
+==== Katalog-Backups werden 30 Tage aufbewahrt
+
+Zuvor wurden Catalog.zip Backups 7 Tage lang aufbewahrt. Jetzt werden sie für 30 Tage aufbewahrt.
+
+Siehe https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["Stellen Sie BlueXP Backup- und Recovery-Daten an dunklen Standorten wieder her"].
+
+
+
 === 23 Oktober 2023
 
 
@@ -196,6 +233,14 @@ Mit BlueXP Backup und Recovery lassen sich Volumes nun schnell von Cloud-Storage
 Auf dem Cloud Volumes ONTAP Zielsystem muss ONTAP Version 9.13.0 oder höher ausgeführt werden. https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["Weitere Informationen zum Wiederherstellen von Daten"].
 
 Der BlueXP Backup- und Recovery Job Monitor zeigt auch Informationen zum Fortschritt schneller Wiederherstellungsaufträge an.
+
+
+
+==== Das Backup von lokalen ONTAP Daten in StorageGRID Buckets wurde verbessert
+
+StorageGRID kann jetzt bis zu 30 Backups von lokalen ONTAP-Daten aus BlueXP Backup und Recovery in einem einzelnen Bucket speichern. Zuvor betrug das Maximum 7 Backups in einem Bucket.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Weitere Informationen zum Backup von On-Premises-ONTAP-Daten in StorageGRID"].
 
 
 
@@ -247,87 +292,23 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
-=== 11 September 2023
-
-
-
-==== Management neuer Richtlinien für ONTAP Daten
-
-Dieser Release bietet die Möglichkeit innerhalb der Benutzeroberfläche, benutzerdefinierte Snapshot-Richtlinien, Replizierungsrichtlinien und Richtlinien für Backups in Objekt-Storage für ONTAP Daten zu erstellen.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["Erfahren Sie mehr über Richtlinien"].
-
-
-
-==== Unterstützung für die Wiederherstellung von Dateien und Ordnern von Volumes in ONTAP S3 Objekt-Storage
-
-Bisher konnten Sie beim Backup von Volumes auf ONTAP S3 Objekt-Storage keine Dateien und Ordner mithilfe der Funktion „Durchsuchen und Wiederherstellen“ wiederherstellen. Mit dieser Version wird diese Einschränkung beseitigt.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["Weitere Informationen zum Wiederherstellen von Daten"].
-
-
-
-==== Sofortige Archivierung von Backup-Daten, ohne dass das erste Mal in den Standard-Storage geschrieben werden muss
-
-Jetzt können Sie die Backup-Dateien sofort an den Archiv-Storage senden, anstatt die Daten in standardmäßigen Cloud-Storage zu schreiben. Dies kann insbesondere für Benutzer nützlich sein, die selten auf Daten aus Cloud-Backups zugreifen müssen oder Benutzer, die eine Backup-auf-Tape-Umgebung ersetzen.
-
-
-
-==== Zusätzliche Unterstützung für das Backup und die Wiederherstellung von SnapLock Volumes
-
-Backup und Recovery können jetzt sowohl FlexVol als auch FlexGroup Volumes sichern, die entweder im SnapLock Compliance- oder im SnapLock Enterprise-Sicherungsmodus konfiguriert sind. Ihre Cluster müssen ONTAP 9.14 oder höher verwenden, um diese Unterstützung zu ermöglichen. Das Sichern von FlexVol Volumes mit dem SnapLock Enterprise-Modus wird seit ONTAP Version 9.11.1 unterstützt. Frühere ONTAP Versionen bieten keine Unterstützung für Backups von SnapLock Protection Volumes.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Erfahren Sie mehr zum Schutz von ONTAP Daten"].
-
-
-
-=== August 2023
-
-[IMPORTANT]
-====
-* Aufgrund einer wichtigen Verbesserung der Sicherheit benötigt Ihr Connector nun ausgehenden Internetzugang auf einen zusätzlichen Endpunkt, um Backup- und Recovery-Ressourcen in Ihrer Public Cloud-Umgebung zu verwalten. Wenn dieser Endpunkt nicht zur Liste „zulässig“ in Ihrer Firewall hinzugefügt wurde, wird in der Benutzeroberfläche ein Fehler bezüglich „Dienst nicht verfügbar“ oder „Dienststatus konnte nicht ermittelt werden“ angezeigt:
-+
-\https://netapp-cloud-account.auth0.com
-
-* Wenn Sie das „CVO Professional“-Paket verwenden, mit dem Sie Backup und Recovery von Cloud Volumes ONTAP und BlueXP bündeln können, ist jetzt ein PAYGO-Abonnement für Backup und Recovery erforderlich. Dies war in der Vergangenheit nicht erforderlich. Für das Abonnement von Backup und Recovery für qualifizierte Cloud Volumes ONTAP Systeme fallen keine Gebühren an. Diese ist jedoch für die Konfiguration von Backups auf neuen Volumes erforderlich.
-
-
-====
-
-
-==== Zum Backup von Volumes in Buckets auf S3-konfigurierten ONTAP Systemen wurde Support hinzugefügt
-
-Mithilfe eines ONTAP Systems, das für den Simple Storage Service (S3) konfiguriert wurde, können Sie jetzt Volumes im Objekt-Storage sichern. Dies wird sowohl für lokale ONTAP Systeme als auch für Cloud Volumes ONTAP Systeme unterstützt. Diese Konfiguration wird in Cloud-Implementierungen und On-Premises-Standorten ohne Internetzugang unterstützt (eine Implementierung im „privaten“ Modus).
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["Weitere Informationen ."].
-
-
-
-==== Jetzt können Sie vorhandene Snapshots von einem geschützten Volume in Ihre Backup-Dateien aufnehmen
-
-In der Vergangenheit hatten Sie die Möglichkeit, vorhandene Snapshot-Kopien von Lese- und Schreib-Volumes in den anfänglichen Backup-Datei- zum Objekt-Storage einzubeziehen (anstatt mit der aktuellsten Snapshot-Kopie zu beginnen). Vorhandene Snapshot-Kopien von schreibgeschützten Volumes (Datensicherungs-Volumes) wurden nicht in die Backup-Datei aufgenommen. Jetzt haben Sie die Wahl, ältere Snapshot-Kopien in die Backup-Datei für „DP“ Volumes aufzunehmen.
-
-Der Backup-Assistent zeigt am Ende der Backup-Schritte eine Eingabeaufforderung an, in der Sie diese „vorhandenen Snapshots“ auswählen können.
-
-
-
-==== BlueXP Backup und Recovery unterstützt künftig keine automatischen Backups von Volumes mehr
-
-Zuvor können Sie im Backup-Assistenten ein Kontrollkästchen aktivieren, um die ausgewählte Backup-Richtlinie auf alle zukünftigen Volumes anzuwenden, die dem Cluster hinzugefügt werden. Diese Funktion wurde aufgrund von Benutzerfeedback und mangelnder Verwendung dieser Funktion entfernt. Sie müssen die Backups für alle neuen Volumes, die dem Cluster hinzugefügt werden, manuell aktivieren.
-
-
-
-==== Die Seite Jobüberwachung wurde mit neuen Funktionen aktualisiert
-
-Auf der Seite Job Monitoring finden Sie jetzt weitere Informationen zur Backup-Strategie 3-2-1. Der Service bietet auch zusätzliche Benachrichtigungen bezüglich der Backup-Strategie.
-
-Der Filter „Backup Lifecycle“ wurde in „Retention“ umbenannt. Verwenden Sie diesen Filter, um den Backup-Lebenszyklus zu verfolgen und den Ablauf aller Backup-Kopien zu identifizieren. Der Jobtyp „Aufbewahrung“ erfasst alle Snapshot Löschjobs, die auf einem Volume initiiert werden, das durch BlueXP Backup und Recovery geschützt ist.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["Erfahren Sie mehr über den aktualisierten Job Monitor"].
-
-
-
 == Klassifizierung
+
+
+
+=== Januar 10 (Version 1.27)
+
+
+
+==== Die Ergebnisse der Untersuchungsseite zeigen jetzt zusätzlich zur Gesamtanzahl der Elemente die Gesamtgröße an
+
+Die gefilterten Ergebnisse auf der Untersuchungsseite zeigen nun zusätzlich zur Gesamtanzahl der Dateien die Gesamtgröße der Elemente an. Dies kann beim Verschieben von Dateien, beim Löschen von Dateien und vielem mehr helfen.
+
+
+
+==== Zusätzliche Gruppen-IDs als „für Organisation offen“ konfigurieren
+
+Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt in der BlueXP-Klassifizierung als „Open to Organization“ betrachtet werden, wenn sie nicht ursprünglich mit dieser Berechtigung festgelegt wurden. Informieren Sie sich darüber https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["Zusätzliche Gruppen-IDs als „für Organisation offen“ hinzufügen"].
 
 
 
@@ -381,6 +362,24 @@ Mit der BlueXP Klassifizierung werden duplizierte Dateien nur bei Dateien identi
 
 
 
+=== 8 Januar 2024
+
+
+
+==== Neue VMs für Azure: Mehrere Verfügbarkeitszonen
+
+Ab Cloud Volumes ONTAP 9.13.1 unterstützen die folgenden VM-Typen Azure mehrere Verfügbarkeitszonen für neue und bestehende Implementierungen von Hochverfügbarkeitspaaren:
+
+* L16s_v3
+* L32s_v3
+* L48s_v3
+* L64s_v3
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Unterstützte Konfigurationen in Azure"^]
+
+
+
 === Bis 6. Dezember 2023
 
 
@@ -424,20 +423,6 @@ Die folgenden Regionen unterstützen jetzt hochverfügbare Implementierungen mit
 
 
 Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Azure"^].
-
-
-
-=== Bis 10. November 2023
-
-Die folgende Änderung wurde mit der Version 3.9.35 des Connectors eingeführt.
-
-
-
-==== Berlin Region jetzt in Google Cloud unterstützt
-
-Die Region Berlin wird jetzt in Google Cloud für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.
-
-Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Google Cloud"^].
 
 
 
@@ -577,6 +562,16 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#googl
 
 
 
+=== 03 Januar 2024
+
+
+
+=== Upgrade Advisor
+
+Upgrade Advisor wurde erweitert und ermöglicht automatisierte, unterbrechungsfreie Upgrade-Pläne für ein einzelnes Cluster und mehrere Cluster. Sie können die Upgrade-Empfehlung nur für ein einzelnes Cluster anzeigen. Dazu gehören eine Risikoübersicht, ein Prüfbericht vor dem Upgrade sowie Informationen zu neuen Funktionen und Verbesserungen. link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["Erfahren Sie, wie Sie die Upgrade-Empfehlung anzeigen und einen Upgrade-Plan erstellen."]
+
+
+
 === Bis 16. November 2023
 
 
@@ -602,18 +597,6 @@ Sie können jetzt maximal 100 Watchlisten erstellen.
 ==== Widget „Planung“
 
 Die Anzahl der Empfehlungen für Technologieaktualisierungen ist im Planungs-Widget des Dashboard auf Kundenebene enthalten. Diese Empfehlungen unterstützen die Planung von Aktualisierungen der Hardware-Technologie, wenn die Hardware nicht mehr unterstützt wird oder sich dem Ende des Supports nähert.
-
-
-
-=== 27 September 2023
-
-
-
-==== Upgrade Advisor
-
-* Über die können Sie auf die Seite Upgrade Advisor für Ihre Standard-Watchlist zugreifen link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor"^] Verlinken:
-* Der Upgrade-Plan wurde optimiert, um redundante Upgrade-Schritte zu entfernen und den Backout-Plan zu vereinfachen. Die allgemeinen Schritte aller Nodes in einem Cluster werden konsolidiert und stehen im Abschnitt „Allgemeine Informationen“ des Upgrade-Plans zur Verfügung. link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["Erfahren Sie, wie Sie einen Upgrade-Plan erstellen und anzeigen"].
-
 
 
 
