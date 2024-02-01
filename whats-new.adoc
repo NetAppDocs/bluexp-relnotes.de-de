@@ -175,6 +175,18 @@ Sie können Amazon S3 Buckets seit geraumer Zeit auf dem BlueXP Canvas anzeigen.
 
 
 
+=== 01 Februar 2024
+
+
+
+==== Verbesserungen bei BlueXP Backup und Recovery für Virtual Machines
+
+* Unterstützung beim Wiederherstellen von Virtual Machines an einem alternativen Speicherort
+* Unterstützung für das Aufheben der Sicherung von Datastores
+
+
+
+
 === Bis 15. Dezember 2023
 
 
@@ -230,14 +242,6 @@ Der BlueXP Backup- und Recovery Job Monitor zeigt auch Informationen zum Fortsch
 
 
 
-==== Das Backup von lokalen ONTAP Daten in StorageGRID Buckets wurde verbessert
-
-StorageGRID kann jetzt bis zu 30 Backups von lokalen ONTAP-Daten aus BlueXP Backup und Recovery in einem einzelnen Bucket speichern. Zuvor betrug das Maximum 7 Backups in einem Bucket.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Weitere Informationen zum Backup von On-Premises-ONTAP-Daten in StorageGRID"].
-
-
-
 ==== Unterstützung für geplante Jobs im Job Monitor
 
 Der BlueXP Backup- und Recovery Job Monitor überwachte zuvor geplante Backup- und Restore-Jobs von Volumes zu Objektspeichern, jedoch keine lokalen Snapshot-, Replizierungs-, Backup- und Restore-Jobs, die über die UI oder die API geplant wurden.
@@ -245,44 +249,6 @@ Der BlueXP Backup- und Recovery Job Monitor überwachte zuvor geplante Backup- u
 Der BlueXP Backup- und Recovery Job Monitor umfasst jetzt geplante Jobs für lokale Snapshots, Replizierungen und Backups in Objekt-Storage.
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["Erfahren Sie mehr über den aktualisierten Job Monitor"].
-
-
-
-=== 13 Oktober 2023
-
-
-
-==== Verbesserungen bei BlueXP Backup und Recovery für Applikationen (Cloud-nativ)
-
-* Microsoft SQL Server Datenbank
-+
-** Unterstützt Backup, Wiederherstellung und Recovery von Microsoft SQL Server Datenbanken auf Amazon FSX for NetApp ONTAP
-** Alle Vorgänge werden nur über REST-APIs unterstützt.
-
-
-* SAP HANA Systeme
-+
-** Während der Systemaktualisierung werden das automatische Mounten und Unmounten der Volumes mithilfe von Workflows anstelle von Skripten durchgeführt
-** Unterstützt Hinzufügen, Entfernen, Bearbeiten, Löschen, Pflegen, und Upgrade des Plug-in-Hosts über die Benutzeroberfläche
-
-
-
-
-
-
-==== Verbesserungen bei BlueXP Backup und Recovery für Applikationen (Hybrid)
-
-* Unterstützt Datensperre und Ransomware-Schutz
-* Unterstützt das Verschieben von Backups von StorageGRID auf Archiv-Tier
-* Unterstützt das Backup von MongoDB-, MySQL- und PostgreSQL-Applikationsdaten von On-Premises ONTAP-Systemen in Amazon Web Services, Microsoft Azure, Google Cloud Platform und StorageGRID. Sie können die Daten bei Bedarf wiederherstellen.
-
-
-
-
-==== Verbesserungen bei BlueXP Backup und Recovery für Virtual Machines
-
-* Unterstützung für Connector-Proxy-Implementierungsmodell
-
 
 
 
@@ -334,6 +300,26 @@ Derzeit werden bei Verwendung von RHEL 9.x. keine Dark-Site-Installationen oder 
 
 
 
+=== 2 Februar 2024
+
+
+
+==== Unterstützung für VMs der Edv5-Serie in Azure
+
+Cloud Volumes ONTAP unterstützt ab Version 9.14.1 jetzt die folgenden VMs der Edv5-Serie.
+
+* E4ds_v5
+* E8ds_v5
+* E20s_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Unterstützte Konfigurationen in Azure"^]
+
+
+
 === 16 Januar 2024
 
 
@@ -361,16 +347,6 @@ Ab Cloud Volumes ONTAP 9.13.1 unterstützen die folgenden VM-Typen Azure mehrere
 
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Unterstützte Konfigurationen in Azure"^]
-
-
-
-=== Bis 6. Dezember 2023
-
-
-
-==== Cloud Volumes ONTAP 9.14.1 RC1
-
-BlueXP kann jetzt Cloud Volumes ONTAP 9.14.1 in AWS, Azure und Google Cloud implementieren und managen.
 
 
 
