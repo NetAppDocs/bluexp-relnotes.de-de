@@ -18,12 +18,6 @@ Erfahren Sie mehr über die neuesten Änderungen an den Cloud-Services, die Teil
 
 
 
-== Einführung von BlueXP
-
-NetApp BlueXP wurde am 1. November 2022 eingeführt. BlueXP erweitert und verbessert die über Cloud Manager bereitgestellten Funktionen. https://docs.netapp.com/us-en/bluexp-family/concept-overview.html["Erfahren Sie mehr über die Einführung von BlueXP"^]
-
-
-
 == Administrative Funktionen
 
 In diesem Abschnitt werden neue Funktionen in Bezug auf BlueXP-Verwaltungsfunktionen beschrieben: Konten, Connectors, Anmeldeinformationen für Cloud-Provider und mehr.
@@ -333,28 +327,6 @@ Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt aus der Blu
 Red hat Enterprise Linux Versionen 8 und 9 unterstützen nicht die Docker Engine, die für die Installation der BlueXP Klassifikation erforderlich war. Wir unterstützen jetzt die Installation der BlueXP Klassifizierung auf RHEL 9.0, 9.1 und 9.2 mit Podman Version 4 oder höher als Container-Infrastruktur. Wenn in Ihrer Umgebung die neuesten Versionen von RHEL erforderlich sind, können Sie Podman jetzt auch die BlueXP-Klassifizierung (Version 1.26 oder höher) installieren.
 
 Derzeit werden bei Verwendung von RHEL 9.x. keine Dark-Site-Installationen oder verteilte Scanumgebungen (mit Master- und Remote-Scanner-Nodes) unterstützt
-
-
-
-=== September 5 (Version 1.25)
-
-
-
-==== Kleine und mittlere Bereitstellungen sind vorübergehend nicht verfügbar
-
-Wenn Sie eine Instanz der BlueXP Klassifizierung in AWS implementieren, ist die Option *Deploy > Configuration* und die Auswahl einer kleinen oder mittelgroßen Instanz derzeit nicht verfügbar. Sie können die Instanz weiterhin mit der Größe der großen Instanz bereitstellen, indem Sie *Deploy > Deploy* auswählen.
-
-
-
-==== Verwenden Sie Tags auf bis zu 100,000 Elemente auf der Seite Untersuchungsergebnisse
-
-In der Vergangenheit konnten Sie auf der Seite Untersuchungsergebnisse (20 Elemente) jeweils nur Tags auf eine Seite anwenden. Jetzt können Sie *alle* Elemente auf den Seiten Untersuchungsergebnisse auswählen und Tags auf alle Elemente anwenden - bis zu 100,000 Elemente gleichzeitig. https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["Erfahren Sie, wie"].
-
-
-
-==== Identifizieren Sie duplizierte Dateien mit einer Mindestdateigröße von 1 MB
-
-Mit der BlueXP Klassifizierung werden duplizierte Dateien nur bei Dateien identifiziert, die 50 MB oder mehr betragen. Nun können duplizierte Dateien, die mit 1 MB beginnen, identifiziert werden. Sie können die Filter der Untersuchungsseite „Dateigröße“ zusammen mit „Duplikate“ verwenden, um zu sehen, welche Dateien einer bestimmten Größe in Ihrer Umgebung dupliziert werden.
 
 
 
