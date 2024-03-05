@@ -443,8 +443,6 @@
   <block id="9e8ed8cdd45e3d9bd3f546720545d06a" category="paragraph">Eine Liste aller Regionen, die mehrere Verfügbarkeitszonen unterstützen, finden Sie im<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
   <block id="500a97f33bcbe3073f32ba66331ac662" category="paragraph"><block ref="dc552a90a374cbb55f942fc8465d623a" category="inline-link-macro-rx"></block>
 <block ref="c6a2e575c9cd7913e0bdc96abdd66269" category="inline-link-macro-rx"></block></block>
-  <block id="d36a1ccbf2d01a1ff61c0e50416882e9" category="section-title">04 Oktober 2023</block>
-  <block id="ec795e7f7ea26d9d59bc0e1e031d4234" category="section-title">Widget „Planung“</block>
   <block id="2971377ab46c11db3998ef23731b52cf" category="section-title">20 Oktober 2023</block>
   <block id="b56e223e6fc7ca1dfacb6233ed47b35e" category="paragraph">Diese Vorschauversion des Disaster Recovery von BlueXP enthält die folgenden Updates.</block>
   <block id="af242308972c98cd4207cc26ee6edaa9" category="paragraph">Mit der Disaster Recovery von BlueXP können Sie Ihre lokalen, NFS-basierten VMware-Workloads vor Ausfällen in eine andere lokale, NFS-basierte VMware Umgebung, zusätzlich zur Public Cloud, schützen. Mit BlueXP Disaster Recovery werden die Disaster-Recovery-Pläne orchestriert.</block>
@@ -493,17 +491,8 @@
   <block id="48938ec2ae208dc89827f9e55c8f1c41" category="paragraph"><block ref="42f00e873b388cac01d84d3ba1605497" category="inline-link-rx"></block>.</block>
   <block id="e24f754057dce2d0f9791240fec7d494" category="section-title">Aktualisieren Sie auf die Node-Version für Daten-Broker</block>
   <block id="a020a6afcaa5c0d333b5cfb93c8d4d79" category="paragraph">Alle neuen Daten-Broker verwenden jetzt Node-Version 21.2.0. Daten-Broker, die mit diesem Update nicht kompatibel sind, wie CentOS 7.0 und Ubuntu Server 18.0, funktionieren nicht mehr mit der BlueXP Kopier- und Synchronisierungsfunktion.</block>
-  <block id="20cc757c4cb0c9b6153ae0f56705ae36" category="section-title">Bis 16. November 2023</block>
   <block id="e057979f7791f37ec4a8704baa00923d" category="section-title">Watchlist</block>
-  <block id="20015eaa9dc8feb8cbf1eaadb95c6b20" category="paragraph">Sie können jetzt maximal 100 Watchlisten erstellen.</block>
-  <block id="752f0c78427b5fffe498798d609a58a7" category="list-text">Empfehlungen zur Technologieaktualisierung sind jetzt in Dashboards für die Watchlist, die Site und die Gruppe verfügbar.</block>
-  <block id="5abb66a3f2a4a3a5e6083eb0e9cb8016" category="list-text">Sie können jetzt potenzielle Kandidaten für Technologieaktualisierungen anzeigen, wenn die Empfehlungen zur Technologieaktualisierung null sind.</block>
-  <block id="bd644bc36e5d6955b3d49189c83c45f3" category="paragraph">Die Anzahl der Empfehlungen für Technologieaktualisierungen ist im Planungs-Widget des Dashboard auf Kundenebene enthalten. Diese Empfehlungen unterstützen die Planung von Aktualisierungen der Hardware-Technologie, wenn die Hardware nicht mehr unterstützt wird oder sich dem Ende des Supports nähert.</block>
   <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">11 Januar 2024</block>
-  <block id="dfbe132af57c8e3ca0aa9a94fc940839" category="section-title">Anschluss 3.9.36</block>
-  <block id="c86344b833d64024dcd801a79f3f366e" category="paragraph">Diese Version enthält kleinere Verbesserungen, Fehlerbehebungen und Unterstützung für den Connector in den folgenden Cloud-Regionen:</block>
-  <block id="5c4c535d51f9fbfc21f1baf9f449004c" category="list-text">Der Region Israel (Tel Aviv) in AWS</block>
-  <block id="c53c95f8243560e843dabb8877e4d787" category="list-text">Die Region Saudi-Arabien in Google Cloud</block>
   <block id="8017dc46d55f13a6a86439ecb091248d" category="section-title">Bis 15. Dezember 2023</block>
   <block id="7ab0753b80059fbad40a2fd72c4592ce" category="section-title">Berichte für lokale Snapshot- und Replikations-Snapshot-Kopien verfügbar</block>
   <block id="9e6cfaae073aa85c2c955e17e29074a8" category="paragraph">Bisher konnten Sie nur Berichte zu Sicherungskopien erstellen. Jetzt können Sie Berichte auch zu lokalen Snapshot Kopien und Snapshot Kopien der Replizierung erstellen.</block>
@@ -525,9 +514,6 @@
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">Zusätzliche Gruppen-IDs als „für Organisation offen“ hinzufügen</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link-macro">Unterstützte Konfigurationen in Azure</block>
   <block id="22342037237200e034fd29c9cfd5bfd4" category="paragraph"><block ref="22342037237200e034fd29c9cfd5bfd4" category="inline-link-macro-rx"></block></block>
-  <block id="0850cf3036348eacfcb9da9c7e6dff71" category="section-title">03 Januar 2024</block>
-  <block id="9c818280eee76d75834ab648289ae85f" category="inline-link-macro">Erfahren Sie, wie Sie die Upgrade-Empfehlung anzeigen und einen Upgrade-Plan erstellen.</block>
-  <block id="bdc2200252b96cc6ed0c081012882ca8" category="paragraph">Upgrade Advisor wurde erweitert und ermöglicht automatisierte, unterbrechungsfreie Upgrade-Pläne für ein einzelnes Cluster und mehrere Cluster. Sie können die Upgrade-Empfehlung nur für ein einzelnes Cluster anzeigen. Dazu gehören eine Risikoübersicht, ein Prüfbericht vor dem Upgrade sowie Informationen zu neuen Funktionen und Verbesserungen. <block ref="5432771afbfeb8bee17b110b384d0041" category="inline-link-macro-rx"></block></block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt aus der BlueXP-Klassifizierung als „Open to Organization“ betrachtet werden, wenn die Gruppe ursprünglich nicht mit dieser Berechtigung festgelegt wurde. Alle Dateien und Ordner, denen diese Gruppen-IDs angehängt sind, werden auf der Seite „Untersuchungsdetails“ als „für Organisation offen“ angezeigt. Informieren Sie sich darüber<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>.</block>
   <block id="4e1f7d458412b18adef0e5ff0db2eee8" category="section-title">01 Februar 2024</block>
   <block id="a409179aac0b12213b3fa77e0a22bd61" category="list-text">Unterstützung beim Wiederherstellen von Virtual Machines an einem alternativen Speicherort</block>
@@ -667,4 +653,47 @@
   <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">In AWS unterstützen Cloud Volumes ONTAP, der Mediator und der Connector nun den Amazon Instant Metadata Service v2 (IMDSv2) für alle Funktionen. IMDSv2 bietet einen verbesserten Schutz vor Schwachstellen. Bisher wurde nur IMDSv1 unterstützt.</block>
   <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">BlueXP Installations- und Administrationsdokumentation für das Management vorhandener Connectors</block>
   <block id="6aec236f70c9d11e5073fa187bf36fd1" category="paragraph">Falls von Ihren Sicherheitsrichtlinien gefordert, können Sie Ihre EC2-Instanzen für die Verwendung von IMDSv2 konfigurieren. Anweisungen finden Sie unter <block ref="437fb94a00c6c9b10a9ad9095b6680bc" category="inline-link-macro-rx"></block>.</block>
+  <block id="fe8fcef9d0fdb328fbc812d42b4ca2e7" category="section-title">26 März 2024</block>
+  <block id="3c16167b6c091087d9151aee3f52b379" category="section-title">Freigabe des privaten Modus (3.9.38)</block>
+  <block id="b7070cb9b31e0d402b92f5c1d4efa401" category="paragraph">Für BlueXP ist jetzt eine neue Version des privaten Modus verfügbar. Diese Version umfasst die folgenden Versionen der BlueXP Services, die im Private-Mode unterstützt werden.</block>
+  <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">Service</block>
+  <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">Version enthalten</block>
+  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">Stecker</block>
+  <block id="0eff5e73304fb938a09633bd1b0cec70" category="cell">3.9.38</block>
+  <block id="2d67cd05b64a3416bc8bae12b4ef5685" category="cell">12 März 2024</block>
+  <block id="9ee51d75827fcf6a985ed40e7418fea6" category="cell">4 März 2024</block>
+  <block id="20f71c84b5a0e44a35f3a8c4207c85a9" category="cell">Cloud Volumes ONTAP-Management</block>
+  <block id="900dd8f50d2294930a102034524e26b7" category="cell">Lokales ONTAP-Cluster-Management</block>
+  <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">Diese neue Version kann von der NetApp Support-Website heruntergeladen werden.</block>
+  <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">Weitere Informationen zum privaten Modus</block>
+  <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
+  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">Erfahren Sie mehr über die ersten Schritte mit BlueXP im privaten Modus</block>
+  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
+  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren</block>
+  <block id="4e208e7f54024bf731fae02025ce34d9" category="list-text"><block ref="4e208e7f54024bf731fae02025ce34d9" category="inline-link-rx"></block></block>
+  <block id="e713d6072685bf32f36150e9f76ce0c1" category="section-title">Möglichkeit zur „schnellen Wiederherstellung“ von Cloud-Backups auf lokale ONTAP Volumes</block>
+  <block id="5a9ee632cba573d0f7355f7d12d908ca" category="paragraph">Jetzt können Sie eine _schnelle Wiederherstellung_ eines Volumes aus dem Cloud-Storage in ein lokales ONTAP-Ziel-Volume durchführen. Bisher konnten Sie nur eine schnelle Wiederherstellung auf einem Cloud Volumes ONTAP System durchführen. Die schnelle Wiederherstellung ist ideal für Disaster Recovery-Situationen, in denen Sie so schnell wie möglich Zugriff auf ein Volume gewährleisten müssen. Eine schnelle Wiederherstellung ist viel schneller als die vollständige Volume-Wiederherstellung. Die Metadaten aus einem Cloud-Snapshot werden auf einem ONTAP-Ziel-Volume wiederhergestellt. Die Quelle könnte von AWS S3, Azure Blob, Google Cloud Services oder NetApp StorageGRID stammen.</block>
+  <block id="07f61dfe973846130f7066ef7bc459ef" category="paragraph">Auf dem lokalen ONTAP Zielsystem muss ONTAP Version 9.14.1 oder höher ausgeführt werden.</block>
+  <block id="1a68bb97275f0f5acd506d7ad906fa05" category="paragraph">Sie können dies mithilfe des Such- und Wiederherstellungsprozesses tun, nicht mit dem Such- und Wiederherstellungsprozess.</block>
+  <block id="bb03c52ec2a68c9eed4513c8ecf6c24d" category="inline-link">ONTAP-Daten aus Backup-Dateien wiederherstellen</block>
+  <block id="2c3b2694da8405de44d10ad024f9a37a" category="paragraph">Weitere Informationen finden Sie unter<block ref="d2c90c25b1a6379e29db7390401794cc" category="inline-link-rx"></block>.</block>
+  <block id="0b15186b9aa75ae921c55dd69591ae94" category="section-title">Möglichkeit zur Wiederherstellung von Dateien und Ordnern von Snapshot und Replizierungskopien</block>
+  <block id="8f859da29f9bc64e255dd02fc2821d0a" category="paragraph">Bisher konnten Dateien und Ordner nur von Backup-Kopien in AWS, Azure und Google Cloud Services wiederhergestellt werden. Sie können jetzt Dateien und Ordner von lokalen Snapshot Kopien und von Replizierungskopien wiederherstellen.</block>
+  <block id="71931edd27b41979c47f73ca3194f9c3" category="paragraph">Sie können diese Funktion mithilfe des Such- und Wiederherstellungsprozesses durchführen, nicht mit dem Durchsuchen- und Wiederherstellungsprozess.</block>
+  <block id="434c0382d376982e5be3c7cf351f2ee1" category="section-title">15 März 2024</block>
+  <block id="32a07c6643e39bb3fe494292db9ae233" category="section-title">Wellness</block>
+  <block id="98f475d7aa8f966d87ccc93ba94fba94" category="inline-link-macro">Analysieren Sie die Nachhaltigkeit Ihrer Storage-Systeme</block>
+  <block id="02a4f8fbb0ee7f45b63d85dd6999883c" category="list-text">Der Wellness-Workflow enthält jetzt das Widget Nachhaltigkeit, das die Anzahl der empfohlenen Aktionen auf Kunden-, Watchlist-, Standort- und Gruppenebene enthält. Sie können auf die Anzahl der Aktionen klicken, um eine detaillierte Ansicht dieser empfohlenen Aktionen auf dem Dashboard Nachhaltigkeit anzuzeigen. Weitere Informationen finden Sie unter <block ref="53ff1edd2c20f94d2a6e053c55aa3849" category="inline-link-macro-rx"></block>.</block>
+  <block id="6dca4e9566164889a09a5302487f229a" category="list-text">Die Sicherheitsanfälligkeiten und Ransomware Defense Widgets im Wellness-Workflow werden in einem einzigen Widget kombiniert, das jetzt als Sicherheit &amp; Ransomware Defense bezeichnet wird.</block>
+  <block id="5bf96d52d5b39a06798b24dfa7469237" category="section-title">Health Check Dashboard</block>
+  <block id="15853c3ab7376c7041427b2140bbd504" category="paragraph">Der Zeitrahmen für technische Cases wird verbessert, um den gesamten Verlauf der Fälle für 6 oder 12 Monate anzuzeigen.</block>
+  <block id="ee994369582acbd0aa1a2c594329160a" category="section-title">29 Februar 2024</block>
+  <block id="51832813a6cc95d32db002987711fdc7" category="paragraph">Sie können jetzt eine Watchlist auf Basis der Keystone Abonnementnummern erstellen und über die ersten drei Zeichen einer Abonnement-Nummer oder eines Watchlist-Namens nach einem Keystone Abonnement suchen.</block>
+  <block id="bd43fc9501d9e9ddb964eda155be38b8" category="section-title">14 März 2024</block>
+  <block id="2910a4560c79f740cc97d113def24905" category="paragraph">Wenn Sie bereits über Assets verfügen und feststellen möchten, ob eine Technologie aktualisiert werden muss, können Sie die wirtschaftlichen Effizienzoptionen von BlueXP nutzen. Sie können entweder eine kurze Bewertung Ihrer aktuellen Workloads überprüfen und Empfehlungen erhalten, oder wenn Sie in den vergangenen 90 Tagen AutoSupport-Protokolle an NetApp gesendet haben, kann der Service jetzt eine Workload-Simulation durchführen, um die Performance Ihrer Workloads auf neuer Hardware zu ermitteln.</block>
+  <block id="10fa032662780ff6f01bd6647d92c626" category="paragraph">Sie können auch einen Workload hinzufügen und vorhandene Workloads von der Simulation ausschließen.</block>
+  <block id="7aea075f0d949c2526cea755a2dee13f" category="paragraph">Bisher konnten Sie nur eine Bewertung Ihrer Ressourcen vornehmen und feststellen, ob eine Technologieerneuerung empfohlen wird.</block>
+  <block id="8006e6282233bdaa99ca3e9db65fc693" category="paragraph">Die Funktion ist jetzt Teil der Option „Tech Refresh“ in der linken Navigation.</block>
+  <block id="33a9c4b5f0c522c38ff9b1b46ebd1498" category="inline-link-macro">Bewertung einer Technologieaktualisierung</block>
+  <block id="914b4ad9ada7977f36d427a9664a4235" category="paragraph">Erfahren Sie mehr über das <block ref="4305c0855ed1712385868c1ca4414cc5" category="inline-link-macro-rx"></block>.</block>
 </blocks>
