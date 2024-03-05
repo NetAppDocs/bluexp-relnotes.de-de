@@ -48,7 +48,7 @@ Der Instance Metadata Service (IMDS) wird in EC2-Instanzen wie folgt aktiviert:
 * Für Cloud Volumes ONTAP ist IMDSv1 standardmäßig auf neuen und bestehenden Instanzen aktiviert. Sie können IMDSv2 auf den EC2-Instanzen manuell konfigurieren, wenn Sie möchten.
 
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["Erfahren Sie, wie Sie IMDSv2 auf vorhandenen Instanzen konfigurieren"].
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["Erfahren Sie, wie Sie IMDSv2 auf vorhandenen Instanzen konfigurieren"].
 
 
 
@@ -105,33 +105,6 @@ Diese Version enthält kleinere Verbesserungen, Fehlerbehebungen und Unterstütz
 * Der Region Israel (Tel Aviv) in AWS
 * Die Region Saudi-Arabien in Google Cloud
 
-
-
-
-=== Bis 5. Dezember 2023
-
-
-
-==== Freigabe des privaten Modus
-
-Für BlueXP ist jetzt eine neue Version des privaten Modus verfügbar. Diese Version enthält Version 3.9.35 des Connectors sowie Versionen der BlueXP Services, die ab Oktober 2023 im Privatmodus unterstützt werden.
-
-Diese neue Version kann von der NetApp Support-Website heruntergeladen werden.
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["Informieren Sie sich über die im Private-Mode enthaltenen BlueXP Services"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Erfahren Sie mehr über die ersten Schritte mit BlueXP im privaten Modus"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren"]
-
-
-
-
-=== Bis 8. November 2023
-
-
-
-==== Anschluss 3.9.35
-
-Diese Version enthält kleinere Sicherheitsverbesserungen und Fehlerbehebungen.
 
 
 
