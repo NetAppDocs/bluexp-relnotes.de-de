@@ -24,6 +24,36 @@ In diesem Abschnitt werden neue Funktionen in Bezug auf BlueXP-Verwaltungsfunkti
 
 
 
+=== 15 Februar 2024
+
+
+
+==== Anschluss 3.9.37
+
+Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
+
+Derzeit ist die Version 3.9.37 für den Standardmodus und den eingeschränkten Modus verfügbar.
+
+
+
+==== Namen bearbeiten
+
+Wenn Sie sich mit den NetApp Cloud-Anmeldedaten bei BlueXP anmelden, können Sie jetzt Ihren Namen in *Benutzereinstellungen* bearbeiten.
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["Ein Screenshot, der die Möglichkeit zeigt, Ihren Namen unter Benutzereinstellungen zu bearbeiten."]
+
+Die Bearbeitung Ihres Namens wird nicht unterstützt, wenn Sie sich mit einer Verbundverbindung oder mit Ihrem NetApp Support-Website-Konto anmelden.
+
+
+
+==== IMDSv1-Anforderung für EC2-Instanzen
+
+Sie sollten beachten, dass der Instance Metadata Service Version 1 (IMDSv1) auf Amazon EC2 Instanzen erforderlich ist, bevor Sie die Connector-Software manuell in AWS installieren.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["Erfahren Sie mehr über die Anforderung an IMDSv1 in AWS"].
+
+
+
 === 11 Januar 2024
 
 
@@ -256,7 +286,27 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
-=== Januar 10 (Version 1.27)
+=== 4. März 2024 (Version 1.29)
+
+
+
+==== Jetzt können Sie Scandaten ausschließen, die sich in bestimmten Datenquellen-Verzeichnissen befinden
+
+Wenn die BlueXP Klassifizierung Scandaten in bestimmten Quellverzeichnissen ausschließen soll, können Sie diese Verzeichnisnamen zu einer Konfigurationsdatei hinzufügen, die durch die BlueXP Klassifizierung verarbeitet wird. Mit dieser Funktion können Sie verhindern, dass Verzeichnisse gescannt werden, die unnötig sind oder zu falsch positiven Ergebnissen von persönlichen Daten führen würden.
+
+https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html["Weitere Informationen ."].
+
+
+
+==== 6505788c29b47651fe2e94f0607a2ef7
+
+1647534ed4603d68f73fd3f261af9b65
+
+1b4f4b549e0860b1392190bfc2a23f81
+
+
+
+=== 10. Januar 2024 (Version 1.27)
 
 
 
@@ -272,31 +322,30 @@ Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt aus der Blu
 
 
 
-=== November 6 (Version 1.26.3)
+=== 14. Dezember 2023 (Version 1.26.6)
 
+Diese Version enthält einige kleinere Verbesserungen.
 
+Das Release hat auch vorübergehend die folgenden Optionen entfernt:
 
-==== Die folgenden Probleme wurden in dieser Version behoben
+* Die Option zum Aktivieren der Überwachungsprotokollsammlung wurde deaktiviert. Siehe link:task-manage-file-access-events.html["Überwachen und managen Sie Dateizugriffsereignisse"].
+* Bei der Untersuchung der Verzeichnisse steht die Möglichkeit zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen nicht zur Verfügung. Siehe link:task-investigate-data.html#filter-data-by-sensitivity-and-content["Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten"].
+* Die Option zur Integration von Daten mit AIP-Labels (Azure Information Protection) wurde deaktiviert. Siehe link:task-org-private-data.html["Private Daten organisieren"].
 
-* Es wurde eine Inkonsistenz bei der Darstellung der Anzahl der vom System gescannten Dateien in Dashboards behoben.
-* Verbesserte das Scanverhalten durch die Handhabung und Berichterstattung von Dateien und Verzeichnissen mit Sonderzeichen im Namen und Metadaten.
-
-
-
-
-=== Oktober 4 (Version 1.26)
-
-
-
-==== Unterstützung lokaler Installationen von BlueXP Klassifizierungen auf RHEL Version 9
-
-Red hat Enterprise Linux Versionen 8 und 9 unterstützen nicht die Docker Engine, die für die Installation der BlueXP Klassifikation erforderlich war. Wir unterstützen jetzt die Installation der BlueXP Klassifizierung auf RHEL 9.0, 9.1 und 9.2 mit Podman Version 4 oder höher als Container-Infrastruktur. Wenn in Ihrer Umgebung die neuesten Versionen von RHEL erforderlich sind, können Sie Podman jetzt auch die BlueXP-Klassifizierung (Version 1.26 oder höher) installieren.
-
-Derzeit werden bei Verwendung von RHEL 9.x. keine Dark-Site-Installationen oder verteilte Scanumgebungen (mit Master- und Remote-Scanner-Nodes) unterstützt
 
 
 
 == Cloud Volumes ONTAP
+
+
+
+=== 5 März 2024
+
+
+
+==== Cloud Volumes ONTAP 9.14.1 GA
+
+BlueXP kann jetzt Cloud Volumes ONTAP 9.14.1 General Availability Release in AWS, Azure und Google Cloud implementieren und managen.
 
 
 
@@ -329,24 +378,6 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-config
 Patch-Releases sind in BlueXP nur für die drei neuesten Cloud Volumes ONTAP Versionen verfügbar.
 
 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#patch-releases["Upgrade von Cloud Volumes ONTAP"^]
-
-
-
-=== 8 Januar 2024
-
-
-
-==== Neue VMs für Azure: Mehrere Verfügbarkeitszonen
-
-Ab Cloud Volumes ONTAP 9.13.1 unterstützen die folgenden VM-Typen Azure mehrere Verfügbarkeitszonen für neue und bestehende Implementierungen von Hochverfügbarkeitspaaren:
-
-* L16s_v3
-* L32s_v3
-* L48s_v3
-* L64s_v3
-
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Unterstützte Konfigurationen in Azure"^]
 
 
 
@@ -404,6 +435,18 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 11 Februar 2024
+
+
+
+==== Verzeichnisse nach regex filtern
+
+Benutzer haben nun die Möglichkeit, Verzeichnisse mit regex zu filtern.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["Erfahren Sie mehr über die Funktion *Verzeichnisse ausschließen*."]
+
+
+
 === Bis 26. November 2023
 
 
@@ -450,39 +493,23 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creati
 
 
 
-=== 6 August 2023
-
-
-
-==== Verwenden Sie vorhandene Azure Sicherheitsgruppen, wenn Sie einen Daten-Broker erstellen
-
-Benutzer haben nun die Möglichkeit, vorhandene Azure Sicherheitsgruppen zu verwenden, wenn sie einen Daten-Broker erstellen.
-
-Das Dienstkonto, das beim Erstellen des Datenbrokers verwendet wird, muss über folgende Berechtigungen verfügen:
-
-* „Microsoft.Network/networkSecurityGroups/securityRules/read"
-* „Microsoft.Network/networkSecurityGroups/read"
-
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html["Erfahren Sie mehr über die Erstellung eines Datenbrokers in Azure."]
-
-
-
-==== Verschlüsseln Sie Daten bei der Synchronisierung mit Google Storage
-
-Benutzer haben nun die Möglichkeit, beim Erstellen einer Synchronisierungsbeziehung zu einem Google Storage-Bucket als Ziel einen vom Kunden gemanagten Schlüssel anzugeben. Sie können Ihren Schlüssel manuell eingeben oder aus einer Liste Ihrer Schlüssel in einer Region auswählen.
-
-Das Dienstkonto, das beim Erstellen des Datenbrokers verwendet wird, muss über folgende Berechtigungen verfügen:
-
-* Cloudkms.cryptkeys.list
-* Cloudkms.Schlüsselanhänger.list
-
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-cloud-storage-bucket-requirements["Erfahren Sie mehr über die Anforderungen von Google Cloud Storage Buckets."]
-
-
-
 == Digitaler Berater
+
+
+
+=== 08 Februar 2024
+
+
+
+==== Dashboard zur Nachhaltigkeit
+
+Sie können jetzt direkt über das auf die Nachhaltigkeitsmetriken für Ihr Standard-Dashboard oder Ihre Standard-Watchlist zugreifen link:https://activeiq.netapp.com/redirect/sustainability["Dashboard Für Nachhaltigkeit"^] Verlinken:
+
+
+
+==== ClusterViewer
+
+Sie können jetzt Festplatten-RPM-Informationen im Abschnitt Datenträgerzusammenfassung anzeigen, der auf der Registerkarte Speicher und in ClusterViewer-Berichten verfügbar ist.
 
 
 
@@ -525,6 +552,18 @@ Die Anzahl der Empfehlungen für Technologieaktualisierungen ist im Planungs-Wid
 
 
 == Digitale Brieftasche
+
+
+
+=== 5 März 2024
+
+
+
+==== BlueXP Disaster Recovery
+
+Mit der Digital Wallet von BlueXP können Sie Lizenzen für die Disaster Recovery von BlueXP jetzt managen. Sie können Lizenzen hinzufügen, Lizenzen aktualisieren und Details zur lizenzierten Kapazität anzeigen.
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Managen Sie Lizenzen für BlueXP Datenservices"]
 
 
 
@@ -598,6 +637,75 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
+=== 5 März 2024
+
+Dies ist die Disaster Recovery-Version von BlueXP für die allgemeine Verfügbarkeit. Sie umfasst folgende Updates.
+
+* *Lizenzierungs-Updates*: Mit BlueXP Disaster Recovery können Sie sich für eine kostenlose 90-Tage-Testversion anmelden oder eine eigene Lizenz (BYOL) mitbringen. Dabei handelt es sich um eine NetApp-Lizenzdatei (NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten. Sie können die Seriennummer der Lizenz verwenden, um das BYOL in der Digital Wallet von BlueXP zu aktivieren. Die Disaster-Recovery-Gebühren für BlueXP basieren auf der bereitgestellten Kapazität von Datastores.
++
+Weitere Informationen zur Einrichtung einer Lizenzierung für die Disaster Recovery von BlueXP finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["Lizenzierung einrichten"].
+
++
+Weitere Informationen zum Verwalten von Lizenzen für *alle* BlueXP Services finden Sie unter https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Managen Sie Lizenzen für alle BlueXP Services"^].
+
+
+
+* *Zeitpläne bearbeiten*: Mit dieser Version können Sie jetzt Zeitpläne einrichten, um Compliance- und Failover-Tests zu testen, damit Sie sicherstellen können, dass diese korrekt funktionieren, wenn Sie sie benötigen.
++
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie den Replizierungsplan"].
+
+
+
+
+
+=== Februar 2024
+
+Diese BlueXP Disaster-Recovery-Vorschau enthält die folgenden Updates:
+
+* *Network Enhancement*: Mit diesem Release können Sie nun die Größe der VM CPU und RAM Werte ändern. Sie können nun auch ein Netzwerk-DHCP oder eine statische IP-Adresse für die VM auswählen.
++
+** DHCP: Wenn Sie diese Option wählen, geben Sie Anmeldeinformationen für die VM an.
+** Statische IP: Sie können die gleichen oder andere Informationen aus der Quell-VM auswählen. Wenn Sie dieselbe Auswahl wie die Quelle wählen, müssen Sie keine Anmeldeinformationen eingeben. Wenn Sie jedoch andere Informationen aus der Quelle verwenden möchten, können Sie Anmeldeinformationen, IP-Adresse, Subnetzmaske, DNS und Gateway-Informationen angeben.
++
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
+
+
+
+* *Custom Scripts* können jetzt als Post Failover Prozesse eingebunden werden. Mit benutzerdefinierten Skripts kann die BlueXP Disaster Recovery Ihr Skript nach einem Failover-Prozess ausführen. Sie können beispielsweise ein benutzerdefiniertes Skript verwenden, um alle Datenbanktransaktionen nach Abschluss des Failovers wieder aufzunehmen.
++
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["Failover an einen Remote-Standort"].
+
+* *SnapMirror Beziehung*: Sie können jetzt eine SnapMirror Beziehung erstellen während Sie den Replizierungsplan entwickeln. Früher mussten Sie diese Beziehung außerhalb der Disaster Recovery von BlueXP aufbauen.
++
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
+
+* *Consistency Groups*: Wenn Sie einen Replikationsplan erstellen, können Sie VMs mit unterschiedlichen Volumes und SVMs einbeziehen. Die Disaster Recovery von BlueXP erstellt einen KonsistenzgruppenSnapshot, der alle Volumes enthält und alle sekundären Standorte aktualisiert.
++
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
+
+* *VM Power-on Delay Option*: Wenn Sie einen Replikationsplan erstellen, können Sie VMs zu einer Ressourcengruppe hinzufügen. Mit Ressourcengruppen können Sie jede VM eine Verzögerung einstellen, sodass sie in einer verzögerten Reihenfolge hochgefahren werden.
++
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
+
+* *Applikationskonsistente Snapshot Kopien*: Sie können angeben, applikationskonsistente Snapshot Kopien zu erstellen. Der Service setzt die Applikation still und erstellt dann einen Snapshot, um einen konsistenten Status der Applikation zu erhalten.
++
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
+
+
+
+
+
+=== 11 Januar 2024
+
+Diese Vorschauversion des Disaster Recovery von BlueXP enthält die folgenden Updates:
+
+* Mit dieser Version können Sie schneller auf Informationen auf anderen Seiten über das Dashboard zugreifen.
+
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["Erfahren Sie mehr über BlueXP Disaster Recovery"].
+
+
+
 === 20 Oktober 2023
 
 Diese Vorschauversion des Disaster Recovery von BlueXP enthält die folgenden Updates.
@@ -608,74 +716,6 @@ Mit der Disaster Recovery von BlueXP können Sie Ihre lokalen, NFS-basierten VMw
 NOTE: Mit diesem Vorschauangebot behält sich NetApp das Recht vor, Angebotsdetails, Inhalte und Zeitpläne vor der allgemeinen Verfügbarkeit zu ändern.
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["Erfahren Sie mehr über die Disaster Recovery von BlueXP"].
-
-
-
-=== 27 September 2023
-
-Diese Vorschauversion des Disaster Recovery von BlueXP enthält die folgenden Updates:
-
-* *Dashboard-Updates*: Sie können nun in die Optionen auf dem Dashboard klicken, was es Ihnen erleichtert, die Informationen schnell zu überprüfen. Darüber hinaus wird im Dashboard jetzt der Status von Failover und Migrationen angezeigt.
-+
-Siehe https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/dashboard-view.html["Zeigen Sie den Zustand Ihrer Disaster-Recovery-Pläne auf dem Dashboard an"].
-
-* *Aktualisierungen des Replikationsplans*:
-+
-** *RPO*: Sie können jetzt im Abschnitt Datastores des Replikationsplans den Wiederherstellungspunkt Objective (RPO) und Retention Count eingeben. Zeigt die Datenmenge an, die nicht älter als die eingestellte Zeit sein muss. Wenn Sie beispielsweise die Einstellung auf 5 Minuten festlegen, kann das System bei einem Zwischenfall bis zu 5 Minuten an Daten verlieren, ohne dass dies geschäftskritische Anforderungen beeinträchtigt.
-+
-Siehe https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
-
-** *Netzwerkverbesserungen*: Wenn Sie im Abschnitt „virtuelle Maschinen“ des Replikationsplans Netzwerke zwischen Quell- und Zielorten zuordnen, bietet BlueXP Disaster Recovery jetzt zwei Optionen: DHCP oder statische IP. Zuvor wurde nur DHCP unterstützt. Für statische IPs konfigurieren Sie die Subnetz-, Gateway- und DNS-Server. Darüber hinaus können Sie jetzt Anmeldeinformationen für virtuelle Maschinen eingeben.
-+
-Siehe https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
-
-** *Zeitpläne bearbeiten*: Sie können jetzt Replikationspläne aktualisieren.
-+
-Siehe https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Ressourcen managen"].
-
-** *SnapMirror-Automatisierung*: Während Sie den Replizierungsplan in diesem Release erstellen, können Sie die SnapMirror Beziehung zwischen Quell- und Ziel-Volumes in einer der folgenden Konfigurationen definieren:
-+
-*** 1 zu 1
-*** 1 zu vielen in einer Fanout-Architektur
-*** Von vielen zu 1 als Konsistenzgruppe
-*** Von vielen auf viele
-+
-Siehe https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
-
-
-
-
-
-
-
-
-
-=== August 2023
-
-Die Disaster-Recovery-Vorschau von BlueXP ist ein Cloud-basierter Disaster-Recovery-Service, der Disaster-Recovery-Workflows automatisiert. Mit der BlueXP Disaster-Recovery-Vorschau können Sie zunächst Ihre lokalen NFS-basierten VMware-Workloads schützen, die NetApp Storage in VMware Cloud (VMC) auf AWS mit Amazon FSX for ONTAP ausführen.
-
-
-NOTE: Mit diesem Vorschauangebot behält sich NetApp das Recht vor, Angebotsdetails, Inhalte und Zeitpläne vor der allgemeinen Verfügbarkeit zu ändern.
-
-https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["Erfahren Sie mehr über die Disaster Recovery von BlueXP"].
-
-Diese Version enthält die folgenden Updates:
-
-* *Ressourcengruppen-Update für Startreihenfolge*: Wenn Sie einen Disaster Recovery- oder Replikationsplan erstellen, können Sie virtuelle Maschinen zu funktionalen Ressourcengruppen hinzufügen. Mit Ressourcengruppen können Sie eine Reihe abhängiger virtueller Maschinen in logische Gruppen umwandeln, die Ihren Anforderungen entsprechen. Gruppen können beispielsweise die Startreihenfolge enthalten, die bei der Wiederherstellung ausgeführt werden kann. Mit diesem Release kann jede Ressourcengruppe eine oder mehrere virtuelle Maschinen enthalten. Die Virtual Machines werden basierend auf der Reihenfolge, in der Sie sie in den Plan aufnehmen, eingeschaltet. Siehe https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups["Wählen Sie Anwendungen aus, die Sie replizieren und Ressourcengruppen zuweisen möchten"].
-* *Replikationsüberprüfung*: Nachdem Sie den Disaster-Recovery- oder Replizierungsplan erstellt haben, identifizieren Sie die Wiederholung im Assistenten und initiieren eine Replikation zu einem Disaster-Recovery-Standort. Alle 30 Minuten überprüft die BlueXP Disaster Recovery, ob die Replikation tatsächlich gemäß dem Plan erfolgt. Sie können den Fortschritt auf der Seite Job Monitor überwachen. Siehe  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/replicate.html["Replizierung von Applikationen an einen anderen Standort"].
-* *Der Replikationsplan zeigt die Zeitpläne für die Übertragung von Recovery Point Objective (RPO)* an: Wenn Sie einen Disaster Recovery- oder Replikationsplan erstellen, wählen Sie die VMs aus. In diesem Release können Sie jetzt die SnapMirror anzeigen, die mit jedem der Volumes verknüpft sind, die dem Datenspeicher oder der VM zugeordnet sind. Sie können auch die mit dem SnapMirror Zeitplan verknüpften RPO-Übertragungszeitpläne anzeigen. Anhand des RPO können Sie feststellen, ob Ihr Backup-Zeitplan für die Wiederherstellung nach einem Ausfall ausreicht. Siehe https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
-* *Job Monitor Update*: Die Job Monitor Seite enthält jetzt eine Refresh Option, damit Sie einen aktuellen Status der Operationen erhalten können. Siehe  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["Überwachen Sie Disaster-Recovery-Jobs"].
-
-
-
-
-=== 18 Mai 2023
-
-Dies ist die erste Version der Disaster Recovery von BlueXP.
-
-BlueXP Disaster Recovery ist ein Cloud-basierter Disaster Recovery Service, der Disaster Recovery Workflows automatisiert. Mit der BlueXP Disaster-Recovery-Vorschau können Sie zunächst Ihre lokalen NFS-basierten VMware-Workloads schützen, die NetApp Storage in VMware Cloud (VMC) auf AWS mit Amazon FSX for ONTAP ausführen.
-
-link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["Erfahren Sie mehr über die Disaster Recovery von BlueXP"].
 
 
 
@@ -901,6 +941,48 @@ Mithilfe des neuen BlueXP Service für betriebliche Ausfallsicherheit und seiner
 Operational Resiliency ist ein Service, mit dem Sie Alarme und Ereignisse analysieren können, um den Zustand, die Uptime und die Performance von Services und Lösungen aufrechtzuerhalten.
 
 link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/intro.html["Erfahren Sie mehr über die betriebliche Ausfallsicherheit von BlueXP"].
+
+
+
+== Schutz durch Ransomware
+
+
+
+=== 5 März 2024
+
+Diese Vorschauversion des Ransomware-Schutzes von BlueXP enthält die folgenden Updates:
+
+* *Schutz-Policy-Management*: Zusätzlich zur Verwendung von vordefinierten Richtlinien können Sie jetzt Richtlinien erstellen, ändern und löschen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über das Verwalten von Richtlinien"].
+* *Unveränderlichkeit bei sekundärem Storage (DataLock)*: Mit der NetApp DataLock Technologie im Objektspeicher können Sie das Backup jetzt unveränderlich im sekundären Storage gestalten. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über das Erstellen von Sicherungsrichtlinien"].
+
+
+* *Automatisches Backup auf NetApp StorageGRID*: Neben der Nutzung von AWS können Sie nun auch StorageGRID als Backup-Ziel wählen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Erfahren Sie mehr über das Konfigurieren von Backup-Zielen"].
+* *Zusätzliche Funktionen zur Untersuchung potenzieller Angriffe*: Sie können jetzt weitere forensische Details anzeigen, um den erkannten potenziellen Angriff zu untersuchen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Erfahren Sie mehr über die Reaktion auf einen erkannten Ransomware-Alarm"].
+* *Wiederherstellungsprozess*. Der Wiederherstellungsprozess wurde verbessert. Jetzt können Sie Volumes für Volumes, alle Volumes für einen Workload oder sogar einige Dateien vom Volume in einem einzigen Workflow wiederherstellen. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Erfahren Sie mehr über die Wiederherstellung nach einem Ransomware-Angriff (nach der Neutralisierung von Vorfällen)"].
+
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Mehr zu BlueXP Ransomware-Schutz"].
+
+
+
+=== 6 Oktober 2023
+
+Der BlueXP Ransomware-Schutzservice ist eine SaaS-Lösung für den Schutz von Daten, die Erkennung potenzieller Angriffe und die Wiederherstellung von Daten nach einem Ransomware-Angriff.
+
+In der Vorschau werden die applikationsbasierten Workloads von Oracle, MySQL, VM-Datastores und File Shares auf lokalem NAS-Storage sowie Cloud Volumes ONTAP auf AWS (über das NFS-Protokoll) über BlueXP Konten hinweg einzeln geschützt und Daten einzeln in Amazon Web Services Cloud-Storage gesichert.
+
+Der BlueXP Ransomware-Schutz-Service bietet eine vollständige Nutzung mehrerer NetApp Technologien, sodass Ihr Datensicherheitsadministrator oder Security Operations Engineer die folgenden Ziele erreichen kann:
+
+* Ransomware-Schutz bei allen Ihren Workloads auf einen Blick
+* Einblicke in Empfehlungen zum Schutz vor Ransomware
+* Verbessern Sie den Schutz basierend auf BlueXP Empfehlungen für den Ransomware-Schutz.
+* Weisen Sie Ransomware-Schutzrichtlinien zu, um Ihre wichtigsten Workloads und hochriskante Daten gegen Ransomware-Angriffe zu schützen.
+* Der Zustand Ihrer Workloads gegen Ransomware-Angriffe, die auf Datenanomalien Wert suchen, überwachen.
+* Ermitteln Sie schnell die Auswirkungen von Ransomware-Vorfällen auf Ihren Workload.
+* Intelligentes Recovery nach Ransomware-Vorfällen durch Wiederherstellung der Daten und Sicherstellung, dass keine erneuten Infektionen der gespeicherten Daten auftreten.
+
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Mehr zu BlueXP Ransomware-Schutz"].
 
 
 

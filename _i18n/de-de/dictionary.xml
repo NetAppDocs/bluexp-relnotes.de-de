@@ -117,7 +117,6 @@
   <block id="723ffd15eb7b4453afd0fa0af42c04c3" category="section-title">Wirtschaftliche Effizienz</block>
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">Bis 02. April 2023</block>
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">Operative Ausfallsicherheit</block>
-  <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">Erfahren Sie, wie Sie die verbrauchte Kapazität in Ihrem Konto anzeigen</block>
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Deinstallieren Sie Astra Trident</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">Die Registerkarte „Lizenzierung“ wurde entfernt</block>
@@ -315,7 +314,6 @@
   <block id="30fee46958559c602b944cc387c72292" category="paragraph">Kunden können jetzt Amazon FSX for NetApp ONTAP-Dateisysteme in drei neuen AWS-Regionen erstellen: Europa (Zürich), Europa (Spanien) und Asien-Pazifik (Hyderabad).</block>
   <block id="4a105824b6f84a35559612caf12c452d" category="inline-link-macro">Amazon FSX for NetApp ONTAP ist jetzt in drei weiteren Regionen verfügbar</block>
   <block id="e1203bb3756aaddbc1d40b7033d44bd1" category="paragraph">Siehe <block ref="2ffac1c1fc93e8203aa3ebf9b3a6ff2d" category="inline-link-macro-rx"></block> Vollständige Informationen.</block>
-  <block id="a57bb636c3624bebb972f007b21fd8fb" category="section-title">6 August 2023</block>
   <block id="56a559acc9f9bd2fc9cf51154aef7ce5" category="section-title">Verwenden Sie vorhandene Azure Sicherheitsgruppen, wenn Sie einen Daten-Broker erstellen</block>
   <block id="bf4bc301ccb8b2b21ef394a22e4afef6" category="paragraph">Benutzer haben nun die Möglichkeit, vorhandene Azure Sicherheitsgruppen zu verwenden, wenn sie einen Daten-Broker erstellen.</block>
   <block id="fd514a292e754d2839b0e90da5ac3514" category="paragraph">Das Dienstkonto, das beim Erstellen des Datenbrokers verwendet wird, muss über folgende Berechtigungen verfügen:</block>
@@ -337,7 +335,6 @@
   <block id="2d81e61b650e87c484f1701ff4c00053" category="section-title">Suchen Sie nach einem Cluster in allen BlueXP Connectors</block>
   <block id="6a3a27c0cd9c23985f6e8260846d58bc" category="paragraph">Wenn Sie mehrere Connectors zur Verwaltung aller Speichersysteme in Ihrer Umgebung verwenden, befinden sich einige Cluster, auf denen Sie Tiering implementieren möchten, möglicherweise in verschiedenen Connectors. Wenn Sie sich nicht sicher sind, welcher Connector einen bestimmten Cluster managt, können Sie über alle Connectors hinweg mithilfe von BlueXP Tiering suchen.<block ref="017b0207cc8469b6ea246adade89f8e1" category="inline-link-rx"></block>.</block>
   <block id="857c228cf033cf46c4d3b643ed4db3a6" category="paragraph">Der Audit-Service zeichnet Informationen zu den durch BlueXP Services ausgeführten Vorgängen auf. Dazu gehören Arbeitsbereiche, verwendete Connectors und andere Telemetriedaten. Anhand dieser Daten können Sie bestimmen, welche Aktionen durchgeführt wurden, wer sie ausgeführt hat und wann sie aufgetreten sind.</block>
-  <block id="ca8395d0f02816c74d48e7e263466096" category="section-title">August 2023</block>
   <block id="94798620994cb827b675957027c80437" category="paragraph">Aufgrund einer wichtigen Verbesserung der Sicherheit benötigt Ihr Connector nun ausgehenden Internetzugang auf einen zusätzlichen Endpunkt, um Backup- und Recovery-Ressourcen in Ihrer Public Cloud-Umgebung zu verwalten. Wenn dieser Endpunkt nicht zur Liste „zulässig“ in Ihrer Firewall hinzugefügt wurde, wird in der Benutzeroberfläche ein Fehler bezüglich „Dienst nicht verfügbar“ oder „Dienststatus konnte nicht ermittelt werden“ angezeigt:</block>
   <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
   <block id="e752fa0925615f823987d88e457d59fd" category="section-title">Zum Backup von Volumes in Buckets auf S3-konfigurierten ONTAP Systemen wurde Support hinzugefügt</block>
@@ -361,9 +358,6 @@
   <block id="64bbb11437b30da2acf631c36bd785dd" category="inline-link-macro">Erstellen Sie einen Replizierungsplan</block>
   <block id="7fad1567be7a7caec7818041fdf4a9c6" category="inline-link-macro">Überwachen Sie Disaster-Recovery-Jobs</block>
   <block id="e1835ebe19023a9c7bf0e0e7dd756bf7" category="inline-link-macro">Erfahren Sie mehr über die Disaster Recovery von BlueXP</block>
-  <block id="8454892d6268011bb79d98eedd4f8afb" category="paragraph"><block ref="10a687fb14a41a274bb5d883fcf5c124" category="inline-link-macro-rx"></block>.</block>
-  <block id="405e835e0544bb4cc8bbd26a2c840b54" category="section-title">18 Mai 2023</block>
-  <block id="acff175f1bababdb2baa1348412d501d" category="paragraph">Dies ist die erste Version der Disaster Recovery von BlueXP.</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">Wenn Sie einen Connector in AWS von BlueXP erstellen, können Sie nun im Feld Schlüsselpaar suchen, um das Schlüsselpaar, das Sie mit der Connector-Instanz verwenden möchten, einfacher zu finden.</block>
   <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">Ein Screenshot der Suchoption im Feld Schlüsselpaar, das beim Erstellen eines Connectors in AWS aus BlueXP auf der Seite Netzwerk angezeigt wird.</block>
   <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
@@ -402,9 +396,7 @@
   <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">Kleine und mittlere Bereitstellungen sind vorübergehend nicht verfügbar</block>
   <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">Wenn Sie eine Instanz der BlueXP Klassifizierung in AWS implementieren, ist die Option *Deploy &gt; Configuration* und die Auswahl einer kleinen oder mittelgroßen Instanz derzeit nicht verfügbar. Sie können die Instanz weiterhin mit der Größe der großen Instanz bereitstellen, indem Sie *Deploy &gt; Deploy* auswählen.</block>
   <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">In der Vergangenheit konnten Sie auf der Seite Untersuchungsergebnisse (20 Elemente) jeweils nur Tags auf eine Seite anwenden. Jetzt können Sie *alle* Elemente auf den Seiten Untersuchungsergebnisse auswählen und Tags auf alle Elemente anwenden - bis zu 100,000 Elemente gleichzeitig.<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>.</block>
-  <block id="0d2ad64b559232943585fd7b1d8a6a97" category="section-title">27 September 2023</block>
   <block id="1e3c19e3742fbfc0e6dd22bb91d109a3" category="section-title">Upgrade Advisor</block>
-  <block id="4b9f4d0e463502904f138e1d9f0014a4" category="section-title">Oktober 4 (Version 1.26)</block>
   <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">Diese Version enthält kleinere Verbesserungen und Fehlerbehebungen.</block>
   <block id="5612c729ea34f27969af31fd815184e0" category="paragraph">Die folgenden Änderungen wurden mit der Version 3.9.34 des Connectors eingeführt.</block>
   <block id="44d133359b344c4542acdebe6209e101" category="section-title">Cloud Volumes ONTAP 9.14.0</block>
@@ -480,16 +472,11 @@
   <block id="df189cdccc86fb97d3dabac525f1ea4a" category="list-text">*Replikationsüberprüfung*: Nachdem Sie den Disaster-Recovery- oder Replizierungsplan erstellt haben, identifizieren Sie die Wiederholung im Assistenten und initiieren eine Replikation zu einem Disaster-Recovery-Standort. Alle 30 Minuten überprüft die BlueXP Disaster Recovery, ob die Replikation tatsächlich gemäß dem Plan erfolgt. Sie können den Fortschritt auf der Seite Job Monitor überwachen. Siehe <block ref="e2d34ab7e7f8a76fb6ba2dcd38a58bb2" category="inline-link-rx"></block>.</block>
   <block id="8b2ef00da71b5ca9de3b177a60a87cf4" category="list-text">*Der Replikationsplan zeigt die Zeitpläne für die Übertragung von Recovery Point Objective (RPO)* an: Wenn Sie einen Disaster Recovery- oder Replikationsplan erstellen, wählen Sie die VMs aus. In diesem Release können Sie jetzt die SnapMirror anzeigen, die mit jedem der Volumes verknüpft sind, die dem Datenspeicher oder der VM zugeordnet sind. Sie können auch die mit dem SnapMirror Zeitplan verknüpften RPO-Übertragungszeitpläne anzeigen. Anhand des RPO können Sie feststellen, ob Ihr Backup-Zeitplan für die Wiederherstellung nach einem Ausfall ausreicht. Siehe<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>.</block>
   <block id="7a1d90df184c04b8d0dc0ca260e46e67" category="list-text">*Job Monitor Update*: Die Job Monitor Seite enthält jetzt eine Refresh Option, damit Sie einen aktuellen Status der Operationen erhalten können. Siehe <block ref="701085704c7bdf4268d7fbe3111fe8b9" category="inline-link-rx"></block>.</block>
-  <block id="25d037b5df7f2e04a4d6a1a3bc33caa7" category="paragraph">BlueXP Disaster Recovery ist ein Cloud-basierter Disaster Recovery Service, der Disaster Recovery Workflows automatisiert. Mit der BlueXP Disaster-Recovery-Vorschau können Sie zunächst Ihre lokalen NFS-basierten VMware-Workloads schützen, die NetApp Storage in VMware Cloud (VMC) auf AWS mit Amazon FSX for ONTAP ausführen.</block>
   <block id="8060a341461a61edc489285d4c464062" category="paragraph">Ihre E-Series Systeme können jetzt direkt aus BlueXP heraus erkannt werden. Die Entdeckung von E-Series Systemen eröffnet Ihnen eine vollständige Ansicht der Daten in Ihrer Hybrid-Multi-Cloud.</block>
   <block id="75cbcf1dd82ddd4349696999b639377f" category="paragraph"><block ref="75cbcf1dd82ddd4349696999b639377f" category="inline-link-macro-rx"></block></block>
   <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">Bis 8. November 2023</block>
   <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">Anschluss 3.9.35</block>
   <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">Diese Version enthält kleinere Sicherheitsverbesserungen und Fehlerbehebungen.</block>
-  <block id="abff2804f60c6da51fe02e78167abad1" category="section-title">November 6 (Version 1.26.3)</block>
-  <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">Die folgenden Probleme wurden in dieser Version behoben</block>
-  <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">Es wurde eine Inkonsistenz bei der Darstellung der Anzahl der vom System gescannten Dateien in Dashboards behoben.</block>
-  <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">Verbesserte das Scanverhalten durch die Handhabung und Berichterstattung von Dateien und Verzeichnissen mit Sonderzeichen im Namen und Metadaten.</block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">Bis 08. November 2023</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">Diese Version der wirtschaftlichen Effizienz von BlueXP enthält eine neue Option, mit der Sie Ihre Assets bewerten und feststellen können, ob eine Technologieaktualisierung empfohlen wird. Der Service umfasst eine neue Option zur technischen Aktualisierung in der linken Navigation, neue Seiten, auf denen Sie eine Bewertung Ihrer aktuellen Workloads und Ressourcen vornehmen können, sowie einen Bericht mit Empfehlungen für Sie.</block>
   <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">Unterstützung für geplante Jobs im Job Monitor</block>
@@ -545,18 +532,10 @@
   <block id="2a7d8d5d92a8e8110b2bc2ab71c0c002" category="paragraph">Zuvor wurden Catalog.zip Backups 7 Tage lang aufbewahrt. Jetzt werden sie für 30 Tage aufbewahrt.</block>
   <block id="16f6196e265bdbd3f9da022848c51d8a" category="inline-link">Stellen Sie BlueXP Backup- und Recovery-Daten an dunklen Standorten wieder her</block>
   <block id="89b2c6f6be45f8f05d713b7bae69cd15" category="paragraph">Siehe<block ref="5596168e45150b1d53148898addeba07" category="inline-link-rx"></block>.</block>
-  <block id="81c60fb26d30a0a1fa208bc6b7d14e6f" category="section-title">Januar 10 (Version 1.27)</block>
   <block id="be8658cdca9524eb49f00560785f3ab7" category="section-title">Die Ergebnisse der Untersuchungsseite zeigen jetzt zusätzlich zur Gesamtanzahl der Elemente die Gesamtgröße an</block>
   <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">Die gefilterten Ergebnisse auf der Untersuchungsseite zeigen nun zusätzlich zur Gesamtanzahl der Dateien die Gesamtgröße der Elemente an. Dies kann beim Verschieben von Dateien, beim Löschen von Dateien und vielem mehr helfen.</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">Zusätzliche Gruppen-IDs als „für Organisation offen“ konfigurieren</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">Zusätzliche Gruppen-IDs als „für Organisation offen“ hinzufügen</block>
-  <block id="fd9107be3db2a4144e054c68a7eab15f" category="section-title">8 Januar 2024</block>
-  <block id="dba248d0d18e6170f9bd4a4286edda53" category="section-title">Neue VMs für Azure: Mehrere Verfügbarkeitszonen</block>
-  <block id="c8d113632e2ef2b901829a0843658f2c" category="paragraph">Ab Cloud Volumes ONTAP 9.13.1 unterstützen die folgenden VM-Typen Azure mehrere Verfügbarkeitszonen für neue und bestehende Implementierungen von Hochverfügbarkeitspaaren:</block>
-  <block id="ceac2355e7d70d7e31592bc8ded88ab3" category="list-text">L16s_v3</block>
-  <block id="2b89a58d3269391f70f9c7fb8d68f746" category="list-text">L32s_v3</block>
-  <block id="c7316b16841dc002d14d45c38a750287" category="list-text">L48s_v3</block>
-  <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="list-text">L64s_v3</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link-macro">Unterstützte Konfigurationen in Azure</block>
   <block id="22342037237200e034fd29c9cfd5bfd4" category="paragraph"><block ref="22342037237200e034fd29c9cfd5bfd4" category="inline-link-macro-rx"></block></block>
   <block id="0850cf3036348eacfcb9da9c7e6dff71" category="section-title">03 Januar 2024</block>
@@ -580,4 +559,101 @@
   <block id="708880d509c52585ca0500cd17ef2166" category="list-text">E32ds_v5</block>
   <block id="843cc0b63b36e79d0bdf4097a1b84b6a" category="list-text">E48ds_v5</block>
   <block id="6ec5cb856eb24c85cf7368cdfd11627f" category="list-text">E64ds_v5</block>
+  <block id="5985540cd0cc5c0e58eaebe95659534e" category="section-title">15 Februar 2024</block>
+  <block id="875cabf7fcb6d8f631b842029efd2117" category="section-title">Anschluss 3.9.37</block>
+  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.</block>
+  <block id="937efe0b961bcb892e05e19e0c147973" category="paragraph">Derzeit ist die Version 3.9.37 für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
+  <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">Namen bearbeiten</block>
+  <block id="c42458c54134318669b685ee8730a478" category="paragraph">Wenn Sie sich mit den NetApp Cloud-Anmeldedaten bei BlueXP anmelden, können Sie jetzt Ihren Namen in *Benutzereinstellungen* bearbeiten.</block>
+  <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">Ein Screenshot, der die Möglichkeit zeigt, Ihren Namen unter Benutzereinstellungen zu bearbeiten.</block>
+  <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4a784443543a41df794122c52fae1df7" category="paragraph">Die Bearbeitung Ihres Namens wird nicht unterstützt, wenn Sie sich mit einer Verbundverbindung oder mit Ihrem NetApp Support-Website-Konto anmelden.</block>
+  <block id="c7f67b21e0c8d093756f7b3a59e8d2e8" category="section-title">IMDSv1-Anforderung für EC2-Instanzen</block>
+  <block id="09477b433fb18272d0d3ee6b7a7e23ad" category="paragraph">Sie sollten beachten, dass der Instance Metadata Service Version 1 (IMDSv1) auf Amazon EC2 Instanzen erforderlich ist, bevor Sie die Connector-Software manuell in AWS installieren.</block>
+  <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link">Erfahren Sie mehr über die Anforderung an IMDSv1 in AWS</block>
+  <block id="ae1d4316f9a8104fa910e65fd2096cb3" category="paragraph"><block ref="3fb75bc46ec80b0989f43707450cda37" category="inline-link-rx"></block>.</block>
+  <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">4. März 2024 (Version 1.29)</block>
+  <block id="2155776a968fa3c23d5147a57832435f" category="section-title">Jetzt können Sie Scandaten ausschließen, die sich in bestimmten Datenquellen-Verzeichnissen befinden</block>
+  <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">Wenn die BlueXP Klassifizierung Scandaten in bestimmten Quellverzeichnissen ausschließen soll, können Sie diese Verzeichnisnamen zu einer Konfigurationsdatei hinzufügen, die durch die BlueXP Klassifizierung verarbeitet wird. Mit dieser Funktion können Sie verhindern, dass Verzeichnisse gescannt werden, die unnötig sind oder zu falsch positiven Ergebnissen von persönlichen Daten führen würden.</block>
+  <block id="1566e9c70755185a01fd5ae6296dca7b" category="paragraph"><block ref="2b616ef681b794b63b03f66a13723ff8" category="inline-link-rx"></block>.</block>
+  <block id="402607c1b30a68385dcfbd12111327c1" category="section-title">10. Januar 2024 (Version 1.27)</block>
+  <block id="7cda33697c25a4972bdbfab414004cc2" category="section-title">14. Dezember 2023 (Version 1.26.6)</block>
+  <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">Diese Version enthält einige kleinere Verbesserungen.</block>
+  <block id="176a42de7f70d82ff8506b6739d7b290" category="paragraph">Das Release hat auch vorübergehend die folgenden Optionen entfernt:</block>
+  <block id="aebeafb9d6b45d6e3629685737b0b510" category="inline-link-macro">Überwachen und managen Sie Dateizugriffsereignisse</block>
+  <block id="39b6848535d4f2679ee032ca465bba8c" category="list-text">Die Option zum Aktivieren der Überwachungsprotokollsammlung wurde deaktiviert. Siehe <block ref="01ac4154b50639da0a94f22ce7059c7f" category="inline-link-macro-rx"></block>.</block>
+  <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link-macro">Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten</block>
+  <block id="ea2bddf8f5366e4e19e9f92e993db900" category="list-text">Bei der Untersuchung der Verzeichnisse steht die Möglichkeit zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen nicht zur Verfügung. Siehe <block ref="5f0cc912e1424f54004e4ab3376e7552" category="inline-link-macro-rx"></block>.</block>
+  <block id="e87b43c3f65a9e6b5fc0f778e155e091" category="inline-link-macro">Private Daten organisieren</block>
+  <block id="95f502d77f0f99fc7fc8414116a3b796" category="list-text">Die Option zur Integration von Daten mit AIP-Labels (Azure Information Protection) wurde deaktiviert. Siehe <block ref="1f3e517a67b0b53387aa4b447bd4c674" category="inline-link-macro-rx"></block>.</block>
+  <block id="592997dde366d5775e7e052816854f74" category="section-title">5 März 2024</block>
+  <block id="cf8f238c2116738b5ed3bacdbd527d14" category="section-title">Cloud Volumes ONTAP 9.14.1 GA</block>
+  <block id="fc0f9e3eef3a6eff3efe2fe7cf358466" category="paragraph">BlueXP kann jetzt Cloud Volumes ONTAP 9.14.1 General Availability Release in AWS, Azure und Google Cloud implementieren und managen.</block>
+  <block id="4b51a8df678b7448fbc55b79ad365ed7" category="section-title">11 Februar 2024</block>
+  <block id="66a743c4896414f00b485685ab377a19" category="section-title">Verzeichnisse nach regex filtern</block>
+  <block id="df5c4f17d479f00c828a9edc617f2277" category="paragraph">Benutzer haben nun die Möglichkeit, Verzeichnisse mit regex zu filtern.</block>
+  <block id="32d736bf69b032967c9ca2f284cd6218" category="inline-link">Erfahren Sie mehr über die Funktion *Verzeichnisse ausschließen*.</block>
+  <block id="9afa1c757f9d9c1d7a951ff852629645" category="paragraph"><block ref="9afa1c757f9d9c1d7a951ff852629645" category="inline-link-rx"></block></block>
+  <block id="82e62a186bc8e1499e10d1400cd762e1" category="section-title">08 Februar 2024</block>
+  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Dashboard zur Nachhaltigkeit</block>
+  <block id="f66a566e9695faf3a9ac3f398a6e5dcd" category="inline-link-macro">Dashboard Für Nachhaltigkeit</block>
+  <block id="abb657094a0038dadd2b0ad8a1f2644b" category="paragraph">Sie können jetzt direkt über das auf die Nachhaltigkeitsmetriken für Ihr Standard-Dashboard oder Ihre Standard-Watchlist zugreifen <block ref="3bfa14a7a0d533bd50f797d3680bb9e4" category="inline-link-macro-rx"></block> Verlinken:</block>
+  <block id="8d1c3a552ad49163efb4753de2a95773" category="section-title">ClusterViewer</block>
+  <block id="3f0a64c1722e89371bae517923a9f798" category="paragraph">Sie können jetzt Festplatten-RPM-Informationen im Abschnitt Datenträgerzusammenfassung anzeigen, der auf der Registerkarte Speicher und in ClusterViewer-Berichten verfügbar ist.</block>
+  <block id="c08885153d0680dab7349b930f5310c4" category="section-title">BlueXP Disaster Recovery</block>
+  <block id="1804830d648adf9126d51f4a827ca950" category="paragraph">Mit der Digital Wallet von BlueXP können Sie Lizenzen für die Disaster Recovery von BlueXP jetzt managen. Sie können Lizenzen hinzufügen, Lizenzen aktualisieren und Details zur lizenzierten Kapazität anzeigen.</block>
+  <block id="85bdddc8ce218c6365f105f9d309d898" category="inline-link">Managen Sie Lizenzen für BlueXP Datenservices</block>
+  <block id="ca654cde28a00db1fb587b8b6bb82015" category="paragraph"><block ref="ca654cde28a00db1fb587b8b6bb82015" category="inline-link-rx"></block></block>
+  <block id="23f1adcf87ca650c2ac077f4be520c97" category="paragraph">Dies ist die Disaster Recovery-Version von BlueXP für die allgemeine Verfügbarkeit. Sie umfasst folgende Updates.</block>
+  <block id="5751cbd481f2486866a7e6d4339df621" category="list-text">*Lizenzierungs-Updates*: Mit BlueXP Disaster Recovery können Sie sich für eine kostenlose 90-Tage-Testversion anmelden oder eine eigene Lizenz (BYOL) mitbringen. Dabei handelt es sich um eine NetApp-Lizenzdatei (NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten. Sie können die Seriennummer der Lizenz verwenden, um das BYOL in der Digital Wallet von BlueXP zu aktivieren. Die Disaster-Recovery-Gebühren für BlueXP basieren auf der bereitgestellten Kapazität von Datastores.</block>
+  <block id="e907b41f5f3d7332bee5a43fbbf78a08" category="inline-link">Lizenzierung einrichten</block>
+  <block id="cba500373ea886a2bb3e508440756918" category="paragraph">Weitere Informationen zur Einrichtung einer Lizenzierung für die Disaster Recovery von BlueXP finden Sie unter<block ref="7585b54fad00f1219b8233730153156f" category="inline-link-rx"></block>.</block>
+  <block id="c32aede135606fbfc51d8bd7581b4201" category="inline-link">Managen Sie Lizenzen für alle BlueXP Services</block>
+  <block id="4d2e644b683b6f34426a63ff3961ea9d" category="paragraph">Weitere Informationen zum Verwalten von Lizenzen für *alle* BlueXP Services finden Sie unter<block ref="834374a0b207d980c4d47827175a6637" category="inline-link-rx"></block>.</block>
+  <block id="5938c93734fbca9c12e3827aa5218ed8" category="list-text">*Zeitpläne bearbeiten*: Mit dieser Version können Sie jetzt Zeitpläne einrichten, um Compliance- und Failover-Tests zu testen, damit Sie sicherstellen können, dass diese korrekt funktionieren, wenn Sie sie benötigen.</block>
+  <block id="4b2bfa262e877a668b7102f58d207f63" category="inline-link">Erstellen Sie den Replizierungsplan</block>
+  <block id="976dcedce9d4c9dc14db60abc49c5867" category="paragraph">Weitere Informationen finden Sie unter<block ref="8026234d3eaba16fdffb266108c2804b" category="inline-link-rx"></block>.</block>
+  <block id="578e9059da07f7d858d4746bbf9af55a" category="section-title">Februar 2024</block>
+  <block id="0468e5ced7eddf7112cb542d124a006f" category="paragraph">Diese BlueXP Disaster-Recovery-Vorschau enthält die folgenden Updates:</block>
+  <block id="c61970ed6417395a368e95032dbce932" category="list-text">*Network Enhancement*: Mit diesem Release können Sie nun die Größe der VM CPU und RAM Werte ändern. Sie können nun auch ein Netzwerk-DHCP oder eine statische IP-Adresse für die VM auswählen.</block>
+  <block id="bb3e5e687ab316872aaebfbeeb4a6605" category="list-text">DHCP: Wenn Sie diese Option wählen, geben Sie Anmeldeinformationen für die VM an.</block>
+  <block id="302dd2d13eb7b51a95fccbe2fc1ba0b8" category="list-text">Statische IP: Sie können die gleichen oder andere Informationen aus der Quell-VM auswählen. Wenn Sie dieselbe Auswahl wie die Quelle wählen, müssen Sie keine Anmeldeinformationen eingeben. Wenn Sie jedoch andere Informationen aus der Quelle verwenden möchten, können Sie Anmeldeinformationen, IP-Adresse, Subnetzmaske, DNS und Gateway-Informationen angeben.</block>
+  <block id="1a390a4e18b059462c8f07ea2ea02106" category="paragraph">Weitere Informationen finden Sie unter<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>.</block>
+  <block id="18d156337647f6bf6b3408e6bf902c50" category="list-text">*Custom Scripts* können jetzt als Post Failover Prozesse eingebunden werden. Mit benutzerdefinierten Skripts kann die BlueXP Disaster Recovery Ihr Skript nach einem Failover-Prozess ausführen. Sie können beispielsweise ein benutzerdefiniertes Skript verwenden, um alle Datenbanktransaktionen nach Abschluss des Failovers wieder aufzunehmen.</block>
+  <block id="2652fb9c2d661c6e545a590071ac6a1f" category="inline-link">Failover an einen Remote-Standort</block>
+  <block id="162522900f68ffca5220e53ec0e2c907" category="paragraph">Weitere Informationen finden Sie unter<block ref="7cdfded96340b83fb1e5d3c286b13377" category="inline-link-rx"></block>.</block>
+  <block id="8d416397bb32c8298a01a75068b98f3c" category="list-text">*SnapMirror Beziehung*: Sie können jetzt eine SnapMirror Beziehung erstellen während Sie den Replizierungsplan entwickeln. Früher mussten Sie diese Beziehung außerhalb der Disaster Recovery von BlueXP aufbauen.</block>
+  <block id="1d73761c9dd4b9338f6974eee8d2a449" category="list-text">*Consistency Groups*: Wenn Sie einen Replikationsplan erstellen, können Sie VMs mit unterschiedlichen Volumes und SVMs einbeziehen. Die Disaster Recovery von BlueXP erstellt einen KonsistenzgruppenSnapshot, der alle Volumes enthält und alle sekundären Standorte aktualisiert.</block>
+  <block id="ed38b69c5713d5b42f77e9c3ec5872a8" category="list-text">*VM Power-on Delay Option*: Wenn Sie einen Replikationsplan erstellen, können Sie VMs zu einer Ressourcengruppe hinzufügen. Mit Ressourcengruppen können Sie jede VM eine Verzögerung einstellen, sodass sie in einer verzögerten Reihenfolge hochgefahren werden.</block>
+  <block id="193634e2d37697e73e8a9d15d4dca73d" category="list-text">*Applikationskonsistente Snapshot Kopien*: Sie können angeben, applikationskonsistente Snapshot Kopien zu erstellen. Der Service setzt die Applikation still und erstellt dann einen Snapshot, um einen konsistenten Status der Applikation zu erhalten.</block>
+  <block id="77a292951e2cd7ee0d1bc7d3db0020ec" category="list-text">Mit dieser Version können Sie schneller auf Informationen auf anderen Seiten über das Dashboard zugreifen.</block>
+  <block id="8fb6114a69ebd8d03454bf88226c2699" category="inline-link">Erfahren Sie mehr über BlueXP Disaster Recovery</block>
+  <block id="0f354958858456370fa7b64c5f2a913c" category="paragraph"><block ref="929628a652068d14da23775529f8803b" category="inline-link-rx"></block>.</block>
+  <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="section-title">Schutz durch Ransomware</block>
+  <block id="5a62a1aba4b0b7df087f145049f2b71f" category="paragraph">Diese Vorschauversion des Ransomware-Schutzes von BlueXP enthält die folgenden Updates:</block>
+  <block id="cf69a03aa5287886f0e8d3de1a6334cc" category="inline-link">Erfahren Sie mehr über das Verwalten von Richtlinien</block>
+  <block id="2c32a45feb7d83419121ac60cd93f581" category="list-text">*Schutz-Policy-Management*: Zusätzlich zur Verwendung von vordefinierten Richtlinien können Sie jetzt Richtlinien erstellen, ändern und löschen.<block ref="b9442a8e5462552f8e91e8150e2b9935" category="inline-link-rx"></block>.</block>
+  <block id="ac623dda99022aa586562b6804c2f1b8" category="inline-link">Erfahren Sie mehr über das Erstellen von Sicherungsrichtlinien</block>
+  <block id="0fd4c934346a4b20a9b03012b080912b" category="list-text">*Unveränderlichkeit bei sekundärem Storage (DataLock)*: Mit der NetApp DataLock Technologie im Objektspeicher können Sie das Backup jetzt unveränderlich im sekundären Storage gestalten.<block ref="a216e61ae0b0740b7be8287c615fa066" category="inline-link-rx"></block>.</block>
+  <block id="732b7b17a4dd9ae4a4359cee4b9b391d" category="inline-link">Erfahren Sie mehr über das Konfigurieren von Backup-Zielen</block>
+  <block id="6baf05b01e83bd3d4b8a2024f16a20f6" category="list-text">*Automatisches Backup auf NetApp StorageGRID*: Neben der Nutzung von AWS können Sie nun auch StorageGRID als Backup-Ziel wählen.<block ref="563323d59981c5d050897f7686a7f9d8" category="inline-link-rx"></block>.</block>
+  <block id="9e599e81fbf58f35a4e8ea8d4d14b0f6" category="inline-link">Erfahren Sie mehr über die Reaktion auf einen erkannten Ransomware-Alarm</block>
+  <block id="e3647ee6d2bf29ee74ee9f4e9ff4e201" category="list-text">*Zusätzliche Funktionen zur Untersuchung potenzieller Angriffe*: Sie können jetzt weitere forensische Details anzeigen, um den erkannten potenziellen Angriff zu untersuchen.<block ref="707fb9c7332f6aa933e8445c28830d7a" category="inline-link-rx"></block>.</block>
+  <block id="bda01efb679b0ca92bc4e76a23294328" category="inline-link">Erfahren Sie mehr über die Wiederherstellung nach einem Ransomware-Angriff (nach der Neutralisierung von Vorfällen)</block>
+  <block id="1661fc233cecf8b9c070d8d398293283" category="list-text">*Wiederherstellungsprozess*. Der Wiederherstellungsprozess wurde verbessert. Jetzt können Sie Volumes für Volumes, alle Volumes für einen Workload oder sogar einige Dateien vom Volume in einem einzigen Workflow wiederherstellen.<block ref="a36a14eacaa464cdf2747d859c29de55" category="inline-link-rx"></block>.</block>
+  <block id="8aea370efa0da7f8c985a03488d3b9a7" category="inline-link">Mehr zu BlueXP Ransomware-Schutz</block>
+  <block id="41e5a42a8cc2023ceb0f8dd06cce7a27" category="paragraph"><block ref="5a80707c96309e25f4c73aee7d2327b1" category="inline-link-rx"></block>.</block>
+  <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">6 Oktober 2023</block>
+  <block id="ae98c30c78f5642e201d040b9e0b468c" category="paragraph">Der BlueXP Ransomware-Schutzservice ist eine SaaS-Lösung für den Schutz von Daten, die Erkennung potenzieller Angriffe und die Wiederherstellung von Daten nach einem Ransomware-Angriff.</block>
+  <block id="4c77961875ba555ef50d5063c1b6fad0" category="paragraph">In der Vorschau werden die applikationsbasierten Workloads von Oracle, MySQL, VM-Datastores und File Shares auf lokalem NAS-Storage sowie Cloud Volumes ONTAP auf AWS (über das NFS-Protokoll) über BlueXP Konten hinweg einzeln geschützt und Daten einzeln in Amazon Web Services Cloud-Storage gesichert.</block>
+  <block id="75b67029f102f7aa5f52d85fbaeb59b1" category="paragraph">Der BlueXP Ransomware-Schutz-Service bietet eine vollständige Nutzung mehrerer NetApp Technologien, sodass Ihr Datensicherheitsadministrator oder Security Operations Engineer die folgenden Ziele erreichen kann:</block>
+  <block id="c97c8c1adb5529a50db916535c46fa2b" category="list-text">Ransomware-Schutz bei allen Ihren Workloads auf einen Blick</block>
+  <block id="b6f8dc0dd7c16df94c4c9e61ea4c4dcf" category="list-text">Einblicke in Empfehlungen zum Schutz vor Ransomware</block>
+  <block id="39a3e38e85bba8b90ed1e5b7d1f36cb3" category="list-text">Verbessern Sie den Schutz basierend auf BlueXP Empfehlungen für den Ransomware-Schutz.</block>
+  <block id="41315f1df6d709866390b219f4b1adac" category="list-text">Weisen Sie Ransomware-Schutzrichtlinien zu, um Ihre wichtigsten Workloads und hochriskante Daten gegen Ransomware-Angriffe zu schützen.</block>
+  <block id="0f1fe9be7b1943507afe2ef939f76423" category="list-text">Der Zustand Ihrer Workloads gegen Ransomware-Angriffe, die auf Datenanomalien Wert suchen, überwachen.</block>
+  <block id="12bcfe65b7fb19c1dbe60c374599be1e" category="list-text">Ermitteln Sie schnell die Auswirkungen von Ransomware-Vorfällen auf Ihren Workload.</block>
+  <block id="f4d7f013aee4ff8dd19b36611ba3f3c6" category="list-text">Intelligentes Recovery nach Ransomware-Vorfällen durch Wiederherstellung der Daten und Sicherstellung, dass keine erneuten Infektionen der gespeicherten Daten auftreten.</block>
+  <block id="c615da36d364061ce672b091d8aa7d3b" category="list-text"><block ref="c615da36d364061ce672b091d8aa7d3b" category="inline-link-rx"></block></block>
+  <block id="19532230e3ff8a5fc0c27cc8389cac67" category="list-text"><block ref="19532230e3ff8a5fc0c27cc8389cac67" category="inline-link-rx"></block></block>
 </blocks>
