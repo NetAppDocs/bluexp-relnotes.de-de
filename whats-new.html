@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head class="at-element-marker">
+  <title>Aktuelle Änderungen in BlueXP | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Aktuelle Änderungen in BlueXP | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/de-de/bluexp-relnotes/whats-new.html" />
+	<meta property="og:description" content="Erfahren Sie mehr über die neuesten Änderungen an den Cloud-Services, die Teil der BlueXP Plattform sind. Weitere Informationen finden Sie in den vollständig..." />
+  <meta property="og:image" content="https://docs.netapp.com/de-de/bluexp-relnotes/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Erfahren Sie mehr über die neuesten Änderungen an den Cloud-Services, die Teil der BlueXP Plattform sind. Weitere Informationen finden Sie in den vollständig...">
+  <meta name="keywords" content=" what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters"><!-- Icons -->
+  <link rel="icon" href="/de-de/bluexp-relnotes/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/de-de/bluexp-relnotes/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/de-de/bluexp-relnotes/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/de-de/bluexp-relnotes/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/de-de/bluexp-relnotes/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/de-de/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-relnotes/whats-new.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/de-de/bluexp-relnotes/js/na-search.js'></script><script src='/de-de/bluexp-relnotes/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/de-de/bluexp-relnotes/js/custom-dropdown.js'></script>
+  <script src='/de-de/bluexp-relnotes/js/FileSaver.min.js'></script>
+  <script src='/de-de/bluexp-relnotes/js/jszip-utils.min.js'></script>
+  <script src='/de-de/bluexp-relnotes/js/jszip.min.js'></script><script src='/de-de/bluexp-relnotes/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/de-de/bluexp-relnotes/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/de/index.aspx">
+                <image id="ie-header-logo" src="/de-de/bluexp-relnotes/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/de/support-and-training/documentation/">Dokumente</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/de-de/bluexp-relnotes/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">Deutsch</span>
+                    <img src="/de-de/bluexp-relnotes/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/de-de/bluexp-relnotes/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/de-de/bluexp-relnotes/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">NetApp Komplettlösung</span>
+                    <img src="/de-de/bluexp-relnotes/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/de-de/bluexp-relnotes/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/de/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">Support</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">Knowledge Base</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/de/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">Training</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/de-de/bluexp-relnotes/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/de-de/bluexp-relnotes/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">Gesamte Dokumentation</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">Cloud-Dokumentation</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/de-de/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/de-de/bluexp-relnotes/">-->
+      Release Notes
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/de-de/bluexp-relnotes/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/de-de/bluexp-relnotes/search.html" 
+        data-type="widget"
+        data-placeholder="Dokumentation durchsuchen"
+        data-no-results-found="Keine Ergebnisse gefunden für {query}"
+        data-did-you-mean="Suchen Sie nach {suggestion}."
+        data-no-results-found-did-you-mean="Es wurden keine Ergebnisse für {query} gefunden. Meinten Sie {suggestion}?"
+        data-results-found="{hitCount} Ergebnisse gefunden"
+        data-error-message="Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+        data-error-reset="Suche zurücksetzen"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Versionshinweise zu BlueXP"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/whats-new.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/de-de/bluexp-relnotes/index.html">
+        Versionshinweise zu BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Neueste Änderungen"
+      data-li-level="1#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/whats-new.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/de-de/bluexp-relnotes/whats-new.html">
+        Neueste Änderungen
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Versionshinweisen – Index"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/whats-new.html" 
+      dale-entry-url="/release-notes-index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/de-de/bluexp-relnotes/release-notes-index.html">
+        Versionshinweisen – Index
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Rechtliche Hinweise"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/whats-new.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/de-de/bluexp-relnotes/legal-notices.html">
+        Rechtliche Hinweise
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/de-de/bluexp-relnotes"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/de-de/bluexp-relnotes"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/de-de/bluexp-relnotes/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> Die deutsche Sprachversion wurde als Serviceleistung für Sie durch maschinelle Übersetzung erstellt. Bei eventuellen Unstimmigkeiten hat die englische Sprachversion Vorrang. </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">Aktuelle Änderungen in BlueXP</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-03-26 16:36:33 +0000">03/26/2024</time>
+        
+    
+    
+        <span>Beitragende
+        </span>
+    
+    
+        <a target="_blank" class="ext-link-indicator" href="/de-de/bluexp-relnotes/feed.xml"><img width="21" height="21" src="/de-de/bluexp-relnotes/images/rss-button.png" alt="RSS" title="RSS-Updates für diese Seite abonnieren" /></a>
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/de-de/bluexp-relnotes/images/discuss-sm.svg" alt="" class="github-icon" />Änderungen vorschlagen</span>
+        <img src="/de-de/bluexp-relnotes/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/de-de/bluexp-relnotes/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-relnotes.de-de/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/de-de/bluexp-relnotes/whats-new.html&page-title=Aktuelle Änderungen in BlueXP" class="page-nav-contribute-link" role="button">Dokumentationsänderungen anfordern</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-relnotes/blob/main/whats-new.adoc" class="page-nav-contribute-link" role="button">Diese Seite bearbeiten</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >So können Sie beitragen</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/de-de/bluexp-relnotes/images/pdf-icon.png" alt="" width="16" height="16"/>PDFs<img src="/de-de/bluexp-relnotes/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/de-de/bluexp-relnotes/pdfs/fullsite-sidebar/Versionshinweise_zu_BlueXP.pdf" >
+                    <img src="/de-de/bluexp-relnotes/images/pdf-icon.png" alt="" width="16" height="16"/>PDF dieser Dokumentationssite</a>
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/de-de/bluexp-relnotes/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Sammlung separater PDF-Dokumente<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Erfahren Sie mehr über die neuesten Änderungen an den Cloud-Services, die Teil der BlueXP Plattform sind. Weitere Informationen erhalten Sie im <a href="release-notes-index.html">"Vollständiger Satz an Versionshinweisen"</a> Für jeden einzelnen Service.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="administrative-funktionen">Administrative Funktionen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In diesem Abschnitt werden neue Funktionen in Bezug auf BlueXP-Verwaltungsfunktionen beschrieben: Konten, Connectors, Anmeldeinformationen für Cloud-Provider und mehr.</p>
+</div>
+<div class="sect2">
+<h3 id="26-märz-2024">26 März 2024</h3>
+<div class="sect3">
+<h4 id="freigabe-des-privaten-modus-3-9-38">Freigabe des privaten Modus (3.9.38)</h4>
+<div class="paragraph">
+<p>Für BlueXP ist jetzt eine neue Version des privaten Modus verfügbar. Diese Version umfasst die folgenden Versionen der BlueXP Services, die im Private-Mode unterstützt werden.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Service</th>
+<th class="tableblock halign-left valign-top">Version enthalten</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stecker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.9.38</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup und Recovery</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12 März 2024</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassifizierung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4 März 2024</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes ONTAP-Management</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8 März 2024</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Digitale Brieftasche</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30 Juli 2023</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lokales ONTAP-Cluster-Management</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30 Juli 2023</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Replizierung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">September 18 2022</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Diese neue Version kann von der NetApp Support-Website heruntergeladen werden.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html">"Weitere Informationen zum privaten Modus"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html">"Erfahren Sie mehr über die ersten Schritte mit BlueXP im privaten Modus"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode">"Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="8-märz-2024">8 März 2024</h3>
+<div class="sect3">
+<h4 id="anschluss-3-9-38">Anschluss 3.9.38</h4>
+<div class="paragraph">
+<p>Derzeit ist die Version 3.9.38 für den Standardmodus und den eingeschränkten Modus verfügbar. Diese Version enthält Unterstützung für IMDSv2 in AWS und ein AWS-Berechtigungs-Update.</p>
+</div>
+<div class="sect4">
+<h5 id="unterstützung-für-imdsv2">Unterstützung für IMDSv2</h5>
+<div class="paragraph">
+<p>BlueXP unterstützt jetzt den Amazon EC2 Instance Metadata Service Version 2 (IMDSv2) mit der Connector-Instanz sowie mit Cloud Volumes ONTAP-Instanzen. IMDSv2 bietet einen verbesserten Schutz vor Schwachstellen. Bisher wurde nur IMDSv1 unterstützt.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/" target="_blank" rel="noopener">"Weitere Informationen zu IMDSv2 finden Sie im AWS Security Blog"</a></p>
+</div>
+<div class="paragraph">
+<p>Der Instance Metadata Service (IMDS) wird in EC2-Instanzen wie folgt aktiviert:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sie eignet sich für neue Connector-Implementierungen von BlueXP, über den AWS Marketplace oder mithilfe von <a href="https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html" target="_blank" rel="noopener">"Terraform-Skripte"</a>, IMDSv2 ist standardmäßig auf der EC2-Instanz aktiviert.</p>
+</li>
+<li>
+<p>Wenn Sie eine neue EC2-Instanz in AWS starten und dann die Connector-Software manuell installieren, ist IMDSv2 standardmäßig ebenfalls aktiviert.</p>
+</li>
+<li>
+<p>Für bestehende Connectors wird IMDSv1 weiterhin unterstützt, Sie können IMDSv2 jedoch manuell auf der EC2-Instanz konfigurieren, wenn Sie dies wünschen.</p>
+</li>
+<li>
+<p>Für Cloud Volumes ONTAP ist IMDSv1 standardmäßig auf neuen und bestehenden Instanzen aktiviert. Sie können IMDSv2 auf den EC2-Instanzen manuell konfigurieren, wenn Sie möchten.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances">"Erfahren Sie, wie Sie IMDSv2 auf vorhandenen Instanzen konfigurieren"</a>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="update-zu-den-aws-berechtigungen">Update zu den AWS-Berechtigungen</h5>
+<div class="paragraph">
+<p>Wir haben die Connector-Richtlinie für AWS mit der Berechtigung „ec2:DescribeAvailability Zones“ aktualisiert. Diese Berechtigung ist für eine kommende Version erforderlich. Wir werden die Versionshinweise mit weiteren Details aktualisieren, sobald diese Version verfügbar ist.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html">"Anzeigen von AWS-Berechtigungen für den Connector"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="proxy-einstellungen-und-cloud-volumes-ontap-einstellungen">Proxy-Einstellungen und Cloud Volumes ONTAP-Einstellungen</h4>
+<div class="paragraph">
+<p>Die Proxy-Server-Einstellungen für den Connector sind jetzt auf der Seite <strong>Connectors verwalten</strong> (Standardmodus) oder auf der Seite <strong>Connectors bearbeiten</strong> (eingeschränkter Modus und privater Modus) verfügbar.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html">"Erfahren Sie, wie Sie den Connector für die Verwendung eines Proxy-Servers konfigurieren"</a>.</p>
+</div>
+<div class="paragraph">
+<p>Außerdem haben wir die Seite <strong>Verbindungseinstellungen</strong> in <strong>Cloud Volumes ONTAP-Einstellungen</strong> umbenannt.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png" alt="Ein Screenshot, der die Option Cloud Volumes ONTAP-Einstellungen zeigt, die im Menü Einstellungen verfügbar ist."></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="15-februar-2024">15 Februar 2024</h3>
+<div class="sect3">
+<h4 id="anschluss-3-9-37">Anschluss 3.9.37</h4>
+<div class="paragraph">
+<p>Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.</p>
+</div>
+<div class="paragraph">
+<p>Derzeit ist die Version 3.9.37 für den Standardmodus und den eingeschränkten Modus verfügbar.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="namen-bearbeiten">Namen bearbeiten</h4>
+<div class="paragraph">
+<p>Wenn Sie sich mit den NetApp Cloud-Anmeldedaten bei BlueXP anmelden, können Sie jetzt Ihren Namen in <strong>Benutzereinstellungen</strong> bearbeiten.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png" alt="Ein Screenshot, der die Möglichkeit zeigt, Ihren Namen unter Benutzereinstellungen zu bearbeiten."></span></p>
+</div>
+<div class="paragraph">
+<p>Die Bearbeitung Ihres Namens wird nicht unterstützt, wenn Sie sich mit einer Verbundverbindung oder mit Ihrem NetApp Support-Website-Konto anmelden.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="azure-blob-storage">Azure Blob Storage</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="5-juni-2023">5 Juni 2023</h3>
+<div class="sect3">
+<h4 id="hinzufügen-neuer-storage-konten-von-bluexp-möglich">Hinzufügen neuer Storage-Konten von BlueXP möglich</h4>
+<div class="paragraph">
+<p>Sie haben schon lange die Möglichkeit, Azure Blob Storage auf dem BlueXP-Bildschirm anzuzeigen. Sie können jetzt direkt aus BlueXP neue Storage-Konten hinzufügen und Eigenschaften vorhandener Storage-Konten ändern. <a href="https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html" target="_blank" rel="noopener">"Hier erfahren Sie, wie Sie neue Azure Blob Storage-Konten hinzufügen"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="azure-netapp-dateien">Azure NetApp Dateien</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="11-april-2021">11. April 2021</h3>
+<div class="sect3">
+<h4 id="unterstützung-für-volume-vorlagen">Unterstützung für Volume-Vorlagen</h4>
+<div class="paragraph">
+<p>Mit einem neuen Applikationsvorlagen-Service können Sie eine Volume-Vorlage für Azure NetApp Files einrichten. Die Vorlage sollte Ihren Job einfacher machen, da bestimmte Volume-Parameter bereits in der Vorlage definiert werden, z. B. Kapazitäts-Pool, Größe, Protokoll, vnet und Subnetz, auf dem sich das Volume befinden soll, und vieles mehr. Wenn ein Parameter bereits vordefiniert ist, können Sie einfach zum nächsten Volume-Parameter springen.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-remediation/concept-resource-templates.html" target="_blank" rel="noopener">"Erfahren Sie mehr über Applikationsvorlagen und deren Verwendung in Ihrer Umgebung"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html">"Erfahren Sie, wie Sie ein Azure NetApp Files Volume aus einer Vorlage erstellen"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="8-märz-2021">8 März 2021</h3>
+<div class="sect3">
+<h4 id="ändern-sie-service-level-dynamisch">Ändern Sie Service-Level dynamisch</h4>
+<div class="paragraph">
+<p>Sie können das Service-Level für ein Volume dynamisch anpassen, um Workload-Anforderungen zu erfüllen und die Kosten zu optimieren. Das Volume wird in den anderen Kapazitäts-Pool verschoben, ohne dass sich dies auf das Volume auswirkt.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level">"Erfahren Sie, wie Sie den Service-Level eines Volumes ändern"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="3-august-2020">3. August 2020</h3>
+<div class="sect3">
+<h4 id="azure-netapp-files-einrichtung-und-management">Azure NetApp Files Einrichtung und Management</h4>
+<div class="paragraph">
+<p>Azure NetApp Files direkt über Cloud Manager einrichten und managen Nachdem Sie eine Azure NetApp Files Arbeitsumgebung erstellt haben, können Sie die folgenden Aufgaben ausführen:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Erstellung von NFS- und SMB-Volumes</p>
+</li>
+<li>
+<p>Management von Kapazitätspools und Volume Snapshots</p>
+<div class="paragraph">
+<p>Cloud Manager ermöglicht das Erstellen, Löschen und Wiederherstellen von Volume Snapshots. Sie können auch neue Kapazitäts-Pools erstellen und deren Service Level angeben.</p>
+</div>
+</li>
+<li>
+<p>Bearbeiten Sie ein Volume, indem Sie seine Größe ändern und Tags verwalten.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Durch die Möglichkeit, Azure NetApp Files direkt über Cloud Manager zu erstellen und zu managen, wird die vorherige Datenmigrationsfunktion ersetzt.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="amazon-fsx-für-ontap">Amazon FSX für ONTAP</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="30-juli-2023">30 Juli 2023</h3>
+<div class="paragraph">
+<p>Kunden können jetzt Amazon FSX for NetApp ONTAP-Dateisysteme in drei neuen AWS-Regionen erstellen: Europa (Zürich), Europa (Spanien) und Asien-Pazifik (Hyderabad).</p>
+</div>
+<div class="paragraph">
+<p>Siehe <a href="https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-ontap-three-regions/#:~:text=Customers%20can%20now%20create%20Amazon,file%20systems%20in%20the%20cloud" target="_blank" rel="noopener">"Amazon FSX for NetApp ONTAP ist jetzt in drei weiteren Regionen verfügbar"</a> Vollständige Informationen.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="02-juli-2023">02 Juli 2023</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Das ist jetzt möglich <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html">"Fügen Sie eine Storage-VM hinzu"</a> Zu dem Filesystem Amazon FSX für NetApp ONTAP mit BlueXP.</p>
+</li>
+<li>
+<p>Die Registerkarte <strong>Meine Möglichkeiten</strong> ist jetzt <strong>Mein Anwesen</strong>. Die Dokumentation wird aktualisiert, um den neuen Namen wiederzugeben.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="04-juni-2023">04 Juni 2023</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Wenn <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment">"Schaffung einer Arbeitsumgebung"</a>, Sie können die Startzeit für das wöchentliche 30-minütige Wartungsfenster angeben, um sicherzustellen, dass die Wartung nicht mit kritischen Geschäftsaktivitäten in Konflikt steht.</p>
+</li>
+<li>
+<p>Wenn <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html">"Erstellen eines Volumes"</a>, Sie können die Datenoptimierung durch Erstellen einer FlexGroup zur Verteilung von Daten über Volumes.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="amazon-s3-storage">Amazon S3 Storage</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="5-märz-2023">5 März 2023</h3>
+<div class="sect3">
+<h4 id="möglichkeit-zum-hinzufügen-neuer-buckets-aus-bluexp">Möglichkeit zum Hinzufügen neuer Buckets aus BlueXP</h4>
+<div class="paragraph">
+<p>Sie können Amazon S3 Buckets seit geraumer Zeit auf dem BlueXP Canvas anzeigen. Sie können jetzt neue Buckets hinzufügen und Eigenschaften für vorhandene Buckets direkt aus BlueXP ändern. <a href="https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html" target="_blank" rel="noopener">"So fügen Sie neue Amazon S3 Buckets hinzu"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="backup-und-recovery">Backup und Recovery</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="12-märz-2024">12 März 2024</h3>
+<div class="sect3">
+<h4 id="möglichkeit-zur-schnellen-wiederherstellung-von-cloud-backups-auf-lokale-ontap-volumes">Möglichkeit zur „schnellen Wiederherstellung“ von Cloud-Backups auf lokale ONTAP Volumes</h4>
+<div class="paragraph">
+<p>Jetzt können Sie eine <em>schnelle Wiederherstellung</em> eines Volumes aus dem Cloud-Storage in ein lokales ONTAP-Ziel-Volume durchführen. Bisher konnten Sie nur eine schnelle Wiederherstellung auf einem Cloud Volumes ONTAP System durchführen. Die schnelle Wiederherstellung ist ideal für Disaster Recovery-Situationen, in denen Sie so schnell wie möglich Zugriff auf ein Volume gewährleisten müssen. Eine schnelle Wiederherstellung ist viel schneller als die vollständige Volume-Wiederherstellung. Die Metadaten aus einem Cloud-Snapshot werden auf einem ONTAP-Ziel-Volume wiederhergestellt. Die Quelle könnte von AWS S3, Azure Blob, Google Cloud Services oder NetApp StorageGRID stammen.</p>
+</div>
+<div class="paragraph">
+<p>Auf dem lokalen ONTAP Zielsystem muss ONTAP Version 9.14.1 oder höher ausgeführt werden.</p>
+</div>
+<div class="paragraph">
+<p>Sie können dies mithilfe des Such- und Wiederherstellungsprozesses tun, nicht mit dem Such- und Wiederherstellungsprozess.</p>
+</div>
+<div class="paragraph">
+<p>Weitere Informationen finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html">"ONTAP-Daten aus Backup-Dateien wiederherstellen"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="möglichkeit-zur-wiederherstellung-von-dateien-und-ordnern-von-snapshot-und-replizierungskopien">Möglichkeit zur Wiederherstellung von Dateien und Ordnern von Snapshot und Replizierungskopien</h4>
+<div class="paragraph">
+<p>Bisher konnten Dateien und Ordner nur von Backup-Kopien in AWS, Azure und Google Cloud Services wiederhergestellt werden. Sie können jetzt Dateien und Ordner von lokalen Snapshot Kopien und von Replizierungskopien wiederherstellen.</p>
+</div>
+<div class="paragraph">
+<p>Sie können diese Funktion mithilfe des Such- und Wiederherstellungsprozesses durchführen, nicht mit dem Durchsuchen- und Wiederherstellungsprozess.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="01-februar-2024">01 Februar 2024</h3>
+<div class="sect3">
+<h4 id="verbesserungen-bei-bluexp-backup-und-recovery-für-virtual-machines">Verbesserungen bei BlueXP Backup und Recovery für Virtual Machines</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Unterstützung beim Wiederherstellen von Virtual Machines an einem alternativen Speicherort</p>
+</li>
+<li>
+<p>Unterstützung für das Aufheben der Sicherung von Datastores</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bis-15-dezember-2023">Bis 15. Dezember 2023</h3>
+<div class="sect3">
+<h4 id="berichte-für-lokale-snapshot-und-replikations-snapshot-kopien-verfügbar">Berichte für lokale Snapshot- und Replikations-Snapshot-Kopien verfügbar</h4>
+<div class="paragraph">
+<p>Bisher konnten Sie nur Berichte zu Sicherungskopien erstellen. Jetzt können Sie Berichte auch zu lokalen Snapshot Kopien und Snapshot Kopien der Replizierung erstellen.</p>
+</div>
+<div class="paragraph">
+<p>Mit diesen Berichten haben Sie folgende Möglichkeiten:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Stellen Sie sicher, dass kritische Daten gemäß den Richtlinien Ihres Unternehmens geschützt sind.</p>
+</li>
+<li>
+<p>Für eine Volume-Gruppe lassen sich Backups reibungslos durchführen.</p>
+</li>
+<li>
+<p>Stellen Sie einen Nachweis für Ihre Produktionsdaten bereit.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Siehe <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html">"Berichte zur Datensicherung"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="benutzerdefiniertes-tagging-auf-volumes-zum-sortieren-und-filtern-verfügbar">Benutzerdefiniertes Tagging auf Volumes zum Sortieren und Filtern verfügbar</h4>
+<div class="paragraph">
+<p>Ab ONTAP 9.13.1 können Sie Volumes nun benutzerdefinierte Tags hinzufügen, sodass Sie Volumes innerhalb und über mehrere Arbeitsumgebungen hinweg gruppieren können. So können Sie Volumes auf den BlueXP Backup- und Recovery-UI-Seiten sortieren und Berichte einfiltern.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="katalog-backups-werden-30-tage-aufbewahrt">Katalog-Backups werden 30 Tage aufbewahrt</h4>
+<div class="paragraph">
+<p>Zuvor wurden Catalog.zip Backups 7 Tage lang aufbewahrt. Jetzt werden sie für 30 Tage aufbewahrt.</p>
+</div>
+<div class="paragraph">
+<p>Siehe <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html">"Stellen Sie BlueXP Backup- und Recovery-Daten an dunklen Standorten wieder her"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="23-oktober-2023">23 Oktober 2023</h3>
+<div class="sect3">
+<h4 id="3-2-1-erstellen-der-backup-richtlinie-während-der-backup-aktivierung">3-2-1 Erstellen der Backup-Richtlinie während der Backup-Aktivierung</h4>
+<div class="paragraph">
+<p>Zuvor mussten benutzerdefinierte Richtlinien erstellt werden, bevor Sie einen Snapshot, eine Replizierung oder ein Backup initiiert haben. Sie können jetzt mithilfe der BlueXP Backup- und Recovery-UI eine Richtlinie während des Backup-Aktivierungsprozesses erstellen.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html">"Erfahren Sie mehr über Richtlinien"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="unterstützung-für-schnelle-on-demand-restores-von-ontap-volumes">Unterstützung für schnelle On-Demand Restores von ONTAP Volumes</h4>
+<div class="paragraph">
+<p>Mit BlueXP Backup und Recovery lassen sich Volumes nun schnell von Cloud-Storage auf ein Cloud Volumes ONTAP System wiederherstellen. Die schnelle Wiederherstellung ist ideal für Disaster Recovery-Situationen, in denen Sie so schnell wie möglich Zugriff auf ein Volume gewährleisten müssen. Bei einer schnellen Wiederherstellung werden die Metadaten aus der Backup-Datei auf einem Volume wiederhergestellt, anstatt die gesamte Backup-Datei wiederherzustellen.</p>
+</div>
+<div class="paragraph">
+<p>Auf dem Cloud Volumes ONTAP Zielsystem muss ONTAP Version 9.13.0 oder höher ausgeführt werden. <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html">"Weitere Informationen zum Wiederherstellen von Daten"</a>.</p>
+</div>
+<div class="paragraph">
+<p>Der BlueXP Backup- und Recovery Job Monitor zeigt auch Informationen zum Fortschritt schneller Wiederherstellungsaufträge an.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="unterstützung-für-geplante-jobs-im-job-monitor">Unterstützung für geplante Jobs im Job Monitor</h4>
+<div class="paragraph">
+<p>Der BlueXP Backup- und Recovery Job Monitor überwachte zuvor geplante Backup- und Restore-Jobs von Volumes zu Objektspeichern, jedoch keine lokalen Snapshot-, Replizierungs-, Backup- und Restore-Jobs, die über die UI oder die API geplant wurden.</p>
+</div>
+<div class="paragraph">
+<p>Der BlueXP Backup- und Recovery Job Monitor umfasst jetzt geplante Jobs für lokale Snapshots, Replizierungen und Backups in Objekt-Storage.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html">"Erfahren Sie mehr über den aktualisierten Job Monitor"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="klassifizierung">Klassifizierung</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="4-märz-2024-version-1-29">4. März 2024 (Version 1.29)</h3>
+<div class="sect3">
+<h4 id="jetzt-können-sie-scandaten-ausschließen-die-sich-in-bestimmten-datenquellen-verzeichnissen-befinden">Jetzt können Sie Scandaten ausschließen, die sich in bestimmten Datenquellen-Verzeichnissen befinden</h4>
+<div class="paragraph">
+<p>Wenn die BlueXP Klassifizierung Scandaten in bestimmten Quellverzeichnissen ausschließen soll, können Sie diese Verzeichnisnamen zu einer Konfigurationsdatei hinzufügen, die durch die BlueXP Klassifizierung verarbeitet wird. Mit dieser Funktion können Sie verhindern, dass Verzeichnisse gescannt werden, die unnötig sind oder zu falsch positiven Ergebnissen von persönlichen Daten führen würden.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html">"Weitere Informationen ."</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="unterstützung-für-extra-große-instanzen-ist-jetzt-qualifiziert">Unterstützung für extra große Instanzen ist jetzt qualifiziert</h4>
+<div class="paragraph">
+<p>Wenn Sie mehr als 250 Millionen Dateien durch eine BlueXP Klassifizierung scannen möchten, können Sie eine besonders große Instanz in Ihrer Cloud-Implementierung oder vor-Ort-Installation verwenden. Dieser Systemtyp kann bis zu 500 Millionen Dateien scannen.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type">"Weitere Informationen ."</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="10-januar-2024-version-1-27">10. Januar 2024 (Version 1.27)</h3>
+<div class="sect3">
+<h4 id="die-ergebnisse-der-untersuchungsseite-zeigen-jetzt-zusätzlich-zur-gesamtanzahl-der-elemente-die-gesamtgröße-an">Die Ergebnisse der Untersuchungsseite zeigen jetzt zusätzlich zur Gesamtanzahl der Elemente die Gesamtgröße an</h4>
+<div class="paragraph">
+<p>Die gefilterten Ergebnisse auf der Untersuchungsseite zeigen nun zusätzlich zur Gesamtanzahl der Dateien die Gesamtgröße der Elemente an. Dies kann beim Verschieben von Dateien, beim Löschen von Dateien und vielem mehr helfen.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="zusätzliche-gruppen-ids-als-für-organisation-offen-konfigurieren">Zusätzliche Gruppen-IDs als „für Organisation offen“ konfigurieren</h4>
+<div class="paragraph">
+<p>Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt aus der BlueXP-Klassifizierung als „Open to Organization“ betrachtet werden, wenn die Gruppe ursprünglich nicht mit dieser Berechtigung festgelegt wurde. Alle Dateien und Ordner, denen diese Gruppen-IDs angehängt sind, werden auf der Seite „Untersuchungsdetails“ als „für Organisation offen“ angezeigt. Informieren Sie sich darüber <a href="https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html">"Zusätzliche Gruppen-IDs als „für Organisation offen“ hinzufügen"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="14-dezember-2023-version-1-26-6">14. Dezember 2023 (Version 1.26.6)</h3>
+<div class="paragraph">
+<p>Diese Version enthält einige kleinere Verbesserungen.</p>
+</div>
+<div class="paragraph">
+<p>Das Release hat auch vorübergehend die folgenden Optionen entfernt:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Die Option zum Aktivieren der Überwachungsprotokollsammlung wurde deaktiviert. Siehe <a href="task-manage-file-access-events.html">"Überwachen und managen Sie Dateizugriffsereignisse"</a>.</p>
+</li>
+<li>
+<p>Bei der Untersuchung der Verzeichnisse steht die Möglichkeit zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen nicht zur Verfügung. Siehe <a href="task-investigate-data.html#filter-data-by-sensitivity-and-content">"Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten"</a>.</p>
+</li>
+<li>
+<p>Die Option zur Integration von Daten mit AIP-Labels (Azure Information Protection) wurde deaktiviert. Siehe <a href="task-org-private-data.html">"Private Daten organisieren"</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cloud-volumes-ontap">Cloud Volumes ONTAP</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="8-märz-2024-2">8 März 2024</h3>
+<div class="sect3">
+<h4 id="unterstützung-für-amazon-instant-metadata-service-v2">Unterstützung für Amazon Instant Metadata Service v2</h4>
+<div class="paragraph">
+<p>In AWS unterstützen Cloud Volumes ONTAP, der Mediator und der Connector nun den Amazon Instant Metadata Service v2 (IMDSv2) für alle Funktionen. IMDSv2 bietet einen verbesserten Schutz vor Schwachstellen. Bisher wurde nur IMDSv1 unterstützt.</p>
+</div>
+<div class="paragraph">
+<p>Falls von Ihren Sicherheitsrichtlinien gefordert, können Sie Ihre EC2-Instanzen für die Verwendung von IMDSv2 konfigurieren. Anweisungen finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances" target="_blank" rel="noopener">"BlueXP Installations- und Administrationsdokumentation für das Management vorhandener Connectors"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="5-märz-2024">5 März 2024</h3>
+<div class="sect3">
+<h4 id="cloud-volumes-ontap-9-14-1-ga">Cloud Volumes ONTAP 9.14.1 GA</h4>
+<div class="paragraph">
+<p>BlueXP kann jetzt Cloud Volumes ONTAP 9.14.1 General Availability Release in AWS, Azure und Google Cloud implementieren und managen.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2-februar-2024">2 Februar 2024</h3>
+<div class="sect3">
+<h4 id="unterstützung-für-vms-der-edv5-serie-in-azure">Unterstützung für VMs der Edv5-Serie in Azure</h4>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP unterstützt ab Version 9.14.1 jetzt die folgenden VMs der Edv5-Serie.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>E4ds_v5</p>
+</li>
+<li>
+<p>E8ds_v5</p>
+</li>
+<li>
+<p>E20s_v5</p>
+</li>
+<li>
+<p>E32ds_v5</p>
+</li>
+<li>
+<p>E48ds_v5</p>
+</li>
+<li>
+<p>E64ds_v5</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html" target="_blank" rel="noopener">"Unterstützte Konfigurationen in Azure"</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cloud-volumes-service-für-google-cloud">Cloud Volumes Service für Google Cloud</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="9-september-2020">9. September 2020</h3>
+<div class="sect3">
+<h4 id="unterstützung-von-cloud-volumes-service-für-google-cloud">Unterstützung von Cloud Volumes Service für Google Cloud</h4>
+<div class="paragraph">
+<p>Sie können Cloud Volumes Service für Google Cloud jetzt direkt über BlueXP verwalten:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Einrichten und Erstellen einer Arbeitsumgebung</p>
+</li>
+<li>
+<p>Erstellen und managen Sie NFSv3 und NFSv4.1 Volumes für Linux- und UNIX-Clients</p>
+</li>
+<li>
+<p>Erstellen und managen Sie SMB 3.x Volumes für Windows Clients</p>
+</li>
+<li>
+<p>Erstellung, Löschung und Wiederherstellung von Volume Snapshots</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cloud-betrieb">Cloud-Betrieb</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="bis-7-dezember-2020">Bis 7. Dezember 2020</h3>
+<div class="sect3">
+<h4 id="navigation-zwischen-cloud-manager-und-spot">Navigation zwischen Cloud Manager und Spot</h4>
+<div class="paragraph">
+<p>Jetzt ist die Navigation zwischen Cloud Manager und Spot einfacher.</p>
+</div>
+<div class="paragraph">
+<p>Mit dem neuen Abschnitt <strong>Storage Operations</strong> in Spot können Sie direkt zu Cloud Manager navigieren. Nach dem Abschluss können Sie im Cloud Manager auf der Registerkarte <strong>Compute</strong> wieder zu Spot zurückkehren.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="oktober-18-2020">Oktober 18 2020</h3>
+<div class="sect3">
+<h4 id="wir-stellen-den-computing-service-vor">Wir stellen den Computing-Service vor</h4>
+<div class="paragraph">
+<p>Durch den Einsatz <a href="https://spot.io/products/cloud-analyzer/" target="_blank" rel="noopener">"Spot's Cloud Analyzer"</a>, Cloud Manager bietet jetzt eine allgemeine Kostenanalyse Ihrer Cloud-Computing-Ausgaben und zeigt potenzielle Einsparungen auf. Diese Informationen erhalten Sie im <strong>Compute</strong> Service in Cloud Manager.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-ops/concept-compute.html">"Weitere Informationen zum Computing-Service"</a>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/screenshot_compute_dashboard.gif" alt="Ein Screenshot, der die Seite zur Kostenanalyse in Cloud Manager zeigt"></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="kopieren-und-synchronisieren">Kopieren und Synchronisieren</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="11-februar-2024">11 Februar 2024</h3>
+<div class="sect3">
+<h4 id="verzeichnisse-nach-regex-filtern">Verzeichnisse nach regex filtern</h4>
+<div class="paragraph">
+<p>Benutzer haben nun die Möglichkeit, Verzeichnisse mit regex zu filtern.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships">"Erfahren Sie mehr über die Funktion <strong>Verzeichnisse ausschließen</strong>."</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bis-26-november-2023">Bis 26. November 2023</h3>
+<div class="sect3">
+<h4 id="unterstützung-für-cold-storage-klassen-für-azure-blob">Unterstützung für Cold-Storage-Klassen für Azure Blob</h4>
+<div class="paragraph">
+<p>Azure Blob Cold-Storage-Tier ist jetzt beim Erstellen einer Sync-Beziehung verfügbar.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html">"Erfahren Sie mehr über das Erstellen einer Synchronisierungsbeziehung."</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="unterstützung-für-die-region-tel-aviv-bei-aws-datenmaklern">Unterstützung für die Region Tel Aviv bei AWS-Datenmaklern</h4>
+<div class="paragraph">
+<p>Tel Aviv ist jetzt eine unterstützte Region, wenn er einen Daten-Broker in AWS erstellt.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker">"Erfahren Sie mehr über die Erstellung eines Datenbrokers in AWS"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="aktualisieren-sie-auf-die-node-version-für-daten-broker">Aktualisieren Sie auf die Node-Version für Daten-Broker</h4>
+<div class="paragraph">
+<p>Alle neuen Daten-Broker verwenden jetzt Node-Version 21.2.0. Daten-Broker, die mit diesem Update nicht kompatibel sind, wie CentOS 7.0 und Ubuntu Server 18.0, funktionieren nicht mehr mit der BlueXP Kopier- und Synchronisierungsfunktion.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="3-september-2023">3 September 2023</h3>
+<div class="sect3">
+<h4 id="dateien-durch-regex-ausschließen">Dateien durch regex ausschließen</h4>
+<div class="paragraph">
+<p>Benutzer haben nun die Möglichkeit, Dateien mit regex auszuschließen.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships">"Erfahren Sie mehr über die Funktion <strong>Exclude File Extensions</strong>."</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="fügen-sie-bei-der-erstellung-des-azure-daten-brokers-s3-schlüssel-hinzu">Fügen Sie bei der Erstellung des Azure Daten-Brokers S3 Schlüssel hinzu</h4>
+<div class="paragraph">
+<p>Benutzer können jetzt bei der Erstellung eines Azure Datenbrokers AWS S3 Zugriffsschlüssel und geheime Schlüssel hinzufügen.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker">"Erfahren Sie mehr über die Erstellung eines Datenbrokers in Azure."</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="digitaler-berater">Digitaler Berater</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="15-märz-2024">15 März 2024</h3>
+<div class="sect3">
+<h4 id="wellness">Wellness</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Der Wellness-Workflow enthält jetzt das Widget Nachhaltigkeit, das die Anzahl der empfohlenen Aktionen auf Kunden-, Watchlist-, Standort- und Gruppenebene enthält. Sie können auf die Anzahl der Aktionen klicken, um eine detaillierte Ansicht dieser empfohlenen Aktionen auf dem Dashboard Nachhaltigkeit anzuzeigen. Weitere Informationen finden Sie unter <a href="https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html">"Analysieren Sie die Nachhaltigkeit Ihrer Storage-Systeme"</a>.</p>
+</li>
+<li>
+<p>Die Sicherheitsanfälligkeiten und Ransomware Defense Widgets im Wellness-Workflow werden in einem einzigen Widget kombiniert, das jetzt als Sicherheit &amp; Ransomware Defense bezeichnet wird.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="health-check-dashboard">Health Check Dashboard</h4>
+<div class="paragraph">
+<p>Der Zeitrahmen für technische Cases wird verbessert, um den gesamten Verlauf der Fälle für 6 oder 12 Monate anzuzeigen.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="29-februar-2024">29 Februar 2024</h3>
+<div class="sect3">
+<h4 id="watchlist">Watchlist</h4>
+<div class="paragraph">
+<p>Sie können jetzt eine Watchlist auf Basis der Keystone Abonnementnummern erstellen und über die ersten drei Zeichen einer Abonnement-Nummer oder eines Watchlist-Namens nach einem Keystone Abonnement suchen.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="08-februar-2024">08 Februar 2024</h3>
+<div class="sect3">
+<h4 id="dashboard-zur-nachhaltigkeit">Dashboard zur Nachhaltigkeit</h4>
+<div class="paragraph">
+<p>Sie können jetzt direkt über das auf die Nachhaltigkeitsmetriken für Ihr Standard-Dashboard oder Ihre Standard-Watchlist zugreifen <a href="https://activeiq.netapp.com/redirect/sustainability" target="_blank" rel="noopener">"Dashboard Für Nachhaltigkeit"</a> Verlinken:</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="clusterviewer">ClusterViewer</h4>
+<div class="paragraph">
+<p>Sie können jetzt Festplatten-RPM-Informationen im Abschnitt Datenträgerzusammenfassung anzeigen, der auf der Registerkarte Speicher und in ClusterViewer-Berichten verfügbar ist.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="digitale-brieftasche">Digitale Brieftasche</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="5-märz-2024-2">5 März 2024</h3>
+<div class="sect3">
+<h4 id="bluexp-disaster-recovery">BlueXP Disaster Recovery</h4>
+<div class="paragraph">
+<p>Mit der Digital Wallet von BlueXP können Sie Lizenzen für die Disaster Recovery von BlueXP jetzt managen. Sie können Lizenzen hinzufügen, Lizenzen aktualisieren und Details zur lizenzierten Kapazität anzeigen.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html">"Managen Sie Lizenzen für BlueXP Datenservices"</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="30-juli-2023-2">30 Juli 2023</h3>
+<div class="sect3">
+<h4 id="verbesserte-nutzungsberichte">Verbesserte Nutzungsberichte</h4>
+<div class="paragraph">
+<p>Die Berichte zur Cloud Volumes ONTAP-Nutzung wurden nun um einige Verbesserungen verbessert:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Die tib-Einheit ist jetzt im Namen der Spalten enthalten.</p>
+</li>
+<li>
+<p>Ein neues <em>Node(s)</em>-Feld für Seriennummern ist nun enthalten.</p>
+</li>
+<li>
+<p>Im Bericht zur Auslastung von Storage-VMs wird jetzt eine neue Spalte „<em>Workload Type</em>“ angezeigt.</p>
+</li>
+<li>
+<p>Die Namen der Arbeitsumgebung sind jetzt in den Berichten zu Storage-VMs und Volume-Nutzung enthalten.</p>
+</li>
+<li>
+<p>Der Datenträgertyp <em>file</em> wird nun mit <em>Primary (Read/Write)</em> beschriftet.</p>
+</li>
+<li>
+<p>Der Datenträgertyp <em>secondary</em> wird jetzt mit <em>secondary (DP)</em> bezeichnet.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Weitere Informationen zu Nutzungsberichten finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports">"Nutzungsberichte herunterladen"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="7-mai-2023">7 Mai 2023</h3>
+<div class="sect3">
+<h4 id="google-cloud-angebote">Google Cloud-Angebote</h4>
+<div class="paragraph">
+<p>Das BlueXP Digital Wallet identifiziert jetzt Google Cloud Marketplace Abonnements, die mit einem privaten Angebot verbunden sind, sowie Enddatum und Laufzeit des Abonnements. Durch diese Erweiterung können Sie überprüfen, ob Sie das private Angebot erfolgreich angenommen haben, und die Bedingungen bestätigen.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="aufladeaufschlüsselung">Aufladeaufschlüsselung</h4>
+<div class="paragraph">
+<p>Jetzt finden Sie heraus, für welche Gebühren Sie zahlen, wenn Sie kapazitätsbasierte Lizenzen abonniert haben. Die folgenden Nutzungsberichte können aus dem Digital Wallet von BlueXP heruntergeladen werden. Die Nutzungsberichte enthalten Kapazitätsdetails zu Ihren Abonnements und geben an, wie Sie für die Ressourcen in Ihren Cloud Volumes ONTAP Abonnements in Rechnung gestellt werden. Die herunterladbaren Berichte können leicht mit anderen geteilt werden.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Verwendung des Cloud Volumes ONTAP-Pakets</p>
+</li>
+<li>
+<p>Allgemeine Nutzung</p>
+</li>
+<li>
+<p>Verwendung von Storage VMs</p>
+</li>
+<li>
+<p>Volumennutzung</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Weitere Informationen zu Nutzungsberichten finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports">"Nutzungsberichte herunterladen"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bis-3-april-2023">Bis 3. April 2023</h3>
+<div class="sect3">
+<h4 id="e-mail-benachrichtigungen">E-Mail-Benachrichtigungen</h4>
+<div class="paragraph">
+<p>Das Digital Wallet von BlueXP unterstützt jetzt E-Mail-Benachrichtigungen.</p>
+</div>
+<div class="paragraph">
+<p>Wenn Sie Ihre Benachrichtigungseinstellungen konfigurieren, können Sie E-Mail-Benachrichtigungen erhalten, wenn Ihre BYOL-Lizenzen ablaufen (eine „Warnung“) oder wenn sie bereits abgelaufen sind (eine „Fehler“-Benachrichtigung).</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html" target="_blank" rel="noopener">"Hier erfahren Sie, wie Sie E-Mail-Benachrichtigungen einrichten"</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="lizenzierte-kapazität-für-marketplace-abonnements">Lizenzierte Kapazität für Marketplace-Abonnements</h4>
+<div class="paragraph">
+<p>Bei der Anzeige der kapazitätsbasierten Lizenzierung für Cloud Volumes ONTAP wird in der Digital Wallet von BlueXP die lizenzierte Kapazität angezeigt, die Sie mit privaten Marketplace-Angeboten erworben haben.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html">"Erfahren Sie, wie Sie die verbrauchte Kapazität in Ihrem Konto anzeigen"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="disaster-recovery">Disaster Recovery</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="5-märz-2024-3">5 März 2024</h3>
+<div class="paragraph">
+<p>Dies ist die Disaster Recovery-Version von BlueXP für die allgemeine Verfügbarkeit. Sie umfasst folgende Updates.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Lizenzierungs-Updates</strong>: Mit BlueXP Disaster Recovery können Sie sich für eine kostenlose 90-Tage-Testversion anmelden oder eine eigene Lizenz (BYOL) mitbringen. Dabei handelt es sich um eine NetApp-Lizenzdatei (NLF), die Sie von Ihrem NetApp Vertriebsmitarbeiter erhalten. Sie können die Seriennummer der Lizenz verwenden, um das BYOL in der Digital Wallet von BlueXP zu aktivieren. Die Disaster-Recovery-Gebühren für BlueXP basieren auf der bereitgestellten Kapazität von Datastores.</p>
+<div class="paragraph">
+<p>Weitere Informationen zur Einrichtung einer Lizenzierung für die Disaster Recovery von BlueXP finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html">"Lizenzierung einrichten"</a>.</p>
+</div>
+<div class="paragraph">
+<p>Weitere Informationen zum Verwalten von Lizenzen für <strong>alle</strong> BlueXP Services finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html" target="_blank" rel="noopener">"Managen Sie Lizenzen für alle BlueXP Services"</a>.</p>
+</div>
+</li>
+<li>
+<p><strong>Zeitpläne bearbeiten</strong>: Mit dieser Version können Sie jetzt Zeitpläne einrichten, um Compliance- und Failover-Tests zu testen, damit Sie sicherstellen können, dass diese korrekt funktionieren, wenn Sie sie benötigen.</p>
+<div class="paragraph">
+<p>Weitere Informationen finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html">"Erstellen Sie den Replizierungsplan"</a>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="februar-2024">Februar 2024</h3>
+<div class="paragraph">
+<p>Diese BlueXP Disaster-Recovery-Vorschau enthält die folgenden Updates:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Network Enhancement</strong>: Mit diesem Release können Sie nun die Größe der VM CPU und RAM Werte ändern. Sie können nun auch ein Netzwerk-DHCP oder eine statische IP-Adresse für die VM auswählen.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>DHCP: Wenn Sie diese Option wählen, geben Sie Anmeldeinformationen für die VM an.</p>
+</li>
+<li>
+<p>Statische IP: Sie können die gleichen oder andere Informationen aus der Quell-VM auswählen. Wenn Sie dieselbe Auswahl wie die Quelle wählen, müssen Sie keine Anmeldeinformationen eingeben. Wenn Sie jedoch andere Informationen aus der Quelle verwenden möchten, können Sie Anmeldeinformationen, IP-Adresse, Subnetzmaske, DNS und Gateway-Informationen angeben.</p>
+<div class="paragraph">
+<p>Weitere Informationen finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html">"Erstellen Sie einen Replizierungsplan"</a>.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Custom Scripts</strong> können jetzt als Post Failover Prozesse eingebunden werden. Mit benutzerdefinierten Skripts kann die BlueXP Disaster Recovery Ihr Skript nach einem Failover-Prozess ausführen. Sie können beispielsweise ein benutzerdefiniertes Skript verwenden, um alle Datenbanktransaktionen nach Abschluss des Failovers wieder aufzunehmen.</p>
+<div class="paragraph">
+<p>Weitere Informationen finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html">"Failover an einen Remote-Standort"</a>.</p>
+</div>
+</li>
+<li>
+<p><strong>SnapMirror Beziehung</strong>: Sie können jetzt eine SnapMirror Beziehung erstellen während Sie den Replizierungsplan entwickeln. Früher mussten Sie diese Beziehung außerhalb der Disaster Recovery von BlueXP aufbauen.</p>
+<div class="paragraph">
+<p>Weitere Informationen finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html">"Erstellen Sie einen Replizierungsplan"</a>.</p>
+</div>
+</li>
+<li>
+<p><strong>Consistency Groups</strong>: Wenn Sie einen Replikationsplan erstellen, können Sie VMs mit unterschiedlichen Volumes und SVMs einbeziehen. Die Disaster Recovery von BlueXP erstellt einen KonsistenzgruppenSnapshot, der alle Volumes enthält und alle sekundären Standorte aktualisiert.</p>
+<div class="paragraph">
+<p>Weitere Informationen finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html">"Erstellen Sie einen Replizierungsplan"</a>.</p>
+</div>
+</li>
+<li>
+<p><strong>VM Power-on Delay Option</strong>: Wenn Sie einen Replikationsplan erstellen, können Sie VMs zu einer Ressourcengruppe hinzufügen. Mit Ressourcengruppen können Sie jede VM eine Verzögerung einstellen, sodass sie in einer verzögerten Reihenfolge hochgefahren werden.</p>
+<div class="paragraph">
+<p>Weitere Informationen finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html">"Erstellen Sie einen Replizierungsplan"</a>.</p>
+</div>
+</li>
+<li>
+<p><strong>Applikationskonsistente Snapshot Kopien</strong>: Sie können angeben, applikationskonsistente Snapshot Kopien zu erstellen. Der Service setzt die Applikation still und erstellt dann einen Snapshot, um einen konsistenten Status der Applikation zu erhalten.</p>
+<div class="paragraph">
+<p>Weitere Informationen finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html">"Erstellen Sie einen Replizierungsplan"</a>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="11-januar-2024">11 Januar 2024</h3>
+<div class="paragraph">
+<p>Diese Vorschauversion des Disaster Recovery von BlueXP enthält die folgenden Updates:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Mit dieser Version können Sie schneller auf Informationen auf anderen Seiten über das Dashboard zugreifen.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html">"Erfahren Sie mehr über BlueXP Disaster Recovery"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="20-oktober-2023">20 Oktober 2023</h3>
+<div class="paragraph">
+<p>Diese Vorschauversion des Disaster Recovery von BlueXP enthält die folgenden Updates.</p>
+</div>
+<div class="paragraph">
+<p>Mit der Disaster Recovery von BlueXP können Sie Ihre lokalen, NFS-basierten VMware-Workloads vor Ausfällen in eine andere lokale, NFS-basierte VMware Umgebung, zusätzlich zur Public Cloud, schützen. Mit BlueXP Disaster Recovery werden die Disaster-Recovery-Pläne orchestriert.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-relnotes/images/note.svg" alt="Hinweis">
+</td>
+<td class="content">
+Mit diesem Vorschauangebot behält sich NetApp das Recht vor, Angebotsdetails, Inhalte und Zeitpläne vor der allgemeinen Verfügbarkeit zu ändern.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html">"Erfahren Sie mehr über die Disaster Recovery von BlueXP"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="e-series-systeme">E-Series Systeme</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="18-september-2022">18. September 2022</h3>
+<div class="sect3">
+<h4 id="unterstützung-der-e-series">Unterstützung der E-Series</h4>
+<div class="paragraph">
+<p>Ihre E-Series Systeme können jetzt direkt aus BlueXP heraus erkannt werden. Die Entdeckung von E-Series Systemen eröffnet Ihnen eine vollständige Ansicht der Daten in Ihrer Hybrid-Multi-Cloud.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="wirtschaftliche-effizienz">Wirtschaftliche Effizienz</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="14-märz-2024">14 März 2024</h3>
+<div class="paragraph">
+<p>Wenn Sie bereits über Assets verfügen und feststellen möchten, ob eine Technologie aktualisiert werden muss, können Sie die wirtschaftlichen Effizienzoptionen von BlueXP nutzen. Sie können entweder eine kurze Bewertung Ihrer aktuellen Workloads überprüfen und Empfehlungen erhalten, oder wenn Sie in den vergangenen 90 Tagen AutoSupport-Protokolle an NetApp gesendet haben, kann der Service jetzt eine Workload-Simulation durchführen, um die Performance Ihrer Workloads auf neuer Hardware zu ermitteln.</p>
+</div>
+<div class="paragraph">
+<p>Sie können auch einen Workload hinzufügen und vorhandene Workloads von der Simulation ausschließen.</p>
+</div>
+<div class="paragraph">
+<p>Bisher konnten Sie nur eine Bewertung Ihrer Ressourcen vornehmen und feststellen, ob eine Technologieerneuerung empfohlen wird.</p>
+</div>
+<div class="paragraph">
+<p>Die Funktion ist jetzt Teil der Option „Tech Refresh“ in der linken Navigation.</p>
+</div>
+<div class="paragraph">
+<p>Erfahren Sie mehr über das <a href="../use/tech-refresh.html">"Bewertung einer Technologieaktualisierung"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bis-08-november-2023">Bis 08. November 2023</h3>
+<div class="paragraph">
+<p>Diese Version der wirtschaftlichen Effizienz von BlueXP enthält eine neue Option, mit der Sie Ihre Assets bewerten und feststellen können, ob eine Technologieaktualisierung empfohlen wird. Der Service umfasst eine neue Option zur technischen Aktualisierung in der linken Navigation, neue Seiten, auf denen Sie eine Bewertung Ihrer aktuellen Workloads und Ressourcen vornehmen können, sowie einen Bericht mit Empfehlungen für Sie.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bis-02-april-2023">Bis 02. April 2023</h3>
+<div class="paragraph">
+<p>Der neue BlueXP Service für wirtschaftliche Effizienz erkennt Storage-Assets mit aktueller oder prognostizierter niedriger Kapazität und gibt Empfehlungen zu Daten-Tiering oder zusätzlicher Kapazität für lokale AFF Systeme.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.html">"Erfahren Sie mehr über die wirtschaftliche Effizienz von BlueXP"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="edge-caching">Edge-Caching</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="august-2023-version-2-3">August 2023 (Version 2.3)</h3>
+<div class="paragraph">
+<p>In dieser Version werden die in beschriebenen Probleme behoben <a href="https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html">"Probleme Wurden Behoben"</a>. Aktualisierte Softwarepakete finden Sie unter <a href="https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources">"Auf dieser Seite"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="5-april-2023-version-2-2">5. April 2023 (Version 2.2)</h3>
+<div class="paragraph">
+<p>Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben <a href="https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html">"Probleme Wurden Behoben"</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="unterstützung-für-global-file-cache-auf-cloud-volumes-ontap-systemen-in-google-cloud">Unterstützung für Global File Cache auf Cloud Volumes ONTAP Systemen in Google Cloud</h4>
+<div class="paragraph">
+<p>Zur Implementierung eines Cloud Volumes ONTAP Systems in Google Cloud ist eine neue „Edge Cache“ Lizenz verfügbar. Sie können ein Global File Cache Edge System für jeweils 3 tib erworbener Kapazität auf dem Cloud Volumes ONTAP System implementieren.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages">"Erfahren Sie mehr über das Edge Cache Lizenzpaket."</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="der-setup-assistent-und-die-benutzeroberfläche-für-die-gfc-konfiguration-wurden-erweitert-um-die-netapp-lizenzregistrierung-durchzuführen">Der Setup-Assistent und die Benutzeroberfläche für die GFC-Konfiguration wurden erweitert, um die NetApp Lizenzregistrierung durchzuführen</h4>
+
+</div>
+<div class="sect3">
+<h4 id="verbesserter-optimus-psm-zur-konfiguration-der-edge-sync-funktionen">Verbesserter Optimus PSM zur Konfiguration der Edge Sync-Funktionen</h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="24-oktober-2022-version-2-1">24. Oktober 2022 (Version 2.1)</h3>
+<div class="paragraph">
+<p>Diese Version enthält die unten aufgeführten neuen Funktionen. Außerdem werden die in beschriebenen Probleme behoben <a href="https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html">"Probleme Wurden Behoben"</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="global-file-cache-ist-jetzt-für-eine-beliebige-anzahl-von-lizenzen-verfügbar">Global File Cache ist jetzt für eine beliebige Anzahl von Lizenzen verfügbar</h4>
+<div class="paragraph">
+<p>Die vorherige Mindestanforderung von 10 Lizenzen bzw. 30 TB Speicher wurde entfernt. Für jeden 3 TB Storage wird eine Lizenz für Global File Cache ausgestellt.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="unterstützung-für-die-verwendung-eines-offline-license-management-servers-wurde-hinzugefügt">Unterstützung für die Verwendung eines Offline License Management Servers wurde hinzugefügt</h4>
+<div class="paragraph">
+<p>Ein Offline- oder Dark-Site ist License Management Server (LMS) besonders nützlich, wenn der LMS keine Internetverbindung zur Lizenzvalidierung mit Lizenzquellen hat. Während der Erstkonfiguration ist eine Internetverbindung und eine Verbindung zur Lizenzquelle erforderlich. Sobald die LMS-Instanz konfiguriert ist, kann sie dunkel werden. Alle Kanten/Kerne sollten eine Verbindung mit LMS haben, um die Lizenzen kontinuierlich zu validieren.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="edge-instanzen-können-weitere-gleichzeitige-benutzer-unterstützen">Edge-Instanzen können weitere gleichzeitige Benutzer unterstützen</h4>
+<div class="paragraph">
+<p>Eine einzige globale File Cache Edge Instanz kann bis zu 500 Benutzer pro dedizierter physischer Edge Instanz sowie bis zu 300 Benutzer für dedizierte virtuelle Bereitstellungen bereitstellen. Die maximale Anzahl von Benutzern war bisher 400 bzw. 200.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="verbesserter-optimus-psm-für-die-konfiguration-der-cloud-lizenzierung">Verbesserter Optimus-PSM für die Konfiguration der Cloud-Lizenzierung</h4>
+
+</div>
+<div class="sect3">
+<h4 id="erweitert-die-edge-sync-funktion-in-optimus-ui-edge-configuration-um-alle-verbundenen-clients-anzuzeigen">Erweitert die Edge Sync-Funktion in Optimus UI (Edge Configuration), um alle verbundenen Clients anzuzeigen</h4>
+
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="google-cloud-storage">Google Cloud Storage</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="10-juli-2023">10 Juli 2023</h3>
+<div class="sect3">
+<h4 id="das-hinzufügen-neuer-buckets-und-das-management-vorhandener-buckets-aus-bluexp-ist-möglich">Das Hinzufügen neuer Buckets und das Management vorhandener Buckets aus BlueXP ist möglich</h4>
+<div class="paragraph">
+<p>Sie haben nun schon lange die Möglichkeit, Google Cloud Storage Buckets auf dem BlueXP Canvas anzuzeigen. Sie können jetzt neue Buckets hinzufügen und Eigenschaften für vorhandene Buckets direkt aus BlueXP ändern. <a href="https://docs.netapp.com/us-en/bluexp-google-cloud-storage/task-add-gcp-bucket.html" target="_blank" rel="noopener">"So fügen Sie neue Google Cloud Storage Buckets hinzu"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="kubernetes">Kubernetes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="bis-02-april-2023-2">Bis 02. April 2023</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Das ist jetzt möglich <a href="https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-trident.html">"Deinstallieren Sie Astra Trident"</a> Sie wurde über den Trident Operator oder BlueXP installiert.</p>
+</li>
+<li>
+<p>Die Benutzeroberfläche wurde verbessert und Screenshots wurden in der Dokumentation aktualisiert.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="05-märz-2023">05 März 2023</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Kubernetes in BlueXP unterstützt jetzt Astra Trident 23.01.</p>
+</li>
+<li>
+<p>Die Benutzeroberfläche wurde verbessert und Screenshots wurden in der Dokumentation aktualisiert.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="06-november-2022">06. November 2022</h3>
+<div class="paragraph">
+<p>Wenn <a href="https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes">"Definieren von Speicherklassen"</a>, Sie können jetzt Storage-Klasse Economy für Block- oder Dateisystem-Speicher aktivieren.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="migrationsberichte">Migrationsberichte</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="bis-13-november-2023">Bis 13. November 2023</h3>
+<div class="paragraph">
+<p>Sie können jetzt Berichte für Volumes erstellen, die das SMB/CIFS-Protokoll verwenden.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="03-september-2023">03 September 2023</h3>
+<div class="paragraph">
+<p>Der aktualisierte BlueXP Migrations-Reports-Service bietet Updates für die Berichtsdaten. Berichte enthalten jetzt die zugewiesene Kapazität.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="02-juni-2023">02 Juni 2023</h3>
+<div class="paragraph">
+<p>Mit dem neuen BlueXP Migrationsberichterstattung-Service können Sie die Anzahl an Dateien, Verzeichnissen, symbolischen Links, Hardlinks, die Tiefe und Breite der Filesystem-Strukturen, größten Dateien und mehr in Ihrer Storage-Landschaft schnell ermitteln.</p>
+</div>
+<div class="paragraph">
+<p>Mit diesen Informationen wissen Sie vorab, dass der Prozess, den Sie verwenden möchten, Ihren Bestand effizient und erfolgreich handhaben kann.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html">"Erfahren Sie mehr über die BlueXP Migrationsberichte"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ontap-cluster-vor-ort">ONTAP-Cluster vor Ort</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="30-juli-2023-3">30 Juli 2023</h3>
+<div class="sect3">
+<h4 id="flexgroup-volumes-erstellen">FlexGroup Volumes erstellen</h4>
+<div class="paragraph">
+<p>Wenn Sie einen Cluster mit einem Connector managen, können Sie jetzt FlexGroup Volumes mit der BlueXP API erstellen.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html" target="_blank" rel="noopener">"Erfahren Sie, wie Sie ein FlexGroup Volume erstellen"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html" target="_blank" rel="noopener">"Was ist ein FlexGroup Volume"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2-juli-2023">2 Juli 2023</h3>
+<div class="sect3">
+<h4 id="cluster-entdeckung-von-my-estate">Cluster-Entdeckung von My Estate</h4>
+<div class="paragraph">
+<p>Sie können jetzt On-Premises-ONTAP-Cluster unter <strong>Canvas &gt; My estate</strong> erkennen, indem Sie einen Cluster auswählen, den BlueXP basierend auf den ONTAP-Clustern vorentdeckt hat, die mit der E-Mail-Adresse für Ihre BlueXP-Anmeldung verknüpft sind.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster">"Erfahren Sie auf der Seite My Estate, wie Sie Cluster erkennen"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="4-mai-2023">4 Mai 2023</h3>
+<div class="sect3">
+<h4 id="bluexp-backup-und-recovery-ermöglichen">BlueXP Backup und Recovery ermöglichen</h4>
+<div class="paragraph">
+<p>Ab ONTAP 9.13.1 können Sie System Manager (erweiterte Ansicht) verwenden, um BlueXP Backup und Recovery zu aktivieren, wenn Sie das Cluster über einen Connector erkannt haben. <a href="https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html" target="_blank" rel="noopener">"Erfahren Sie mehr über die Unterstützung von BlueXP Backup und Recovery"</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="upgrade-des-ontap-versions-images-und-der-hardware-firmware">Upgrade des ONTAP Versions-Images und der Hardware-Firmware</h4>
+<div class="paragraph">
+<p>Ab ONTAP 9.10.1 können Sie System Manager (erweiterte Ansicht) verwenden, um das ONTAP Versions-Image und die Hardware-Firmware zu aktualisieren. Sie können automatische Upgrades erhalten, um auf dem neuesten Stand zu bleiben, oder manuelle Updates von Ihrem lokalen Computer oder einem Server durchführen, auf den über BlueXP zugegriffen werden kann. <a href="https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update" target="_blank" rel="noopener">"Erfahren Sie mehr über Upgrades von ONTAP und Firmware"</a></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-relnotes/images/note.svg" alt="Hinweis">
+</td>
+<td class="content">
+Wenn Sie über einen Connector verfügen, können Sie keine Updates von Ihrem lokalen Rechner aus vornehmen, nur von einem Server, auf den Sie mit BlueXP zugreifen können.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="operative-ausfallsicherheit">Operative Ausfallsicherheit</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="bis-02-april-2023-3">Bis 02. April 2023</h3>
+<div class="paragraph">
+<p>Mithilfe des neuen BlueXP Service für betriebliche Ausfallsicherheit und seiner automatisierten Vorschläge zur Behebung DES IT-Betriebsrisikos können Sie vorgeschlagene Korrekturmaßnahmen implementieren, bevor es zu einem Ausfall oder einem Ausfall kommt.</p>
+</div>
+<div class="paragraph">
+<p>Operational Resiliency ist ein Service, mit dem Sie Alarme und Ereignisse analysieren können, um den Zustand, die Uptime und die Performance von Services und Lösungen aufrechtzuerhalten.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/intro.html">"Erfahren Sie mehr über die betriebliche Ausfallsicherheit von BlueXP"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="schutz-durch-ransomware">Schutz durch Ransomware</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="5-märz-2024-4">5 März 2024</h3>
+<div class="paragraph">
+<p>Diese Vorschauversion des Ransomware-Schutzes von BlueXP enthält die folgenden Updates:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Schutz-Policy-Management</strong>: Zusätzlich zur Verwendung von vordefinierten Richtlinien können Sie jetzt Richtlinien erstellen, ändern und löschen. <a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html">"Erfahren Sie mehr über das Verwalten von Richtlinien"</a>.</p>
+</li>
+<li>
+<p><strong>Unveränderlichkeit bei sekundärem Storage (DataLock)</strong>: Mit der NetApp DataLock Technologie im Objektspeicher können Sie das Backup jetzt unveränderlich im sekundären Storage gestalten. <a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html">"Erfahren Sie mehr über das Erstellen von Sicherungsrichtlinien"</a>.</p>
+</li>
+<li>
+<p><strong>Automatisches Backup auf NetApp StorageGRID</strong>: Neben der Nutzung von AWS können Sie nun auch StorageGRID als Backup-Ziel wählen. <a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html">"Erfahren Sie mehr über das Konfigurieren von Backup-Zielen"</a>.</p>
+</li>
+<li>
+<p><strong>Zusätzliche Funktionen zur Untersuchung potenzieller Angriffe</strong>: Sie können jetzt weitere forensische Details anzeigen, um den erkannten potenziellen Angriff zu untersuchen. <a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html">"Erfahren Sie mehr über die Reaktion auf einen erkannten Ransomware-Alarm"</a>.</p>
+</li>
+<li>
+<p><strong>Wiederherstellungsprozess</strong>. Der Wiederherstellungsprozess wurde verbessert. Jetzt können Sie Volumes für Volumes, alle Volumes für einen Workload oder sogar einige Dateien vom Volume in einem einzigen Workflow wiederherstellen. <a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html">"Erfahren Sie mehr über die Wiederherstellung nach einem Ransomware-Angriff (nach der Neutralisierung von Vorfällen)"</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html">"Mehr zu BlueXP Ransomware-Schutz"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="6-oktober-2023">6 Oktober 2023</h3>
+<div class="paragraph">
+<p>Der BlueXP Ransomware-Schutzservice ist eine SaaS-Lösung für den Schutz von Daten, die Erkennung potenzieller Angriffe und die Wiederherstellung von Daten nach einem Ransomware-Angriff.</p>
+</div>
+<div class="paragraph">
+<p>In der Vorschau werden die applikationsbasierten Workloads von Oracle, MySQL, VM-Datastores und File Shares auf lokalem NAS-Storage sowie Cloud Volumes ONTAP auf AWS (über das NFS-Protokoll) über BlueXP Konten hinweg einzeln geschützt und Daten einzeln in Amazon Web Services Cloud-Storage gesichert.</p>
+</div>
+<div class="paragraph">
+<p>Der BlueXP Ransomware-Schutz-Service bietet eine vollständige Nutzung mehrerer NetApp Technologien, sodass Ihr Datensicherheitsadministrator oder Security Operations Engineer die folgenden Ziele erreichen kann:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ransomware-Schutz bei allen Ihren Workloads auf einen Blick</p>
+</li>
+<li>
+<p>Einblicke in Empfehlungen zum Schutz vor Ransomware</p>
+</li>
+<li>
+<p>Verbessern Sie den Schutz basierend auf BlueXP Empfehlungen für den Ransomware-Schutz.</p>
+</li>
+<li>
+<p>Weisen Sie Ransomware-Schutzrichtlinien zu, um Ihre wichtigsten Workloads und hochriskante Daten gegen Ransomware-Angriffe zu schützen.</p>
+</li>
+<li>
+<p>Der Zustand Ihrer Workloads gegen Ransomware-Angriffe, die auf Datenanomalien Wert suchen, überwachen.</p>
+</li>
+<li>
+<p>Ermitteln Sie schnell die Auswirkungen von Ransomware-Vorfällen auf Ihren Workload.</p>
+</li>
+<li>
+<p>Intelligentes Recovery nach Ransomware-Vorfällen durch Wiederherstellung der Daten und Sicherstellung, dass keine erneuten Infektionen der gespeicherten Daten auftreten.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html">"Mehr zu BlueXP Ransomware-Schutz"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="korrekturmaßnahmen">Korrekturmaßnahmen</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="3-märz-2022">3 März 2022</h3>
+<div class="sect3">
+<h4 id="jetzt-können-sie-eine-vorlage-erstellen-um-bestimmte-arbeitsumgebungen-zu-finden">Jetzt können Sie eine Vorlage erstellen, um bestimmte Arbeitsumgebungen zu finden</h4>
+<div class="paragraph">
+<p>Mit der Aktion „vorhandene Ressourcen suchen“ können Sie die Arbeitsumgebung identifizieren und anschließend andere Vorlagenaktionen wie die Erstellung eines Volumes verwenden, um auf einfache Weise Aktionen in vorhandenen Arbeitsumgebungen durchzuführen. <a href="https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#examples-of-finding-existing-resources-and-enabling-services-using-templates">"Weitere Informationen finden Sie hier"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="möglichkeit-zur-erstellung-einer-cloud-volumes-ontap-ha-arbeitsumgebung-in-aws">Möglichkeit zur Erstellung einer Cloud Volumes ONTAP HA-Arbeitsumgebung in AWS</h4>
+<div class="paragraph">
+<p>Die vorhandene Unterstützung zur Erstellung einer Cloud Volumes ONTAP-Arbeitsumgebung in AWS wurde erweitert und umfasst nun zusätzlich ein Single-Node-System ein Hochverfügbarkeitssystem. <a href="https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment">"Erfahren Sie, wie Sie eine Vorlage für eine Cloud Volumes ONTAP Arbeitsumgebung erstellen"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="9-februar-2022">9 Februar 2022</h3>
+<div class="sect3">
+<h4 id="sie-können-jetzt-eine-vorlage-erstellen-um-bestimmte-vorhandene-volumes-zu-finden-und-dann-cloud-backup-zu-aktivieren">Sie können jetzt eine Vorlage erstellen, um bestimmte vorhandene Volumes zu finden und dann Cloud Backup zu aktivieren</h4>
+<div class="paragraph">
+<p>Mithilfe der neuen Aktion „Ressource suchen“ können Sie alle Volumes identifizieren, auf denen Sie Cloud Backup aktivieren möchten. Anschließend können Sie die Aktion „Cloud Backup“ verwenden, um das Backup auf diesen Volumes zu aktivieren.</p>
+</div>
+<div class="paragraph">
+<p>Aktuelle Unterstützung bieten Volumes auf Cloud Volumes ONTAP und lokalen ONTAP Systemen. <a href="https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#find-existing-volumes-and-activate-bluexp-backup-and-recovery">"Weitere Informationen finden Sie hier"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="oktober-31-2021">Oktober 31 2021</h3>
+<div class="sect3">
+<h4 id="jetzt-können-sie-ihre-synchronisierungsbeziehungen-markieren-damit-sie-sie-gruppieren-oder-kategorisieren-können-um-einen-einfachen-zugriff-zu-ermöglichen">Jetzt können Sie Ihre Synchronisierungsbeziehungen markieren, damit Sie sie gruppieren oder kategorisieren können, um einen einfachen Zugriff zu ermöglichen</h4>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-remediation/concept-tagging.html">"Erfahren Sie mehr über Ressourcen-Tagging"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="replizierung">Replizierung</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="september-18-2022">September 18 2022</h3>
+<div class="sect3">
+<h4 id="fsx-für-ontap-auf-cloud-volumes-ontap">FSX für ONTAP auf Cloud Volumes ONTAP</h4>
+<div class="paragraph">
+<p>Sie können jetzt Daten von einem Amazon FSX für ONTAP-Dateisystem auf Cloud Volumes ONTAP replizieren.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html">"Hier erfahren Sie, wie Sie Datenreplizierung einrichten"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="31-juli-2022">31 Juli 2022</h3>
+<div class="sect3">
+<h4 id="fsx-für-ontap-als-datenquelle">FSX für ONTAP als Datenquelle</h4>
+<div class="paragraph">
+<p>Sie können jetzt Daten von einem Amazon FSX für ONTAP-Dateisystem auf die folgenden Ziele replizieren:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Amazon FSX für ONTAP</p>
+</li>
+<li>
+<p>On-Premises-ONTAP-Cluster</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html">"Hier erfahren Sie, wie Sie Datenreplizierung einrichten"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="september-2021">September 2021</h3>
+<div class="sect3">
+<h4 id="unterstützung-von-amazon-fsx-für-ontap">Unterstützung von Amazon FSX für ONTAP</h4>
+<div class="paragraph">
+<p>Sie können jetzt Daten von einem Cloud Volumes ONTAP System oder einem lokalen ONTAP Cluster auf ein Amazon FSX für ONTAP Filesystem replizieren.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html">"Hier erfahren Sie, wie Sie Datenreplizierung einrichten"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="storagegrid">StorageGRID</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="18-september-2022-2">18. September 2022</h3>
+<div class="sect3">
+<h4 id="unterstützung-von-storagegrid">Unterstützung von StorageGRID</h4>
+<div class="paragraph">
+<p>Sie können Ihre StorageGRID-Systeme jetzt direkt bei BlueXP entdecken. Die Entdeckung von StorageGRID verschafft Ihnen eine vollständige Übersicht über die Daten in Ihrer gesamten Hybrid-Multi-Cloud.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="tiering">Tiering</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="9-august-2023">9 August 2023</h3>
+<div class="sect3">
+<h4 id="verwenden-sie-ein-benutzerdefiniertes-präfix-für-den-bucket-namen-unter-dem-tiering-daten-gespeichert-werden">Verwenden Sie ein benutzerdefiniertes Präfix für den Bucket-Namen, unter dem Tiering-Daten gespeichert werden</h4>
+<div class="paragraph">
+<p>In der Vergangenheit mussten Sie bei der Definition des Bucket-Namens das Standard-Präfix „Fabric-Pool“ verwenden, z. B. <em>Fabric-Pool-bucket1</em>. Jetzt können Sie beim Benennen Ihres Buckets ein benutzerdefiniertes Präfix verwenden. Diese Funktion ist nur beim Daten-Tiering zu Amazon S3 verfügbar. <a href="https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment">"Weitere Informationen ."</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="suchen-sie-nach-einem-cluster-in-allen-bluexp-connectors">Suchen Sie nach einem Cluster in allen BlueXP Connectors</h4>
+<div class="paragraph">
+<p>Wenn Sie mehrere Connectors zur Verwaltung aller Speichersysteme in Ihrer Umgebung verwenden, befinden sich einige Cluster, auf denen Sie Tiering implementieren möchten, möglicherweise in verschiedenen Connectors. Wenn Sie sich nicht sicher sind, welcher Connector einen bestimmten Cluster managt, können Sie über alle Connectors hinweg mithilfe von BlueXP Tiering suchen. <a href="https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#search-for-a-cluster-across-all-bluexp-connectors">"Weitere Informationen ."</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="4-juli-2023">4 Juli 2023</h3>
+<div class="sect3">
+<h4 id="jetzt-können-sie-die-bandbreite-anpassen-die-zum-hochladen-inaktiver-daten-in-den-objektspeicher-verwendet-wird">Jetzt können Sie die Bandbreite anpassen, die zum Hochladen inaktiver Daten in den Objektspeicher verwendet wird</h4>
+<div class="paragraph">
+<p>Bei der Aktivierung von BlueXP Tiering kann ONTAP eine unbegrenzte Menge an Netzwerkbandbreite verwenden, um die inaktiven Daten von den Volumes im Cluster auf Objekt-Storage zu übertragen. Wenn Sie bemerken, dass der Tiering Traffic normale Benutzer-Workloads beeinträchtigt, können Sie die Bandbreite, die während der Übertragung verwendet werden kann, drosseln. <a href="https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage">"Weitere Informationen ."</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="das-tiering-ereignis-für-low-tiering-wird-im-benachrichtigungscenter-angezeigt">Das Tiering-Ereignis für „Low Tiering“ wird im Benachrichtigungscenter angezeigt</h4>
+<div class="paragraph">
+<p>Das Tiering-Ereignis „Tiering zusätzlicher Daten von Cluster &lt;name&gt; auf Objekt-Storage zur Steigerung der Storage-Effizienz“ wird nun als Benachrichtigung angezeigt, wenn ein Cluster weniger als 20 % seiner kalten Daten Tiering durchführt – einschließlich Clustern, die keine Daten Tiering nutzen.</p>
+</div>
+<div class="paragraph">
+<p>Diese Mitteilung ist eine „Empfehlung“, mit der Sie Ihre Systeme effizienter gestalten und Storage-Kosten einsparen können. Sie enthält einen Link zum <a href="https://bluexp.netapp.com/cloud-tiering-service-tco" target="_blank" rel="noopener">"BlueXP Tiering-Rechner für Gesamtbetriebskosten und Einsparungen"</a> Zur Berechnung Ihrer Kosteneinsparungen.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bis-3-april-2023-2">Bis 3. April 2023</h3>
+<div class="sect3">
+<h4 id="die-registerkarte-lizenzierung-wurde-entfernt">Die Registerkarte „Lizenzierung“ wurde entfernt</h4>
+<div class="paragraph">
+<p>Die Registerkarte Lizenzierung wurde aus der BlueXP Tiering-Schnittstelle entfernt. Auf alle Lizenzen für PAYGO-Abonnements (Pay-as-you-go) kann jetzt über das BlueXP Tiering On-Premises-Dashboard zugegriffen werden. Über diesen Link gelangen Sie auch zur Digital Wallet von BlueXP, sodass Sie beliebige BlueXP Tiering-Lizenzen (BYOL, Bring-Your-Own-License) anzeigen und managen können.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="die-registerkarten-tiering-wurden-umbenannt-und-enthalten-aktualisierte-inhalte">Die Registerkarten „Tiering“ wurden umbenannt und enthalten aktualisierte Inhalte</h4>
+<div class="paragraph">
+<p>Die Registerkarte „Cluster Dashboard“ wurde in „Cluster“ umbenannt und die Registerkarte „On-Premises-Übersicht“ wurde in „On-Premises-Dashboard“ umbenannt. Auf diesen Seiten wurden einige Informationen hinzugefügt, die Ihnen helfen, zu bewerten, ob Sie Ihren Speicherplatz mit zusätzlicher Tiering-Konfiguration optimieren können.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="volume-caching">Volume-Caching</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="04-juni-2023-2">04 Juni 2023</h3>
+<div class="paragraph">
+<p>Volume Caching, eine Funktion der ONTAP 9 Software, ist eine Remote-Caching-Funktion, die die Dateiverteilung vereinfacht, WAN-Latenz reduziert, indem Ressourcen näher an den Orten Ihrer Benutzer und Computing-Ressourcen gebracht werden und die Kosten für die WAN-Bandbreite gesenkt werden. Durch Volume Caching wird ein persistentes, beschreibbares Volume an einem Remote-Standort bereitgestellt. BlueXP Volume-Caching beschleunigt den Zugriff auf Daten und erleichtert die Verlagerung von Datenverkehr von Volumes, auf die sehr viel zugegriffen wird. Cache Volumes sind ideal für leseintensive Workloads, insbesondere wenn Clients wiederholt auf dieselben Daten zugreifen müssen.</p>
+</div>
+<div class="paragraph">
+<p>Mit BlueXP Volume-Caching verfügen Sie über Caching-Funktionen für die Cloud, insbesondere für Amazon FSX for NetApp ONTAP, Cloud Volumes ONTAP und On-Premises als Arbeitsumgebungen.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html">"Weitere Informationen zum Volume-Caching von BlueXP"</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/de-de/bluexp-relnotes/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/de-de/bluexp-relnotes/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">Auf dieser seite</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Nutzungsbedingungen</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Datenschutzrichtlinie</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Richtlinie zu Cookies</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie-Einstellungen</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">Feedback zu dieser Seite senden</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/de-de/bluexp-relnotes/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/de-de/bluexp-relnotes/js/prism.js'></script>
+      <script type="text/javascript" src='/de-de/bluexp-relnotes/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/de-de/bluexp-relnotes/js/ie-tabbed-blocks.js'></script>
+    <script src='/de-de/bluexp-relnotes/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
