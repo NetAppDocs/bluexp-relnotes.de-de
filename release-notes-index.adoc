@@ -59,7 +59,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["Einrichtung und
 * https://docs.netapp.com/us-en/bluexp-edge-caching/whats-new.html["Edge-Caching"^]
 * https://docs.netapp.com/us-en/bluexp-operational-resiliency/release-notes/whats-new.html["Operative Ausfallsicherheit"^]
 * https://docs.netapp.com/us-en/bluexp-ransomware-protection/whats-new.html["Schutz durch Ransomware"^]
-* https://docs.netapp.com/us-en/bluexp-remediation/whats-new.html["Korrekturmaßnahmen"^]
 * https://docs.netapp.com/us-en/bluexp-replication/whats-new.html["Replizierung"^]
 * https://docs.netapp.com/us-en/bluexp-tiering/whats-new.html["Tiering"^]
 * https://docs.netapp.com/us-en/bluexp-volume-caching/release-notes/cache-whats-new.html["Volume-Caching"^]
