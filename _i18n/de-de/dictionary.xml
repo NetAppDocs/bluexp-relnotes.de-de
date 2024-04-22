@@ -34,14 +34,6 @@
   <block id="de5b4c52cc860c2f7cacca0bb7f4265f" category="section-title">Ändern Sie Service-Level dynamisch</block>
   <block id="65ade213f17aabb636c7c98c83fa9121" category="paragraph">Sie können das Service-Level für ein Volume dynamisch anpassen, um Workload-Anforderungen zu erfüllen und die Kosten zu optimieren. Das Volume wird in den anderen Kapazitäts-Pool verschoben, ohne dass sich dies auf das Volume auswirkt.</block>
   <block id="f89e84889d5fd0c46e9997ddb21ac922" category="inline-link">Erfahren Sie, wie Sie den Service-Level eines Volumes ändern</block>
-  <block id="95fa237a7a6265df02b6172c4be387f7" category="section-title">3. August 2020</block>
-  <block id="629ca03a8a495acd7bc18927ca4da6cc" category="section-title">Azure NetApp Files Einrichtung und Management</block>
-  <block id="51faca1c58439a1d1223104a28f554cc" category="paragraph">Azure NetApp Files direkt über Cloud Manager einrichten und managen Nachdem Sie eine Azure NetApp Files Arbeitsumgebung erstellt haben, können Sie die folgenden Aufgaben ausführen:</block>
-  <block id="a42ed9034f13a0f6a3660f2c241f605f" category="list-text">Erstellung von NFS- und SMB-Volumes</block>
-  <block id="0d293213ebed3e92e24e1624dfd19aa2" category="list-text">Management von Kapazitätspools und Volume Snapshots</block>
-  <block id="e54595e40dfd177a2a9e671c794a3a4d" category="paragraph">Cloud Manager ermöglicht das Erstellen, Löschen und Wiederherstellen von Volume Snapshots. Sie können auch neue Kapazitäts-Pools erstellen und deren Service Level angeben.</block>
-  <block id="5054d68a0b2f03dece3eb72cfaa09427" category="list-text">Bearbeiten Sie ein Volume, indem Sie seine Größe ändern und Tags verwalten.</block>
-  <block id="396a3c9fb559d38e68f68ea139b3539a" category="paragraph">Durch die Möglichkeit, Azure NetApp Files direkt über Cloud Manager zu erstellen und zu managen, wird die vorherige Datenmigrationsfunktion ersetzt.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">Weitere Informationen .</block>
   <block id="a67ce68ccac082ad54a552bdbcb6ecd7" category="section-title">E-Mail-Benachrichtigungen</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">9. September 2020</block>
@@ -149,14 +141,6 @@
   <block id="3c5979c173a0a4fe3ff27e0e6185a693" category="list-text">Volumennutzung</block>
   <block id="6e3d9df489c437a2601f627a5b8935c9" category="paragraph">Die Registerkarte Lizenzierung wurde aus der BlueXP Tiering-Schnittstelle entfernt. Auf alle Lizenzen für PAYGO-Abonnements (Pay-as-you-go) kann jetzt über das BlueXP Tiering On-Premises-Dashboard zugegriffen werden. Über diesen Link gelangen Sie auch zur Digital Wallet von BlueXP, sodass Sie beliebige BlueXP Tiering-Lizenzen (BYOL, Bring-Your-Own-License) anzeigen und managen können.</block>
   <block id="f6e3b39522072e9cb3b0ffb8cecf9b0b" category="paragraph">Die Registerkarte „Cluster Dashboard“ wurde in „Cluster“ umbenannt und die Registerkarte „On-Premises-Übersicht“ wurde in „On-Premises-Dashboard“ umbenannt. Auf diesen Seiten wurden einige Informationen hinzugefügt, die Ihnen helfen, zu bewerten, ob Sie Ihren Speicherplatz mit zusätzlicher Tiering-Konfiguration optimieren können.</block>
-  <block id="7e43a762816453626bbf35533afa1755" category="section-title">4 Mai 2023</block>
-  <block id="4addbe3fd43e1a48fd8eb999d5f3b487" category="section-title">BlueXP Backup und Recovery ermöglichen</block>
-  <block id="f5303ee41218fc978c78d7744749c918" category="inline-link-macro">Erfahren Sie mehr über die Unterstützung von BlueXP Backup und Recovery</block>
-  <block id="b4dac87ad594b04c0dcd76d4227b5f53" category="paragraph">Ab ONTAP 9.13.1 können Sie System Manager (erweiterte Ansicht) verwenden, um BlueXP Backup und Recovery zu aktivieren, wenn Sie das Cluster über einen Connector erkannt haben. <block ref="e052ae4f2be0dcbae408a5e7fa45055e" category="inline-link-macro-rx"></block></block>
-  <block id="f3d662d271f05f454f32718233b273b8" category="section-title">Upgrade des ONTAP Versions-Images und der Hardware-Firmware</block>
-  <block id="31599c36bc63510a259d9bd99e50d225" category="inline-link-macro">Erfahren Sie mehr über Upgrades von ONTAP und Firmware</block>
-  <block id="8fc7dd0bb44c44f9797d86872cb017cc" category="paragraph">Ab ONTAP 9.10.1 können Sie System Manager (erweiterte Ansicht) verwenden, um das ONTAP Versions-Image und die Hardware-Firmware zu aktualisieren. Sie können automatische Upgrades erhalten, um auf dem neuesten Stand zu bleiben, oder manuelle Updates von Ihrem lokalen Computer oder einem Server durchführen, auf den über BlueXP zugegriffen werden kann. <block ref="d994c74c98eb05bb27c8a6afc3cc2159" category="inline-link-macro-rx"></block></block>
-  <block id="09dfe5e2e7b8574b925ad72bc7875409" category="admonition">Wenn Sie über einen Connector verfügen, können Sie keine Updates von Ihrem lokalen Rechner aus vornehmen, nur von einem Server, auf den Sie mit BlueXP zugreifen können.</block>
   <block id="b2bc6f51638406715d089920f0b12029" category="paragraph"><block ref="b2bc6f51638406715d089920f0b12029" category="inline-link-rx"></block></block>
   <block id="0ce55dbe491d96365e2c6abd492cbf95" category="list-text"><block ref="0ce55dbe491d96365e2c6abd492cbf95" category="inline-link-rx"></block></block>
   <block id="dd4e767d5e7ac992c0ec2ecf41b2b08c" category="list-text"><block ref="dd4e767d5e7ac992c0ec2ecf41b2b08c" category="inline-link-rx"></block></block>
@@ -476,21 +460,10 @@
   <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">Die gefilterten Ergebnisse auf der Untersuchungsseite zeigen nun zusätzlich zur Gesamtanzahl der Dateien die Gesamtgröße der Elemente an. Dies kann beim Verschieben von Dateien, beim Löschen von Dateien und vielem mehr helfen.</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">Zusätzliche Gruppen-IDs als „für Organisation offen“ konfigurieren</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">Zusätzliche Gruppen-IDs als „für Organisation offen“ hinzufügen</block>
-  <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link-macro">Unterstützte Konfigurationen in Azure</block>
-  <block id="22342037237200e034fd29c9cfd5bfd4" category="paragraph"><block ref="22342037237200e034fd29c9cfd5bfd4" category="inline-link-macro-rx"></block></block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt aus der BlueXP-Klassifizierung als „Open to Organization“ betrachtet werden, wenn die Gruppe ursprünglich nicht mit dieser Berechtigung festgelegt wurde. Alle Dateien und Ordner, denen diese Gruppen-IDs angehängt sind, werden auf der Seite „Untersuchungsdetails“ als „für Organisation offen“ angezeigt. Informieren Sie sich darüber<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>.</block>
   <block id="4e1f7d458412b18adef0e5ff0db2eee8" category="section-title">01 Februar 2024</block>
   <block id="a409179aac0b12213b3fa77e0a22bd61" category="list-text">Unterstützung beim Wiederherstellen von Virtual Machines an einem alternativen Speicherort</block>
   <block id="9c75b0f26dddf07ed827e32aaf28bee9" category="list-text">Unterstützung für das Aufheben der Sicherung von Datastores</block>
-  <block id="d4eb5b4412a01c5991086dff8c51a89f" category="section-title">2 Februar 2024</block>
-  <block id="4b2d018110adbf4819b09a7a28283445" category="section-title">Unterstützung für VMs der Edv5-Serie in Azure</block>
-  <block id="d94bc26a7eea05003dc921a469161911" category="paragraph">Cloud Volumes ONTAP unterstützt ab Version 9.14.1 jetzt die folgenden VMs der Edv5-Serie.</block>
-  <block id="0ce1565dc58071deb098bde3e5a6a4b6" category="list-text">E4ds_v5</block>
-  <block id="625fbc51242c48d9e17a8b8b2fe6e5c7" category="list-text">E8ds_v5</block>
-  <block id="d6f19e3dc85d5a64809ab696a35a54ab" category="list-text">E20s_v5</block>
-  <block id="708880d509c52585ca0500cd17ef2166" category="list-text">E32ds_v5</block>
-  <block id="843cc0b63b36e79d0bdf4097a1b84b6a" category="list-text">E48ds_v5</block>
-  <block id="6ec5cb856eb24c85cf7368cdfd11627f" category="list-text">E64ds_v5</block>
   <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">4. März 2024 (Version 1.29)</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="section-title">Jetzt können Sie Scandaten ausschließen, die sich in bestimmten Datenquellen-Verzeichnissen befinden</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">Wenn die BlueXP Klassifizierung Scandaten in bestimmten Quellverzeichnissen ausschließen soll, können Sie diese Verzeichnisnamen zu einer Konfigurationsdatei hinzufügen, die durch die BlueXP Klassifizierung verarbeitet wird. Mit dieser Funktion können Sie verhindern, dass Verzeichnisse gescannt werden, die unnötig sind oder zu falsch positiven Ergebnissen von persönlichen Daten führen würden.</block>
@@ -663,4 +636,22 @@
   <block id="17c54e9ba828968f120b82b8cd07abfa" category="inline-link">Richtlinieneinstellungen für Backup-to-Object</block>
   <block id="9e59a4332ff7e195837a4721f8adaf92" category="list-text"><block ref="9e59a4332ff7e195837a4721f8adaf92" category="inline-link-rx"></block></block>
   <block id="4df3ea515a84d83efad2c0e3bc03c438" category="paragraph">Der BlueXP Service zur Problembehebung wurde am 22. April 2024 entfernt.</block>
+  <block id="2d177a5ce778fe0e6f460ac5e9449f84" category="section-title">Volume-Vorlagen werden nicht mehr unterstützt</block>
+  <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">Sie können kein Volume mehr aus einer Vorlage erstellen. Diese Aktion wurde mit dem BlueXP Korrekturservice verknüpft, der nicht mehr verfügbar ist.</block>
+  <block id="31e2ca9cb7755d06bc40e30fd8e408d3" category="section-title">Bis 23. April 2024</block>
+  <block id="a2fefc65df2136938b995f8abbe643c2" category="section-title">Unterstützung neuer Regionen für Implementierungen mit mehreren Verfügbarkeitszonen in Azure</block>
+  <block id="0cc914ed23f0f7d6bc902ae731843213" category="paragraph">Die folgenden Regionen unterstützen jetzt HA-Implementierungen mit mehreren Verfügbarkeitszonen in Azure für Cloud Volumes ONTAP 9.12.1 GA und höher:</block>
+  <block id="1dab3491cdeeb2a6d567b21ee3063ae4" category="list-text">Deutschland West Central</block>
+  <block id="26b4bdc11dfead08029a688129c42cf9" category="list-text">Polen, Mitte</block>
+  <block id="64fb50bb758fe12b94faa568a567e13c" category="list-text">USA, Westen 3</block>
+  <block id="eb1aea8107eeeb90c841d5710262dd52" category="list-text">Israel, Mitte</block>
+  <block id="6c2cb03afda0af373b8df47f9dc47ed7" category="list-text">Italien Nord</block>
+  <block id="1d0f99876d748759fce5e852f79fca96" category="list-text">Kanada Mitte</block>
+  <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">Eine Liste aller Regionen finden Sie im<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
+  <block id="0b745a8416b0a8e3b89e7e01ba13af65" category="section-title">Johannesburg Region jetzt in Google Cloud unterstützt</block>
+  <block id="ec826289e3407edb59d3c5ed0aca5c74" category="paragraph">Der Region Johannesburg <block ref="6d1d2d77b70fb38d060e5653977838a2" prefix="(" category="inline-code"></block> Wird jetzt in Google Cloud für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.</block>
+  <block id="2bc724993144e8002899059117620062" category="inline-link">Karte der globalen Regionen unter Google Cloud</block>
+  <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">Eine Liste aller Regionen finden Sie im<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>.</block>
+  <block id="ee94ea94211470599a81d49f8c4b586f" category="section-title">Volume-Vorlagen und -Tags werden nicht mehr unterstützt</block>
+  <block id="96b0b2a19dd9deb6b94e53f2e29f4387" category="paragraph">Sie können kein Volume mehr aus einer Vorlage erstellen oder die Tags eines Volumes bearbeiten. Diese Aktionen wurden mit dem BlueXP Korrekturservice verknüpft, der nicht mehr verfügbar ist.</block>
 </blocks>
