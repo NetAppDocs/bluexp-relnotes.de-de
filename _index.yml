@@ -1,0 +1,27 @@
+---
+indexpage:
+  title: Versionshinweise zu BlueXP
+  summary: In diesen Versionshinweisen werden die neuesten Verbesserungen der Cloud-Services
+    beschrieben, die Teil von BlueXP sind. Für jeden einzelnen Service stehen Links
+    zu allen Versionshinweisen zur Verfügung.
+  keywords: release notes, enhancements, cloud services, bluexp
+  lead: In diesen Versionshinweisen werden die neuesten Verbesserungen der Cloud-Services
+    beschrieben, die Teil von BlueXP sind. Für jeden einzelnen Service stehen Links
+    zu allen Versionshinweisen zur Verfügung.
+  tiles:
+  - title: Was ist neu
+    links:
+    - title: Aktuelle Änderungen in BlueXP
+      url: whats-new.html
+  - title: Versionshinweise nach Service
+    links:
+    - title: Versionshinweisen – Index
+      url: release-notes-index.html
+  - title: Blogs und Community
+    links:
+    - title: NetApp Community
+      url: https://community.netapp.com/t5/Public-Cloud-Services/ct-p/CDS
+    - title: BlueXP Blogs
+      url: https://bluexp.netapp.com/blog
+    - title: Cloud-Webinare
+      url: https://bluexp.netapp.com/events
