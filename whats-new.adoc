@@ -589,6 +589,12 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 11 August 2024
+
+Wir haben den BlueXP Kopier- und Synchronisierungsservice und den Daten-Broker aktualisiert, um einige Bugs zu beheben. Die neue Data Broker Version ist 1.0.54.
+
+
+
 === 14 Juli 2024
 
 Wir haben den BlueXP Kopier- und Synchronisierungsservice und den Daten-Broker aktualisiert, um einige Bugs zu beheben. Die neue Data Broker Version ist 1.0.53.
@@ -598,30 +604,6 @@ Wir haben den BlueXP Kopier- und Synchronisierungsservice und den Daten-Broker a
 === 2 Juni 2024
 
 Der BlueXP Kopier- und Synchronisierungsservice wurde aktualisiert, um einige Fehler zu beheben. Der Daten-Broker wurde ebenfalls aktualisiert, um Sicherheitsupdates anzuwenden. Die neue Data Broker Version ist 1.0.52.
-
-
-
-=== Bis 8. April 2024
-
-
-
-==== Unterstützung für RHEL 8.9
-
-Der Daten-Broker wird jetzt auf Hosts unterstützt, auf denen Red hat Enterprise Linux 8.9 ausgeführt wird.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-host-requirements["Linux-Host-Anforderungen anzeigen"].
-
-
-
-=== 11 Februar 2024
-
-
-
-==== Verzeichnisse nach regex filtern
-
-Benutzer haben nun die Möglichkeit, Verzeichnisse mit regex zu filtern.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["Erfahren Sie mehr über die Funktion *Verzeichnisse ausschließen*."]
 
 
 
