@@ -24,6 +24,30 @@ In diesem Abschnitt werden neue Funktionen in Bezug auf BlueXP-Verwaltungsfunkti
 
 
 
+=== 22 August 2024
+
+
+
+==== Anschluss 3.9.43-Patch
+
+Wir haben den Connector aktualisiert, um die Version Cloud Volumes ONTAP 9.15.1 zu unterstützen.
+
+Diese Version wird unterstützt und umfasst eine Aktualisierung der Connector-Richtlinie für Azure. Die Richtlinie umfasst jetzt die folgenden Berechtigungen:
+
+[source, json]
+----
+"Microsoft.Compute/virtualMachineScaleSets/write",
+"Microsoft.Compute/virtualMachineScaleSets/read",
+"Microsoft.Compute/virtualMachineScaleSets/delete"
+----
+Diese Berechtigungen sind erforderlich, damit Cloud Volumes ONTAP die Skalierungssätze von Virtual Machines unterstützt. Wenn Sie bereits Connectors haben und diese neue Funktion verwenden möchten, müssen Sie diese Berechtigungen zu den benutzerdefinierten Rollen hinzufügen, die Ihren Azure-Anmeldeinformationen zugeordnet sind.
+
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Erfahren Sie mehr über die Unterstützung von Cloud Volumes ONTAP für Skalierungssets von Virtual Machines"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Azure-Berechtigungen für den Connector anzeigen"].
+
+
+
+
 === 8 August 2024
 
 
@@ -476,6 +500,18 @@ link:reference-free-paid.html["Erfahren Sie mehr über die veralteten Funktionen
 
 
 
+=== 22 August 2024
+
+
+
+==== Cloud Volumes ONTAP 9.15.1 GA
+
+BlueXP  kann jetzt die allgemeine Verfügbarkeitsversion von Cloud Volumes ONTAP 9.15.1 in AWS, Azure und Google Cloud implementieren und managen.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
+
+
+
 === 8 August 2024
 
 
@@ -488,7 +524,7 @@ Kapazitätsbasierte Edge Cache-Lizenzierungspakete sind für zukünftige Cloud V
 
 ==== Unterstützte Mindestversion von ONTAP für Flash Cache auf Azure
 
-Die ONTAP-Mindestversion, die für die Konfiguration von Flash Cache auf Azure erforderlich ist, ist 9.13.1 GA. Es können nur ONTAP 9.13.1 GA und neuere Versionen zur Implementierung von Flash Cache auf Cloud Volumes ONTAP Systemen für Azure verwendet werden.
+Die ONTAP-Mindestversion, die für die Konfiguration von Flash Cache auf Azure erforderlich ist, ist 9.13.1 GA. ONTAP 9.13.1 GA und höhere Versionen können Sie für die Bereitstellung von Flash Cache auf Cloud Volumes ONTAP Systemen für Azure nur verwenden.
 
 Informationen zu unterstützten Konfigurationen finden Sie unter https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Unterstützte Konfigurationen in Azure"^].
 
@@ -497,14 +533,6 @@ Informationen zu unterstützten Konfigurationen finden Sie unter https://docs.ne
 ==== Kostenlose Testversionen für Marketplace-Abonnements sind veraltet
 
 Die automatische kostenlose 30-Tage-Testversion für Pay-as-you-go-Abonnements auf dem Marktplatz des Cloud-Providers wird in Cloud Volumes ONTAP nicht mehr verfügbar sein. Die Verrechnung für jede Art von Marketplace-Abonnement (PAYGO oder Jahresvertrag) wird ab der ersten Nutzung ohne einen kostenlosen Testzeitraum aktiviert.
-
-
-
-==== Canada West wird jetzt in AWS unterstützt
-
-Die Region Kanada West wird jetzt in AWS für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.
-
-Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter AWS"^].
 
 
 
@@ -517,21 +545,6 @@ Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-
 BlueXP kann jetzt Cloud Volumes ONTAP 9.15.0 in AWS, Azure und Google Cloud implementieren und managen.
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Erfahren Sie mehr über die neuen Funktionen in dieser Version von Cloud Volumes ONTAP"^].
-
-
-
-=== 17 Mai 2024
-
-
-
-==== Unterstützung von Amazon Web Services Local Zones
-
-Für Cloud Volumes ONTAP HA-Implementierungen ist jetzt Unterstützung für AWS Local Zones verfügbar. AWS Local Zones sind eine Infrastrukturimplementierung, bei der Storage, Computing, Datenbanken und andere ausgewählte AWS Services in der Nähe von großen Städten und Branchenbereichen liegen.
-
-
-NOTE: AWS Local Zones werden beim Einsatz von BlueXP im Standardmodus unterstützt. Derzeit werden AWS Lokale Zonen nicht unterstützt, wenn BlueXP im eingeschränkten Modus oder im privaten Modus verwendet wird.
-
-Weitere Informationen zu AWS Local Zones mit HA-Implementierungen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWS lokale Zonen"^].
 
 
 
@@ -608,6 +621,16 @@ Der BlueXP Kopier- und Synchronisierungsservice wurde aktualisiert, um einige Fe
 
 
 == Digitaler Berater
+
+
+
+=== 21 August 2024
+
+
+
+==== Berichte An
+
+Der Bericht *7-Mode Upgrade Advisor Plans* ist nicht mehr verfügbar, da Systeme mit 7-Mode den begrenzten Support erreicht haben. Weitere Informationen finden Sie unter link:https://mysupport.netapp.com/site/info/version-support["Unterstützung Der Softwareversion"^]. Erfahren Sie mehr über link:https://docs.netapp.com/a/ontap/7-mode/8.2.1/Upgrade-And-Revert-Or-Downgrade-Guide-For-7-Mode.pdf["Upgrade der Data ONTAP Storage-Systeme in 7-Mode"^].
 
 
 
