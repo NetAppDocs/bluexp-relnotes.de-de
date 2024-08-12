@@ -42,7 +42,7 @@ Diese Version wird unterstützt und umfasst eine Aktualisierung der Connector-Ri
 ----
 Diese Berechtigungen sind erforderlich, damit Cloud Volumes ONTAP die Skalierungssätze von Virtual Machines unterstützt. Wenn Sie bereits Connectors haben und diese neue Funktion verwenden möchten, müssen Sie diese Berechtigungen zu den benutzerdefinierten Rollen hinzufügen, die Ihren Azure-Anmeldeinformationen zugeordnet sind.
 
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Erfahren Sie mehr über die Unterstützung von Cloud Volumes ONTAP für Skalierungssets von Virtual Machines"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Erfahren Sie mehr über die Version Cloud Volumes ONTAP 9.15.1"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Azure-Berechtigungen für den Connector anzeigen"].
 
 
@@ -497,6 +497,18 @@ link:reference-free-paid.html["Erfahren Sie mehr über die veralteten Funktionen
 
 
 == Cloud Volumes ONTAP
+
+
+
+=== 23 August 2024
+
+
+
+==== Canada West wird jetzt in AWS unterstützt
+
+Die Region Kanada West wird jetzt in AWS für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.
+
+Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter AWS"^].
 
 
 
