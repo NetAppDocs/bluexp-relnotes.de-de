@@ -404,8 +404,6 @@
   <block id="ca654cde28a00db1fb587b8b6bb82015" category="paragraph"><block ref="ca654cde28a00db1fb587b8b6bb82015" category="inline-link-rx"></block></block>
   <block id="e907b41f5f3d7332bee5a43fbbf78a08" category="inline-link">Lizenzierung einrichten</block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="section-title">Schutz durch Ransomware</block>
-  <block id="8aea370efa0da7f8c985a03488d3b9a7" category="inline-link">Mehr zu BlueXP Ransomware-Schutz</block>
-  <block id="41e5a42a8cc2023ceb0f8dd06cce7a27" category="paragraph"><block ref="5a80707c96309e25f4c73aee7d2327b1" category="inline-link-rx"></block>.</block>
   <block id="c615da36d364061ce672b091d8aa7d3b" category="list-text"><block ref="c615da36d364061ce672b091d8aa7d3b" category="inline-link-rx"></block></block>
   <block id="19532230e3ff8a5fc0c27cc8389cac67" category="list-text"><block ref="19532230e3ff8a5fc0c27cc8389cac67" category="inline-link-rx"></block></block>
   <block id="2d67cd05b64a3416bc8bae12b4ef5685" category="cell">12 März 2024</block>
@@ -463,11 +461,6 @@
   <block id="92617b18f6079084c5380cf97f72f43a" category="list-text"><block ref="92617b18f6079084c5380cf97f72f43a" category="inline-link-rx"></block></block>
   <block id="5e8c098d325749413b23d5eba5837aad" category="inline-link">Stellen Sie BlueXP Backup- und Recovery-Daten an einem dunklen Standort wieder her</block>
   <block id="b682afa0ff8a1d136b51d3115421ac1b" category="list-text"><block ref="b682afa0ff8a1d136b51d3115421ac1b" category="inline-link-rx"></block></block>
-  <block id="240debedb0b95c0376b930ba9355ecf4" category="section-title">15. Mai 2024 (Version 1.31)</block>
-  <block id="d1e72f4d21bb915d180e5f6d1e9d4264" category="section-title">Klassifizierung ist als zentraler Service in BlueXP erhältlich</block>
-  <block id="ac229efd3fa61c5457dcab252996be0b" category="paragraph">Die BlueXP Klassifizierung ist jetzt als zentrale Funktion in BlueXP ohne Aufpreis für bis zu 500 tib gescannte Daten verfügbar. Es ist keine Klassifizierungslizenz oder kostenpflichtiges Abonnement erforderlich. Da wir uns bei der BlueXP Klassifizierungsfunktion auf das Scannen von NetApp Storage-Systemen mit dieser neuen Version konzentrieren, stehen einige ältere Funktionen nur Kunden zur Verfügung, die zuvor für eine Lizenz bezahlt hatten. Die Nutzung dieser älteren Funktionen läuft ab, wenn der bezahlte Vertrag sein Enddatum erreicht.</block>
-  <block id="3607a722a9a09bb6d405f4d84609e858" category="inline-link-macro">Erfahren Sie mehr über die veralteten Funktionen</block>
-  <block id="1a50d9154328b370f6d9bbbab041964a" category="paragraph"><block ref="671322b9b43cc49264f86b21ef88a11d" category="inline-link-macro-rx"></block>.</block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">15 Mai 2024</block>
   <block id="9df62cb4d6f151b560e84723841bd523" category="paragraph">Diese BlueXP Disaster Recovery-Version umfasst die folgenden Updates:</block>
   <block id="7f1d1e9df7ef6953a6e373e29826ca55" category="list-text">*Das Replizieren von VMware-Workloads von On-Premises auf On-Premises* ist nun als allgemeine Verfügbarkeitsfunktion verfügbar. Zuvor war es eine Technologievorschau mit eingeschränkter Funktionalität.</block>
@@ -479,9 +472,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp Community</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP Blogs</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Cloud-Webinare</block>
-  <block id="6849ea484f5664c887acc6f1ff990dfd" category="section-title">2 Juni 2024</block>
-  <block id="cfa477f3b89d95c12ff30d6390b89dd9" category="paragraph">Der BlueXP Kopier- und Synchronisierungsservice wurde aktualisiert, um einige Fehler zu beheben. Der Daten-Broker wurde ebenfalls aktualisiert, um Sicherheitsupdates anzuwenden. Die neue Data Broker Version ist 1.0.52.</block>
-  <block id="bf5237098b7bb15bc07f1d47863a9b8a" category="section-title">5. Juni 2024 (Version 1.32)</block>
   <block id="b9620e9aadf9827ac9bb29001772b3f0" category="paragraph">Diese Version enthält die folgenden Updates.</block>
   <block id="b83927d03444ee961e834ea1c3b0581b" category="section-title">Durch Mapping-Scans werden Metadaten erfasst</block>
   <block id="6c7aa72b096dc637dbeefccf15ca45f8" category="paragraph">Die folgenden Metadaten werden während der Mapping-Scans aus Dateien extrahiert und auf den Dashboards Governance, Compliance und Investigation angezeigt:</block>
@@ -501,10 +491,6 @@
   <block id="43ac3190fe70b3bdb1f5d5b7083f374a" category="paragraph">Diese Version aktualisiert, welche Daten während der Mapping-Scans in den Dashboards für Governance, Compliance und Untersuchung angezeigt werden.</block>
   <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link">Was ist der Unterschied zwischen Mapping- und Klassifikationsscans</block>
   <block id="c7fb92ca31125e81e2a4f2982bc6a806" category="paragraph">Weitere Informationen finden Sie unter<block ref="4062fc8e6e6df1b01a1de644d8a7eeca" category="inline-link-rx"></block></block>
-  <block id="7910c8307cac3d62eca8ac0d42301b38" category="section-title">Neue Zuordnungsstatus-Spalte auf der Seite Konfiguration</block>
-  <block id="cfbaa8108dcd3c438f032a03ea5c380b" category="paragraph">In diesem Release wird jetzt eine neue Zuordnungsstatus-Spalte auf der Seite Konfiguration angezeigt. Mit der neuen Spalte können Sie feststellen, ob die Zuordnung ausgeführt, in die Warteschlange gestellt, angehalten oder mehr ist.</block>
-  <block id="6195c7a1534de8abb0c4706e15d24a3c" category="inline-link">Scaneinstellungen ändern</block>
-  <block id="2f94c0116c501abdbd5c76ddef86d94a" category="paragraph">Erläuterungen zu den Status finden Sie unter<block ref="cacd3972a6d9bfb8b2d3cde3ba576e77" category="inline-link-rx"></block>.</block>
   <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Dashboard zur Nachhaltigkeit</block>
   <block id="8934fed115a0b826a4b438906a11bfa9" category="inline-link-macro">Übersicht über das Dashboard „Nachhaltigkeit“</block>
   <block id="73cb3e305b75665c1f29817b70dd8a1f" category="summary">Erfahren Sie mehr über die neuesten Änderungen an den Cloud-Services, die Teil der BlueXP Plattform sind.</block>
@@ -526,10 +512,7 @@
   <block id="3b08fbca8f3b3deaf466cedfd425cfc6" category="section-title">Juli 2024 (Version 1.33)</block>
   <block id="d61892207457d808cffbfc18b9dcd8ad" category="section-title">Ubuntu unterstützt</block>
   <block id="0db04e76c6afbdb79f128758ee937013" category="paragraph">Diese Version unterstützt die Ubuntu 24.04 Linux-Plattform.</block>
-  <block id="b660413c1fbf79ce31a119db078401fe" category="paragraph">Diese Version enthält das folgende Update.</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="section-title">10 Juni 2024</block>
-  <block id="1601188d2b39087206296933e9255990" category="section-title">Cloud Volumes ONTAP 9.15.0</block>
-  <block id="c6ee0c74323b0d984d764b4be950bd87" category="paragraph">BlueXP kann jetzt Cloud Volumes ONTAP 9.15.0 in AWS, Azure und Google Cloud implementieren und managen.</block>
   <block id="a6cba69e97a9115b21cbf35b24b33d83" category="section-title">04 Juli 2024</block>
   <block id="5e63fb298525a46837cedfd7fc3c5002" category="paragraph">Umgebungsindikatoren, die Einblick in den Zustand der Umgebung Ihrer Storage-Systeme bieten, bieten nun präzisere Werte für den prognostizierten Stromverbrauch, den direkten Kohlenstoffverbrauch und die Wärmeabgabe auf der Grundlage eines erweiterten Prognosemodells. Weitere Informationen finden Sie unter <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>.</block>
   <block id="8352fdd61dbba9f97925bd7797c4eb47" category="paragraph">Nachhaltigkeit wird nun auf Systemen der E-Series und StorageGRID unterstützt. Sie können eine Liste empfohlener Maßnahmen und Umweltindikatoren anzeigen, die Prognosen für Leistung, direkten Kohlenstoffverbrauch und Wärme aus dem Sustainability Dashboard für diese Systeme anzeigen. Weitere Informationen finden Sie unter <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>.</block>
@@ -563,15 +546,6 @@
   <block id="5bc0cd3e3204e2ab72bd03661373648f" category="inline-link">Erfahren Sie mehr über den Schutz von Workloads und das Management von Strategien zum Schutz vor Ransomware</block>
   <block id="20eb1918e9de308789133c5a0b0cc2c4" category="paragraph"><block ref="88ddee768f79e382777baf84277fe57c" category="inline-link-rx"></block>.</block>
   <block id="4c57408166809e028adf9be27b861c0a" category="paragraph">Diese Version des Ransomware-Schutzes von BlueXP umfasst folgende Updates:</block>
-  <block id="a88e0dc5892d64e5e1293fb97d10e870" category="list-text">*Sperrung der Snapshot-Kopie auf dem Primärspeicher*: Aktivieren Sie diese Funktion, um die Snapshot-Kopien im Primärspeicher zu sperren, damit sie für einen bestimmten Zeitraum nicht geändert oder gelöscht werden können, selbst wenn ein Ransomware-Angriff den Weg zum Backup-Storage-Ziel findet.</block>
-  <block id="693cf7ee0375c87d1ecc02615f651ebe" category="inline-link">Erfahren Sie mehr über den Schutz von Workloads und die Aktivierung von Backup-Sperrung in einer Strategie für den Schutz vor Ransomware</block>
-  <block id="d9e97b4dacf8789a452df06f4739d3b7" category="paragraph"><block ref="691f168695c0ebf6c9e1bf6093933aac" category="inline-link-rx"></block>.</block>
-  <block id="1c73f6fee4ed4d02eabef99de35666d2" category="list-text">*Diese Version unterstützt Cloud Volumes ONTAP für Microsoft Azure* als Arbeitsumgebung zusätzlich zu Cloud Volumes ONTAP für AWS und On-Premises ONTAP NAS.</block>
-  <block id="6b9ec885733dcee16db8c4d8dde6312a" category="inline-link">Schnellstart für Cloud Volumes ONTAP in Azure</block>
-  <block id="17223b00f9d3a714622f5df95956564b" category="paragraph"><block ref="17223b00f9d3a714622f5df95956564b" category="inline-link-rx"></block></block>
-  <block id="2803032e22b35c4bdcf58b92d42735f5" category="list-text">*Microsoft Azure wurde als Sicherungsziel hinzugefügt*. Sie können nun Microsoft Azure zusammen mit AWS und NetApp StorageGRID als Backup-Ziel hinzufügen.</block>
-  <block id="8e84b1daf78912b246a0f51f49a81be6" category="inline-link">Erfahren Sie mehr über das Konfigurieren von Schutzeinstellungen</block>
-  <block id="a5074ce00bd12388aded816f7d17bc0b" category="paragraph"><block ref="8490e5084c846c3f615579ffada71b2e" category="inline-link-rx"></block>.</block>
   <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">Die Unterstützung für RHEL 8.10 beginnt mit der Version 3.9.40 des Connectors.</block>
   <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">14 Juli 2024</block>
   <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">Wir haben den BlueXP Kopier- und Synchronisierungsservice und den Daten-Broker aktualisiert, um einige Bugs zu beheben. Die neue Data Broker Version ist 1.0.53.</block>
@@ -627,7 +601,6 @@
   <block id="abbf2484b45da9fd7be677fe96c511eb" category="inline-link-macro">Wiederherstellen von Ordnern und Dateien mit Browse &amp;amp; Restore</block>
   <block id="9b7af6cb2e410e55ce793003b7110047" category="paragraph">Weitere Informationen finden Sie unter <block ref="07023d18b01371174abc5a157da41b99" category="inline-link-macro-rx"></block>.</block>
   <block id="707304f314bfa71975e8ffb352535092" category="paragraph">Weitere Informationen zur manuellen Aktivierung finden Sie unter<block ref="7de2d0863d92330816fac8b7768edb68" category="inline-link-rx"></block>.</block>
-  <block id="e1de422d9b50a40fe1300cc8736bc7f0" category="section-title">5 August 2024 (Version 1.34)</block>
   <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">Diese BlueXP -Klassifizierungsversion umfasst das folgende Update.</block>
   <block id="44a73383773bebac3194e73bd06397a8" category="section-title">Wechseln Sie von CentOS zu Ubuntu</block>
   <block id="6a1611bc2c4a6c8c16154f81c0323dc2" category="paragraph">BlueXP  Classification hat sein Linux-Betriebssystem für Microsoft Azure und Google Cloud Platform (GCP) von CentOS 7.9 auf Ubuntu 22.04 aktualisiert.</block>
@@ -677,7 +650,6 @@
   <block id="7c26a70dd4c64672aaff5da10a3afaec" category="list-text"><block ref="7c26a70dd4c64672aaff5da10a3afaec" category="inline-link-rx"></block></block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">8 August 2024</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">Anschluss 3.9.43</block>
-  <block id="be1b4db310d7b6590c7af9eb4751b6ce" category="paragraph">Diese Version enthält kleinere Verbesserungen, Fehlerbehebungen und die Voraussetzungen für neue Azure-Berechtigungen.</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">Die Version 3.9.43 ist für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">CPU- und RAM-Anforderungen aktualisiert</block>
   <block id="07279af47b8b78d8d96257fb42d7c5d9" category="paragraph">Um eine höhere Zuverlässigkeit zu gewährleisten und die Leistung von BlueXP  und dem Connector zu verbessern, benötigen wir jetzt zusätzliche CPU und RAM für die virtuelle Connector-Maschine:</block>
@@ -687,18 +659,10 @@
   <block id="43a4336ace07071a0817d23211d30402" category="list-text">AWS: T3.2xlarge</block>
   <block id="70e7db9a896d903493a8716aa3885ee7" category="list-text">Azure: Standard_D8S_v3</block>
   <block id="1a0e003291457a847a85677ad5244c4e" category="list-text">Google Cloud: n2-Standard-8</block>
-  <block id="7ef0b49c93a0c955c309b5fea693d698" category="paragraph">Diese Anforderung gilt für neue und vorhandene Steckverbinder.</block>
   <block id="fecbdb7e41beb7c2b4125b62d71b116d" category="section-title">Unterstützung für Podman 4.9.4 mit RHEL 8.10</block>
   <block id="601e92646453def880eec16da18e4390" category="paragraph">Podman Version 4.9.4 wird jetzt bei der Installation des Connectors auf einem Red hat Enterprise Linux 8.10-Host unterstützt.</block>
   <block id="18ecc589a4f329e3ba95ac4e285b4504" category="section-title">Benutzervalidierung für Identity Federation</block>
   <block id="8b71299c32997f38948f7e56b11d69b8" category="paragraph">Wenn Sie Identitätsföderation mit BlueXP  verwenden, muss jeder Benutzer, der sich zum ersten Mal bei BlueXP  anmeldet, ein schnelles Formular ausfüllen, um seine Identität zu validieren.</block>
-  <block id="e84c1e70dc9a2186ec21e22a3e9cbda0" category="section-title">Veraltete Edge Cache-Lizenzpakete</block>
-  <block id="882b50ca44d46bfb8d9502390cfeaf96" category="paragraph">Kapazitätsbasierte Edge Cache-Lizenzierungspakete sind für zukünftige Cloud Volumes ONTAP Implementierungen nicht mehr verfügbar. Sie können jedoch die API verwenden, um diese Funktionalität in Anspruch zu nehmen.</block>
-  <block id="a5729938408dc232ea97fb5d7d00b71c" category="section-title">Unterstützte Mindestversion von ONTAP für Flash Cache auf Azure</block>
-  <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link">Unterstützte Konfigurationen in Azure</block>
-  <block id="2936dc7efe93e6248aca38d21b92cc62" category="paragraph">Informationen zu unterstützten Konfigurationen finden Sie unter<block ref="10c1bb30d666a83202b9e687d7b06d1b" category="inline-link-rx"></block>.</block>
-  <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">Kostenlose Testversionen für Marketplace-Abonnements sind veraltet</block>
-  <block id="860dc5e7395e0f2c15a42ffdef98eca4" category="paragraph">Die automatische kostenlose 30-Tage-Testversion für Pay-as-you-go-Abonnements auf dem Marktplatz des Cloud-Providers wird in Cloud Volumes ONTAP nicht mehr verfügbar sein. Die Verrechnung für jede Art von Marketplace-Abonnement (PAYGO oder Jahresvertrag) wird ab der ersten Nutzung ohne einen kostenlosen Testzeitraum aktiviert.</block>
   <block id="d6b2c344cefb2303b488f51358e47bad" category="section-title">07 August 2024</block>
   <block id="a262e6e8b2140ed65b4662f6ea3826e9" category="section-title">ONTAP-Update</block>
   <block id="bfcca17c4ea8c7320a1a54960ce35444" category="paragraph">Der BlueXP  Service für Softwareupdates bietet Benutzern ein nahtloses Update, da Risiken verringert und sichergestellt wird, dass Kunden die ONTAP Funktionen in vollem Umfang nutzen können.</block>
@@ -706,7 +670,6 @@
   <block id="3b51dbc206ff39db31b586cff27b62b6" category="paragraph">Erfahren Sie mehr über <block ref="5932964ef1a5389f9863c988396d1e93" category="inline-link-macro-rx"></block>.</block>
   <block id="a5cfb1c769f5b79bb515811f8e2d3256" category="section-title">11 August 2024</block>
   <block id="91c579c47837abf6f4d04e29b24b1d72" category="paragraph">Wir haben den BlueXP Kopier- und Synchronisierungsservice und den Daten-Broker aktualisiert, um einige Bugs zu beheben. Die neue Data Broker Version ist 1.0.54.</block>
-  <block id="22e645000db07af6682e1c6517a3c82a" category="section-title">22 August 2024</block>
   <block id="335b63351c39337de35ede84c3852d4d" category="section-title">Anschluss 3.9.43-Patch</block>
   <block id="262115d0d4a65fe9bcd074ab5666018a" category="paragraph">Wir haben den Connector aktualisiert, um die Version Cloud Volumes ONTAP 9.15.1 zu unterstützen.</block>
   <block id="ede74fed38968a6f0c0dcebc3102b859" category="paragraph">Diese Version wird unterstützt und umfasst eine Aktualisierung der Connector-Richtlinie für Azure. Die Richtlinie umfasst jetzt die folgenden Berechtigungen:</block>
@@ -716,7 +679,6 @@
   <block id="bfe1024d3c9f1a02aa5dd1d7e5dccb34" category="section-title">22 August 2024</block>
   <block id="cf153c7d2cb432b6e772832926525a09" category="section-title">Cloud Volumes ONTAP 9.15.1 GA</block>
   <block id="ffa2c93a775db2cb6243bf2a224cf240" category="paragraph">BlueXP  kann jetzt die allgemeine Verfügbarkeitsversion von Cloud Volumes ONTAP 9.15.1 in AWS, Azure und Google Cloud implementieren und managen.</block>
-  <block id="5e5a8323b53f79c61a277215cb801b01" category="paragraph">Die ONTAP-Mindestversion, die für die Konfiguration von Flash Cache auf Azure erforderlich ist, ist 9.13.1 GA. ONTAP 9.13.1 GA und höhere Versionen können Sie für die Bereitstellung von Flash Cache auf Cloud Volumes ONTAP Systemen für Azure nur verwenden.</block>
   <block id="788b77f1903c86b79d6ab3fa3aeac01e" category="section-title">21 August 2024</block>
   <block id="c91c7b93c28cd18741b71f727ee81ee3" category="section-title">Berichte An</block>
   <block id="fc1d748db1b5b488ce7af7d17ea15d55" category="inline-link-macro">Unterstützung Der Softwareversion</block>
@@ -729,4 +691,61 @@
   <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">Die Region Kanada West wird jetzt in AWS für Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt.</block>
   <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">Karte der globalen Regionen unter AWS</block>
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Eine Liste aller Regionen finden Sie im<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
+  <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">9 September 2024</block>
+  <block id="2e5948b55d019081bde9b17268d72c2c" category="section-title">Anschluss 3.9.44</block>
+  <block id="eef503d0bc4de5d76d47f4691b412e15" category="paragraph">Diese Version enthält Unterstützung für Docker Engine 26, eine Erweiterung für SSL-Zertifikate und Fehlerbehebungen.</block>
+  <block id="8e05f2728c2c4042bd5165b33b122aa7" category="paragraph">Die Version 3.9.44 ist für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
+  <block id="15ba9bb026c53a148756b12826c46f8b" category="section-title">Aktualisiertes SSL-Zertifikat für lokalen UI-Zugriff</block>
+  <block id="b96edd49155123375756b26e44b38121" category="paragraph">Wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden, kann auf die Benutzeroberfläche über die virtuelle Connector-Maschine zugegriffen werden, die in Ihrer Cloud-Region oder vor Ort bereitgestellt wird. Standardmäßig verwendet BlueXP  ein selbstsigniertes SSL-Zertifikat, um einen sicheren HTTPS-Zugriff auf die webbasierte Konsole zu ermöglichen, die auf dem Connector ausgeführt wird.</block>
+  <block id="2737440e84d6c8a13a097fa583a6e67a" category="paragraph">In dieser Version haben wir Änderungen am SSL-Zertifikat für neue und bestehende Connectors vorgenommen:</block>
+  <block id="6cb49682fd1f125736d18f28cbce1f23" category="list-text">Der allgemeine Name für das Zertifikat stimmt jetzt mit dem kurzen Hostnamen überein</block>
+  <block id="982638142d38ac9441736ff5402f4e2a" category="list-text">Der alternative Name des Zertifikats ist der vollständig qualifizierte Domänenname (FQDN) des Hostcompaters</block>
+  <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">Unterstützung für RHEL 9.4</block>
+  <block id="70a7dd17e18fef168a9d377653df73ca" category="paragraph">BlueXP  unterstützt jetzt die Installation des Connectors auf einem Red hat Enterprise Linux 9.4-Host, wenn BlueXP  im Standardmodus oder im eingeschränkten Modus verwendet wird.</block>
+  <block id="2ba7632ac1d83ea5ae8e4c11321eb1d3" category="paragraph">Die Unterstützung für RHEL 9.4 beginnt mit der Version 3.9.40 des Connectors.</block>
+  <block id="d624d762d93c33c9dde16183d90a90e0" category="paragraph">Die aktualisierte Liste der unterstützten RHEL-Versionen für den Standardmodus und den eingeschränkten Modus enthält nun Folgendes:</block>
+  <block id="94d03d842e38bfc8ebeb1cd5999b1321" category="list-text">9.1 bis 9.4</block>
+  <block id="7a8260cd47a221886a3337b85ff2ec45" category="section-title">Unterstützung für Podman 4.9.4 mit allen RHEL-Versionen</block>
+  <block id="3a5941c5e1e3e3c4cb703b2d9d78963c" category="paragraph">Podman 4.9.4 wird jetzt mit allen unterstützten Versionen von Red hat Enterprise Linux unterstützt. Version 4.9.4 wurde zuvor nur mit RHEL 8.10 unterstützt.</block>
+  <block id="d0f584a070c78efb8fff64b377dbf729" category="paragraph">Die aktualisierte Liste der unterstützten Podman-Versionen umfasst 4.6.1 und 4.9.4 mit Red hat Enterprise Linux-Hosts.</block>
+  <block id="fef89f8fc6e9d583565954d5abe02ec4" category="paragraph">Podman ist ab Version 3.9.40 des Connectors für RHEL-Hosts erforderlich.</block>
+  <block id="842ce6e5c3bdb8cf81ffbd4f90a57649" category="section-title">AWS- und Azure-Berechtigungen wurden aktualisiert</block>
+  <block id="c1f46e9419a384f29f23682739cc8d58" category="paragraph">Wir haben die AWS- und Azure-Richtlinien für den Connector aktualisiert, um nicht mehr benötigte Berechtigungen zu beseitigen. Die Berechtigungen haben sich auf das BlueXP -Edge-Caching und die Erkennung und das Management von Kubernetes-Clustern bezogen, die ab August 2024 nicht mehr unterstützt werden.</block>
+  <block id="d201eff65f4516de2c618efea5a7edde" category="inline-link">Erfahren Sie, was sich in der AWS-Richtlinie geändert hat</block>
+  <block id="b0c050c316c776928b8b8bc0c327449e" category="list-text"><block ref="aff0e765a5d2f4e281feabd61d1dd500" category="inline-link-rx"></block>.</block>
+  <block id="2f036a4385aa02ab7c67e7932bd4036f" category="inline-link">Lesen Sie, was sich in der Azure-Richtlinie geändert hat</block>
+  <block id="31fa3b726cc2ab8e192bc70a792168a7" category="list-text"><block ref="c65ef862e4776cf4a66f5e1d7163d89e" category="inline-link-rx"></block>.</block>
+  <block id="d30916c53949113e97a8033f02e41364" category="paragraph">Diese Version enthält kleinere Verbesserungen und Fehlerbehebungen.</block>
+  <block id="9d97f1d57b6500707266656cdf2bf526" category="paragraph">Die aktualisierten CPU- und RAM-Anforderungen gelten für alle neuen Connectors. Für bestehende Steckverbinder wird empfohlen, die CPU und den RAM zu erhöhen, um eine verbesserte Leistung und Zuverlässigkeit zu gewährleisten.</block>
+  <block id="597f26a63507bfee99f67909c68d5354" category="section-title">2. September 2024 (Version 1.35)</block>
+  <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="section-title">Scannen von StorageGRID-Daten</block>
+  <block id="83bceb987dd495cde1a148944580e473" category="paragraph">Mit der BlueXP -Klassifizierung können Daten jetzt in StorageGRID gescannt werden.</block>
+  <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">Weitere Informationen finden Sie unter <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>.</block>
+  <block id="a5ac20c838605b872613985f5c302c61" category="section-title">5. August 2024 (Version 1.34)</block>
+  <block id="cdd78645b017b927a25b5449e345f823" category="section-title">WORM- und ARP-Funktionalitäten sind nicht mehr kostenpflichtig</block>
+  <block id="7fd6d2c43ef162414a32b6569dfcc99a" category="paragraph">Die integrierten Datensicherungs- und Sicherheitsfunktionen von WORM (Write Once Read Many) und ARP (Autonomous Ransomware Protection) werden ohne zusätzliche Kosten mit Cloud Volumes ONTAP Lizenzen angeboten. Das neue Preismodell gilt sowohl für neue als auch bestehende BYOL- und PAYGO/Marketplace-Abonnements von AWS, Azure und Google Cloud. Sowohl kapazitätsbasierte als auch Node-basierte Lizenzen enthalten ARP- und WORM-Funktionen für alle Konfigurationen, einschließlich Single Node und HA-Paaren mit hoher Verfügbarkeit, ohne dass zusätzliche Kosten anfallen.</block>
+  <block id="9dab6b96899670128353b1e92c2b8997" category="paragraph">Die vereinfachte Preisgestaltung bietet Ihnen diese Vorteile:</block>
+  <block id="000f6c26eec43af35931bc5e6fbf9f49" category="list-text">Konten, die derzeit WORM und ARP enthalten, werden für diese Funktionen nicht mehr berechnet. In Zukunft fallen für Ihre Abrechnung nur Gebühren für die Kapazitätsnutzung an, wie vor dieser Änderung. WORM und ARP werden nicht mehr in Ihren zukünftigen Rechnungen enthalten sein.</block>
+  <block id="3817bf50b7761fc5155c59e4a334d37a" category="list-text">Wenn Ihre aktuellen Konten diese Funktionen nicht enthalten, können Sie sich jetzt für WORM und ARP ohne zusätzliche Kosten entscheiden.</block>
+  <block id="1974af11cb1ac87d0b58d8696f893e4d" category="list-text">Alle Cloud Volumes ONTAP-Angebote für neue Konten sind ohne Gebühren für WORM und ARP erhältlich.</block>
+  <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">Weitere Informationen zu diesen Funktionen:</block>
+  <block id="0c0c93dcca58dc6ba5a46ef2bf56980b" category="inline-link">Besserer Schutz gegen Ransomware</block>
+  <block id="a7cf7c6eee288b3a91bcae2e6522aa7a" category="list-text"><block ref="a7cf7c6eee288b3a91bcae2e6522aa7a" category="inline-link-rx"></block></block>
+  <block id="8aca368ccd90320c96e8a69a43545003" category="inline-link">WORM-Lagerung</block>
+  <block id="a100999de1d9ee815d7e13741acf163d" category="list-text"><block ref="a100999de1d9ee815d7e13741acf163d" category="inline-link-rx"></block></block>
+  <block id="ec6210d470db7cd7b6f5408f088e1c02" category="paragraph">Einige der BlueXP  Funktionen zur wirtschaftlichen Effizienz wurden vorübergehend deaktiviert:</block>
+  <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">Technologieaktualisierungen</block>
+  <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">Kapazitäten ergänzen</block>
+  <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2 September 2024</block>
+  <block id="dddaa1ce44a2d4bbebf20d3f4563c0a4" category="paragraph">Diese Version des BlueXP  Ransomware-Schutzes umfasst folgende Updates.</block>
+  <block id="8817c21accd9fdcb9207397834af08f6" category="list-text">*Sicherheitsrisikobewertung von Digital Advisor*: BlueXP  Ransomware-Schutz sammelt jetzt Informationen über hohe und kritische Sicherheitsrisiken in Verbindung mit einem Cluster von NetApp Digital Advisor. Wenn ein Risiko gefunden wird, bietet der BlueXP  Ransomware-Schutz eine Empfehlung im Dashboard-Bereich *Empfohlene Aktionen*: "Behebt eine bekannte Sicherheitslücke auf dem Cluster-&lt;name&gt;." Klicken Sie in der Empfehlung im Dashboard auf *Überprüfen und beheben*, um Digital Advisor und einen CVE-Artikel (Common Vulnerability &amp; Exposure) zu überprüfen, um das Sicherheitsrisiko zu beheben. Wenn mehrere Sicherheitsrisiken bestehen, lesen Sie die Informationen in Digital Advisor.</block>
+  <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Digital Advisor Dokumentation</block>
+  <block id="9a42efab941e78c35ff03d2f3de7f294" category="paragraph">Siehe<block ref="5d1aa2fae9958ef5ced45eec5d13d250" category="inline-link-rx"></block>.</block>
+  <block id="db99b952c4a66f69627f5f328e20f9d1" category="list-text">*Backup auf Google Cloud Platform*: Mit diesem Release können Sie ein Backup-Ziel auf einen Google Cloud Platform-Bucket setzen. Bisher konnten Sie Sicherungsziele nur zu NetApp StorageGRID, Amazon Web Services und Microsoft Azure hinzufügen.</block>
+  <block id="6296ba9154f4dc4d4403121335c812c9" category="list-text">*Unterstützung für Google Cloud Platform*: Der Service unterstützt jetzt Cloud Volumes ONTAP für Google Cloud Platform für Speicherschutz. Bisher wurde für den Service nur Cloud Volumes ONTAP für Amazon Web Services und Microsoft Azure zusammen mit einem lokalen NAS unterstützt.</block>
+  <block id="571e1080641fe631491306478d4572a1" category="inline-link">Informieren Sie sich über BlueXP  Ransomware-Schutz und unterstützte Datenquellen, Backup-Ziele und Arbeitsumgebungen</block>
+  <block id="5c6a145c454aef23e256b2459f8c4c75" category="paragraph"><block ref="e1153028bb0f55bf33080551a5d7f6f3" category="inline-link-rx"></block>.</block>
+  <block id="98f1cb1ebd09ccf6e678d5bae1920213" category="list-text">*Rollenbasierte Zugriffssteuerung*: Mit rollenbasierter Zugriffssteuerung (Role Based Access Control, RBAC) können Sie nun den Zugriff auf bestimmte Aktivitäten einschränken. BlueXP  Ransomware-Schutz verwendet zwei Rollen aus BlueXP : BlueXP -Konto-Administrator und nicht-Konto-Administrator (Viewer).</block>
+  <block id="c7038711405bbbe2f0f37c53c5eb81ad" category="inline-link">Rollenbasierte Zugriffssteuerung: Privileges</block>
+  <block id="edf15150f2ed24145a29e67792372ecc" category="paragraph">Weitere Informationen zu den Aktionen, die jede Rolle ausführen kann, finden Sie unter<block ref="03cd1069228e8895d221bed8eef34f69" category="inline-link-rx"></block>.</block>
 </blocks>
