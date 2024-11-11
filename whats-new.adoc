@@ -24,6 +24,46 @@ In diesem Abschnitt werden neue Funktionen in Bezug auf BlueXP-Verwaltungsfunkti
 
 
 
+=== Bis 26. November 2024
+
+
+
+==== Freigabe des privaten Modus (3.9.46)
+
+Eine neue Version für den privaten Modus steht jetzt zum Herunterladen von zur Verfügung https://mysupport.netapp.com/site/downloads["NetApp Support-Website"^]
+
+Version 3.9.46 enthält Updates zu den folgenden BlueXP  Komponenten und Services.
+
+[cols="3*"]
+|===
+| Komponente oder Dienst | In dieser Version enthaltene Version | Änderungen seit der letzten privaten Modus-Freigabe 
+
+
+| Stecker | 3.9.46 | Kleinere Verbesserungen bei der Sicherheit und Fehlerbehebungen 
+
+
+| Backup und Recovery | Bis 22. November 2024 | Besuchen Sie die https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Was ist neu auf der Backup- und Recovery-Seite von BlueXP "^] und verweisen Sie auf die Änderungen, die in der Version November 2024 enthalten sind 
+
+
+| Klassifizierung | 4. November 2024 (Version 1.37) | Rufen Sie die https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Was ist neu in der BlueXP  Klassifizierungsseite"^] auf und beziehen Sie sich auf die Änderungen der Versionen 1.32 bis 1.37 
+
+
+| Cloud Volumes ONTAP-Management | Bis 11. November 2024 | Informationen zu den Änderungen der Versionen Oktober 2024 und November 2024 finden Sie im https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Neuerungen bei der Cloud Volumes ONTAP Management-Seite"^] 
+
+
+| Lokales ONTAP-Cluster-Management | Bis 26. November 2024 | Besuchen Sie die https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["Neuerungen bei der lokalen ONTAP Cluster-Management-Seite"^] und verweisen Sie auf die Änderungen, die in der Version November 2024 enthalten sind 
+|===
+Während das BlueXP  Digital Wallet und die BlueXP  Replizierung ebenfalls im Private Mode enthalten sind, gibt es keine Änderungen gegenüber der vorherigen Private Mode Version.
+
+Weitere Informationen zum privaten Modus, einschließlich der Aktualisierung, finden Sie in den folgenden Informationen:
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Weitere Informationen zum privaten Modus"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Erfahren Sie mehr über die ersten Schritte mit BlueXP im privaten Modus"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren"]S
+
+
+
+
 === Bis 11. November 2024
 
 
@@ -51,94 +91,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-project
 ==== Anschluss 3.9.45-Patch
 
 Dieser Patch enthält Fehlerbehebungen.
-
-
-
-=== 7 Oktober 2024
-
-
-
-==== Identitäts- und Zugriffsmanagement für BlueXP
-
-BlueXP  Identitäts- und Zugriffsmanagement (Identity and Access Management, IAM) ist ein neues Modell für das Ressourcen- und Zugriffsmanagement, das die zuvor von BlueXP -Konten bereitgestellten Funktionen beim Einsatz von BlueXP  im Standardmodus ersetzt und erweitert.
-
-BlueXP  IAM bietet ein granulareres Management von Ressourcen und Berechtigungen:
-
-* Eine übergeordnete _Organisation_ ermöglicht Ihnen, den Zugriff über Ihre verschiedenen _Projekte_ zu verwalten.
-* _Ordner_ ermöglicht Ihnen, verwandte Projekte zu gruppieren.
-* Mit der erweiterten Ressourcenverwaltung können Sie eine Ressource einem oder mehreren Ordnern oder Projekten zuordnen.
-+
-Sie können beispielsweise ein Cloud Volumes ONTAP-System mehreren Projekten zuordnen.
-
-* Mit der erweiterten Zugriffsverwaltung können Sie Mitgliedern auf verschiedenen Ebenen der Unternehmenshierarchie eine Rolle zuweisen.
-
-
-Diese Verbesserungen bieten eine bessere Kontrolle über die Aktionen, die Benutzer ausführen können, und die Ressourcen, auf die sie zugreifen können.
-
-.Wie sich BlueXP  IAM auf Ihr bestehendes Konto auswirkt
-Wenn Sie sich bei BlueXP  anmelden, werden Sie folgende Änderungen bemerken:
-
-* Ihr _Account_ wird jetzt _Organisation_ genannt
-* Ihre _Workspaces_ heißen jetzt _projects_
-* Die Namen der Benutzerrollen haben sich geändert:
-+
-** _Account admin_ ist jetzt _Organisation admin_
-** _Workspace admin_ ist jetzt _Folder oder Project admin_
-** _Compliance Viewer_ ist jetzt _Classification Viewer_
-
-
-* Unter Einstellungen können Sie auf die Identitäts- und Zugriffsverwaltung von BlueXP  zugreifen, um diese Verbesserungen zu nutzen
-
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png["Ein Screenshot von BlueXP  zeigt die Organisation und das Projekt, die oben in der Benutzeroberfläche ausgewählt werden können, sowie die Identitäts- und Zugriffsverwaltung, die im Menü Einstellungen verfügbar ist."]
-
-Beachten Sie Folgendes:
-
-* Es gibt keine Änderungen an Ihren bestehenden Benutzern oder Arbeitsumgebungen.
-* Obwohl sich die Namen der Rollen geändert haben, gibt es keine Unterschiede in der Berechtigungsperspektive. Benutzer haben weiterhin Zugriff auf dieselben Arbeitsumgebungen wie zuvor.
-* Die Anmeldung bei BlueXP  ist nicht geändert. BlueXP  IAM arbeitet wie BlueXP -Konten mit NetApp-Cloud-Anmeldedaten, NetApp-Support-Website-Anmeldedaten und gebündelten Verbindungen zusammen.
-* Wenn Sie mehrere BlueXP -Konten hatten, gibt es jetzt mehrere BlueXP -Unternehmen.
-
-
-.API für BlueXP  IAM
-Mit dieser Änderung wird eine neue API für BlueXP  IAM eingeführt, die jedoch abwärtskompatibel mit der vorherigen Mandanten-API ist. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Erfahren Sie mehr über die API für BlueXP  IAM"^]
-
-.Unterstützte Bereitstellungsmodi
-BlueXP  IAM wird unterstützt, wenn BlueXP  im Standardmodus verwendet wird. Wenn Sie BlueXP  im eingeschränkten oder privaten Modus verwenden, verwenden Sie weiterhin ein BlueXP  _Account_, um Arbeitsbereiche, Benutzer und Ressourcen zu verwalten.
-
-.Weitere Schritte
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["Erfahren Sie mehr über BlueXP  IAM"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["Erste Schritte mit BlueXP  IAM"]
-
-
-
-
-==== Anschluss 3.9.45
-
-Diese Version enthält eine erweiterte Unterstützung für Betriebssysteme und Fehlerbehebungen.
-
-Die Version 3.9.45 ist für den Standardmodus und den eingeschränkten Modus verfügbar.
-
-.Unterstützung für Ubuntu 24.04 LTS
-Ab Version 3.9.45 unterstützt BlueXP  jetzt neue Installationen des Connectors auf Ubuntu 24.04 LTS-Hosts, wenn BlueXP  im Standardmodus oder im eingeschränkten Modus verwendet wird.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Host-Anforderungen des Connectors anzeigen"].
-
-
-
-==== Unterstützung für SELinux mit RHEL-Hosts
-
-BlueXP  unterstützt jetzt den Connector mit Red hat Enterprise Linux Hosts, auf denen SELinux entweder im Forcieren- oder im freizügigen Modus aktiviert ist.
-
-Die Unterstützung für SELinux beginnt mit der Version 3.9.40 für den Standardmodus und den eingeschränkten Modus und mit der Version 3.9.42 für den privaten Modus.
-
-Beachten Sie die folgenden Einschränkungen:
-
-* BlueXP  unterstützt SELinux mit Ubuntu-Hosts nicht.
-* Verwaltung von Cloud Volumes ONTAP-Systemen, die nicht von Connectors unterstützt werden, auf denen SELinux auf dem Betriebssystem aktiviert ist.
-
-
-https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["Erfahren Sie mehr über SELinux"^]
 
 
 
@@ -296,7 +248,37 @@ Mit einem neuen Applikationsvorlagen-Service können Sie eine Volume-Vorlage fü
 
 
 
+=== Bis 22. November 2024
+
+Diese BlueXP -Version für Backup und Recovery enthält die folgenden Updates.
+
+
+
+==== SnapLock Compliance- und SnapLock Enterprise-Schutzmodi
+
+BlueXP  Backup und Recovery können jetzt sowohl FlexVol als auch FlexGroup On-Premises Volumes sichern, die entweder im SnapLock Compliance- oder im SnapLock Enterprise-Sicherungsmodus konfiguriert sind. Ihre Cluster müssen ONTAP 9.14 oder höher verwenden, um diese Unterstützung zu ermöglichen. Das Sichern von FlexVol Volumes mit dem SnapLock Enterprise-Modus wird seit ONTAP Version 9.11.1 unterstützt. Frühere ONTAP Versionen bieten keine Unterstützung für Backups von SnapLock Protection Volumes.
+
+Eine vollständige Liste der unterstützten Volumes finden Sie im https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Erfahren Sie mehr über BlueXP Backup und Recovery"].
+
+
+
+==== Indizierung für Such- und Wiederherstellungsprozess auf der Seite Volumes
+
+Bevor Sie Suche und Wiederherstellung verwenden können, müssen Sie „Indizierung“ in jeder Arbeitsumgebung aktivieren, aus der Sie Volume-Daten wiederherstellen möchten. So kann der indizierte Katalog die Backup-Dateien für jedes Volume nachverfolgen. Auf der Seite Volumes wird nun der Indexierungsstatus angezeigt:
+
+* Indiziert: Volumes wurden indiziert.
+* In Bearbeitung
+* Nicht Indiziert
+* Indizierung angehalten
+* Fehler
+* Nicht Aktiviert
+
+
+
+
 === 27 September 2024
+
+Diese BlueXP -Version für Backup und Recovery enthält die folgenden Updates.
 
 
 
@@ -355,24 +337,6 @@ Mit dieser Version ist die Unterstützung für die Wiederherstellung von FlexGro
 Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-browse-restore["Wiederherstellen von Ordnern und Dateien mit Browse  Restore"].
 
 Weitere Informationen zur manuellen Aktivierung finden Sie unter https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["BlueXP Backup und Recovery – Blog vom 2024. Juli"].
-
-
-
-=== 17 Mai 2024
-
-
-
-==== Einschränkungen bei der Verwendung von RHEL 8 und RHEL 9 für den lokalen Connector
-
-BlueXP Connector Version 3.9.40 unterstützt bestimmte Versionen von Red hat Enterprise Linux Version 8 und 9 für jede manuelle Installation der Connector-Software auf einem RHEL 8- oder 9-Host, unabhängig vom Speicherort zusätzlich zu den in genannten Betriebssystemen https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["Host-Anforderungen erfüllt"^]. Diese neueren RHEL-Versionen benötigen die Podman-Engine anstelle der Docker Engine. Derzeit unterliegt das Backup und Recovery von BlueXP zwei Einschränkungen, wenn die Podman Engine verwendet wird.
-
-Siehe https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["Einschränkungen bei Backup und Restore"] Entsprechende Details.
-
-Die folgenden Verfahren enthalten neue Podman-Anweisungen:
-
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-restart-backup.html["BlueXP Backup und Recovery neu starten"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["Stellen Sie BlueXP Backup- und Recovery-Daten an einem dunklen Standort wieder her"]
-
 
 
 
@@ -445,7 +409,7 @@ Weitere Informationen finden Sie unter link:task-scanning-storagegrid.html["Scan
 
 NetApp plant das Ende der Verfügbarkeit (EOA) und das Ende des Supports (EOS) für die Node-basierte Cloud Volumes ONTAP Lizenzierung. Ab dem 11. November 2024 wurde die begrenzte Verfügbarkeit von Node-basierten Lizenzen eingestellt. Der Support für Node-basierte Lizenzierung endet am 31. Dezember 2024. Nachdem Ihre Node-basierten Lizenzen nicht mehr erhältlich sind, sollten Sie die kapazitätsbasierte Lizenzierung mithilfe des BlueXP  Lizenzkonvertierungs-Tools starten.
 
-Wenn NetApp Sie ein Jahr lang oder länger gültig sind, sollten Sie Ihren NetApp Ansprechpartner vor dem EOA-Datum oder dem Ablaufdatum der Lizenz kontaktieren. So sollten Sie sicherstellen, dass die Voraussetzungen für die Transition gegeben sind. Wenn Sie keinen langfristigen Vertrag über einen Cloud Volumes ONTAP-Knoten haben und Ihr System mit einem On-Demand-PAYGO-Abonnement ausführen, ist es wichtig, die Konvertierung vor dem EOS-Datum zu planen. Sowohl für langfristige Verträge als auch für PAYGO Abonnements können Sie das BlueXP  Lizenzkonvertierungstool für eine nahtlose Konvertierung verwenden.
+Wenn NetApp Sie ein Jahr lang oder länger gültig sind, sollten Sie Ihren NetApp Ansprechpartner vor dem EOA-Datum oder dem Ablaufdatum der Lizenz kontaktieren. So sollten Sie sicherstellen, dass die Voraussetzungen für die Transition gegeben sind. Wenn Sie keinen langfristigen Vertrag für einen Cloud Volumes ONTAP-Node haben und Ihr System mit einem PAYGO-Abonnement (On-Demand Pay-as-you-go) ausführen, ist es wichtig, die Konvertierung vor dem EOS-Datum zu planen. Sowohl für langfristige Verträge als auch für PAYGO Abonnements können Sie das BlueXP  Lizenzkonvertierungstool für eine nahtlose Konvertierung verwenden.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Ende der Verfügbarkeit von Node-basierten Lizenzen"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["Konvertieren Sie Node-basierte Lizenzen in kapazitätsbasierte Lizenzen"^]
 
@@ -485,7 +449,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-az
 
 ==== WORM-Aktivierung nach der Bereitstellung von Cloud Volumes ONTAP
 
-Zuvor können Sie WORM-Storage aktivieren, wenn Sie eine Cloud Volumes ONTAP-Arbeitsumgebung auf BlueXP  erstellen. Jetzt bietet Ihnen BlueXP  die Möglichkeit, WORM in einer Arbeitsumgebung ZU aktivieren, auch wenn WORM während der Erstellung nicht aktiviert war. Nachdem Sie sie aktiviert haben, können Sie WORM nicht deaktivieren.
+Sie können nun WORM-Storage (Write Once, Read Many) auf einem bestehenden Cloud Volumes ONTAP System mithilfe von BlueXP  aktivieren. Mit dieser Funktionalität erhalten Sie die Flexibilität, WORM in einer Arbeitsumgebung zu aktivieren, auch wenn WORM während seiner Erstellung nicht aktiviert wurde. Sobald diese Option aktiviert ist, können Sie WORM nicht mehr deaktivieren.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabling-worm-on-a-cloud-volumes-ontap-working-environment["Aktivierung von WORM in einer Cloud Volumes ONTAP Arbeitsumgebung"^]
 
@@ -932,6 +896,20 @@ Der Service für BlueXP -Migrationsberichte wurde am 7. August 2024 aufgehoben.
 
 
 
+=== Bis 26. November 2024
+
+
+
+==== Unterstützung für ASA r2-Systeme mit Private Mode
+
+Sie können jetzt NetApp ASA r2-Systeme erkennen, wenn Sie BlueXP  im privaten Modus verwenden. Diese Unterstützung ist ab der 3.9.46 Private Mode-Version von BlueXP  verfügbar.
+
+* https://docs.netapp.com/us-en/asa-r2/index.html["Erfahren Sie mehr über ASA r2-Systeme"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Weitere Informationen zu BlueXP Implementierungsmodi"^]
+
+
+
+
 === 7 Oktober 2024
 
 
@@ -957,20 +935,6 @@ Die Erkennung von ASA r2-Systemen wird nicht unterstützt, wenn BlueXP  im priv
 ==== Volume-Vorlagen werden nicht mehr unterstützt
 
 Sie können kein Volume mehr aus einer Vorlage erstellen. Diese Aktion wurde mit dem BlueXP Korrekturservice verknüpft, der nicht mehr verfügbar ist.
-
-
-
-=== 30 Juli 2023
-
-
-
-==== FlexGroup Volumes erstellen
-
-Wenn Sie einen Cluster mit einem Connector managen, können Sie jetzt FlexGroup Volumes mit der BlueXP API erstellen.
-
-* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html["Erfahren Sie, wie Sie ein FlexGroup Volume erstellen"^]
-* https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html["Was ist ein FlexGroup Volume"^]
-
 
 
 
