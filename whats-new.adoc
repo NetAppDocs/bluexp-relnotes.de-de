@@ -208,7 +208,7 @@ Siehe link:https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-
 
 ==== Fügen Sie eine Storage-VM hinzu
 
-Das ist jetzt möglich link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["Fügen Sie eine Storage-VM hinzu"] Zu dem Filesystem Amazon FSX für NetApp ONTAP mit BlueXP.
+Sie können jetzt mithilfe von BlueXP  eine Storage-VM zum Filesystem von Amazon FSX für NetApp ONTAP hinzufügen.
 
 
 
