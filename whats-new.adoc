@@ -24,6 +24,40 @@ In diesem Abschnitt werden neue Funktionen in Bezug auf BlueXP-Verwaltungsfunkti
 
 
 
+=== 13 Januar 2025
+
+
+
+==== Anschluss 3.9.48
+
+Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
+
+Derzeit ist die Version 3.9.48 für den Standardmodus und den eingeschränkten Modus verfügbar.
+
+
+
+==== Identitäts- und Zugriffsmanagement für BlueXP
+
+* Auf der Seite „Ressourcen“ werden jetzt nicht erkannte Ressourcen angezeigt. Nicht entdeckte Ressourcen sind Speicherressourcen, die BlueXP  kennt, aber Sie haben keine Arbeitsumgebungen für erstellt. Beispielsweise werden Ressourcen, die in Digital Advisor angezeigt werden, für die noch keine Arbeitsumgebungen vorhanden sind, auf der Seite „Ressourcen“ als nicht erkannte Ressourcen angezeigt.
+* Amazon FSX for NetApp ONTAP-Ressourcen werden auf der Seite IAM-Ressourcen nicht angezeigt, da Sie sie nicht mit einer IAM-Rolle verknüpfen können. Sie können diese Ressourcen in ihrem jeweiligen Arbeitsbereich oder in Arbeitslasten anzeigen.
+
+
+
+
+==== Erstellen eines Support-Cases für zusätzliche BlueXP  Services
+
+Nachdem Sie BlueXP  für den Support registriert haben, können Sie einen Support-Fall direkt über die webbasierte Konsole von BlueXP  erstellen. Wenn Sie den Fall erstellen, müssen Sie den Dienst auswählen, mit dem das Problem verknüpft ist.
+
+Ab dieser Version können Sie nun einen Support-Fall erstellen und ihn weiteren BlueXP  Services zuordnen:
+
+* BlueXP Disaster Recovery
+* BlueXP vor Ransomware-Schutz
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["Erfahren Sie mehr über die Erstellung eines Support-Cases"].
+
+
+
 === Bis 16. Dezember 2024
 
 
@@ -88,46 +122,6 @@ Auf der Seite Connectors werden nur die derzeit verfügbaren Connectors aufgefü
 
 
 
-=== Bis 26. November 2024
-
-
-
-==== Freigabe des privaten Modus (3.9.46)
-
-Eine neue Version für den privaten Modus steht jetzt zum Herunterladen von zur Verfügung https://mysupport.netapp.com/site/downloads["NetApp Support-Website"^]
-
-Version 3.9.46 enthält Updates zu den folgenden BlueXP  Komponenten und Services.
-
-[cols="3*"]
-|===
-| Komponente oder Dienst | In dieser Version enthaltene Version | Änderungen seit der letzten privaten Modus-Freigabe 
-
-
-| Stecker | 3.9.46 | Kleinere Verbesserungen bei der Sicherheit und Fehlerbehebungen 
-
-
-| Backup und Recovery | Bis 22. November 2024 | Besuchen Sie die https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Was ist neu auf der Backup- und Recovery-Seite von BlueXP "^] und verweisen Sie auf die Änderungen, die in der Version November 2024 enthalten sind 
-
-
-| Klassifizierung | 4. November 2024 (Version 1.37) | Rufen Sie die https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Was ist neu in der BlueXP  Klassifizierungsseite"^] auf und beziehen Sie sich auf die Änderungen der Versionen 1.32 bis 1.37 
-
-
-| Cloud Volumes ONTAP-Management | Bis 11. November 2024 | Informationen zu den Änderungen der Versionen Oktober 2024 und November 2024 finden Sie im https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Neuerungen bei der Cloud Volumes ONTAP Management-Seite"^] 
-
-
-| Lokales ONTAP-Cluster-Management | Bis 26. November 2024 | Besuchen Sie die https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["Neuerungen bei der lokalen ONTAP Cluster-Management-Seite"^] und verweisen Sie auf die Änderungen, die in der Version November 2024 enthalten sind 
-|===
-Während das BlueXP  Digital Wallet und die BlueXP  Replizierung ebenfalls im Private Mode enthalten sind, gibt es keine Änderungen gegenüber der vorherigen Private Mode Version.
-
-Weitere Informationen zum privaten Modus, einschließlich der Aktualisierung, finden Sie in den folgenden Informationen:
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Weitere Informationen zum privaten Modus"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Erfahren Sie mehr über die ersten Schritte mit BlueXP im privaten Modus"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren"]
-
-
-
-
 == Meldungen
 
 
@@ -160,6 +154,18 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["Informieren Sie
 
 
 
+=== 06 Januar 2025
+
+
+
+==== NetApp stellt zusätzliche CloudFormation-Ressourcen bereit
+
+NetApp NOW stellt CloudFormation Ressourcen bereit, die es Kunden ermöglichen, erweiterte ONTAP Komponenten zu nutzen, die nicht in der AWS-Konsole bereitgestellt werden. CloudFormation ist der Infrastructure-as-Code-Mechanismus für AWS. Sie können Replizierungsbeziehungen, CIFS-Freigaben, NFS-Exportrichtlinien, Snapshots und vieles mehr erstellen.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html["Managen Sie Amazon FSX für NetApp ONTAP-Filesysteme mit CloudFormation"]
+
+
+
 === Bis 11. November 2024
 
 
@@ -185,22 +191,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/s
 Kunden können jetzt Amazon FSX for NetApp ONTAP-Dateisysteme in drei neuen AWS-Regionen erstellen: Europa (Zürich), Europa (Spanien) und Asien-Pazifik (Hyderabad).
 
 Siehe link:https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-ontap-three-regions/#:~:text=Customers%20can%20now%20create%20Amazon,file%20systems%20in%20the%20cloud["Amazon FSX for NetApp ONTAP ist jetzt in drei weiteren Regionen verfügbar"^] Vollständige Informationen.
-
-
-
-=== 02 Juli 2023
-
-
-
-==== Fügen Sie eine Storage-VM hinzu
-
-Sie können jetzt mithilfe von BlueXP  eine Storage-VM zum Filesystem von Amazon FSX für NetApp ONTAP hinzufügen.
-
-
-
-==== **Meine Möglichkeiten** Tab ist jetzt **Mein Anwesen**
-
-Die Registerkarte **Meine Möglichkeiten** ist jetzt **Mein Anwesen**. Die Dokumentation wird aktualisiert, um den neuen Namen wiederzugeben.
 
 
 
@@ -236,6 +226,16 @@ Sie haben schon lange die Möglichkeit, Azure Blob Storage auf dem BlueXP-Bildsc
 
 
 
+=== 13 Januar 2025
+
+
+
+==== Netzwerkfunktionen werden jetzt in BlueXP  unterstützt
+
+Wenn Sie ein Volume in Azure NetApp Files über BlueXP  konfigurieren, können Sie jetzt Netzwerkfunktionen angeben. Dies harmonisiert mit den in nativen Azure NetApp Files verfügbaren Funktionen.
+
+
+
 === 12 Juni 2024
 
 
@@ -261,20 +261,6 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 ==== Volume-Vorlagen werden nicht mehr unterstützt
 
 Sie können kein Volume mehr aus einer Vorlage erstellen. Diese Aktion wurde mit dem BlueXP Korrekturservice verknüpft, der nicht mehr verfügbar ist.
-
-
-
-=== 11. April 2021
-
-
-
-==== Unterstützung für Volume-Vorlagen
-
-Mit einem neuen Applikationsvorlagen-Service können Sie eine Volume-Vorlage für Azure NetApp Files einrichten. Die Vorlage sollte Ihren Job einfacher machen, da bestimmte Volume-Parameter bereits in der Vorlage definiert werden, z. B. Kapazitäts-Pool, Größe, Protokoll, vnet und Subnetz, auf dem sich das Volume befinden soll, und vieles mehr. Wenn ein Parameter bereits vordefiniert ist, können Sie einfach zum nächsten Volume-Parameter springen.
-
-* https://docs.netapp.com/us-en/bluexp-remediation/concept-resource-templates.html["Erfahren Sie mehr über Applikationsvorlagen und deren Verwendung in Ihrer Umgebung"^]
-* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html["Erfahren Sie, wie Sie ein Azure NetApp Files Volume aus einer Vorlage erstellen"]
-
 
 
 
@@ -452,7 +438,7 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azu
 
 NetApp plant das Ende der Verfügbarkeit (EOA) und das Ende des Supports (EOS) für die Node-basierte Cloud Volumes ONTAP Lizenzierung. Ab dem 11. November 2024 wurde die begrenzte Verfügbarkeit von Node-basierten Lizenzen eingestellt. Der Support für Node-basierte Lizenzierung endet am 31. Dezember 2024. Nachdem Ihre Node-basierten Lizenzen nicht mehr erhältlich sind, sollten Sie die kapazitätsbasierte Lizenzierung mithilfe des BlueXP  Lizenzkonvertierungs-Tools starten.
 
-Wenn NetApp Sie ein Jahr lang oder länger gültig sind, sollten Sie Ihren NetApp Ansprechpartner vor dem EOA-Datum oder dem Ablaufdatum der Lizenz kontaktieren. So sollten Sie sicherstellen, dass die Voraussetzungen für die Transition gegeben sind. Wenn Sie keinen langfristigen Vertrag für einen Cloud Volumes ONTAP-Node haben und Ihr System mit einem PAYGO-Abonnement (On-Demand Pay-as-you-go) ausführen, ist es wichtig, die Konvertierung vor dem EOS-Datum zu planen. Sowohl für langfristige Verträge als auch für PAYGO Abonnements können Sie das BlueXP  Lizenzkonvertierungstool für eine nahtlose Konvertierung verwenden.
+Wenn NetApp Sie ein jährliches oder längerfristiges Programm nutzen möchten, sollten Sie Ihren NetApp Ansprechpartner vor dem EOA-Datum oder dem Ablaufdatum der Lizenz kontaktieren. So sollten Sie sicherstellen, dass die Voraussetzungen für die Transition gegeben sind. Wenn Sie keinen langfristigen Vertrag für einen Cloud Volumes ONTAP-Node haben und Ihr System mit einem PAYGO-Abonnement (On-Demand Pay-as-you-go) ausführen, ist es wichtig, die Konvertierung vor dem EOS-Datum zu planen. Sowohl für langfristige Verträge als auch für PAYGO Abonnements können Sie das BlueXP  Lizenzkonvertierungstool für eine nahtlose Konvertierung verwenden.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Ende der Verfügbarkeit von Node-basierten Lizenzen"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["Konvertieren Sie Node-basierte Lizenzen in kapazitätsbasierte Lizenzen"^]
 
@@ -619,6 +605,16 @@ Sie können jetzt die Speicherfirmware, die SP/BMC-Firmware und das Autonome Ran
 
 
 
+=== Bis 04. Dezember 2024
+
+
+
+==== AutoSupport-Widget
+
+Das Widget „AutoSupport“ wurde dem Dashboard-Hauptbildschirm hinzugefügt, um Kunden über die Probleme mit dem AutoSupport-Status zu informieren.
+
+
+
 === 23 September 2024
 
 
@@ -626,16 +622,6 @@ Sie können jetzt die Speicherfirmware, die SP/BMC-Firmware und das Autonome Ran
 ==== Supportangebote
 
 Das NetApp SupportEdge Basic Serviceangebot umfasst jetzt alle in SupportEdge Advisor und SupportEdge Expert verfügbaren Digital Advisor-Funktionen, mit Ausnahme der umfassenden Topologie (VMware), die selbst bei Aktivierung keine Sichtbarkeit der vollständigen Überwachung des VMware Stacks bietet.
-
-
-
-=== 21 August 2024
-
-
-
-==== Berichte An
-
-Der Bericht *7-Mode Upgrade Advisor Plans* ist nicht mehr verfügbar, da Systeme mit 7-Mode den begrenzten Support erreicht haben. Weitere Informationen finden Sie unter link:https://mysupport.netapp.com/site/info/version-support["Unterstützung Der Softwareversion"^]. Erfahren Sie mehr über link:https://docs.netapp.com/a/ontap/7-mode/8.2.1/Upgrade-And-Revert-Or-Downgrade-Guide-For-7-Mode.pdf["Upgrade der Data ONTAP Storage-Systeme in 7-Mode"^].
 
 
 
@@ -991,6 +977,35 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== Bis 16. Dezember 2024
+
+
+
+==== Erkennen von ungewöhnlichem Benutzerverhalten mit Data Infrastructure Insights Storage Workload Security
+
+Mit dieser Version können Sie Storage Workload Security von Data Infrastructure Insights verwenden, um ungewöhnliches Benutzerverhalten in Ihren Storage-Workloads zu erkennen. Diese Funktion hilft Ihnen dabei, potenzielle Sicherheitsbedrohungen zu erkennen und potenziell böswillige Benutzer zu blockieren, um Ihre Daten zu schützen.
+
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Reagieren Sie auf einen erkannten Ransomware-Alarm"].
+
+Bevor Sie Data Infrastructure Insights Storage Workload Security zur Erkennung von ungewöhnlichem Benutzerverhalten verwenden, müssen Sie die Option über die Option BlueXP  Ransomware Protection *Settings* konfigurieren.
+
+Siehe https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Konfigurieren Sie BlueXP Ransomware-Schutzeinstellungen"].
+
+
+
+==== Wählen Sie die zu erdeckende und zu schützende Workloads aus
+
+Mit dieser Version können Sie nun Folgendes tun:
+
+* Wählen Sie in jedem Connector die Arbeitsumgebungen aus, in denen Sie Workloads erkennen möchten. Diese Funktion könnte für Sie von Vorteil sein, wenn Sie bestimmte Workloads in Ihrer Umgebung schützen möchten und keine anderen.
+* Während der Workload-Erkennung können Sie die automatische Erkennung von Workloads pro Connector aktivieren. Mit dieser Funktion können Sie die Workloads auswählen, die Sie schützen möchten.
+* Ermittlung neu erstellter Workloads für zuvor ausgewählte Arbeitsumgebungen.
+
+
+Siehe https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Workloads erkennen"].
+
+
+
 === Bis 7. November 2024
 
 
@@ -1040,42 +1055,6 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["
 Mit dieser Version können Sie nun Dateifreigaben in Gruppen gruppieren, um den Schutz Ihres Datenbestands zu erleichtern. Der Service kann alle Volumes einer Gruppe gleichzeitig schützen. Bisher mussten Sie jedes Volume separat schützen.
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Erfahren Sie mehr über das Gruppieren von File Share-Workloads in Strategien zum Schutz vor Ransomware"].
-
-
-
-=== 2 September 2024
-
-
-
-==== Sicherheitsrisikobewertung von Digital Advisor
-
-Der Schutz vor Ransomware von BlueXP  sammelt jetzt Informationen über hohe und kritische Sicherheitsrisiken in Verbindung mit einem Cluster aus dem digitalen Berater von NetApp. Wenn ein Risiko gefunden wird, bietet der BlueXP  Ransomware-Schutz eine Empfehlung im Dashboard-Bereich *Empfohlene Aktionen*: "Behebt eine bekannte Sicherheitslücke auf dem Cluster-<name>." Klicken Sie in der Empfehlung im Dashboard auf *Überprüfen und beheben*, um Digital Advisor und einen CVE-Artikel (Common Vulnerability & Exposure) zu überprüfen, um das Sicherheitsrisiko zu beheben. Wenn mehrere Sicherheitsrisiken bestehen, lesen Sie die Informationen in Digital Advisor.
-
-Siehe https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor Dokumentation"^].
-
-
-
-==== Backup auf der Google Cloud Platform
-
-Mit diesem Release können Sie ein Backup-Ziel auf einen Bucket von Google Cloud Platform festlegen. Bisher konnten Sie Sicherungsziele nur zu NetApp StorageGRID, Amazon Web Services und Microsoft Azure hinzufügen.
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Erfahren Sie mehr über die Konfiguration der BlueXP  Ransomware-Schutzeinstellungen"].
-
-
-
-==== Unterstützung für die Google Cloud Platform
-
-Der Service unterstützt jetzt Cloud Volumes ONTAP für die Google Cloud Platform für Storage-Sicherung. Bisher wurde für den Service nur Cloud Volumes ONTAP für Amazon Web Services und Microsoft Azure zusammen mit einem lokalen NAS unterstützt.
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Informieren Sie sich über BlueXP  Ransomware-Schutz und unterstützte Datenquellen, Backup-Ziele und Arbeitsumgebungen"].
-
-
-
-==== Rollenbasierte Zugriffssteuerung
-
-Mithilfe rollenbasierter Zugriffssteuerung (Role Based Access Control, RBAC) können Sie den Zugriff auf bestimmte Aktivitäten jetzt einschränken. BlueXP  Ransomware-Schutz verwendet zwei Rollen aus BlueXP : BlueXP -Konto-Administrator und nicht-Konto-Administrator (Viewer).
-
-Weitere Informationen zu den Aktionen, die jede Rolle ausführen kann, finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["Rollenbasierte Zugriffssteuerung: Privileges"].
 
 
 
@@ -1252,6 +1231,18 @@ link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro
 
 
 == Arbeitslast Fabrik
+
+
+
+=== 05 Januar 2025
+
+
+
+==== Support für Servicekonten in der BlueXP  Workload-Fabrik
+
+Servicekonten werden jetzt in der BlueXP  Workload-Fabrik unterstützt. Sie können Servicekonten erstellen, die als Maschinenbenutzer fungieren, die Infrastrukturvorgänge automatisieren.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-service-accounts.html["Erstellen und Verwalten von Servicekonten"]
 
 
 
