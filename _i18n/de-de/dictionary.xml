@@ -409,11 +409,6 @@
   <block id="cf3625b0846a5497dd36ab2220da602a" category="paragraph">Erfahren Sie mehr über <block ref="4ef0c81e219f07a508ae115770245e4e" category="inline-link-macro-rx"></block>.</block>
   <block id="35ccbae2ce9b9594b9af9196a3bed361" category="inline-link">Arbeitslast Fabrik</block>
   <block id="0b672c7e4b6adbcc5d61df4659dfc304" category="list-text"><block ref="0b672c7e4b6adbcc5d61df4659dfc304" category="inline-link-rx"></block></block>
-  <block id="67c7aeb67508aad4a1a5b35bdab67864" category="inline-link-macro">Erfahren Sie mehr über FSX für ONTAP-Funktionen in der BlueXP  Workload-Fabrik</block>
-  <block id="9043e597fd1a3537f95cd09a004d83dc" category="paragraph"><block ref="9043e597fd1a3537f95cd09a004d83dc" category="inline-link-macro-rx"></block></block>
-  <block id="622ad6297367666ca450d994236cbc2d" category="paragraph">Wenn Sie nach der Option „_Advanced view_“ suchen, mit der Sie ein FSX für ONTAP-Dateisystem mit dem ONTAP-Systemmanager verwalten können, können Sie diese Option nun auf der BlueXP -Arbeitsfläche finden, nachdem Sie die Arbeitsumgebung ausgewählt haben.</block>
-  <block id="50a397404296b3dd547fbabeb18e9092" category="inline-image-macro">Ein Screenshot aus dem rechten Fensterbereich auf dem BlueXP -Bildschirm nach Auswahl einer Arbeitsumgebung, in der die Option System Manager angezeigt wird.</block>
-  <block id="66cff4f3970f46872862ee60b7f0a832" category="paragraph"><block ref="66cff4f3970f46872862ee60b7f0a832" category="inline-image-macro-rx" type="image"></block></block>
   <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">Wir haben den BlueXP Kopier- und Synchronisierungsservice und den Daten-Broker aktualisiert, um einige Bugs zu beheben. Die neue Data Broker Version ist 1.0.56.</block>
   <block id="9a2ed93898be76fbc237cf9fca13d650" category="paragraph"><block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>.</block>
   <block id="139da935670a9f985194d3241917c359" category="paragraph">BlueXP  Backup und Recovery können jetzt sowohl FlexVol als auch FlexGroup On-Premises Volumes sichern, die entweder im SnapLock Compliance- oder im SnapLock Enterprise-Sicherungsmodus konfiguriert sind. Ihre Cluster müssen ONTAP 9.14 oder höher verwenden, um diese Unterstützung zu ermöglichen. Das Sichern von FlexVol Volumes mit dem SnapLock Enterprise-Modus wird seit ONTAP Version 9.11.1 unterstützt. Frühere ONTAP Versionen bieten keine Unterstützung für Backups von SnapLock Protection Volumes.</block>
@@ -426,9 +421,6 @@
   <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">Fehler</block>
   <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">Nicht Aktiviert</block>
   <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">Sie können jetzt NetApp ASA r2-Systeme erkennen, wenn Sie BlueXP  im privaten Modus verwenden. Diese Unterstützung ist ab der 3.9.46 Private Mode-Version von BlueXP  verfügbar.</block>
-  <block id="a295598082ec4c1c06fb5a3e2ad3e1d1" category="paragraph">Die Maschinenfamilien DS_v2 und Es_v3 stehen bei der Bereitstellung neuer Instanzen von Cloud Volumes ONTAP in Azure nicht mehr zur Auswahl auf BlueXP  zur Verfügung. Diese Familien werden nur in älteren, bestehenden Systemen beibehalten und unterstützt. Neue Implementierungen von Cloud Volumes ONTAP werden in Azure erst ab Version 9.12.1 unterstützt. Wir empfehlen, entweder auf Es_v4 oder eine andere Serie zu wechseln, die mit Cloud Volumes ONTAP 9.12.1 und höher kompatibel ist. Die Maschinen der Serien DS_v2 und Es_v3 werden jedoch für neue Bereitstellungen über die API verfügbar sein.</block>
-  <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link">Unterstützte Konfigurationen in Azure</block>
-  <block id="ef57b1c89cee8819c5de2b079e4b0640" category="paragraph"><block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
   <block id="3406306d1e826f71d49547332136491d" category="paragraph">Das Scannen nach PII-Daten in BlueXP -Ransomware-Schutz ist für Kunden, die die BlueXP -Klassifizierung implementiert haben, in der Regel verfügbar. Die BlueXP -Klassifizierung ist als Teil der BlueXP  Plattform ohne Zusatzkosten verfügbar und kann vor Ort oder in der Cloud des Kunden bereitgestellt werden.</block>
   <block id="78efdac7339a3a2a767f54e63e415b79" category="paragraph">Bei der Installation des Connectors oder bei einer automatischen Aktualisierung kontaktiert der Connector Repositorys, um Bilder für die Installation oder das Upgrade herunterzuladen. Standardmäßig hat der Connector immer die folgenden Endpunkte kontaktiert:</block>
   <block id="f55e31da35f47937201bdbf54e964315" category="list-text">\https://*.blob.core.windows.net</block>
@@ -569,9 +561,6 @@
   <block id="13ac5039f81a1aa4ae7419bf17b5b6a0" category="section-title">06 Januar 2025</block>
   <block id="16e305f77c7a0272aceac8c95312d98a" category="section-title">NetApp stellt zusätzliche CloudFormation-Ressourcen bereit</block>
   <block id="c043b3439543ebfc027a3c1fcb5613a5" category="paragraph">NetApp NOW stellt CloudFormation Ressourcen bereit, die es Kunden ermöglichen, erweiterte ONTAP Komponenten zu nutzen, die nicht in der AWS-Konsole bereitgestellt werden. CloudFormation ist der Infrastructure-as-Code-Mechanismus für AWS. Sie können Replizierungsbeziehungen, CIFS-Freigaben, NFS-Exportrichtlinien, Snapshots und vieles mehr erstellen.</block>
-  <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">Bis 11. November 2024</block>
-  <block id="844ae8089b7faaed0a2b7abc588969d9" category="section-title">FSX für ONTAP lässt sich in Storage in die BlueXP  Workload-Fabrik integrieren</block>
-  <block id="dc13de95ece93019b115a46e9259730f" category="paragraph">FSX für ONTAP-Filesystem-Management-Aufgaben wie das Hinzufügen von Volumes, das erweitern der Filesystem-Kapazität und das Managen von Storage-VMs werden jetzt in der BlueXP  Workload Factory gemanagt, einem neuen Service von NetApp und Amazon FSX für NetApp ONTAP. Sie können Ihre vorhandenen Anmeldeinformationen und Berechtigungen wie zuvor verwenden. Der Unterschied ist, dass Sie jetzt mehr aus BlueXP  Workload Factory heraus tun können, um Ihre Dateisysteme zu verwalten. Wenn Sie eine FSX for ONTAP-Arbeitsumgebung aus dem BlueXP -Arbeitsbereich öffnen, werden Sie direkt zur BlueXP -Workload-Fabrik gehen.</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 März 2023</block>
   <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">Möglichkeit zum Hinzufügen neuer Buckets aus BlueXP</block>
   <block id="3bec690d07df1a3a36c8a3122654fc24" category="section-title">5 Juni 2023</block>
@@ -610,8 +599,6 @@
   <block id="d34aa8cf529fee89c49e6c7c38dbf1e7" category="paragraph">Die Option für die erweiterte Verwaltung von Cloud Volumes ONTAP von BlueXP  über ONTAP System Manager wurde von *Erweiterte Ansicht* in *System Manager* umbenannt.</block>
   <block id="75b76b021da36b8e8bf9678596449aa4" category="section-title">Das BlueXP  Digital Wallet vereinfacht das Lizenzmanagement</block>
   <block id="5fbce01b2fa5bcad467f74186949bef5" category="paragraph">Profitieren Sie jetzt von einem vereinfachten Management von Cloud Volumes ONTAP Lizenzen dank verbesserter Navigationspunkte in der Digital Wallet von BlueXP :</block>
-  <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">Bis 9. Dezember 2024</block>
-  <block id="497e698cad27d6346959de7394ab5df8" category="section-title">Liste der unterstützten VMs, die für Azure aktualisiert wurden, um die Best Practices abzustimmen</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">9 September 2020</block>
   <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">Unterstützung von Cloud Volumes Service für Google Cloud</block>
   <block id="7ee45649520b61796809750e472a8000" category="section-title">Bis 7. Dezember 2020</block>
@@ -814,4 +801,11 @@
   <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">Verbesserte Genauigkeit des Kategorisierungsmodells</block>
   <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link-macro">Vordefinierte Kategorien</block>
   <block id="f436ec850a6acc51f2281d01c1b289da" category="paragraph">Die Genauigkeit des Machine-Learning-Modells für <block ref="fff0603fda0aac9c86fd12605ac8a06f" category="inline-link-macro-rx"></block> hat sich um 11 % erhöht.</block>
+  <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">02 März 2025</block>
+  <block id="fd8693cf8f6802fd1c7d50d5742a4c71" category="section-title">CloudShell-Events in Tracker</block>
+  <block id="de57e19ed3d5b873e357689269de25a1" category="paragraph">Immer, wenn Sie CloudShell für die Ausführung von FSX for ONTAP-Vorgängen aus BlueXP -Workloads verwenden, werden die Ereignisse in Tracker angezeigt.</block>
+  <block id="4fbdcdf3c2d8694d5e358b3175b867da" category="section-title">03 März 2025</block>
+  <block id="62c9277e75aee50ddfb792de79bd94d3" category="section-title">Neuseeland Nordregion wird jetzt in Azure unterstützt</block>
+  <block id="81ae8423a213b8c9bbcb79aee6ae0af8" category="paragraph">Die neuseeländische Nordregion wird jetzt in Azure für Single Node- und HA-Konfigurationen (High Availability, Hochverfügbarkeit) von Cloud Volumes ONTAP 9.12.1 GA und höher unterstützt. Beachten Sie, dass der Lsv3-Instanztyp in dieser Region nicht unterstützt wird.</block>
+  <block id="b717ddfb2f9a28b7e4673751144693cc" category="paragraph">Eine Liste aller unterstützten Regionen finden Sie im<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
 </blocks>
