@@ -536,6 +536,9 @@ So wiederholen Sie alle Scans:
 . Um alle fehlgeschlagenen Scans erneut zu versuchen, wählen Sie *Alle Scans wiederholen*.
 
 
+.Verbesserte Genauigkeit des Kategorisierungsmodells
+Die Genauigkeit des Machine-Learning-Modells für link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["Vordefinierte Kategorien"] hat sich um 11 % erhöht.
+
 
 
 === 22 Januar 2025
