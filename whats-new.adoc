@@ -355,6 +355,60 @@ Sie können kein Volume mehr aus einer Vorlage erstellen. Diese Aktion wurde mit
 
 
 
+=== 21 Februar 2025
+
+Diese BlueXP -Version für Backup und Recovery enthält die folgenden Updates.
+
+
+
+==== Hochperformante Indizierung
+
+BlueXP  Backup und Recovery bietet eine aktualisierte Indexierungsfunktion, durch die die Indizierung der Daten in der Arbeitsumgebung der Quelle effizienter erfolgt. Die neue Indexierungsfunktion umfasst Updates der Benutzeroberfläche, eine verbesserte Performance der Methode „Search & Restore“ zur Datenwiederherstellung, Upgrades der Funktionen für globale Suchvorgänge und eine bessere Skalierbarkeit.
+
+Hier eine Aufschlüsselung der Verbesserungen:
+
+* *Ordnerkonsolidierung*: Die aktualisierte Version gruppiert Ordner zusammen mit Namen, die bestimmte Kennungen enthalten, was den Indizierungsprozess reibungsloser macht.
+* *Parkett-Dateiverdichtung*: Die aktualisierte Version reduziert die Anzahl der Dateien, die für die Indizierung jedes Volumes verwendet werden, vereinfacht den Prozess und macht eine zusätzliche Datenbank erforderlich.
+* *Scale-out mit mehr Sitzungen*: Die neue Version fügt mehr Sitzungen zur Bearbeitung von Indizierungsaufgaben hinzu, was den Prozess beschleunigt.
+* *Unterstützung für mehrere Index-Container*: Die neue Version verwendet mehrere Container, um Indexaufgaben besser zu verwalten und zu verteilen.
+* *Split Index Workflow*: Die neue Version unterteilt den Indexierungsprozess in zwei Teile, wodurch die Effizienz erhöht wird.
+* *Verbesserte Parallelität*: Die neue Version ermöglicht es, Verzeichnisse gleichzeitig zu löschen oder zu verschieben, was den Indexierungsprozess beschleunigt.
+
+
+.Wer profitiert von dieser Funktion?
+Die neue Indexierungsfunktion steht allen Neukunden zur Verfügung.
+
+.Wie aktivieren Sie die Indexierung?
+Bevor Sie die Such- und Wiederherstellungsmethode zum Wiederherstellen von Daten verwenden können, müssen Sie „Indizierung“ in jeder Quellarbeitsumgebung aktivieren, in der Sie Volumes oder Dateien wiederherstellen möchten. Auf diese Weise kann der indizierte Katalog jedes Volume und jede Sicherungsdatei nachverfolgen, sodass Ihre Suche schnell und effizient erfolgt.
+
+Aktivieren Sie die Indizierung der Arbeitsumgebung, indem Sie die Option „Indizierung aktivieren“ auswählen, wenn Sie eine Suche und Wiederherstellung durchführen.
+
+Weitere Informationen finden Sie in der Dokumentation https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-search-restore["Wiederherstellen von ONTAP-Daten mithilfe von Suche  Wiederherstellen"].
+
+.Unterstützte Skalierung
+Die neue Indexierungsfunktion unterstützt Folgendes:
+
+* Globale Sucheffizienz in weniger als 3 Minuten
+* Bis zu 5 Milliarden Dateien
+* Bis zu 5000 Volumes pro Cluster
+* Bis zu 100.000 Snapshots pro Volume
+* Die maximale Zeit für die Indizierung der Basislinie beträgt weniger als 7 Tage. Die tatsächliche Zeit variiert je nach Umgebung.
+
+
+
+
+==== Verbesserte globale Such-Performance
+
+Diese Version enthält auch Verbesserungen der globalen Such-Performance. Sie sehen jetzt Fortschrittsanzeigen und ausführlichere Suchergebnisse, einschließlich der Anzahl der Dateien und der Zeit, die für die Suche erforderlich ist. Dedizierte Container für die Suche und Indexierung sorgen dafür, dass globale Suchen in weniger als fünf Minuten abgeschlossen werden.
+
+Beachten Sie die folgenden Überlegungen zur globalen Suche:
+
+* Der neue Index wird nicht für Snapshots ausgeführt, die als stündlich gekennzeichnet sind.
+* Die neue Indexierungsfunktion funktioniert nur für Snapshots auf FlexVols und nicht für Snapshots auf FlexGroups.
+
+
+
+
 === Bis 22. November 2024
 
 Diese BlueXP -Version für Backup und Recovery enthält die folgenden Updates.
