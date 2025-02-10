@@ -733,6 +733,36 @@ Das NetApp SupportEdge Basic Serviceangebot umfasst jetzt alle in SupportEdge Ad
 
 
 
+=== 10 Februar 2025
+
+Die BlueXP  Digital Wallet wurde aus Anwenderfreundlichkeit neu gestaltet und bietet jetzt zusätzliches Abonnement- und Lizenzmanagement.
+
+
+
+==== Neues Dashboard mit Übersicht
+
+Auf der Digital Wallet-Homepage befindet sich ein aktualisiertes Dashboard Ihrer NetApp Lizenzen und Marketplace Abonnements, in dem Sie nach bestimmten Services, Lizenztypen und erforderlichen Aktionen suchen können.
+
+
+
+==== Konfigurieren von Abonnements für Anmeldeinformationen
+
+Mit dem BlueXP  Digital Wallet können Sie jetzt Ihre Abonnements für Provider-Anmeldedaten konfigurieren. Normalerweise tun Sie dies, wenn Sie zum ersten Mal ein Marketplace-Abonnement oder einen Jahresvertrag abonnieren. Zuvor konnten die Anmeldeinformationen des Abonnements nur auf der Seite Anmeldedaten geändert werden.
+
+
+
+==== Abonnements mit Organisationen verknüpfen
+
+Sie können jetzt das Unternehmen, dem ein Abonnement zugeordnet ist, direkt aus dem Digital Wallet aktualisieren.
+
+
+
+==== Management von Cloud Volume ONTAP Lizenzen
+
+Sie verwalten Cloud Volumes ONTAP-Lizenzen jetzt über die Startseite oder den Reiter *Datendienst-Lizenzen*. Verwenden Sie die Registerkarte *Marketplace-Abonnements*, um Ihre Abonnementinformationen anzuzeigen.
+
+
+
 === 5 März 2024
 
 
@@ -759,30 +789,6 @@ Die Berichte zur Cloud Volumes ONTAP-Nutzung wurden nun um einige Verbesserungen
 * Die Namen der Arbeitsumgebung sind jetzt in den Berichten zu Storage-VMs und Volume-Nutzung enthalten.
 * Der Datenträgertyp _file_ wird nun mit _Primary (Read/Write)_ beschriftet.
 * Der Datenträgertyp _secondary_ wird jetzt mit _secondary (DP)_ bezeichnet.
-
-
-Weitere Informationen zu Nutzungsberichten finden Sie unter https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["Nutzungsberichte herunterladen"].
-
-
-
-=== 7 Mai 2023
-
-
-
-==== Google Cloud-Angebote
-
-Das BlueXP Digital Wallet identifiziert jetzt Google Cloud Marketplace Abonnements, die mit einem privaten Angebot verbunden sind, sowie Enddatum und Laufzeit des Abonnements. Durch diese Erweiterung können Sie überprüfen, ob Sie das private Angebot erfolgreich angenommen haben, und die Bedingungen bestätigen.
-
-
-
-==== Aufladeaufschlüsselung
-
-Jetzt finden Sie heraus, für welche Gebühren Sie zahlen, wenn Sie kapazitätsbasierte Lizenzen abonniert haben. Die folgenden Nutzungsberichte können aus dem Digital Wallet von BlueXP heruntergeladen werden. Die Nutzungsberichte enthalten Kapazitätsdetails zu Ihren Abonnements und geben an, wie Sie für die Ressourcen in Ihren Cloud Volumes ONTAP Abonnements in Rechnung gestellt werden. Die herunterladbaren Berichte können leicht mit anderen geteilt werden.
-
-* Verwendung des Cloud Volumes ONTAP-Pakets
-* Allgemeine Nutzung
-* Verwendung von Storage VMs
-* Volumennutzung
 
 
 Weitere Informationen zu Nutzungsberichten finden Sie unter https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["Nutzungsberichte herunterladen"].
