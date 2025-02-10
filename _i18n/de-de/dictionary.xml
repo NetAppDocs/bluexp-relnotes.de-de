@@ -796,4 +796,10 @@
   <block id="5781bb449b503c5fcaefb20bfaa81cc4" category="section-title">Cloud Volumes ONTAP 9.16.1 GA</block>
   <block id="efa5e5522cbd4457ef4e551fb5d60491" category="paragraph">Mit BlueXP  können Sie jetzt die Cloud Volumes ONTAP 9.16.1 General Availability-Version in Azure und Google Cloud implementieren und managen. Diese Version steht jedoch nicht für die Bereitstellung und das Upgrade in AWS zur Verfügung.</block>
   <block id="e622e2ddfce6c06eca3078953e9e6186" category="section-title">Unterstützung für die Region Neuseeland Nord in Azure</block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 März 2025</block>
+  <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="section-title">Version 1.41</block>
+  <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">Diese BlueXP -Klassifizierungsversion enthält allgemeine Verbesserungen und Fehlerbehebungen. Die Lösung umfasst außerdem:</block>
+  <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">Scanstatus</block>
+  <block id="9f4be2ee88f8d600b3db6a9021b88d97" category="paragraph">Mit der BlueXP -Klassifizierung wird jetzt der Echtzeitfortschritt der Scans von _initial_ Mapping und Klassifizierung auf einem Volume verfolgt. Separate progressive Balken verfolgen die Mapping- und Klassifikations-Scans und zeigen einen Prozentsatz der insgesamt gescannten Dateien an. Sie können auch mit dem Mauszeiger auf eine Fortschrittsleiste zeigen, um die Anzahl der gescannten Dateien und die Gesamtdateien anzuzeigen. Durch das Verfolgen des Status Ihrer Scans erhalten Sie tiefere Einblicke in den Scanfortschritt, sodass Sie Ihre Scans besser planen und die Ressourcenzuweisung verstehen können.</block>
+  <block id="dea24de819351c63f66685576d21ee25" category="paragraph">Um den Status Ihrer Scans anzuzeigen, navigieren Sie in der BlueXP -Klassifizierung zu **Konfiguration**, und wählen Sie dann die **Konfiguration der Arbeitsumgebung**. Der Fortschritt wird für jedes Volume in der Zeile angezeigt.</block>
 </blocks>

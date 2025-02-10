@@ -487,6 +487,21 @@ Weitere Informationen zur manuellen Aktivierung finden Sie unter https://communi
 
 
 
+=== 10 März 2025
+
+
+
+==== Version 1.41
+
+Diese BlueXP -Klassifizierungsversion enthält allgemeine Verbesserungen und Fehlerbehebungen. Die Lösung umfasst außerdem:
+
+.Scanstatus
+Mit der BlueXP -Klassifizierung wird jetzt der Echtzeitfortschritt der Scans von _initial_ Mapping und Klassifizierung auf einem Volume verfolgt. Separate progressive Balken verfolgen die Mapping- und Klassifikations-Scans und zeigen einen Prozentsatz der insgesamt gescannten Dateien an. Sie können auch mit dem Mauszeiger auf eine Fortschrittsleiste zeigen, um die Anzahl der gescannten Dateien und die Gesamtdateien anzuzeigen. Durch das Verfolgen des Status Ihrer Scans erhalten Sie tiefere Einblicke in den Scanfortschritt, sodass Sie Ihre Scans besser planen und die Ressourcenzuweisung verstehen können.
+
+Um den Status Ihrer Scans anzuzeigen, navigieren Sie in der BlueXP -Klassifizierung zu **Konfiguration**, und wählen Sie dann die **Konfiguration der Arbeitsumgebung**. Der Fortschritt wird für jedes Volume in der Zeile angezeigt.
+
+
+
 === 19 Februar 2025
 
 
