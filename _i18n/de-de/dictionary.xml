@@ -808,4 +808,11 @@
   <block id="98e6e30b63e5242616c686684a17c03b" category="paragraph">Weitere Informationen finden Sie unter<block ref="7d31e5b11cc548279f7c20a9569ec8fc" category="inline-link-rx"></block> und<block ref="026d9da5e400c1054ac1084b0f63056d" category="inline-link-rx"></block>.</block>
   <block id="d957d0c80017f235b131c557ae0876b1" category="section-title">Warnmeldungen werden ausgegeben, wenn eine hohe Verschlüsselung erkannt wird</block>
   <block id="8c8c1a747835015c86248b11a2097c02" category="paragraph">Mit dieser Version können Sie Warnmeldungen anzeigen, wenn eine hohe Verschlüsselung bei Ihren Workloads erkannt wird, selbst ohne Änderungen an der Dateierweiterung. Diese Funktion, die ARP-KI (ONTAP Autonomous Ransomware Protection) nutzt, hilft Ihnen bei der Ermittlung von Workloads, die dem Risiko von Ransomware-Angriffen ausgesetzt sind. Verwenden Sie diese Funktion, und laden Sie die gesamte Liste der betroffenen Dateien mit oder ohne Erweiterungsänderungen herunter.</block>
+  <block id="23b3b711859803a815b81aca1cc4811c" category="section-title">Anschluss 3.9.50</block>
+  <block id="0de5f5ade75808b90faefd69873b4b3c" category="section-title">12 März 2025</block>
+  <block id="a2fefc65df2136938b995f8abbe643c2" category="section-title">Unterstützung neuer Regionen für Implementierungen mit mehreren Verfügbarkeitszonen in Azure</block>
+  <block id="0cc914ed23f0f7d6bc902ae731843213" category="paragraph">Die folgenden Regionen unterstützen jetzt HA-Implementierungen mit mehreren Verfügbarkeitszonen in Azure für Cloud Volumes ONTAP 9.12.1 GA und höher:</block>
+  <block id="2e168141b8f719cbd37e6beec663b599" category="list-text">Zentral USA</block>
+  <block id="7a6df46ff8e25ac610f60f312512afa4" category="list-text">US-Behörde Virginia (Region der US-Regierung – Virginia)</block>
+  <block id="91aba3afcaafb3ecbed8f358c30b8a7a" category="paragraph">Eine Liste aller Regionen finden Sie im<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
 </blocks>
