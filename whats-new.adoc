@@ -1148,31 +1148,31 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
-==== ad84f24c65dd6930a049e0903256dc97
+==== Simulieren Sie einen Angriff und reagieren Sie darauf
 
-6cadf1d9d5289622136d042488809e73
+Mit dieser Version können Sie einen Ransomware-Angriff simulieren, um Ihre Reaktion auf eine Ransomware-Warnung zu testen. Diese Funktion hilft Ihnen dabei, sich im Falle eines echten Ransomware-Angriffs auf Sie vorzubereiten, indem Sie Warnmeldungs-, Reaktions- und Recovery-Prozesse testen.
 
-9b1eb2dbe181e9f7b73db8a0785c0419
-
-
-
-==== d36ca1f9466b055dd6adb80de5cce7d4
-
-61541c0b99aec5f11fccef5bcb3fe5a1
-
-* cb3c0a83218c46d38ab0842ce49a7e6e
-* 6a4c9cc76f7f432efa274c3ff0dae3dd
-* 3b7810e8427f006590b006af43d016ef
-* 28573ff4f820730a3eeae9cdd51b54d4
-
-
-98e6e30b63e5242616c686684a17c03b
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Machen Sie sich eine Übung zur Vorbereitung auf einen Ransomware-Angriff"].
 
 
 
-==== d957d0c80017f235b131c557ae0876b1
+==== Verbesserungen am Ermittlungsprozess
 
-8c8c1a747835015c86248b11a2097c02
+Diese Version enthält Verbesserungen an den Prozessen zur selektiven Bestandsaufnahme und erneuten Bestandsaufnahme:
+
+* Mit diesem Release können Sie neu erstellte Workloads erkennen, die den zuvor ausgewählten Arbeitsumgebungen hinzugefügt wurden.
+* Sie können in dieser Version auch _New_ Arbeitsumgebungen auswählen. Diese Funktion unterstützt Sie beim Schutz neuer Workloads, die zu Ihrer Umgebung hinzugefügt werden.
+* Wenn Sie alle erkannten Workloads auswählen möchten, können Sie dies über die Option *alles auswählen* tun.
+* Sie können diese Erkennungsprozesse während des Erkennungsvorgangs zunächst oder über die Option Einstellungen durchführen.
+
+
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Ermittlung neu erstellter Workloads für zuvor ausgewählte Arbeitsumgebungen"] und https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Konfigurieren Sie fetaures mit der Option Einstellungen"].
+
+
+
+==== Warnmeldungen werden ausgegeben, wenn eine hohe Verschlüsselung erkannt wird
+
+Mit dieser Version können Sie Warnmeldungen anzeigen, wenn eine hohe Verschlüsselung bei Ihren Workloads erkannt wird, selbst ohne Änderungen an der Dateierweiterung. Diese Funktion, die ARP-KI (ONTAP Autonomous Ransomware Protection) nutzt, hilft Ihnen bei der Ermittlung von Workloads, die dem Risiko von Ransomware-Angriffen ausgesetzt sind. Verwenden Sie diese Funktion, und laden Sie die gesamte Liste der betroffenen Dateien mit oder ohne Erweiterungsänderungen herunter.
 
 Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Reagieren Sie auf einen erkannten Ransomware-Alarm"].
 

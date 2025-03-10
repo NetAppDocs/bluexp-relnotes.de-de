@@ -793,4 +793,19 @@
   <block id="0d4a9d16793bcc1fc3c4982137275a77" category="paragraph">Sie können Abonnements jetzt aus dem Digital Wallet entfernen, wenn Sie sie abbestellt haben.</block>
   <block id="86eb6e7f10c1d00078e563696c2882c7" category="section-title">Zeigen Sie die verbrauchte Kapazität für Marketplace-Abonnements an</block>
   <block id="0a85a2f78dadf31d5b3bcc7353bae9d1" category="paragraph">Bei der Anzeige von PAYGO-Abonnements können Sie nun die verbrauchte Kapazität des Abonnements anzeigen.</block>
+  <block id="ad84f24c65dd6930a049e0903256dc97" category="section-title">Simulieren Sie einen Angriff und reagieren Sie darauf</block>
+  <block id="6cadf1d9d5289622136d042488809e73" category="paragraph">Mit dieser Version können Sie einen Ransomware-Angriff simulieren, um Ihre Reaktion auf eine Ransomware-Warnung zu testen. Diese Funktion hilft Ihnen dabei, sich im Falle eines echten Ransomware-Angriffs auf Sie vorzubereiten, indem Sie Warnmeldungs-, Reaktions- und Recovery-Prozesse testen.</block>
+  <block id="50b24b085ac9888ffc4b0ba727107bd7" category="inline-link">Machen Sie sich eine Übung zur Vorbereitung auf einen Ransomware-Angriff</block>
+  <block id="9b1eb2dbe181e9f7b73db8a0785c0419" category="paragraph">Weitere Informationen finden Sie unter<block ref="83090590e567818593b829ba2ced1db1" category="inline-link-rx"></block>.</block>
+  <block id="d36ca1f9466b055dd6adb80de5cce7d4" category="section-title">Verbesserungen am Ermittlungsprozess</block>
+  <block id="61541c0b99aec5f11fccef5bcb3fe5a1" category="paragraph">Diese Version enthält Verbesserungen an den Prozessen zur selektiven Bestandsaufnahme und erneuten Bestandsaufnahme:</block>
+  <block id="cb3c0a83218c46d38ab0842ce49a7e6e" category="list-text">Mit diesem Release können Sie neu erstellte Workloads erkennen, die den zuvor ausgewählten Arbeitsumgebungen hinzugefügt wurden.</block>
+  <block id="6a4c9cc76f7f432efa274c3ff0dae3dd" category="list-text">Sie können in dieser Version auch _New_ Arbeitsumgebungen auswählen. Diese Funktion unterstützt Sie beim Schutz neuer Workloads, die zu Ihrer Umgebung hinzugefügt werden.</block>
+  <block id="3b7810e8427f006590b006af43d016ef" category="list-text">Wenn Sie alle erkannten Workloads auswählen möchten, können Sie dies über die Option *alles auswählen* tun.</block>
+  <block id="28573ff4f820730a3eeae9cdd51b54d4" category="list-text">Sie können diese Erkennungsprozesse während des Erkennungsvorgangs zunächst oder über die Option Einstellungen durchführen.</block>
+  <block id="33e99171183cf72ac66db77d8dd5792a" category="inline-link">Ermittlung neu erstellter Workloads für zuvor ausgewählte Arbeitsumgebungen</block>
+  <block id="16e3b92f9b1f5d1c29b18c748e6a228e" category="inline-link">Konfigurieren Sie fetaures mit der Option Einstellungen</block>
+  <block id="98e6e30b63e5242616c686684a17c03b" category="paragraph">Weitere Informationen finden Sie unter<block ref="7d31e5b11cc548279f7c20a9569ec8fc" category="inline-link-rx"></block> und<block ref="026d9da5e400c1054ac1084b0f63056d" category="inline-link-rx"></block>.</block>
+  <block id="d957d0c80017f235b131c557ae0876b1" category="section-title">Warnmeldungen werden ausgegeben, wenn eine hohe Verschlüsselung erkannt wird</block>
+  <block id="8c8c1a747835015c86248b11a2097c02" category="paragraph">Mit dieser Version können Sie Warnmeldungen anzeigen, wenn eine hohe Verschlüsselung bei Ihren Workloads erkannt wird, selbst ohne Änderungen an der Dateierweiterung. Diese Funktion, die ARP-KI (ONTAP Autonomous Ransomware Protection) nutzt, hilft Ihnen bei der Ermittlung von Workloads, die dem Risiko von Ransomware-Angriffen ausgesetzt sind. Verwenden Sie diese Funktion, und laden Sie die gesamte Liste der betroffenen Dateien mit oder ohne Erweiterungsänderungen herunter.</block>
 </blocks>
