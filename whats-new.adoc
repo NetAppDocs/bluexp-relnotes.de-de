@@ -38,10 +38,9 @@ Derzeit ist die Version 3.9.51 für den Standardmodus und den eingeschränkten M
 
 ==== Identitäts- und Zugriffsmanagement (BlueXP , IAM)
 
-* Benutzer ohne den Org-Administrator, Ordner- oder Projektadministrator müssen einer Ransomware-Sicherheitsrolle zugewiesen werden, um Zugriff auf Ransomware-Schutz zu haben. Sie können einem Benutzer eine von zwei Rollen zuweisen: Ransomware Protection Admin oder Ransomware Protection Viewer.
+* Benutzer ohne den Org-Administrator, Ordner oder Projektadministrator müssen eine Ransomware-Schutzrolle zugewiesen werden, um Zugriff auf Ransomware-Schutz zu haben. Sie können einem Benutzer eine von zwei Rollen zuweisen: Ransomware Protection Admin oder Ransomware Protection Viewer.
 * Benutzer ohne Org.-Administrator, Ordner- oder Projektadministrator müssen einer Keystone-Rolle zugewiesen werden, um Zugriff auf Keystone zu haben. Sie können einem Benutzer eine von zwei Rollen zuweisen: Keystone Admin oder Keystone Viewer.
-
-
++
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Erfahren Sie mehr über Zugriffsrollen."^]
 
 * Wenn Sie über die Rolle „Org-Administrator“ oder „Ordner“ oder „Projektadministrator“ verfügen, können Sie jetzt ein Keystone-Abonnement mit einem IAM-Projekt verknüpfen. Durch die Verknüpfung einer Keystone Subscription mit einem IAM-Projekt können Sie den Zugriff auf Keystone innerhalb von BlueXP  steuern.
@@ -716,6 +715,48 @@ Weitere Informationen zu Nutzungsberichten finden Sie unter https://docs.netapp.
 
 
 
+=== Bis 16. April 2025
+
+Version 4.3
+
+
+
+==== Geplante Ermittlung für VMs
+
+Bei der Disaster Recovery von BlueXP  werden alle 24 Stunden einmal erkannt. Mit dieser Version können Sie den Zeitplan zur Bestandsaufnahme nun an Ihre Anforderungen anpassen und die Performance bei Bedarf verringern. Wenn Sie beispielsweise über eine große Anzahl von VMs verfügen, können Sie den Erkennungszeitplan so einstellen, dass er alle 48 Stunden ausgeführt wird. Wenn Sie über eine geringe Anzahl von VMs verfügen, können Sie den Erkennungszeitplan so einstellen, dass er alle 12 Stunden ausgeführt wird.
+
+Wenn Sie die Ermittlung nicht per wan planen, können Sie die Option für die geplante Ermittlung deaktivieren und die Ermittlung jederzeit manuell aktualisieren.
+
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/sites-add.html["Fügen Sie vCenter-Serverstandorte hinzu"].
+
+
+
+==== Unterstützung für Ressourcengruppen-Datastore
+
+Zuvor können Sie Ressourcengruppen nur nach VMs erstellen. Mit diesem Release können Sie eine Ressourcengruppe nach Datastores erstellen. Wenn Sie einen Replikationsplan erstellen und eine Ressourcengruppe für diesen Plan erstellen, werden alle VMs in einem Datenspeicher aufgelistet. Dies ist nützlich, wenn Sie über eine große Anzahl von VMs verfügen und sie nach Datenspeicher gruppieren möchten.
+
+Sie haben folgende Möglichkeiten, eine Ressourcengruppe mit einem Datastore zu erstellen:
+
+* Wenn Sie eine Ressourcengruppe mithilfe von Datastores hinzufügen, wird eine Liste der Datastores angezeigt. Sie können einen oder mehrere Datastores auswählen, um eine Ressourcengruppe zu erstellen.
+* Wenn Sie einen Replizierungsplan erstellen und eine Ressourcengruppe innerhalb des Plans erstellen, werden die VMs in den Datenspeichern angezeigt.
+
+
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
+
+
+
+==== Benachrichtigungen über Ablauf der kostenlosen Testversion oder Lizenz
+
+Diese Version enthält Benachrichtigungen, dass die kostenlose Testversion in 60 Tagen abläuft, um sicherzustellen, dass Sie Zeit haben, um eine Lizenz zu erhalten. Diese Version enthält auch Benachrichtigungen an dem Tag, an dem die Lizenz abläuft.
+
+
+
+==== Benachrichtigung über Service-Updates
+
+Mit diesem Release wird oben ein Banner angezeigt, das anzeigt, dass Services aktualisiert werden und der Service in den Wartungsmodus versetzt wird. Das Banner wird angezeigt, wenn der Dienst aktualisiert wird, und wird nach Abschluss der Aktualisierung nicht mehr angezeigt. Sie können zwar weiterhin in der Benutzeroberfläche arbeiten, während das Upgrade ausgeführt wird, Sie können jedoch keine neuen Jobs senden. Geplante Jobs werden ausgeführt, nachdem die Aktualisierung abgeschlossen ist und der Dienst in den Produktionsmodus zurückkehrt.
+
+
+
 === 19 Februar 2025
 
 Version 4.2
@@ -825,23 +866,6 @@ Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-disa
 Sie können jetzt Snapshots abgleichen, die nicht synchron zwischen Quelle und Ziel sind. Dies kann vorkommen, wenn Snapshots auf einem Ziel außerhalb der Disaster Recovery von BlueXP  gelöscht werden. Der Dienst löscht den Snapshot auf der Quelle automatisch alle 24 Stunden. Sie können dies jedoch nach Bedarf durchführen. Mit dieser Funktion können Sie sicherstellen, dass die Snapshots über alle Standorte hinweg konsistent sind.
 
 Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Verwalten von Replikationsplänen"].
-
-
-
-=== 20 September 2024
-
-
-
-==== Unterstützung von lokalen bis lokalen VMware VMFS-Datastores
-
-Diese Version umfasst Unterstützung für VMs, die auf VMware vSphere VMFS-Datastores (Virtual Machine File System) für iSCSI und FC gemountet sind und in lokalem Storage geschützt sind. Zuvor bot der Service eine Technologievorschau, die VMFS-Datastores für iSCSI und FC unterstützte.
-
-Folgende Punkte sollten in Bezug auf iSCSI- und FC-Protokolle zusätzlich beachtet werden:
-
-* FC-Unterstützung ist für Front-End-Protokolle des Clients, nicht für Replizierung.
-* Die Disaster Recovery von BlueXP  unterstützt nur eine einzige LUN pro ONTAP Volume. Das Volume sollte nicht über mehrere LUNs verfügen.
-* Bei jedem Replizierungsplan sollte das Ziel-ONTAP-Volume die gleichen Protokolle verwenden wie das Quell-ONTAP-Volume, auf dem die geschützten VMs gehostet werden. Wenn z. B. die Quelle ein FC-Protokoll verwendet, sollte das Ziel auch FC verwenden.
-
 
 
 

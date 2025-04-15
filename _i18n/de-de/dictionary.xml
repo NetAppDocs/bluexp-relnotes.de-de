@@ -340,10 +340,6 @@
   <block id="8e28797de414b72e6beab6ed5932133f" category="inline-link-macro">BlueXP  Software-Updates</block>
   <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">Technologieaktualisierungen</block>
   <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">Kapazitäten ergänzen</block>
-  <block id="0eb65976c0b0c5ffa90b07d4a062e509" category="paragraph">Folgende Punkte sollten in Bezug auf iSCSI- und FC-Protokolle zusätzlich beachtet werden:</block>
-  <block id="d671bd2f503deef1e03581ce8d516507" category="list-text">FC-Unterstützung ist für Front-End-Protokolle des Clients, nicht für Replizierung.</block>
-  <block id="cf1967c6d778937fae37b9e43582b1b6" category="list-text">Die Disaster Recovery von BlueXP  unterstützt nur eine einzige LUN pro ONTAP Volume. Das Volume sollte nicht über mehrere LUNs verfügen.</block>
-  <block id="f3a37c3560d0027bc0f49abfab4ab0e3" category="list-text">Bei jedem Replizierungsplan sollte das Ziel-ONTAP-Volume die gleichen Protokolle verwenden wie das Quell-ONTAP-Volume, auf dem die geschützten VMs gehostet werden. Wenn z. B. die Quelle ein FC-Protokoll verwendet, sollte das Ziel auch FC verwenden.</block>
   <block id="d5861f4539296095cd7c9fdfd0c5a2c9" category="paragraph">Für ASA r2 Systeme sind keine anderen Managementoptionen verfügbar. Sie können die Standardansicht nicht verwenden und BlueXP Services nicht aktivieren.</block>
   <block id="989977a18a476a92018e04dd60ec37c1" category="inline-link">Erfahren Sie mehr über ASA r2-Systeme</block>
   <block id="a7c7539e11570decc041c60258667032" category="paragraph"><block ref="a7c7539e11570decc041c60258667032" category="inline-link-rx"></block></block>
@@ -510,9 +506,6 @@
   <block id="61a7f53a93554e648fe2eb9ad8dd6468" category="paragraph">Sie können alle Snapshots löschen, die nicht mehr über die angegebene Aufbewahrungszahl hinaus benötigt werden. Snapshots können sich im Laufe der Zeit ansammeln, wenn Sie die Anzahl der Snapshot-Aufbewahrung senken, und Sie können sie jetzt entfernen, um Speicherplatz freizugeben. Dies ist jederzeit nach Bedarf oder beim Löschen eines Replikationsplans möglich.</block>
   <block id="8cd43e146a4fc163d690bdc8bdc47fc6" category="section-title">Snapshots abgleichen</block>
   <block id="4472d2b5ab8a2ba1ff5429790d72930f" category="paragraph">Sie können jetzt Snapshots abgleichen, die nicht synchron zwischen Quelle und Ziel sind. Dies kann vorkommen, wenn Snapshots auf einem Ziel außerhalb der Disaster Recovery von BlueXP  gelöscht werden. Der Dienst löscht den Snapshot auf der Quelle automatisch alle 24 Stunden. Sie können dies jedoch nach Bedarf durchführen. Mit dieser Funktion können Sie sicherstellen, dass die Snapshots über alle Standorte hinweg konsistent sind.</block>
-  <block id="eaecda6db64f5346d5c63bfe0094e040" category="section-title">20 September 2024</block>
-  <block id="5d95f17e7ddbf703465910039fd80c35" category="section-title">Unterstützung von lokalen bis lokalen VMware VMFS-Datastores</block>
-  <block id="089160f6b14935d2f39adf9a95c5da5a" category="paragraph">Diese Version umfasst Unterstützung für VMs, die auf VMware vSphere VMFS-Datastores (Virtual Machine File System) für iSCSI und FC gemountet sind und in lokalem Storage geschützt sind. Zuvor bot der Service eine Technologievorschau, die VMFS-Datastores für iSCSI und FC unterstützte.</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 September 2022</block>
   <block id="532b36a42fa02f3df85b0e70d519a9ac" category="section-title">Unterstützung der E-Series</block>
   <block id="8060a341461a61edc489285d4c464062" category="paragraph">Ihre E-Series Systeme können jetzt direkt aus BlueXP heraus erkannt werden. Die Entdeckung von E-Series Systemen eröffnet Ihnen eine vollständige Ansicht der Daten in Ihrer Hybrid-Multi-Cloud.</block>
@@ -718,7 +711,6 @@
   <block id="1fa6d342759ba5c5a8f23c210cac048c" category="section-title">Anschluss 3.9.51</block>
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">Derzeit ist die Version 3.9.51 für den Standardmodus und den eingeschränkten Modus verfügbar.</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">Identitäts- und Zugriffsmanagement (BlueXP , IAM)</block>
-  <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">Benutzer ohne den Org-Administrator, Ordner- oder Projektadministrator müssen einer Ransomware-Sicherheitsrolle zugewiesen werden, um Zugriff auf Ransomware-Schutz zu haben. Sie können einem Benutzer eine von zwei Rollen zuweisen: Ransomware Protection Admin oder Ransomware Protection Viewer.</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">Benutzer ohne Org.-Administrator, Ordner- oder Projektadministrator müssen einer Keystone-Rolle zugewiesen werden, um Zugriff auf Keystone zu haben. Sie können einem Benutzer eine von zwei Rollen zuweisen: Keystone Admin oder Keystone Viewer.</block>
   <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">Erfahren Sie mehr über Zugriffsrollen.</block>
   <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
@@ -757,4 +749,21 @@
   <block id="47388f68695ab5799ff2adfb33bca00d" category="section-title">Bis 02. April 2025</block>
   <block id="f50a226c5a51111405309ae78236d95d" category="section-title">Risikoverringerung</block>
   <block id="66fa090892a2bd81c896ab6fbf156b19" category="paragraph">Im Abschnitt „Zusammenfassung“ der BlueXP -Softwareupdates können Sie nun die Gesamtzahl der Risiken anzeigen, die durch das Betriebssystem-Update vermindert werden können. Auf diese Weise können Benutzer die Sicherheits- und Stabilitätsverbesserungen auf ihrer Installationsbasis bewerten.</block>
+  <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">Benutzer ohne den Org-Administrator, Ordner oder Projektadministrator müssen eine Ransomware-Schutzrolle zugewiesen werden, um Zugriff auf Ransomware-Schutz zu haben. Sie können einem Benutzer eine von zwei Rollen zuweisen: Ransomware Protection Admin oder Ransomware Protection Viewer.</block>
+  <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">Bis 16. April 2025</block>
+  <block id="e1b61136672bccd13e6828fe7987e4f6" category="paragraph">Version 4.3</block>
+  <block id="f2265cb494c0b6dc346cf3703718b766" category="section-title">Geplante Ermittlung für VMs</block>
+  <block id="a1cc1dbaf027adca720112f5a8c48e4d" category="paragraph">Bei der Disaster Recovery von BlueXP  werden alle 24 Stunden einmal erkannt. Mit dieser Version können Sie den Zeitplan zur Bestandsaufnahme nun an Ihre Anforderungen anpassen und die Performance bei Bedarf verringern. Wenn Sie beispielsweise über eine große Anzahl von VMs verfügen, können Sie den Erkennungszeitplan so einstellen, dass er alle 48 Stunden ausgeführt wird. Wenn Sie über eine geringe Anzahl von VMs verfügen, können Sie den Erkennungszeitplan so einstellen, dass er alle 12 Stunden ausgeführt wird.</block>
+  <block id="7e2d4377602fe8c7a718d5ef8759c008" category="paragraph">Wenn Sie die Ermittlung nicht per wan planen, können Sie die Option für die geplante Ermittlung deaktivieren und die Ermittlung jederzeit manuell aktualisieren.</block>
+  <block id="d04fa3ae362a3ea46fde26bdba81b204" category="inline-link">Fügen Sie vCenter-Serverstandorte hinzu</block>
+  <block id="0002b275859484d6cdca867fbab8e165" category="paragraph">Weitere Informationen finden Sie unter<block ref="54555db921feb31b73553520fa282341" category="inline-link-rx"></block>.</block>
+  <block id="84307a139104b06aba6c6de9c728b2ff" category="section-title">Unterstützung für Ressourcengruppen-Datastore</block>
+  <block id="ed0d134f0d7b751b80633ad848722c7a" category="paragraph">Zuvor können Sie Ressourcengruppen nur nach VMs erstellen. Mit diesem Release können Sie eine Ressourcengruppe nach Datastores erstellen. Wenn Sie einen Replikationsplan erstellen und eine Ressourcengruppe für diesen Plan erstellen, werden alle VMs in einem Datenspeicher aufgelistet. Dies ist nützlich, wenn Sie über eine große Anzahl von VMs verfügen und sie nach Datenspeicher gruppieren möchten.</block>
+  <block id="84ae8aaf40a4b59fed9a4fa741ccf225" category="paragraph">Sie haben folgende Möglichkeiten, eine Ressourcengruppe mit einem Datastore zu erstellen:</block>
+  <block id="ee64b17e5379b689c5eb4ab50027f625" category="list-text">Wenn Sie eine Ressourcengruppe mithilfe von Datastores hinzufügen, wird eine Liste der Datastores angezeigt. Sie können einen oder mehrere Datastores auswählen, um eine Ressourcengruppe zu erstellen.</block>
+  <block id="3043e1ee38988e4248b9d1966e6dd1a4" category="list-text">Wenn Sie einen Replizierungsplan erstellen und eine Ressourcengruppe innerhalb des Plans erstellen, werden die VMs in den Datenspeichern angezeigt.</block>
+  <block id="f7a1d657a7b8993c917f63602c0774a1" category="section-title">Benachrichtigungen über Ablauf der kostenlosen Testversion oder Lizenz</block>
+  <block id="38a9b45e86982c8330edcb875da55284" category="paragraph">Diese Version enthält Benachrichtigungen, dass die kostenlose Testversion in 60 Tagen abläuft, um sicherzustellen, dass Sie Zeit haben, um eine Lizenz zu erhalten. Diese Version enthält auch Benachrichtigungen an dem Tag, an dem die Lizenz abläuft.</block>
+  <block id="5d940e67e8d433508306c751ff0ea678" category="section-title">Benachrichtigung über Service-Updates</block>
+  <block id="9bdd52eb995b6f47a02ffa6aa4318399" category="paragraph">Mit diesem Release wird oben ein Banner angezeigt, das anzeigt, dass Services aktualisiert werden und der Service in den Wartungsmodus versetzt wird. Das Banner wird angezeigt, wenn der Dienst aktualisiert wird, und wird nach Abschluss der Aktualisierung nicht mehr angezeigt. Sie können zwar weiterhin in der Benutzeroberfläche arbeiten, während das Upgrade ausgeführt wird, Sie können jedoch keine neuen Jobs senden. Geplante Jobs werden ausgeführt, nachdem die Aktualisierung abgeschlossen ist und der Dienst in den Produktionsmodus zurückkehrt.</block>
 </blocks>
