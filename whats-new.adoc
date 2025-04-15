@@ -24,6 +24,30 @@ In diesem Abschnitt werden neue Funktionen in Bezug auf BlueXP-Verwaltungsfunkti
 
 
 
+=== 12 Mai 2025
+
+
+
+==== Anschluss 3.9.52
+
+Diese Version des BlueXP -Connectors enthält kleinere Sicherheitsverbesserungen und Fehlerbehebungen sowie einige zusätzliche Updates.
+
+Derzeit ist die Version 3.9.52 für den Standardmodus und den eingeschränkten Modus verfügbar.
+
+
+
+===== Unterstützung für Docker 27 und Docker 28
+
+Docker 27 und Docker 28 werden nun vom Connector unterstützt.
+
+
+
+==== Keystone Administration in BlueXP  verfügbar
+
+Die Beta für NetApp Keystone in BlueXP  hat den Zugriff auf die Keystone Administration hinzugefügt. Sie können die Anmeldeseite für die NetApp Keystone Beta über die linke Navigationsleiste von BlueXP  aufrufen.
+
+
+
 === Bis 14. April 2025
 
 
@@ -77,30 +101,6 @@ Weitere Informationen zum privaten Modus, einschließlich der Aktualisierung, fi
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Erfahren Sie mehr über die ersten Schritte mit BlueXP im privaten Modus"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren"]
 
-
-
-
-=== 10 März 2025
-
-
-
-==== Anschluss 3.9.50
-
-Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
-
-* Die Verwaltung von Cloud Volumes ONTAP-Systemen wird jetzt von Connectors unterstützt, auf denen SELinux auf dem Betriebssystem aktiviert ist.
-+
-https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["Erfahren Sie mehr über SELinux"^]
-
-
-
-Derzeit ist die Version 3.9.50 für den Standardmodus und den eingeschränkten Modus verfügbar.
-
-
-
-==== NetApp Keystone Beta verfügbar in BlueXP
-
-NetApp Keystone wird bald bei BlueXP  erhältlich sein und ist jetzt als Beta-Version erhältlich. Sie können die Anmeldeseite für die NetApp Keystone Beta über die linke Navigationsleiste von BlueXP  aufrufen.
 
 
 
@@ -820,6 +820,62 @@ Weitere Informationen zu Nutzungsberichten finden Sie unter https://docs.netapp.
 
 
 == Disaster Recovery
+
+
+
+=== 13 Mai 2025
+
+Version 4.2.3
+
+
+
+==== Subnetzzuordnung
+
+Mit diesem Release können Sie IP-Adressen bei einem Failover auf neue Weise mithilfe der Subnetzzuordnung managen, wodurch Sie Subnetze für jedes vCenter hinzufügen können. Dabei definieren Sie den IPv4 CIDR, das Standard-Gateway und den DNS für jedes virtuelle Netzwerk.
+
+Bei einem Failover ermittelt die Disaster Recovery von BlueXP  die geeignete IP-Adresse jeder vNIC, indem das für das zugeordnete virtuelle Netzwerk bereitgestellte CIDR betrachtet und es zum Ableiten der neuen IP-Adresse verwendet wird.
+
+Beispiel:
+
+* NetworkA = 10.1.1.0/24
+* NetzwerkB = 192.168.1.0/24
+
+
+VM1 verfügt über eine vNIC (10.1.1.50), die mit NetworkA verbunden ist. NetworkA wird in den Einstellungen des Replikationsplans zu NetworkB zugeordnet.
+
+Bei einem Failover ersetzt die Disaster Recovery von BlueXP  den Teil Netzwerk der ursprünglichen IP-Adresse (10.1.1) und behält die Host-Adresse (.50) der ursprünglichen IP-Adresse (10.1.1.50) bei. Für VM1 betrachtet die BlueXP  Disaster Recovery die CIDR-Einstellungen für NetworkB und verwendet den Netzwerk-B-Teil 192.168.1, während der Host-Teil (.50) beibehalten wird, um die neue IP-Adresse für VM1 zu erstellen. Die neue IP wird 192.168.1.50.
+
+Zusammenfassend bleibt die Host-Adresse unverändert, während die Netzwerkadresse durch das ersetzt wird, was in der Subnetz-Zuordnung des Standorts konfiguriert ist. So lässt sich die IP-Adressenzuweisung beim Failover einfacher managen, insbesondere wenn Sie hunderte Netzwerke und tausende VMs managen müssen.
+
+Weitere Informationen zum Einbeziehen der Subnetzzuordnung in Ihre Standorte finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/sites-add.html["Fügen Sie vCenter-Serverstandorte hinzu"].
+
+
+
+==== Schutz überspringen
+
+Sie können jetzt den Schutz überspringen, damit der Dienst nach einem Failover des Replikationsplans nicht automatisch eine umgekehrte Schutzbeziehung erstellt. Dies ist nützlich, wenn Sie auf dem wiederhergestellten Standort weitere Vorgänge durchführen möchten, bevor Sie ihn in BlueXP  Disaster Recovery wieder online schalten.
+
+Wenn Sie ein Failover initiieren, erstellt der Service standardmäßig automatisch eine umgekehrte Schutzbeziehung für jedes Volume im Replizierungsplan, wenn der ursprüngliche Quellstandort online ist. Das bedeutet, dass der Service eine SnapMirror-Beziehung vom Zielstandort zurück zum Quellstandort erstellt. Der Service kehrt auch automatisch die SnapMirror-Beziehung um, wenn Sie ein Failback initiieren.
+
+Wenn Sie ein Failover starten, können Sie jetzt eine Option *Skip Protection* wählen. Damit wird die SnapMirror-Beziehung nicht automatisch rückgängig gemacht. Stattdessen verlässt es das beschreibbare Volume auf beiden Seiten des Replizierungsplans.
+
+Nachdem der ursprüngliche Quellstandort wieder online ist, können Sie den umgekehrten Schutz einrichten, indem Sie im Menü Aktionen des Replikationsplans die Option *Ressourcen schützen* auswählen. Dadurch wird versucht, für jedes Volume im Plan eine umgekehrte Replikationsbeziehung zu erstellen. Sie können diesen Job wiederholt ausführen, bis der Schutz wiederhergestellt ist. Wenn der Schutz wiederhergestellt ist, können Sie ein Failback auf die übliche Weise initiieren.
+
+Weitere Informationen zum Übersprungsschutz finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["Failover von Anwendungen an einen Remote-Standort"].
+
+
+
+==== SnapMirror plant Updates im Replizierungsplan
+
+BlueXP  Disaster Recovery unterstützt nun die Verwendung externer Snapshot-Managementlösungen, wie z. B. der native Richtlinienplaner von ONTAP SnapMirror oder die Integration von Produkten anderer Anbieter mit ONTAP. Wenn jeder Datastore (Volume) im Replizierungsplan bereits über eine SnapMirror-Beziehung verfügt, die an anderer Stelle gemanagt wird, können Sie diese Snapshots als Wiederherstellungspunkte in der BlueXP  Disaster Recovery verwenden.
+
+Aktivieren Sie zum Konfigurieren im Abschnitt Replizierungsplan > Ressourcenzuordnung das Kontrollkästchen *Plattform-verwaltete Backups und Aufbewahrungszeitpläne verwenden*, wenn Sie die Datenspeicherzuordnung konfigurieren.
+
+Wenn die Option ausgewählt ist, wird in BlueXP  Disaster Recovery kein Backup-Zeitplan konfiguriert. Sie müssen jedoch weiterhin einen Aufbewahrungszeitplan konfigurieren, da darüber hinaus Snapshots für Test-, Failover- und Failback-Vorgänge erstellt werden können.
+
+Nach der Konfiguration erstellt der Service keine regelmäßig geplanten Snapshots, sondern verlässt sich darauf, dass die externe Einheit diese Snapshots erstellt und aktualisiert.
+
+Weitere Informationen zur Verwendung externer Snapshot-Lösungen im Replikationsplan finden Sie unter https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Erstellen Sie einen Replizierungsplan"].
 
 
 
