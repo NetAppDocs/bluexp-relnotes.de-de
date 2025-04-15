@@ -1274,20 +1274,11 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 ==== Berichte zu nicht unterstützten Arbeitsumgebungen in BlueXP  Ransomware-Schutz
 
-Während des Erkennungs-Workflows zeigt der BlueXP  Ransomware-Schutz weitere Details an, wenn Sie den Mauszeiger über unterstützte oder nicht unterstützte Workloads halten. So verstehen Sie, warum einige Ihrer Workloads und Arbeitsumgebungen nicht Teil des Dashboards sind oder vom Ransomware-Schutzservice gemanagt werden. Die folgenden Arbeitsumgebungen werden derzeit vom BlueXP  Ransomware-Schutzservice nicht unterstützt.
+Während des Erkennungs-Workflows zeigt der BlueXP  Ransomware-Schutz weitere Details an, wenn Sie den Mauszeiger über unterstützte oder nicht unterstützte Workloads halten. So verstehen Sie, warum einige Ihrer Workloads nicht vom BlueXP  Ransomware-Schutzdienst erkannt werden.
 
-* Azure NetApp Dateien
-* Cloud Volumes Service
-* E-Series
-* Google Cloud Platform (GCP)
-* ONTAP 9.11.1 und frühere Versionen
-* On-Premises-Cluster ONTAP Direct, die nicht von einem BlueXP  Connector gemanagt werden
-* StorageGRID
+Es gibt viele Gründe, warum der Dienst keine funktionierende Umgebung unterstützt. Beispielsweise könnte die ONTAP-Version in Ihrer Arbeitsumgebung unter der erforderlichen Version liegen. Wenn Sie den Mauszeiger über eine nicht unterstützte Arbeitsumgebung halten, wird in einer QuickInfo der Grund angezeigt.
 
-
-Sie können die nicht unterstützten Arbeitsumgebungen während der ersten Ermittlung und später über die Option *Workload-Erkennung* auf der Seite Einstellungen anzeigen. Es gibt viele Gründe, warum der Dienst keine funktionierende Umgebung unterstützt. Beispielsweise könnte die ONTAP-Version in Ihrer Arbeitsumgebung unter der erforderlichen Version liegen. Wenn Sie den Mauszeiger über eine nicht unterstützte Arbeitsumgebung halten, wird in einer QuickInfo der Grund angezeigt.
-
-Sie können die Ergebnisse des Erkennungsvorgangs nach der Erkennung herunterladen.
+Sie können die nicht unterstützten Arbeitsumgebungen während der ersten Erkennung anzeigen, in denen Sie die Ergebnisse auch herunterladen können. Sie können die Ergebnisse der Ermittlung auch über die Option *Workload-Erkennung* auf der Seite Einstellungen anzeigen.
 
 Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Workloads in BlueXP Ransomware-Schutz entdecken"].
 
