@@ -88,6 +88,12 @@ Weitere Informationen zum privaten Modus, einschließlich der Aktualisierung, fi
 
 Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
 
+* Die Verwaltung von Cloud Volumes ONTAP-Systemen wird jetzt von Connectors unterstützt, auf denen SELinux auf dem Betriebssystem aktiviert ist.
++
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["Erfahren Sie mehr über SELinux"^]
+
+
+
 Derzeit ist die Version 3.9.50 für den Standardmodus und den eingeschränkten Modus verfügbar.
 
 
@@ -270,12 +276,6 @@ Diese BlueXP -Version für Backup und Recovery enthält die folgenden Updates.
 
 
 
-==== Verbessertes Volume Dashboard (Vorschau)
-
-Das Volume Dashboard kann jetzt in weniger als 10 Sekunden geladen werden und bietet damit eine wesentlich schnellere und effizientere Schnittstelle. Diese Vorschau-Version ist für ausgewählte Kunden verfügbar und bietet ihnen einen ersten Blick auf diese Verbesserungen.
-
-
-
 ==== UI-Verbesserungen
 
 Diese Version verbessert die Benutzerfreundlichkeit durch die Vereinfachung der Oberfläche:
@@ -289,6 +289,12 @@ Diese Version verbessert die Benutzerfreundlichkeit durch die Vereinfachung der 
 
 
 
+==== Verbessertes Volume Dashboard (Vorschau)
+
+Das Volume Dashboard kann jetzt in weniger als 10 Sekunden geladen werden und bietet damit eine wesentlich schnellere und effizientere Schnittstelle. Diese Vorschau-Version ist für ausgewählte Kunden verfügbar und bietet ihnen einen ersten Blick auf diese Verbesserungen.
+
+
+
 ==== Unterstützung für Wasabi-Objektspeicher von Drittanbietern (Vorschau)
 
 BlueXP  Backup und Recovery erweitert jetzt ihre Unterstützung auf Objektspeicher von Drittanbietern, wobei der Schwerpunkt primär auf Wasabi liegt. Mit dieser neuen Vorschaufunktion können Sie jeden S3-kompatiblen Objektspeicher für Ihre Backup- und Recovery-Anforderungen nutzen.
@@ -297,7 +303,30 @@ BlueXP  Backup und Recovery erweitert jetzt ihre Unterstützung auf Objektspeic
 
 ===== Erste Schritte mit Wasabi
 
-Um diese Funktion zu verwenden, müssen Sie ein Flag in der BlueXP -Benutzeroberfläche aktivieren. Anschließend können Sie die Verbindungsdetails für einen Objektspeicher eines Drittanbieters eingeben und in Ihre Backup- und Recovery-Workflows integrieren.
+Um Drittanbieter-Storage als Objektspeicher zu verwenden, müssen Sie im BlueXP -Connector ein Flag aktivieren. Anschließend können Sie die Verbindungsdetails für einen Objektspeicher eines Drittanbieters eingeben und in Ihre Backup- und Recovery-Workflows integrieren.
+
+.Schritte
+. SSH in den Connector.
+. Gehen Sie zum cbs-Server-Container für Backup und Recovery von BlueXP :
++
+[listing]
+----
+docker exec -it cloudmanager_cbs sh
+----
+. Öffnen Sie die `default.json` Datei im `config` Ordner über VIM oder einen anderen Editor:
++
+[listing]
+----
+vi default.json
+----
+. Ändern `allow-s3-compatible`: false zu `allow-s3-compatible`: true.
+. Speichern Sie die Änderungen.
+. Verlassen Sie den Container.
+. Starten Sie den cbs-Server-Container für BlueXP  Backup und Recovery neu.
+
+
+.Ergebnis
+Nachdem der Container wieder EINGESCHALTET ist, öffnen Sie die BlueXP  Backup and Recovery UI. Wenn Sie ein Backup initiieren oder eine Backup-Strategie bearbeiten, wird der neue Provider zusammen mit anderen Backup-Providern von AWS, Microsoft Azure, Google Cloud, StorageGRID und ONTAP S3 als „S3-kompatibel“ aufgeführt.
 
 
 
@@ -522,6 +551,22 @@ Diese BlueXP -Klassifizierungsversion enthält allgemeine Verbesserungen und Fe
 
 
 
+=== Bis 16. April 2025
+
+
+
+==== In Azure werden neue Regionen unterstützt
+
+In Azure können Sie jetzt Cloud Volumes ONTAP 9.12.1 GA und höher in einzelnen und mehreren Verfügbarkeitszonen in folgenden Regionen implementieren. Dies umfasst die Unterstützung von Single-Node- und HA-Implementierungen (High Availability).
+
+* Spanien, Mitte
+* Mexiko-Mitte
+
+
+Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Azure"^].
+
+
+
 === Bis 14. April 2025
 
 
@@ -534,31 +579,15 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.
 
 
 
-=== 28 März 2025
+=== Bis 3. April 2025
 
 
 
-==== Private-Mode-Bereitstellungen aktiviert für Cloud Volumes ONTAP 9.14.1
+==== Unterstützung für China-Regionen für Cloud Volumes ONTAP 9.13.1 in AWS
 
-Sie können Cloud Volumes ONTAP 9.14.1 jetzt im privaten Modus in AWS, Azure und Google Cloud implementieren. Der private Modus ist sowohl für Single-Node- als auch für HA-Implementierungen (High Availability) von Cloud Volumes ONTAP 9.14.1 aktiviert.
+Sie können Cloud Volumes ONTAP 9.13.1 jetzt in AWS in China implementieren. Dies umfasst die Unterstützung von Single-Node- und HA-Implementierungen (High Availability). Nachdem Sie Cloud Volumes ONTAP 9.13.1 implementiert haben, können Sie es auf neuere Versionen aktualisieren. Es werden nur Lizenzen unterstützt, die direkt von NetApp erworben wurden.
 
-Weitere Informationen zu Bereitstellungen im privaten Modus finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#restricted-mode["Weitere Informationen zu BlueXP Implementierungsmodi"^].
-
-
-
-=== 12 März 2025
-
-
-
-==== Unterstützung neuer Regionen für Implementierungen mit mehreren Verfügbarkeitszonen in Azure
-
-Die folgenden Regionen unterstützen jetzt HA-Implementierungen mit mehreren Verfügbarkeitszonen in Azure für Cloud Volumes ONTAP 9.12.1 GA und höher:
-
-* Zentral USA
-* US-Behörde Virginia (Region der US-Regierung – Virginia)
-
-
-Eine Liste aller Regionen finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karte der globalen Regionen unter Azure"^].
+Informationen zur regionalen Verfügbarkeit finden Sie im https://bluexp.netapp.com/cloud-volumes-global-regions["Karten für globale Regionen für Cloud Volumes ONTAP"^].
 
 
 
@@ -1051,6 +1080,33 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 == Schutz durch Ransomware
+
+
+
+=== Bis 29. April 2025
+
+
+
+==== Unterstützung von Amazon FSX für NetApp ONTAP
+
+Dieser Release unterstützt Amazon FSX für NetApp ONTAP. Diese Funktion hilft Ihnen mit BlueXP  Ransomware-Schutz dabei, Ihre FSX for ONTAP-Workloads zu schützen.
+
+FSX for ONTAP ist ein vollständig gemanagter Service, der die Leistung von NetApp ONTAP Storage in der Cloud bereitstellt. Er bietet dieselben Funktionen, Performance- und Administrationsfunktionen, die Sie vor Ort nutzen, sowie die Agilität und Skalierbarkeit eines nativen AWS-Service.
+
+Am Workflow für Ransomware-Schutz von BlueXP  wurden folgende Änderungen vorgenommen:
+
+* Bestandsaufnahme umfasst Workloads in FSX for ONTAP 9.15 Arbeitsumgebungen.
+* Auf der Registerkarte „Schutz“ werden Workloads in FSX für ONTAP-Umgebungen angezeigt. In dieser Umgebung sollten Sie Backup-Vorgänge mithilfe des FSX für ONTAP-Backup-Service durchführen. Sie können diese Workloads mit BlueXP  Snapshots zum Schutz vor Ransomware wiederherstellen.
++
+
+TIP: Backup-Richtlinien für Workloads, die auf FSX for ONTAP ausgeführt werden, können nicht in BlueXP  festgelegt werden. Alle bestehenden Backup-Richtlinien in Amazon FSX für NetApp ONTAP bleiben unverändert.
+
+* Warnungsvorfälle zeigen die neue Arbeitsumgebung von FSX for ONTAP.
+
+
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Erfahren Sie mehr über BlueXP  Ransomware-Schutz und Arbeitsumgebungen"].
+
+Informationen zu den unterstützten Optionen finden Sie im https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["Einschränkungen beim BlueXP  Schutz vor Ransomware"].
 
 
 
