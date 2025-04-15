@@ -464,8 +464,8 @@ Weitere Informationen finden Sie unter xref:task-custom-classification.adoc[Füg
 .Registerkarte gespeicherte Suchen
 Die Registerkarte **Policen** wurde umbenanntxref:task-using-policies.html[**Gespeicherte Suchen**]. Die Funktionalität ist die gleiche.
 
-.Scan-Ereignisse an Überwachungsprotokoll senden
-BlueXP -Scan-Ereignisse können jetzt an den gesendet werdenxref:task-audit-data-sense-actions.html[Prüfprotokoll]. BlueXP  Classification unterstützt auch das Senden von Klassifikationsereignissen (wenn ein Scan initiiert wird und wenn er endet) an den link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  Zeitplan"^]. Das Senden von Klassifizierungsscan-Ereignissen an die BlueXP -Zeitachse wird nur in Arbeitsumgebungen unterstützt.
+.Senden Sie Scanereignisse an die BlueXP  Timeline
+BlueXP  classification unterstützt jetzt das Senden von Klassifikationsereignissen (wenn ein Scan initiiert wird und wann er endet) an den link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  Zeitplan"^].
 
 .Sicherheitsupdates
 * Das Keras-Paket wurde aktualisiert, um Schwachstellen zu beheben (BDSA-2025-0107 und BDSA-2025-1984).
