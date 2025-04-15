@@ -264,6 +264,59 @@ Sie können kein Volume mehr aus einer Vorlage erstellen. Diese Aktion wurde mit
 
 
 
+=== Bis 16. April 2025
+
+Diese BlueXP -Version für Backup und Recovery enthält die folgenden Updates.
+
+
+
+==== Verbessertes Volume Dashboard (Vorschau)
+
+Das Volume Dashboard kann jetzt in weniger als 10 Sekunden geladen werden und bietet damit eine wesentlich schnellere und effizientere Schnittstelle. Diese Vorschau-Version ist für ausgewählte Kunden verfügbar und bietet ihnen einen ersten Blick auf diese Verbesserungen.
+
+
+
+==== UI-Verbesserungen
+
+Diese Version verbessert die Benutzerfreundlichkeit durch die Vereinfachung der Oberfläche:
+
+* Das Entfernen der Spalte Aggregate aus den Volume-Tabellen zusammen mit den Spalten Snapshot Policy, Backup Policy und Replication Policy aus der Volume-Tabelle im V2 Dashboard führt zu einem optimierten Layout.
+* Wenn Sie nicht aktivierte Arbeitsumgebungen aus der Dropdown-Liste ausschließen, wird die Oberfläche weniger überladen, die Navigation effizienter und das Laden schneller.
+* Während die Sortierung in der Spalte Tags deaktiviert ist, können Sie die Tags dennoch anzeigen, um sicherzustellen, dass wichtige Informationen leicht zugänglich bleiben.
+* Das Entfernen von Etiketten auf den Schutzsymbolen trägt zu einem saubereren Aussehen bei und verringert die Ladezeit.
+* Während der Aktivierung der Arbeitsumgebung wird in einem Dialogfeld ein Ladesymbol angezeigt, das Feedback liefert, bis der Erkennungsvorgang abgeschlossen ist. Dies erhöht die Transparenz und erhöht die Sicherheit für die Systemvorgänge.
+
+
+
+
+==== Unterstützung für Wasabi-Objektspeicher von Drittanbietern (Vorschau)
+
+BlueXP  Backup und Recovery erweitert jetzt ihre Unterstützung auf Objektspeicher von Drittanbietern, wobei der Schwerpunkt primär auf Wasabi liegt. Mit dieser neuen Vorschaufunktion können Sie jeden S3-kompatiblen Objektspeicher für Ihre Backup- und Recovery-Anforderungen nutzen.
+
+
+
+===== Erste Schritte mit Wasabi
+
+Um diese Funktion zu verwenden, müssen Sie ein Flag in der BlueXP -Benutzeroberfläche aktivieren. Anschließend können Sie die Verbindungsdetails für einen Objektspeicher eines Drittanbieters eingeben und in Ihre Backup- und Recovery-Workflows integrieren.
+
+
+
+===== Einschränkungen des Vorschaumodus
+
+Während diese Funktion in der Vorschau angezeigt wird, beachten Sie die folgenden Einschränkungen:
+
+* Bring Your Own Bucket (BYOB) wird nicht unterstützt.
+* Die Aktivierung von DataLock in einer Richtlinie wird nicht unterstützt.
+* Die Aktivierung des Archivmodus in einer Richtlinie wird nicht unterstützt.
+* Es werden nur lokale ONTAP-Umgebungen unterstützt.
+* MetroCluster wird nicht unterstützt.
+* Optionen zur Aktivierung der Verschlüsselung auf Bucket-Ebene werden nicht unterstützt.
+
+
+In dieser Vorschau empfehlen wir Ihnen, diese neue Funktion zu erkunden und Feedback zur Integration in Objektspeicher von Drittanbietern zu geben, bevor die volle Funktionalität bereitgestellt wird.
+
+
+
 === 17 März 2025
 
 Diese BlueXP -Version für Backup und Recovery enthält die folgenden Updates.
@@ -344,34 +397,6 @@ Beachten Sie die folgenden Überlegungen zur globalen Suche:
 
 * Der neue Index wird nicht für Snapshots ausgeführt, die als stündlich gekennzeichnet sind.
 * Die neue Indexierungsfunktion funktioniert nur für Snapshots auf FlexVols und nicht für Snapshots auf FlexGroups.
-
-
-
-
-=== Bis 22. November 2024
-
-Diese BlueXP -Version für Backup und Recovery enthält die folgenden Updates.
-
-
-
-==== SnapLock Compliance- und SnapLock Enterprise-Schutzmodi
-
-BlueXP  Backup und Recovery können jetzt sowohl FlexVol als auch FlexGroup On-Premises Volumes sichern, die entweder im SnapLock Compliance- oder im SnapLock Enterprise-Sicherungsmodus konfiguriert sind. Ihre Cluster müssen ONTAP 9.14 oder höher verwenden, um diese Unterstützung zu ermöglichen. Das Sichern von FlexVol Volumes mit dem SnapLock Enterprise-Modus wird seit ONTAP Version 9.11.1 unterstützt. Frühere ONTAP Versionen bieten keine Unterstützung für Backups von SnapLock Protection Volumes.
-
-Eine vollständige Liste der unterstützten Volumes finden Sie im https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Erfahren Sie mehr über BlueXP Backup und Recovery"].
-
-
-
-==== Indizierung für Such- und Wiederherstellungsprozess auf der Seite Volumes
-
-Bevor Sie Suche und Wiederherstellung verwenden können, müssen Sie „Indizierung“ in jeder Arbeitsumgebung aktivieren, aus der Sie Volume-Daten wiederherstellen möchten. So kann der indizierte Katalog die Backup-Dateien für jedes Volume nachverfolgen. Auf der Seite Volumes wird nun der Indexierungsstatus angezeigt:
-
-* Indiziert: Volumes wurden indiziert.
-* In Bearbeitung
-* Nicht Indiziert
-* Indizierung angehalten
-* Fehler
-* Nicht Aktiviert
 
 
 

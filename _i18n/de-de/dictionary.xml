@@ -374,15 +374,6 @@
   <block id="35ccbae2ce9b9594b9af9196a3bed361" category="inline-link">Arbeitslast Fabrik</block>
   <block id="0b672c7e4b6adbcc5d61df4659dfc304" category="list-text"><block ref="0b672c7e4b6adbcc5d61df4659dfc304" category="inline-link-rx"></block></block>
   <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">Wir haben den BlueXP Kopier- und Synchronisierungsservice und den Daten-Broker aktualisiert, um einige Bugs zu beheben. Die neue Data Broker Version ist 1.0.56.</block>
-  <block id="139da935670a9f985194d3241917c359" category="paragraph">BlueXP  Backup und Recovery können jetzt sowohl FlexVol als auch FlexGroup On-Premises Volumes sichern, die entweder im SnapLock Compliance- oder im SnapLock Enterprise-Sicherungsmodus konfiguriert sind. Ihre Cluster müssen ONTAP 9.14 oder höher verwenden, um diese Unterstützung zu ermöglichen. Das Sichern von FlexVol Volumes mit dem SnapLock Enterprise-Modus wird seit ONTAP Version 9.11.1 unterstützt. Frühere ONTAP Versionen bieten keine Unterstützung für Backups von SnapLock Protection Volumes.</block>
-  <block id="ba48140a3394818b661e6fd497e203a7" category="inline-link">Erfahren Sie mehr über BlueXP Backup und Recovery</block>
-  <block id="9ddb3e6714694f5c7f619d474fec8169" category="paragraph">Eine vollständige Liste der unterstützten Volumes finden Sie im<block ref="9e68a582cc487ad29425f5a4796c9e45" category="inline-link-rx"></block>.</block>
-  <block id="cd9b31737e78e0a0a755acc12151f766" category="list-text">Indiziert: Volumes wurden indiziert.</block>
-  <block id="02e4eb80c967f3b9add2ba16a690eef2" category="list-text">In Bearbeitung</block>
-  <block id="838534d879f74e7af515a7de57e72b71" category="list-text">Nicht Indiziert</block>
-  <block id="73d4d0de3c5f56849f3c1a290a6681f2" category="list-text">Indizierung angehalten</block>
-  <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">Fehler</block>
-  <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">Nicht Aktiviert</block>
   <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">Sie können jetzt NetApp ASA r2-Systeme erkennen, wenn Sie BlueXP  im privaten Modus verwenden. Diese Unterstützung ist ab der 3.9.46 Private Mode-Version von BlueXP  verfügbar.</block>
   <block id="39ca8580b0e6a065fa25faac2a2acc86" category="inline-link-macro">Erfahren Sie, wie Sie Empfehlungen für Firmware-Updates anzeigen</block>
   <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.</block>
@@ -451,11 +442,7 @@
   <block id="bb123d17400bea06780499dfee0aa1eb" category="section-title">Neue Berechtigung erforderlich</block>
   <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">Bis 22. April 2024</block>
   <block id="2d177a5ce778fe0e6f460ac5e9449f84" category="section-title">Volume-Vorlagen werden nicht mehr unterstützt</block>
-  <block id="008c6d012aabba0e44e2b94f8259635c" category="section-title">Bis 22. November 2024</block>
   <block id="3c97d3b45dd14b2958c1e0e304230aa0" category="paragraph">Diese BlueXP -Version für Backup und Recovery enthält die folgenden Updates.</block>
-  <block id="517624d736bd2a385ee8cda71584112f" category="section-title">SnapLock Compliance- und SnapLock Enterprise-Schutzmodi</block>
-  <block id="fec92c3dfb6a0b3db498488c7f4d2f29" category="section-title">Indizierung für Such- und Wiederherstellungsprozess auf der Seite Volumes</block>
-  <block id="20d3b0b7cfe7a9f3dcfdb0faa9398efd" category="paragraph">Bevor Sie Suche und Wiederherstellung verwenden können, müssen Sie „Indizierung“ in jeder Arbeitsumgebung aktivieren, aus der Sie Volume-Daten wiederherstellen möchten. So kann der indizierte Katalog die Backup-Dateien für jedes Volume nachverfolgen. Auf der Seite Volumes wird nun der Indexierungsstatus angezeigt:</block>
   <block id="009d2060a609114df262eff04e83f241" category="section-title">22 Januar 2025</block>
   <block id="0a401367ec8a2cd84bb197e6d12c99af" category="section-title">Version 1.39</block>
   <block id="1a58f9988f87b599ed71b9c7430034c2" category="paragraph">Diese BlueXP -Klassifizierungsversion aktualisiert den Exportprozess für den Datenuntersuchungsbericht. Diese Exportaktualisierung ist nützlich, um zusätzliche Analysen Ihrer Daten durchzuführen, zusätzliche Visualisierungen der Daten zu erstellen oder die Ergebnisse Ihrer Datenuntersuchung mit anderen zu teilen.</block>
@@ -766,4 +753,26 @@
   <block id="38a9b45e86982c8330edcb875da55284" category="paragraph">Diese Version enthält Benachrichtigungen, dass die kostenlose Testversion in 60 Tagen abläuft, um sicherzustellen, dass Sie Zeit haben, um eine Lizenz zu erhalten. Diese Version enthält auch Benachrichtigungen an dem Tag, an dem die Lizenz abläuft.</block>
   <block id="5d940e67e8d433508306c751ff0ea678" category="section-title">Benachrichtigung über Service-Updates</block>
   <block id="9bdd52eb995b6f47a02ffa6aa4318399" category="paragraph">Mit diesem Release wird oben ein Banner angezeigt, das anzeigt, dass Services aktualisiert werden und der Service in den Wartungsmodus versetzt wird. Das Banner wird angezeigt, wenn der Dienst aktualisiert wird, und wird nach Abschluss der Aktualisierung nicht mehr angezeigt. Sie können zwar weiterhin in der Benutzeroberfläche arbeiten, während das Upgrade ausgeführt wird, Sie können jedoch keine neuen Jobs senden. Geplante Jobs werden ausgeführt, nachdem die Aktualisierung abgeschlossen ist und der Dienst in den Produktionsmodus zurückkehrt.</block>
+  <block id="46c8a90c914cf567466d573545fb57d9" category="section-title">Verbessertes Volume Dashboard (Vorschau)</block>
+  <block id="d4400da5c041019019538ea47e6a4d7e" category="paragraph">Das Volume Dashboard kann jetzt in weniger als 10 Sekunden geladen werden und bietet damit eine wesentlich schnellere und effizientere Schnittstelle. Diese Vorschau-Version ist für ausgewählte Kunden verfügbar und bietet ihnen einen ersten Blick auf diese Verbesserungen.</block>
+  <block id="a43e01afb7862afba8cef123bb022bd8" category="section-title">UI-Verbesserungen</block>
+  <block id="d631beb153bc97ac47e69041180f2bda" category="paragraph">Diese Version verbessert die Benutzerfreundlichkeit durch die Vereinfachung der Oberfläche:</block>
+  <block id="7945214ab9edda2604c048e3254b6820" category="list-text">Das Entfernen der Spalte Aggregate aus den Volume-Tabellen zusammen mit den Spalten Snapshot Policy, Backup Policy und Replication Policy aus der Volume-Tabelle im V2 Dashboard führt zu einem optimierten Layout.</block>
+  <block id="1f4ea4d0a55155c1ea9271081e2e118f" category="list-text">Wenn Sie nicht aktivierte Arbeitsumgebungen aus der Dropdown-Liste ausschließen, wird die Oberfläche weniger überladen, die Navigation effizienter und das Laden schneller.</block>
+  <block id="c42ae4d1274def078f227f6b5526ed38" category="list-text">Während die Sortierung in der Spalte Tags deaktiviert ist, können Sie die Tags dennoch anzeigen, um sicherzustellen, dass wichtige Informationen leicht zugänglich bleiben.</block>
+  <block id="ee5a89c90c463c21f6188d8945b6a165" category="list-text">Das Entfernen von Etiketten auf den Schutzsymbolen trägt zu einem saubereren Aussehen bei und verringert die Ladezeit.</block>
+  <block id="4deca0db77c0cb1d491b7636aff218c4" category="list-text">Während der Aktivierung der Arbeitsumgebung wird in einem Dialogfeld ein Ladesymbol angezeigt, das Feedback liefert, bis der Erkennungsvorgang abgeschlossen ist. Dies erhöht die Transparenz und erhöht die Sicherheit für die Systemvorgänge.</block>
+  <block id="e933dec5f784259760ab3c9400fb8e0b" category="section-title">Unterstützung für Wasabi-Objektspeicher von Drittanbietern (Vorschau)</block>
+  <block id="57a83bf4b6d8f755d141ebf2bb282ed3" category="paragraph">BlueXP  Backup und Recovery erweitert jetzt ihre Unterstützung auf Objektspeicher von Drittanbietern, wobei der Schwerpunkt primär auf Wasabi liegt. Mit dieser neuen Vorschaufunktion können Sie jeden S3-kompatiblen Objektspeicher für Ihre Backup- und Recovery-Anforderungen nutzen.</block>
+  <block id="da21b58c44ce1975cb8550ec689df5b3" category="section-title">Erste Schritte mit Wasabi</block>
+  <block id="f3afa8b48aa14a1da6a21d82ad964f5d" category="paragraph">Um diese Funktion zu verwenden, müssen Sie ein Flag in der BlueXP -Benutzeroberfläche aktivieren. Anschließend können Sie die Verbindungsdetails für einen Objektspeicher eines Drittanbieters eingeben und in Ihre Backup- und Recovery-Workflows integrieren.</block>
+  <block id="9b6d9b582a741bc832b2557c16d31b09" category="section-title">Einschränkungen des Vorschaumodus</block>
+  <block id="fdf10a1d090d444123d00414152f7943" category="paragraph">Während diese Funktion in der Vorschau angezeigt wird, beachten Sie die folgenden Einschränkungen:</block>
+  <block id="7ebc42140a656312f7a985f14e55f3a6" category="list-text">Bring Your Own Bucket (BYOB) wird nicht unterstützt.</block>
+  <block id="1361fc3308297e6892c65225fef43d57" category="list-text">Die Aktivierung von DataLock in einer Richtlinie wird nicht unterstützt.</block>
+  <block id="250e26d77f45f9c60f2e7d28e0011265" category="list-text">Die Aktivierung des Archivmodus in einer Richtlinie wird nicht unterstützt.</block>
+  <block id="b86033acef55ce16df9b8accc019fc9d" category="list-text">Es werden nur lokale ONTAP-Umgebungen unterstützt.</block>
+  <block id="5ba05bcaf18ef618c0ef794d4ae3e855" category="list-text">MetroCluster wird nicht unterstützt.</block>
+  <block id="2a9854e98da75bbc07132378bef6de4d" category="list-text">Optionen zur Aktivierung der Verschlüsselung auf Bucket-Ebene werden nicht unterstützt.</block>
+  <block id="f98d5407ffd34a829996a4bb36d6e582" category="paragraph">In dieser Vorschau empfehlen wir Ihnen, diese neue Funktion zu erkunden und Feedback zur Integration in Objektspeicher von Drittanbietern zu geben, bevor die volle Funktionalität bereitgestellt wird.</block>
 </blocks>
