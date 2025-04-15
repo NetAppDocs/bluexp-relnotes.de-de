@@ -388,15 +388,9 @@
   <block id="bd03ede87c82adb65c788a5ae08c50b6" category="inline-link">Workloads erkennen</block>
   <block id="9ac7153dab130e828e160c247e5ccb61" category="paragraph">Siehe<block ref="24a34ebfc2a0852de6406d8f5a18bd02" category="inline-link-rx"></block>.</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">10 Februar 2025</block>
-  <block id="4716735cca1c0ec4ab6acb97d14dcaa7" category="inline-link-macro">Erstellen Sie einen Fall mit dem NetApp-Support</block>
-  <block id="f0100d47b49cbe11e6a325bdee8db6ff" category="paragraph">Wenn Sie bereits FSX for ONTAP-Dateisysteme haben, die nicht mit einem Arbeitsbereich verknüpft sind, helfen wir Ihnen, diese einem Arbeitsbereich in BlueXP  zuzuordnen. Sie können dies <block ref="d0e0ce62131d959daa6f062d97c0d6a8" category="inline-link-macro-rx"></block>in der BlueXP -Konsole ausführen. Wählen Sie *Workload Factory* als Dienst aus.</block>
-  <block id="181840612e9e637bf9dbbc740a738a45" category="inline-link-macro">Erfahren Sie, wie Sie ein FSX für ONTAP-Dateisystem aus einem Arbeitsbereich in BlueXP  entfernen</block>
-  <block id="e3d09410dae9543aebfcc83b7bceebc5" category="paragraph"><block ref="e3d09410dae9543aebfcc83b7bceebc5" category="inline-link-macro-rx"></block></block>
   <block id="0672b60d374d87a810fa73810e4a0a82" category="inline-link-macro">Monitoring und Nachverfolgung von FSX für den ONTAP-Betrieb in BlueXP</block>
   <block id="d3626ed21f71a99d578970f5e4960cdc" category="paragraph"><block ref="d3626ed21f71a99d578970f5e4960cdc" category="inline-link-macro-rx"></block></block>
-  <block id="30e5906a069abe8bb88f1aed916b358b" category="paragraph">CloudShell ist verfügbar, wenn Sie sich in BlueXP -Workloads über die BlueXP -Konsole befinden. CloudShell ermöglicht Ihnen die Verwendung der in Ihrem BlueXP -Konto angegebenen AWS- und ONTAP-Anmeldeinformationen und die Ausführung von AWS CLI-Befehlen oder ONTAP CLI-Befehlen in einer Shell-ähnlichen Umgebung.</block>
   <block id="4ab00ae468588a563b956d814954695d" category="inline-link-macro">Verwenden Sie CloudShell</block>
-  <block id="03efd4c623255859d8f24cea1414ca80" category="paragraph"><block ref="03efd4c623255859d8f24cea1414ca80" category="inline-link-macro-rx"></block></block>
   <block id="a4a7057d917e03803441c79badd6d519" category="paragraph">Zuvor war der Export des Berichts zur Untersuchung von Daten auf 10,000 Zeilen beschränkt. Mit dieser Version wurde das Limit entfernt, sodass Sie alle Ihre Daten exportieren können. Durch diese Änderung können Sie mehr Daten aus Ihren Datenermittlungsberichten exportieren, was Ihnen mehr Flexibilität bei der Datenanalyse bietet.</block>
   <block id="72fa9e7ff6f311a170ad8d720dff3f2f" category="paragraph">Sie können die Arbeitsumgebung, die Volumes, den Zielordner und entweder das JSON- oder CSV-Format auswählen. Der exportierte Dateiname enthält einen Zeitstempel, mit dem Sie den Zeitpunkt des Exportes der Daten identifizieren können.</block>
   <block id="7afa5ec6a3f715e47b3c6fa2655f18b0" category="paragraph">Zu den unterstützten Arbeitsumgebungen gehören:</block>
@@ -413,8 +407,6 @@
   <block id="2004b4ad1feb57e1e4505f5888cfbb60" category="paragraph"><block ref="2004b4ad1feb57e1e4505f5888cfbb60" category="inline-link-macro-rx"></block></block>
   <block id="6cff628e35cc5d429a57e4a125a0bf6b" category="inline-link-macro">Änderungsprotokoll für Berechtigungen</block>
   <block id="86fbb6c90e401f3291e15bdc1398509c" category="paragraph"><block ref="86fbb6c90e401f3291e15bdc1398509c" category="inline-link-macro-rx"></block></block>
-  <block id="ca475a2b63c70fedcf8f6650024d480b" category="section-title">BlueXP -Workload-Werkseinstellungen</block>
-  <block id="f157db6a1ae10e7a29a28440d21f5cb8" category="paragraph"><block ref="f157db6a1ae10e7a29a28440d21f5cb8" category="inline-link-macro-rx"></block></block>
   <block id="3aff149422876e5f443408fd802b4fb2" category="paragraph">Die BlueXP  Digital Wallet wurde aus Anwenderfreundlichkeit neu gestaltet und bietet jetzt zusätzliches Abonnement- und Lizenzmanagement.</block>
   <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">13 Januar 2025</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">Bis 16. Dezember 2024</block>
@@ -425,13 +417,6 @@
   <block id="2c132bb868e25bdbc509ab83d2436d71" category="paragraph">Sie können Details zu Warnmeldungen anzeigen und Empfehlungen finden.</block>
   <block id="a81101241f6ae4b53dda6f72078e1a84" category="paragraph">Dank BlueXP -Warnmeldungen lassen sich Warnmeldungen zu Ihrer ONTAP Storage-Umgebung anzeigen sowie Details anzeigen, die mit ONTAP System Manager verknüpft sind.</block>
   <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">02 Februar 2025</block>
-  <block id="8f0b3ce2b96f337852fd1c252724a612" category="section-title">Ordnen Sie FSX für ONTAP-Dateisystem einem Arbeitsbereich in BlueXP  zu</block>
-  <block id="da3003c64aba681511ac42ea840639fa" category="paragraph">Nach der BlueXP -Integration im November 2024 wurden neu erstellte FSX für ONTAP-Dateisysteme nicht mit einem Arbeitsbereich in BlueXP  verknüpft. Wenn Sie nun FSX für ONTAP-Dateisysteme erstellen oder entdecken, werden diese einem Arbeitsbereich innerhalb eines BlueXP -Kontos zugeordnet.</block>
-  <block id="ca67d4d470c8d498e9ac0294cf4f7805" category="section-title">Entfernen des Dateisystems aus BlueXP  Canvas</block>
-  <block id="b93cfe5d8c5b8d31c6e277f9086d4e40" category="paragraph">Sie können jetzt ein FSX für ONTAP-Dateisystem aus einem Arbeitsbereich im BlueXP -Bildschirm entfernen. Mit dieser Operation wird das Dateisystem von einem Arbeitsbereich getrennt, sodass Sie es einem anderen Arbeitsbereich innerhalb desselben BlueXP -Kontos zuordnen können.</block>
-  <block id="ea3d4df6f8aff21b2dfe549c5ecf9775" category="section-title">Tracker zur Überwachung und Nachverfolgung von Vorgängen verfügbar</block>
-  <block id="ce9be95deabee3be9356a5b5de8e7b0b" category="paragraph">Tracker ist eine neue Monitoring-Funktion in BlueXP  Amazon FSX for NetApp ONTAP. Mit Tracker können Sie den Fortschritt und den Status von Anmeldeinformationen, Speicher und Verbindungsvorgängen überwachen und verfolgen, Details für Betriebsaufgaben und untergeordnete Aufgaben überprüfen, Probleme oder Fehler diagnostizieren, Parameter für fehlgeschlagene Vorgänge bearbeiten und fehlgeschlagene Vorgänge erneut versuchen.</block>
-  <block id="27a901c04d21dffe48f2fc38150f7c5c" category="section-title">CloudShell verfügbar in BlueXP -Workloads</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 März 2023</block>
   <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">Möglichkeit zum Hinzufügen neuer Buckets aus BlueXP</block>
   <block id="3bec690d07df1a3a36c8a3122654fc24" category="section-title">5 Juni 2023</block>
@@ -556,7 +541,6 @@
   <block id="7f1ab9d2ad99562dfd8cff4cb4c70b29" category="paragraph">CloudShell ist an jedem beliebigen Ort in der BlueXP -Workload-Factory-Konsole verfügbar. CloudShell ermöglicht Ihnen, die in Ihrem BlueXP -Konto angegebenen AWS- und ONTAP-Anmeldeinformationen zu verwenden und AWS CLI-Befehle oder ONTAP CLI-Befehle in einer Shell-ähnlichen Umgebung auszuführen.</block>
   <block id="f3a98886e89c22ab1a8df16ff87d5b3c" category="section-title">Berechtigungsaktualisierung für Datenbanken</block>
   <block id="0d8e78270e3796caacf42c07616b7e32" category="paragraph">Die folgende Berechtigung ist jetzt im _read_ Modus für Datenbanken verfügbar:<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>.</block>
-  <block id="5291909ce92037a20a37f7a0c86dd921" category="paragraph">Sie können sich jetzt die Berechtigungen anzeigen lassen, die BlueXP -Workload in der Fabrik verwendet, um verschiedene Vorgänge auszuführen. Angefangen bei der Erkennung Ihrer Storage-Umgebungen bis hin zum Implementieren von AWS Ressourcen wie Dateisysteme im Storage oder Wissensdatenbanken für GenAI-Workloads. Sie können IAM-Richtlinien und Berechtigungen für Storage, Datenbanken, VMware und GenAI-Workloads anzeigen.</block>
   <block id="9ba3a5a376a4241ee4847ae13742a741" category="section-title">Zeigen Sie mit dem ONTAP System Manager verknüpfte Cluster-Details an</block>
   <block id="79043fd5ff3b61216207b60882cd72cd" category="section-title">19 Februar 2025</block>
   <block id="6b9d9a04ff593ff427731819f0c3618f" category="section-title">Version 1.40</block>
@@ -730,7 +714,6 @@
   <block id="66fa090892a2bd81c896ab6fbf156b19" category="paragraph">Im Abschnitt „Zusammenfassung“ der BlueXP -Softwareupdates können Sie nun die Gesamtzahl der Risiken anzeigen, die durch das Betriebssystem-Update vermindert werden können. Auf diese Weise können Benutzer die Sicherheits- und Stabilitätsverbesserungen auf ihrer Installationsbasis bewerten.</block>
   <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">Benutzer ohne den Org-Administrator, Ordner oder Projektadministrator müssen eine Ransomware-Schutzrolle zugewiesen werden, um Zugriff auf Ransomware-Schutz zu haben. Sie können einem Benutzer eine von zwei Rollen zuweisen: Ransomware Protection Admin oder Ransomware Protection Viewer.</block>
   <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">Bis 16. April 2025</block>
-  <block id="e1b61136672bccd13e6828fe7987e4f6" category="paragraph">Version 4.3</block>
   <block id="f2265cb494c0b6dc346cf3703718b766" category="section-title">Geplante Ermittlung für VMs</block>
   <block id="a1cc1dbaf027adca720112f5a8c48e4d" category="paragraph">Bei der Disaster Recovery von BlueXP  werden alle 24 Stunden einmal erkannt. Mit dieser Version können Sie den Zeitplan zur Bestandsaufnahme nun an Ihre Anforderungen anpassen und die Performance bei Bedarf verringern. Wenn Sie beispielsweise über eine große Anzahl von VMs verfügen, können Sie den Erkennungszeitplan so einstellen, dass er alle 48 Stunden ausgeführt wird. Wenn Sie über eine geringe Anzahl von VMs verfügen, können Sie den Erkennungszeitplan so einstellen, dass er alle 12 Stunden ausgeführt wird.</block>
   <block id="7e2d4377602fe8c7a718d5ef8759c008" category="paragraph">Wenn Sie die Ermittlung nicht per wan planen, können Sie die Option für die geplante Ermittlung deaktivieren und die Ermittlung jederzeit manuell aktualisieren.</block>
@@ -784,11 +767,6 @@
   <block id="c1ad65632774d8f35681af3ad68ef48e" category="paragraph">In Azure können Sie jetzt Cloud Volumes ONTAP 9.12.1 GA und höher in einzelnen und mehreren Verfügbarkeitszonen in folgenden Regionen implementieren. Dies umfasst die Unterstützung von Single-Node- und HA-Implementierungen (High Availability).</block>
   <block id="db0cdd3af654aa7b69312d9b6154a9de" category="list-text">Spanien, Mitte</block>
   <block id="ef87967149148a309569bd7d04467de6" category="list-text">Mexiko-Mitte</block>
-  <block id="f0d468a1074534e3b37c7322f2e97bb1" category="section-title">Bis 3. April 2025</block>
-  <block id="b77891a5294c25aca8a6fda943805ecf" category="section-title">Unterstützung für China-Regionen für Cloud Volumes ONTAP 9.13.1 in AWS</block>
-  <block id="3899c7c0df13a38296f1334779a1dfe7" category="paragraph">Sie können Cloud Volumes ONTAP 9.13.1 jetzt in AWS in China implementieren. Dies umfasst die Unterstützung von Single-Node- und HA-Implementierungen (High Availability). Nachdem Sie Cloud Volumes ONTAP 9.13.1 implementiert haben, können Sie es auf neuere Versionen aktualisieren. Es werden nur Lizenzen unterstützt, die direkt von NetApp erworben wurden.</block>
-  <block id="abe88f95b23156cb29c433c9ebe92a00" category="inline-link">Karten für globale Regionen für Cloud Volumes ONTAP</block>
-  <block id="10df570a0447a18b299f516b2e8498c2" category="paragraph">Informationen zur regionalen Verfügbarkeit finden Sie im<block ref="f76c632bc8b9c4e032a9d48fcbfa8dc1" category="inline-link-rx"></block>.</block>
   <block id="8855742ef7ac60d26f35536e1d09aef9" category="section-title">Bis 29. April 2025</block>
   <block id="f65bfe10577ea64b648eddd04f107545" category="section-title">Unterstützung von Amazon FSX für NetApp ONTAP</block>
   <block id="24964ea0918b681c02283685b1da1438" category="paragraph">Dieser Release unterstützt Amazon FSX für NetApp ONTAP. Diese Funktion hilft Ihnen mit BlueXP  Ransomware-Schutz dabei, Ihre FSX for ONTAP-Workloads zu schützen.</block>
@@ -802,4 +780,70 @@
   <block id="280931b406a1e00d83a4a8faa2e537a0" category="paragraph">Weitere Informationen finden Sie unter<block ref="4517bbdfa51110822f93ef44df6a4f92" category="inline-link-rx"></block>.</block>
   <block id="08ceca9f9a853977a5c71c8c66b68b55" category="inline-link">Einschränkungen beim BlueXP  Schutz vor Ransomware</block>
   <block id="eb745462fc54b055b8087d694fb01b5f" category="paragraph">Informationen zu den unterstützten Optionen finden Sie im<block ref="875047b763859105fc2c6e622181cfbb" category="inline-link-rx"></block>.</block>
+  <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">04 Mai 2025</block>
+  <block id="e740d5331c1318c8aeedd3bc928fee0f" category="section-title">Unterstützung von Tracker-Antworten</block>
+  <block id="afa647328e65fc54651ec9202e08f684" category="paragraph">Tracker bietet jetzt API-Antworten, sodass Sie die REST API-Ausgabe zu der Aufgabe sehen können.</block>
+  <block id="7dc7c15512069d38e071e0b7f2eb0075" category="section-title">Unterstützung der Link-Authentifizierung für AWS Secrets Manager</block>
+  <block id="73ecd40a86b02acff9f56b3a1ac74d7f" category="paragraph">Sie haben jetzt die Möglichkeit, Secrets von AWS Secrets Manager zum Authentifizieren von Links zu verwenden, sodass Sie keine in BlueXP -Workloads gespeicherten Anmeldeinformationen verwenden müssen.</block>
+  <block id="37b002845528ac0296b86d28bb71e5a5" category="inline-link-macro">Stellen Sie über einen Lambda-Link eine Verbindung zu einem FSX für ONTAP-Dateisystem her</block>
+  <block id="bdd7f454c54673987f53c40f8e5b8072" category="paragraph"><block ref="bdd7f454c54673987f53c40f8e5b8072" category="inline-link-macro-rx"></block></block>
+  <block id="b4650b4ce326d6a3b7fad5e98b1b29d3" category="section-title">Implementierung von Best Practices für ein FSX für ONTAP-Filesystem</block>
+  <block id="bf66fc8532837c2f341b98d92d40bd27" category="paragraph">BlueXP  Workloads bietet ein Dashboard, über das Sie den Architektur-Status Ihrer Filesystem-Konfigurationen überprüfen können. Mithilfe dieser Analyse können Sie Best Practices für Ihre FSX for ONTAP-Dateisysteme implementieren. Die Dateisystemkonfigurationsanalyse umfasst die folgenden Konfigurationen: SSD-Kapazitätsgrenze, geplante lokale Snapshots, geplante FSX für ONTAP-Backups, Daten-Tiering und Remote-Datenreplizierung.</block>
+  <block id="20c1cdeb819f1a107044754c5b7cd16d" category="inline-link-macro">Informieren Sie sich über die gut konzipierte Analyse für Filesystem-Konfigurationen</block>
+  <block id="f85ae2c7c8690dad4aad4469edd0d4d1" category="list-text"><block ref="f85ae2c7c8690dad4aad4469edd0d4d1" category="inline-link-macro-rx"></block></block>
+  <block id="ee8bd13e9852f521384a9366f9fddac8" category="inline-link-macro">Implementieren Sie Best Practices für Ihre Dateisysteme</block>
+  <block id="a04ab86f504e47221c279d8c74e9697c" category="list-text"><block ref="a04ab86f504e47221c279d8c74e9697c" category="inline-link-macro-rx"></block></block>
+  <block id="dad34f5734adb85d9981374c4c32d1d5" category="section-title">Gut gestaltete Benachrichtigung bei Problemen mit dem Dateisystem</block>
+  <block id="16ca2e92ee84ccef4088c5d2a61cd8d2" category="paragraph">In der BlueXP -Konsole zeigen FSX für ONTAP-Dateisysteme mit gut konzipierten Problemen jetzt eine Benachrichtigung im Bildschirm an, die anzeigt, wann Dateisysteme Probleme zu beheben haben.</block>
+  <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">Terminologie für Berechtigungen wurde aktualisiert</block>
+  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">Die Benutzeroberfläche und Dokumentation der Workload Factory verwenden jetzt „Read-Only“, um auf Leseberechtigungen und „Read-Write“ zu verweisen, um Berechtigungen zu automatisieren.</block>
+  <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">12 Mai 2025</block>
+  <block id="67840d2b3ccd99d7c6db2904273f95ef" category="section-title">Version 1.43</block>
+  <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">Priorisieren Sie Klassifizierungs-Scans</block>
+  <block id="0dc348cb820b479010800e3c6cddc127" category="paragraph">Die BlueXP -Klassifizierung unterstützt jetzt die Möglichkeit, neben den nur-Mapping-Scans auch Karten- und Klassifizierungen zu priorisieren, wodurch Sie auswählen können, welche Scans zuerst abgeschlossen werden. Die Priorisierung von Map &amp; Classify-Scans wird während und vor Beginn der Scans unterstützt. Wenn Sie einen Scan priorisieren möchten, während er gerade läuft, werden sowohl die Mapping- als auch die Klassifikationsscans priorisiert.</block>
+  <block id="d58e3b3044e314bd5b914f8e22d6a0a8" category="paragraph-title">Unterstützung für kanadische Datenkategorien für personenbezogene Daten (PII)</block>
+  <block id="25afe4e8f395663d2442297e33aa8a20" category="paragraph">BlueXP  Klassifikations-Scans identifizieren jetzt kanadische PII-Datenkategorien für Bankdaten, Passnummer, Sozialversicherungsnummer, Führerschein-Nummer und Krankenversicherungsnummer für alle Provinzen und Gebiete.</block>
+  <block id="841ba72ee4bfb55c34ecc91bca130388" category="inline-xref-macro">Kategorien personenbezogener Daten</block>
+  <block id="8ac2e225945f40bbf038dd67449b1841" category="paragraph">Weitere Informationen finden Sie unter <block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>.</block>
+  <block id="0faf34dc58fa8cc3526b8a0a51850b2b" category="paragraph-title">Benutzerdefinierte Klassifizierung (Vorschau)</block>
+  <block id="e43dc9231ca750651c1b2d09176b0bc3" category="paragraph">Die BlueXP -Klassifizierung unterstützt jetzt benutzerdefinierte Klassifizierungen für Karten- und Klassifikations-Scans. Mit benutzerdefinierten Klassifikationen können Sie BlueXP -Scans so anpassen, dass Daten für Ihr Unternehmen erfasst werden, um die Einhaltung von regulären Ausdrücken zu gewährleisten. Diese Funktion befindet sich derzeit in der Vorschau.</block>
+  <block id="68fcca37a232a8993c6b392c92803de3" category="inline-xref-macro">Fügen Sie benutzerdefinierte Klassifizierungen hinzu</block>
+  <block id="293ef51708e6a5ff00afa3b03fc38173" category="paragraph">Weitere Informationen finden Sie unter <block ref="5c3ba05e723fa646f41c75d6d8a263d3" category="inline-xref-macro-rx"></block>.</block>
+  <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">Registerkarte gespeicherte Suchen</block>
+  <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-xref-macro">**Gespeicherte Suchen**</block>
+  <block id="619964fa6c4dc175f106697cd53cd93b" category="paragraph">Die Registerkarte **Policen** wurde umbenannt<block ref="57cf69bfb5ee6dec8716152c342ad94c" category="inline-xref-macro-rx"></block>. Die Funktionalität ist die gleiche.</block>
+  <block id="260ad9aa0619e900a957ec4498a7084d" category="paragraph-title">Scan-Ereignisse an Überwachungsprotokoll senden</block>
+  <block id="decaf26b476fc5aad56ba857036660b7" category="inline-link-macro">BlueXP  Zeitplan</block>
+  <block id="7d71019726dccc04ceb52b94f892b7f6" category="inline-xref-macro">Prüfprotokoll</block>
+  <block id="1c6653b6dfd13a16237efa3ea5c87e2a" category="paragraph">BlueXP -Scan-Ereignisse können jetzt an den gesendet werden<block ref="e7616c9e5375866db0d455d96b016998" category="inline-xref-macro-rx"></block>. BlueXP  Classification unterstützt auch das Senden von Klassifikationsereignissen (wenn ein Scan initiiert wird und wenn er endet) an den <block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>. Das Senden von Klassifizierungsscan-Ereignissen an die BlueXP -Zeitachse wird nur in Arbeitsumgebungen unterstützt.</block>
+  <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">Sicherheitsupdates</block>
+  <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">Das Keras-Paket wurde aktualisiert, um Schwachstellen zu beheben (BDSA-2025-0107 und BDSA-2025-1984).</block>
+  <block id="408f8b982d641a307784a27c0fb6d9c9" category="list-text">Die Konfiguration der Docker Container wurde aktualisiert. Der Container hat keinen Zugriff mehr auf die Netzwerkschnittstellen des Hosts, um rohe Netzwerkpakete zu erstellen. Durch die Reduzierung unnötiger Zugriffe verringert das Update potenzielle Sicherheitsrisiken.</block>
+  <block id="4a02475d909bd7464565a63664e4dc8b" category="paragraph-title">Performance-Verbesserungen</block>
+  <block id="247e7f07f0a97b367563cc22c1a529cb" category="paragraph">Codeverbesserungen wurden implementiert, um die RAM-Nutzung zu reduzieren und die Gesamtleistung der BlueXP -Klassifizierung zu verbessern.</block>
+  <block id="223594359ca2e5c0c959aa756dea2d50" category="paragraph">Fehler, die dazu geführt haben, dass StorageGRID-Scans fehlschlagen, dass die Filteroptionen für die Untersuchungsseite nicht geladen werden und die Datenermittlung, die für Prüfungen mit hohem Volumen nicht heruntergeladen werden sollte, wurden behoben.</block>
+  <block id="462848e89fbcd7fc117ed7c36b47f6f3" category="section-title">Bestandsaufnahme der Implementierungen, die über den Azure Marketplace in BlueXP  durchgeführt wurden</block>
+  <block id="cb52ca43108f98673f7dcc6c4bc528f6" category="paragraph">BlueXP  ist jetzt in der Lage, die Cloud Volumes ONTAP Systeme zu erkennen, die direkt über den Azure Marketplace bereitgestellt werden. Das bedeutet, dass Sie diese Systeme jetzt wie beliebige andere Cloud Volumes ONTAP-Systeme in BlueXP  als funktionierende Umgebungen hinzufügen und verwalten können.</block>
+  <block id="e94250a733abb8fd0b0ca35ccdcc534f" category="inline-link">Implementieren Sie Cloud Volumes ONTAP über den Azure Marketplace</block>
+  <block id="2f3a59a024a5fa5e6d9049c44506f8b0" category="paragraph"><block ref="2f3a59a024a5fa5e6d9049c44506f8b0" category="inline-link-rx"></block></block>
+  <block id="d2e69d0efb90eba181fe1aff16489eba" category="section-title">Möglichkeit zum Tiering von Daten für Azure Mandanten</block>
+  <block id="6a86c1cc6c3338bb337a5e643e80da8e" category="paragraph">Sie können nun das Tiering für einen Azure Mandanten in einem Szenario aktivieren, in dem die Cloud Volumes ONTAP Arbeitsumgebung von einem Mandanten erstellt und der BlueXP  Connector von einem anderen erstellt wird. Mithilfe dieser Funktion können Sie denselben Connector für das Tiering von Daten für mehrere Azure-Mandanten verwenden.</block>
+  <block id="879e91c0a0fa09577c58d0330291ff06" category="inline-link">Anforderungen für das Tiering von Daten für einen Azure Mandanten</block>
+  <block id="215678b43321c729a07cabb64971f83c" category="paragraph"><block ref="215678b43321c729a07cabb64971f83c" category="inline-link-rx"></block></block>
+  <block id="848964f0743e2416b5d061a5e088ca73" category="paragraph">Version 4.2.2</block>
+  <block id="ae493f6fb938d3c8c6db8b5a9e623794" category="paragraph">Version 4.2.1</block>
+  <block id="78e5de64c036a105265b3f447a5fbbca" category="section-title">Intelligente Proxy-Unterstützung</block>
+  <block id="12430fc7d9e2c156fb2dc1af2bf60126" category="paragraph">Der BlueXP -Connector unterstützt den intelligenten Proxy. Ein intelligenter Proxy ist eine einfache, sichere und effiziente Möglichkeit, Ihre On-Premises-Umgebung mit dem BlueXP -Service zu verbinden. Sie stellt eine sichere Verbindung zwischen Ihrer Umgebung und dem BlueXP -Dienst her, ohne dass ein VPN oder ein direkter Internetzugang erforderlich ist. Diese optimierte Proxy-Implementierung entlastet den API-Verkehr innerhalb des lokalen Netzwerks.</block>
+  <block id="2baae43f4fa62104c66585e956c51e1e" category="paragraph">Wenn ein Proxy konfiguriert ist, versucht BlueXP  Disaster Recovery, direkt mit VMware oder ONTAP zu kommunizieren und verwendet den konfigurierten Proxy, wenn die direkte Kommunikation fehlschlägt.</block>
+  <block id="a115e6ab8acfcda534f22a18d1d6940d" category="paragraph">Für die Implementierung eines BlueXP  Disaster Recovery Proxy ist eine Port 443-Kommunikation zwischen dem Connector und allen vCenter-Servern und ONTAP-Arrays über ein HTTPS-Protokoll erforderlich. Der BlueXP  Disaster Recovery-Agent im Connector kommuniziert direkt mit VMware vSphere, VC oder ONTAP, wenn Aktionen durchgeführt werden.</block>
+  <block id="7297a33a5c9a50db535ceb180e4e6c29" category="inline-link">Richten Sie Ihre Infrastruktur für die Disaster Recovery von BlueXP ein</block>
+  <block id="a7a0475144b255eccfff4d2ee3e7a5c4" category="paragraph">Weitere Informationen zum intelligenten Proxy für die Disaster Recovery von BlueXP  finden Sie unter<block ref="bf1bf7a536149f2406a2eab17db3a297" category="inline-link-rx"></block>.</block>
+  <block id="146adb7944757e88795676b780c31811" category="inline-link">Konfigurieren Sie einen Konnektor für die Verwendung eines Proxy-Servers</block>
+  <block id="635abfb2f80497d39998f2a81dfecd7e" category="paragraph">Weitere Informationen über die Einrichtung eines allgemeinen Proxys in BlueXP  finden Sie unter<block ref="4d83a369cd8d5456206d71335578eaaa" category="inline-link-rx"></block>.</block>
+  <block id="7469dc0d82ce9411c03b852f2163d515" category="section-title">Beenden Sie die kostenlose Testversion jederzeit</block>
+  <block id="38567a6024618c3687de90b3e2cff86e" category="paragraph">Sie können die kostenlose Testversion an jedem Zinken stoppen oder Sie können warten, bis sie abläuft.</block>
+  <block id="8d4d6551ee286317b2a4f297766952f5" category="inline-link">Beenden Sie die kostenlose Testversion</block>
+  <block id="b618f30aeca114d464120de119b19ced" category="paragraph">Siehe<block ref="5f37f8bd4230e4b629c60b7dc23a5850" category="inline-link-rx"></block>.</block>
+  <block id="74d516ef8dfa098bb4cd92313c403475" category="section-title">Autocomplete-Unterstützung für CloudShell</block>
+  <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">Wenn Sie BlueXP  Workload Factory CloudShell verwenden, können Sie einen Befehl eingeben und die Tabulatortaste drücken, um die verfügbaren Optionen anzuzeigen. Wenn mehrere Möglichkeiten vorhanden sind, zeigt die CLI eine Liste mit Vorschlägen an. Diese Funktion steigert die Produktivität, indem Fehler minimiert und die Befehlsausführung beschleunigt wird.</block>
 </blocks>
