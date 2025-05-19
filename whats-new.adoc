@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features,cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features,cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam, recovery' 
 summary: Erfahren Sie mehr über die neuesten Änderungen an den Cloud-Services, die Teil der BlueXP Plattform sind. 
 ---
 = Aktuelle Änderungen in BlueXP
@@ -57,6 +57,12 @@ Die Beta für NetApp Keystone in BlueXP  hat den Zugriff auf die Keystone Admin
 Diese Version des BlueXP Connector enthält kleinere Sicherheitsverbesserungen und Bug Fixes.
 
 Derzeit ist die Version 3.9.51 für den Standardmodus und den eingeschränkten Modus verfügbar.
+
+
+
+===== Sichere Endpunkte für Connector-Downloads werden jetzt für Backup und Recovery sowie für Ransomware-Schutz unterstützt
+
+Wenn Sie Backup und Recovery oder Ransomware-Schutz verwenden, können Sie jetzt sichere Endpunkte für Connector-Downloads verwenden. link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#new-secure-endpoints-to-obtain-connector-images["Erfahren Sie mehr über Downloads von sicheren Endpunkten für Connector."^]
 
 
 
@@ -494,17 +500,17 @@ Beachten Sie die folgenden Überlegungen zur globalen Suche:
 Diese BlueXP -Klassifizierungsversion umfasst:
 
 .Priorisieren Sie Klassifizierungs-Scans
-Die BlueXP -Klassifizierung unterstützt jetzt die Möglichkeit, neben den nur-Mapping-Scans auch Karten- und Klassifizierungen zu priorisieren, wodurch Sie auswählen können, welche Scans zuerst abgeschlossen werden. Die Priorisierung von Map & Classify-Scans wird während und vor Beginn der Scans unterstützt. Wenn Sie einen Scan priorisieren möchten, während er gerade läuft, werden sowohl die Mapping- als auch die Klassifikationsscans priorisiert.
+Die BlueXP -Klassifizierung unterstützt die Möglichkeit, neben den nur-Mapping-Scans auch Karten- und Klassifikationsscans zu priorisieren, wodurch Sie auswählen können, welche Scans zuerst abgeschlossen werden. Die Priorisierung von Map & Classify-Scans wird während und vor Beginn der Scans unterstützt. Wenn Sie einen Scan priorisieren möchten, während er gerade läuft, werden sowohl die Mapping- als auch die Klassifikationsscans priorisiert.
 
 Weitere Informationen finden Sie unter link:task-managing-repo-scanning.html#prioritize-scans["Priorisieren Sie Scans"].
 
 .Unterstützung für kanadische Datenkategorien für personenbezogene Daten (PII)
-BlueXP  Klassifikations-Scans identifizieren jetzt kanadische PII-Datenkategorien für Bankdaten, Passnummer, Sozialversicherungsnummer, Führerschein-Nummer und Krankenversicherungsnummer für alle Provinzen und Gebiete.
+BlueXP -Klassifikations-Scans identifizieren kanadische PII-Datenkategorien. Diese Kategorien umfassen Bankdaten, Passnummern, Sozialversicherungsnummern, Führerscheinnummern und Krankenkartennummern für alle kanadischen Provinzen und Gebiete.
 
 Weitere Informationen finden Sie unter xref:reference-private-data-categories.adoc#types-of-personal-data[Kategorien personenbezogener Daten].
 
 .Benutzerdefinierte Klassifizierung (Vorschau)
-Die BlueXP -Klassifizierung unterstützt jetzt benutzerdefinierte Klassifizierungen für Karten- und Klassifikations-Scans. Mit benutzerdefinierten Klassifikationen können Sie BlueXP -Scans so anpassen, dass Daten für Ihr Unternehmen erfasst werden, um die Einhaltung von regulären Ausdrücken zu gewährleisten. Diese Funktion befindet sich derzeit in der Vorschau.
+Die BlueXP -Klassifizierung unterstützt benutzerdefinierte Klassifizierungen für Karten- und Klassifikations-Scans. Mit benutzerdefinierten Klassifizierungen können Sie BlueXP -Scans so anpassen, dass sie Daten erfassen, die speziell auf Ihr Unternehmen zugeschnitten sind, und dabei reguläre Ausdrücke verwenden. Diese Funktion befindet sich derzeit in der Vorschau.
 
 Weitere Informationen finden Sie unter xref:task-custom-classification.adoc[Fügen Sie benutzerdefinierte Klassifizierungen hinzu].
 
@@ -512,7 +518,7 @@ Weitere Informationen finden Sie unter xref:task-custom-classification.adoc[Füg
 Die Registerkarte **Policen** wurde umbenanntxref:task-using-policies.html[**Gespeicherte Suchen**]. Die Funktionalität ist die gleiche.
 
 .Senden Sie Scanereignisse an die BlueXP  Timeline
-BlueXP  classification unterstützt jetzt das Senden von Klassifikationsereignissen (wenn ein Scan initiiert wird und wann er endet) an den link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  Zeitplan"^].
+BlueXP  Classification unterstützt das Senden von Klassifikationsereignissen (wenn ein Scan initiiert wird und wann er endet) an den link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  Zeitplan"^].
 
 .Sicherheitsupdates
 * Das Keras-Paket wurde aktualisiert, um Schwachstellen zu beheben (BDSA-2025-0107 und BDSA-2025-1984).
@@ -536,10 +542,10 @@ Fehler, die dazu geführt haben, dass StorageGRID-Scans fehlschlagen, dass die F
 Diese BlueXP -Klassifizierungsversion umfasst:
 
 .Massenscans für Arbeitsumgebungen
-Die BlueXP -Klassifizierung unterstützt jetzt Massenvorgänge für Arbeitsumgebungen. Sie können Mapping Scans aktivieren, Map & Classify Scans aktivieren, Scans deaktivieren oder eine benutzerdefinierte Konfiguration über Volumes in der Arbeitsumgebung erstellen. Wenn Sie eine Auswahl für ein einzelnes Volume treffen, wird die Massenauswahl überschrieben. Um einen Massenvorgang durchzuführen, navigieren Sie zur Seite **Konfiguration** und wählen Sie aus.
+Die BlueXP -Klassifizierung unterstützt Massenvorgänge für Arbeitsumgebungen. Sie können Mapping Scans aktivieren, Map & Classify Scans aktivieren, Scans deaktivieren oder eine benutzerdefinierte Konfiguration über Volumes in der Arbeitsumgebung erstellen. Wenn Sie eine Auswahl für ein einzelnes Volume treffen, wird die Massenauswahl überschrieben. Um einen Massenvorgang durchzuführen, navigieren Sie zur Seite **Konfiguration** und wählen Sie aus.
 
 .Untersuchungsbericht lokal herunterladen
-BlueXP  Classification unterstützt jetzt die Möglichkeit, Datenermittlungsberichte lokal herunterzuladen, um sie im Browser anzuzeigen. Wenn Sie die lokale Option wählen, ist die Datenermittlung nur im CSV-Format verfügbar und zeigt nur die ersten 10,000 Datenzeilen an.
+BlueXP  Classification unterstützt die Möglichkeit, Datenermittlungsberichte lokal herunterzuladen, um sie im Browser anzuzeigen. Wenn Sie die lokale Option wählen, ist die Datenermittlung nur im CSV-Format verfügbar und zeigt nur die ersten 10,000 Datenzeilen an.
 
 Weitere Informationen finden Sie unter link:task-investigate-data.html#create-the-data-investigation-report["Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten mit der BlueXP -Klassifizierung"].
 
@@ -554,7 +560,7 @@ Weitere Informationen finden Sie unter link:task-investigate-data.html#create-th
 Diese BlueXP -Klassifizierungsversion enthält allgemeine Verbesserungen und Fehlerbehebungen. Die Lösung umfasst außerdem:
 
 .Scanstatus
-Mit der BlueXP -Klassifizierung wird jetzt der Echtzeitfortschritt der Scans von _initial_ Mapping und Klassifizierung auf einem Volume verfolgt. Separate progressive Balken verfolgen die Mapping- und Klassifikations-Scans und zeigen einen Prozentsatz der insgesamt gescannten Dateien an. Sie können auch mit dem Mauszeiger auf eine Fortschrittsleiste zeigen, um die Anzahl der gescannten Dateien und die Gesamtdateien anzuzeigen. Durch das Verfolgen des Status Ihrer Scans erhalten Sie tiefere Einblicke in den Scanfortschritt, sodass Sie Ihre Scans besser planen und die Ressourcenzuweisung verstehen können.
+Die BlueXP -Klassifizierung verfolgt den Echtzeitfortschritt der Scans von _initial_ Mapping und Klassifikation auf einem Volume. Separate progressive Balken verfolgen die Mapping- und Klassifikations-Scans und zeigen einen Prozentsatz der insgesamt gescannten Dateien an. Sie können auch mit dem Mauszeiger auf eine Fortschrittsleiste zeigen, um die Anzahl der gescannten Dateien und die Gesamtdateien anzuzeigen. Durch das Verfolgen des Status Ihrer Scans erhalten Sie tiefere Einblicke in den Scanfortschritt, sodass Sie Ihre Scans besser planen und die Ressourcenzuweisung verstehen können.
 
 Um den Status Ihrer Scans anzuzeigen, navigieren Sie in der BlueXP -Klassifizierung zu **Konfiguration**, und wählen Sie dann die **Konfiguration der Arbeitsumgebung**. Der Fortschritt wird für jedes Volume in der Zeile angezeigt.
 
@@ -576,7 +582,7 @@ Für die folgenden Betriebssysteme ist die Verwendung der Podman-Container-Engin
 .Priorisieren Sie nur Mapping-Scans
 Bei der Durchführung von nur-Mapping-Scans können Sie die wichtigsten Scans priorisieren. Diese Funktion hilft Ihnen, wenn Sie viele Arbeitsumgebungen haben und sicherstellen möchten, dass zuerst Scans mit hoher Priorität abgeschlossen werden.
 
-Standardmäßig werden Scans basierend auf der Reihenfolge, in der sie initiiert werden, in die Warteschlange gestellt. Mit der Möglichkeit, Scans zu priorisieren, können Sie jetzt Scans an die Vorderseite der Warteschlange verschieben. Mehrere Scans können priorisiert werden. Die Priorität wird in der Reihenfolge „First-in“, „First-Out“ festgelegt. Das bedeutet, dass der erste von Ihnen priorisierte Scan an den Anfang der Warteschlange geht. Der zweite priorisierte Scan wird in der Warteschlange und so weiter.
+Standardmäßig werden Scans basierend auf der Reihenfolge, in der sie initiiert werden, in die Warteschlange gestellt. Mit der Möglichkeit, Scans zu priorisieren, können Sie Scans an die Vorderseite der Warteschlange verschieben. Mehrere Scans können priorisiert werden. Die Priorität wird in der Reihenfolge „First-in“, „First-Out“ festgelegt. Das bedeutet, dass der erste von Ihnen priorisierte Scan an den Anfang der Warteschlange geht. Der zweite priorisierte Scan wird in der Warteschlange und so weiter.
 
 Die Prioritätsachse wird einmalig vergeben. Automatische Neuscans von Zuordnungsdaten erfolgen in der Standardreihenfolge.
 
@@ -585,9 +591,9 @@ Die Priorisierung ist beschränkt auflink:concept-cloud-compliance.html["Nur-Map
 Weitere Informationen finden Sie unter link:task-managing-repo-scanning.html#prioritize-scans["Priorisieren Sie Scans"].
 
 .Wiederholen Sie alle Scans
-Die BlueXP -Klassifizierung unterstützt jetzt die Möglichkeit, alle fehlgeschlagenen Scans im Batch-Modus erneut zu versuchen.
+Die BlueXP -Klassifizierung unterstützt die Möglichkeit, alle fehlgeschlagenen Scans im Batch-Modus erneut zu versuchen.
 
-Mit der Funktion **Alle wiederholen** können Sie jetzt Scans in einem Batch-Vorgang erneut versuchen. Wenn Klassifikationsscans aufgrund eines vorübergehenden Problems, wie z. B. eines Netzwerkausfalls, fehlschlagen, können Sie alle Scans gleichzeitig mit einer Taste wiederholen, anstatt sie einzeln erneut zu versuchen. Scans können so oft wie nötig wiederholt werden.
+Sie können Scans in einem Batch-Vorgang mit der Funktion **Alle wiederholen** erneut versuchen. Wenn Klassifikationsscans aufgrund eines vorübergehenden Problems, wie z. B. eines Netzwerkausfalls, fehlschlagen, können Sie alle Scans gleichzeitig mit einer Taste wiederholen, anstatt sie einzeln erneut zu versuchen. Scans können so oft wie nötig wiederholt werden.
 
 So wiederholen Sie alle Scans:
 
@@ -752,6 +758,28 @@ Wir haben den BlueXP Kopier- und Synchronisierungsservice und den Daten-Broker a
 
 
 
+=== 08 Mai 2025
+
+
+
+==== AutoSupport-Widget
+
+Das Widget „AutoSupport“ wurde um ein Popup-Fenster erweitert, das Details zu Systemen enthält, die nicht mehr AutoSupport-Daten senden. Durch die Aktivierung von AutoSupport wird das Risiko von Ausfallzeiten verringert und ein proaktives Management des Systemzustands unterstützt.
+
+
+
+==== Bericht zu Supportverträgen
+
+Der Bericht „Supportverträge“ wurde um das neue ASP/LSG-Flag-Feld erweitert. Dieses Feld ermöglicht das Filtern und Identifizieren von Systemen, die von einem autorisierten Support-Partner abgedeckt werden, auch als Lifecycle Services Certified bekannt.
+
+
+
+==== Dashboard zur Nachhaltigkeit
+
+Über den in der Nachhaltigkeitspräsentation enthaltenen Link können Sie nun das Dashboard Nachhaltigkeit starten.
+
+
+
 === 05 März 2025
 
 
@@ -771,16 +799,6 @@ Wir haben den BlueXP Kopier- und Synchronisierungsservice und den Daten-Broker a
 ==== Upgrade Advisor
 
 Sie können jetzt die Speicherfirmware, die SP/BMC-Firmware und das Autonome Ransomware-Paket (ARP) anzeigen, die für ein Update empfohlen werden. link:https://docs.netapp.com/us-en/active-iq/view-firmware-update-recommendations.html["Erfahren Sie, wie Sie Empfehlungen für Firmware-Updates anzeigen"].
-
-
-
-=== Bis 04. Dezember 2024
-
-
-
-==== AutoSupport-Widget
-
-Das Widget „AutoSupport“ wurde dem Dashboard-Hauptbildschirm hinzugefügt, um Kunden über die Probleme mit dem AutoSupport-Status zu informieren.
 
 
 
