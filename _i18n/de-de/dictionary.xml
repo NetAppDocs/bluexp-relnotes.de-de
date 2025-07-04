@@ -986,4 +986,5 @@
   <block id="c0ae6f0ec7cb1322a1c6b72f77e783f2" category="paragraph">Der Benachrichtigungsdienst der BlueXP Workload Factory ermöglicht es der Workload Factory, Benachrichtigungen an den BlueXP-Warndienst oder an ein Amazon SNS-Thema zu senden. An BlueXP-Warnmeldungen gesendete Benachrichtigungen werden im BlueXP-Warnmeldungsbereich angezeigt. Wenn die Workload Factory Benachrichtigungen an ein Amazon SNS-Thema veröffentlicht, erhalten Abonnenten des Themas (z. B. Benutzer oder andere Anwendungen) die Benachrichtigungen an den für das Thema konfigurierten Endpunkten (z. B. per E-Mail oder SMS).</block>
   <block id="76490568879e4523bb6bd6d8263472a9" category="inline-link">Konfigurieren Sie die Benachrichtigungen der BlueXP-Workload-Factory</block>
   <block id="533a43c23a4d81612b2392465e022a51" category="paragraph"><block ref="533a43c23a4d81612b2392465e022a51" category="inline-link-rx"></block></block>
+  <block id="0e42c2b565849349fc544a0196ef1b6a" category="section-title">10 Juni 2025</block>
 </blocks>
