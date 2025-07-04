@@ -206,6 +206,18 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["Informieren Sie
 
 
 
+=== 14 Juli 2025
+
+
+
+==== Unterstützung für die Replikation von Daten zwischen zwei FSx for ONTAP-Dateisystemen
+
+Die Datenreplikation zwischen zwei FSx für ONTAP-Dateisystemen ist jetzt über die BlueXP-Konsole verfügbar.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["Datenreplizierung"]
+
+
+
 === 29 Juni 2025
 
 
@@ -215,14 +227,6 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["Informieren Sie
 Nachdem Sie Anmeldeinformationen und Berechtigungen für Ihr FSx for ONTAP-Dateisystem eingerichtet haben, werden Sie zur Seite „BlueXP-Anmeldeinformationen“ weitergeleitet. Auf dieser Seite können Sie Ihre FSx for ONTAP-Anmeldeinformationen umbenennen oder entfernen.
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Einrichten von Berechtigungen für FSx for ONTAP-Dateisysteme"]
-
-
-
-==== Unterstützung für die Replikation von Daten zwischen zwei FSx for ONTAP-Dateisystemen
-
-Die Datenreplikation zwischen zwei FSx für ONTAP-Dateisystemen ist jetzt über die BlueXP-Konsole verfügbar.
-
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["Datenreplizierung"]
 
 
 
@@ -263,18 +267,6 @@ In der BlueXP -Konsole zeigen FSX für ONTAP-Dateisysteme mit gut konzipierten 
 ==== Terminologie für Berechtigungen wurde aktualisiert
 
 In der Benutzeroberfläche und Dokumentation der Workload Factory wird jetzt „schreibgeschützt“ für Leseberechtigungen und „Lesen/Schreiben“ für automatisierte Berechtigungen verwendet.
-
-
-
-=== 30 März 2025
-
-
-
-==== iam:SimulatePermissionPolicy-Berechtigungsaktualisierung
-
-Jetzt können Sie die Berechtigung über die BlueXP -Konsole managen `iam:SimulatePrincipalPolicy`, wenn Sie zusätzliche Anmeldedaten für das AWS-Konto hinzufügen oder neue Workload-Funktionen wie den GenAI-Workload hinzufügen.
-
-link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["Änderungsprotokoll für Berechtigungen"^]
 
 
 
@@ -1354,21 +1346,21 @@ Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp
 
 ==== Verbesserter Workload-Schutz
 
-Diese Version bietet einen verbesserten Workflow zum Schutz von Workloads mit und ohne Datenschutz. Wenn Sie andere NetApp Datenschutztools wie SnapCenter oder BlueXP backup and recovery für Ihre Snapshots oder Backups verwenden, erkennt der BlueXP ransomware protection diese und ermöglicht Ihnen die Beibehaltung der entsprechenden Richtlinien. Mit dieser Version können Sie diese Richtlinien durch BlueXP ransomware protection -Schutzrichtlinien ersetzen oder die bestehenden Richtlinien weiterverwenden.
+Diese Version verbessert den Konfigurationsprozess für Workloads mit Snapshot- und Backup-Richtlinien aus anderen NetApp -Tools wie SnapCenter oder BlueXP backup and recovery. In früheren Versionen erkannte der BlueXP ransomware protection die Richtlinien anderer Tools und ermöglichte lediglich die Änderung der Erkennungsrichtlinie. Mit dieser Version können Sie nun Snapshot- und Backup-Richtlinien durch BlueXP ransomware protection Schutzrichtlinien ersetzen oder die Richtlinien anderer Tools weiterverwenden.
 
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Schutz von Workloads"].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Schutz von Workloads"].
 
 
 
 ==== E-Mail-Benachrichtigungen
 
-Wenn der BlueXP ransomware protection einen möglichen Angriff erkennt, wird eine Benachrichtigung in den BlueXP Benachrichtigungen angezeigt und eine E-Mail an die von Ihnen konfigurierte E-Mail-Adresse gesendet. Der Dienst erstellt außerdem sofort einen Snapshot.
+Wenn der BlueXP ransomware protection einen möglichen Angriff erkennt, wird eine Benachrichtigung in den BlueXP Benachrichtigungen angezeigt und eine E-Mail an die von Ihnen konfigurierte E-Mail-Adresse gesendet.
 
-An diesem Punkt sollten Sie sich die E-Mail ansehen, in der der Schweregrad und die betroffenen Ressourcen aufgeführt sind, und sich das potenzielle Risiko auf der Registerkarte *Warnungen* des BlueXP ransomware protection ansehen.
+Die E-Mail enthält Informationen zum Schweregrad, zur betroffenen Arbeitslast und einen Link zur Warnung im Reiter „Warnungen“ des BlueXP ransomware protection .
 
-Wenn Sie im BlueXP ransomware protection ein Sicherheits- und Ereignismanagement (SIEM) konfiguriert haben, sendet der Dienst Warndetails an Ihr SIEM-System.
+Wenn Sie im BlueXP ransomware protection ein Sicherheits- und Ereignismanagementsystem (SIEM) konfiguriert haben, sendet der Dienst Warndetails an Ihr SIEM-System.
 
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Behandeln Sie erkannte Ransomware-Warnmeldungen"].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Behandeln Sie erkannte Ransomware-Warnmeldungen"].
 
 
 
