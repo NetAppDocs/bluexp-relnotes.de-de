@@ -369,6 +369,29 @@ Sie können kein Volume mehr aus einer Vorlage erstellen. Diese Aktion wurde mit
 
 
 
+=== 28. Juli 2025
+
+Diese BlueXP -Version für Backup und Recovery enthält die folgenden Updates.
+
+
+
+==== Kubernetes-Workload-Unterstützung als Vorschau
+
+Diese Version von BlueXP backup and recovery bietet Unterstützung für die Erkennung und Verwaltung von Kubernetes-Workloads:
+
+* Entdecken Sie Red Hat OpenShift und Open-Source-Kubernetes-Cluster, unterstützt von NetApp ONTAP, ohne Kubeconfig-Dateien freizugeben.
+* Entdecken, verwalten und schützen Sie Anwendungen über mehrere Kubernetes-Cluster hinweg mithilfe einer einheitlichen Steuerungsebene.
+* Lagern Sie Datenverschiebungsvorgänge zur Sicherung und Wiederherstellung von Kubernetes-Anwendungen auf NetApp ONTAP aus.
+* Orchestrieren Sie lokale und objektspeicherbasierte Anwendungssicherungen.
+* Sichern und stellen Sie ganze Anwendungen und einzelne Ressourcen in beliebigen Kubernetes-Clustern wieder her.
+* Arbeiten Sie mit Containern und virtuellen Maschinen, die auf Kubernetes laufen.
+* Erstellen Sie anwendungskonsistente Backups mithilfe von Ausführungs-Hooks und Vorlagen.
+
+
+Weitere Informationen zum Schutz von Kubernetes-Workloads finden Sie unter  https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-kubernetes-protect-overview.html["Übersicht zum Schützen von Kubernetes-Workloads"] .
+
+
+
 === 14 Juli 2025
 
 Diese BlueXP -Version für Backup und Recovery enthält die folgenden Updates.
@@ -454,51 +477,6 @@ Die vorherige Version unterstützte SnapMirror to Cloud Resync (SM-C Resync). Di
 Wenn Sie Sicherungsdateien im Objektspeicher für eine Arbeitsumgebung erstellen, erstellt BlueXP Backup & Recovery standardmäßig den Container (Bucket oder Speicherkonto) für die Sicherungsdateien im von Ihnen konfigurierten Objektspeicherkonto. Bisher konnten Sie dies überschreiben und Ihren eigenen Container für Amazon S3, Azure Blob Storage und Google Cloud Storage angeben. Mit dieser Version können Sie nun Ihren eigenen StorageGRID-Objektspeichercontainer verwenden.
 
 Siehe https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html["Erstellen Sie Ihren eigenen Objektspeichercontainer"].
-
-
-
-=== 13 Mai 2025
-
-Diese BlueXP -Version für Backup und Recovery enthält die folgenden Updates.
-
-
-
-==== Neusynchronisierung von SnapMirror zu Cloud bei Volume-Migrationen
-
-Die Funktion SnapMirror zu Cloud Resync optimiert die Datensicherung und Kontinuität bei Volume-Migrationen in NetApp-Umgebungen. Bei der Migration eines Volumes mithilfe von SnapMirror Logical Replication (LRSE), von einer lokalen NetApp Implementierung zu einer anderen oder zu einer Cloud-basierten Lösung wie Cloud Volumes ONTAP oder Cloud Volumes Service sorgt SnapMirror zu Cloud Resync dafür, dass vorhandene Cloud-Backups intakt und betriebsbereit bleiben.
-
-Durch diese Funktion wird ein zeitaufwendiger und ressourcenintensiver Neustart des Basisplans überflüssig, sodass Backup-Vorgänge nach der Migration fortgesetzt werden können. Diese Funktion ist in Workload-Migrationsszenarien nützlich, da sie sowohl FlexVols als auch FlexGroups unterstützt. Sie ist ab ONTAP Version 9.16.1 verfügbar.
-
-Durch die Aufrechterhaltung der Backup-Kontinuität über verschiedene Umgebungen hinweg verbessert SnapMirror to Cloud Resync die betriebliche Effizienz und verringert die Komplexität des Datenmanagements in der Hybrid Cloud und Multi Cloud.
-
-Weitere Informationen zur Durchführung der Resynchronisierung finden Sie unter https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-migrate-resync.html["Migrieren Sie Volumes mit SnapMirror zur Cloud-Neusynchronisierung"].
-
-
-
-==== Unterstützung für Minio-Objektspeicher von Drittanbietern (Vorschau)
-
-Backup und Recovery von BlueXP  erweitern jetzt ihre Unterstützung auf Objektspeicher anderer Hersteller, wobei der Schwerpunkt auf Mini-Objektspeicher liegt. Mit dieser neuen Vorschaufunktion können Sie jeden S3-kompatiblen Objektspeicher für Ihre Backup- und Recovery-Anforderungen nutzen.
-
-Mit dieser Vorschau-Version möchten wir eine robuste Integration in Objektspeicher von Drittanbietern gewährleisten, bevor die volle Funktionalität verfügbar ist. Wir empfehlen Ihnen, diese neue Funktion zu erkunden und Feedback zu geben, um den Service zu verbessern.
-
-
-IMPORTANT: Diese Funktion sollte nicht in der Produktion verwendet werden.
-
-*Beschränkungen des Vorschaumodus*
-
-Während diese Funktion in der Vorschau angezeigt wird, gibt es einige Einschränkungen:
-
-* Bring Your Own Bucket (BYOB) wird nicht unterstützt.
-* Die Aktivierung von DataLock in der Richtlinie wird nicht unterstützt.
-* Die Aktivierung des Archivmodus in der Richtlinie wird nicht unterstützt.
-* Es werden nur lokale ONTAP-Umgebungen unterstützt.
-* MetroCluster wird nicht unterstützt.
-* Optionen zur Aktivierung der Verschlüsselung auf Bucket-Ebene werden nicht unterstützt.
-
-
-*Erste Schritte*
-
-Um diese Vorschaufunktion zu verwenden, müssen Sie ein Flag auf dem BlueXP -Konnektor aktivieren. Sie können dann die Verbindungsdetails Ihres Minio-Objektspeichers von Drittanbietern im Schutz-Workflow eingeben, indem Sie im Backup-Bereich den Objektspeicher *Drittanbieter-kompatibel* auswählen.
 
 
 
