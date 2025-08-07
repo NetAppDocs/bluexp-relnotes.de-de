@@ -870,7 +870,7 @@ Wir haben den BlueXP Kopier- und Synchronisierungsservice und den Daten-Broker a
 
 ==== Unterstützt berechtigte Switches
 
-ef3139c75debdd9ee259a4ea386083d3
+Sie können jetzt Informationen zu Brocade Fibre Channel SAN-Switches anzeigen, die Anspruch auf Support haben. Dazu gehören Details zum Switch-Modell, zur Seriennummer und zum Support-Status. link:https://docs.netapp.com/us-en/active-iq/task_view_inventory_details.html["Erfahren Sie, wie Sie Support-berechtigte Switches anzeigen"] .
 
 
 
@@ -1216,7 +1216,16 @@ Der BlueXP  Edge Caching Service wurde am 7. August 2024 entfernt.
 
 === 21 Juli 2025
 
-Ungelöste Richtlinie in https://raw.githubusercontent.com/NetAppDocs/bluexp-google-cloud-netapp-volumes/main/whats-new.adoc[] - include::../_whatsnew/2025-07-14.adoc[]
+
+
+==== Unterstützung für Google Cloud NetApp Volumes in BlueXP
+
+Sie können Google Cloud NetApp Volumes jetzt direkt von BlueXP aus verwalten:
+
+* Fügen Sie eine Arbeitsumgebung hinzu.
+* Zeigen Sie Ihre Bände an.
+* Entfernen Sie Ihre Arbeitsumgebung.
+
 
 
 
