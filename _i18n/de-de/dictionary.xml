@@ -918,4 +918,16 @@
   <block id="4632607b0b76f87d36568a2df2c3a267" category="paragraph">Im Digital Advisor API-Katalog ist ein neuer veralteter API-Abschnitt verfügbar. Darin werden die APIs aufgelistet, deren Einstellung geplant ist, zusammen mit den Zeitplänen für die Einstellung und alternativen APIs.</block>
   <block id="9eadf268f4ef55df53b7403a020082b1" category="section-title">Kapazitätsprognose V2 und Einstellung der API-Module für das Supportende</block>
   <block id="bd2055e6fb5a6ca7ecc6d9d52f394548" category="paragraph">Die API-Module „Capacity Forecast V2“ und „End of Support“ werden voraussichtlich nicht mehr unterstützt. Um auf die veralteten APIs zuzugreifen oder sich über die Zeitpläne für die Veraltung und alternative APIs zu informieren, navigieren Sie zu *API-Dienste -&gt; Durchsuchen -&gt; Veraltete APIs*.</block>
+  <block id="3488d38349240c72f75d081c2a79fa3b" category="section-title">04. August 2025</block>
+  <block id="4a32789f771ba902fef02cd0f2a544e6" category="paragraph">Version 4.2.5P2</block>
+  <block id="d4b79f85bf29ad80a3ae386050c77c87" category="section-title">BlueXP disaster recovery</block>
+  <block id="36088b35355e766d544b98140baa439a" category="list-text">Die VMFS-Unterstützung wurde verbessert, um dieselbe LUN zu verarbeiten, die von mehreren virtuellen Speichermaschinen bereitgestellt wird.</block>
+  <block id="5958ae417b9ca044a24e8a3629b195bb" category="list-text">Die Bereinigung beim Test-Teardown wurde verbessert, um den Datenspeicher zu verarbeiten, der bereits ausgehängt und/oder gelöscht wurde.</block>
+  <block id="1a2957b0c8fb36225440df520076e072" category="list-text">Verbesserte Subnetzzuordnung, sodass jetzt überprüft wird, ob das eingegebene Gateway im bereitgestellten Netzwerk enthalten ist.</block>
+  <block id="7f5267deccdc08e8591ec8b4dccfcc03" category="list-text">Ein Problem wurde behoben, das dazu führen konnte, dass der Replikationsplan fehlschlug, wenn der VM-Name „.com“ enthielt.</block>
+  <block id="8af129ac3a817923db5feb647660eb7c" category="list-text">Eine Einschränkung wurde entfernt, die verhinderte, dass das Zielvolume beim Erstellen des Volumes im Rahmen der Erstellung des Replikationsplans mit dem Quellvolume identisch war.</block>
+  <block id="4de413f6189881cc6b259fb6e68df02c" category="list-text">Unterstützung für ein Pay-as-you-go-Abonnement (PAYGO) für NetApp Intelligent Services im Azure Marketplace hinzugefügt und im Dialogfeld „Kostenlose Testversion“ ein Link zum Azure Marketplace hinzugefügt.</block>
+  <block id="276ba658474d8685c0925cd2bcb486a8" category="inline-link">BlueXP disaster recovery -Lizenzierung</block>
+  <block id="a7193edb26a4b1bca4b7b82254e6dd4b" category="inline-link">Einrichten der Lizenzierung für die BlueXP disaster recovery</block>
+  <block id="17c3f7bad28af5667bbaacbe3fe4f6d1" category="paragraph">Weitere Einzelheiten finden Sie unter<block ref="ea68973aac8ca707300074d97a0eb98d" category="inline-link-rx"></block> Und<block ref="1e6c39dcb2e36546ede605d53a914ae9" category="inline-link-rx"></block> .</block>
 </blocks>
