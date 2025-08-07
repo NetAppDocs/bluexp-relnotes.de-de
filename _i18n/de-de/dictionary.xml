@@ -516,9 +516,6 @@
   <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
   <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">Erfahren Sie, wie Sie den Connector bei der Verwendung des privaten Modus aktualisieren</block>
   <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
-  <block id="1b4189ae198caba09051ca2138497fc7" category="section-title">05 März 2025</block>
-  <block id="5542dbcb72159ed44fa6bf922b45c1e8" category="list-text">Mit dem Disk Qualification Package (DQP) können Sie jetzt die Festplatten-Controller und die Firmware des Speichergeräts automatisch gemäß den vordefinierten Integrations- und Leistungskriterien aktualisieren. Dies verringert potenzielle Ausfälle und verbessert die allgemeine Systemzuverlässigkeit.</block>
-  <block id="90dd6f07c096c3965dc62d991f80f7fd" category="list-text">Die Zeitzonendatenbank (DB) wurde eingeführt, um die Systemausrichtung automatisch mit den aktuellen Zeitzonendefinitionen zu halten. Dadurch wird sichergestellt, dass zeitabhängige Vorgänge auch dann reibungslos ablaufen, wenn sich die Zeitzonenregeln ändern.</block>
   <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">30 März 2025</block>
   <block id="ef74d01649997b60252254da8a1573fd" category="section-title">CloudShell meldet AI-generierte Fehlermeldungen für ONTAP-CLI-Befehle</block>
   <block id="3450754e7ec63bd0a961376c9928752a" category="paragraph">Bei der Verwendung von CloudShell können Sie jedes Mal, wenn Sie einen ONTAP-CLI-Befehl ausgeben und ein Fehler auftritt, AI-generierte Fehlermeldungen erhalten, die eine Beschreibung des Fehlers, die Ursache des Fehlers und eine detaillierte Lösung enthalten.</block>
@@ -911,4 +908,14 @@
   <block id="c1682b4af830f8e1dcda8da16400f7e1" category="section-title">Anzeigen von Verbrauchsdaten auf Instanzebene</block>
   <block id="10d5879ffcf41a017554a80a63e4b46e" category="inline-link-macro">Den Verbrauch Ihrer Keystone -Abonnements anzeigen</block>
   <block id="d2c70766af411fb0e8a745645e1d2b86" category="paragraph">Sie können den aktuellen Verbrauch und historische Daten für jede Instanz des Performance-Service-Levels über das Keystone -Dashboard in BlueXP anzeigen. Diese Funktion ist für Leistungsservicelevel mit mehreren Instanzen verfügbar, sofern Sie über ein Abonnement für Keystone Version 3 (v3) verfügen. Weitere Informationen finden Sie unter<block ref="500828148463e083954a63124cb9a7bb" category="inline-link-macro-rx"></block> .</block>
+  <block id="e8b6643d4bda95ae4c2dacb6a8e40cac" category="section-title">06. August 2025</block>
+  <block id="a30ce25654f610d7e9e47c6277028c38" category="section-title">Unterstützt berechtigte Switches</block>
+  <block id="d98c483ab007e03305ae5655fe6cbaf8" category="inline-link-macro">Erfahren Sie, wie Sie Support-berechtigte Switches anzeigen</block>
+  <block id="e71b090a525e98d8d6e64f80e67acf6f" category="paragraph">Sie können jetzt Informationen zu Brocade Fibre Channel SAN-Switches anzeigen, die Anspruch auf Support haben. Dazu gehören Details zum Switch-Modell, zur Seriennummer und zum Support-Status. <block ref="0ccb1381392c0ca51f280aad697adc46" category="inline-link-macro-rx"></block> .</block>
+  <block id="adc76ac62c705df3456206213de66002" category="section-title">Schwellenwert für RSS- AutoSupport -Daten</block>
+  <block id="3cdd6b50a4e4c3395ca5fea20c94ee5b" category="paragraph">Das RSS-Limit (Currently Stopped Sending) im AutoSupport Widget wurde von 48 Stunden (2 Tage) auf 216 Stunden (9 Tage) verlängert, bevor ein System als RSS gekennzeichnet wird. Dies geschieht, um Plattformen wie StorageGRID entgegenzukommen, die nur wöchentliche AutoSupport Daten senden.</block>
+  <block id="bbe4dac655b49c7a3978eb5864452f05" category="section-title">Abschnitt „Veraltete API“ im Digital Advisor API-Katalog</block>
+  <block id="4632607b0b76f87d36568a2df2c3a267" category="paragraph">Im Digital Advisor API-Katalog ist ein neuer veralteter API-Abschnitt verfügbar. Darin werden die APIs aufgelistet, deren Einstellung geplant ist, zusammen mit den Zeitplänen für die Einstellung und alternativen APIs.</block>
+  <block id="9eadf268f4ef55df53b7403a020082b1" category="section-title">Kapazitätsprognose V2 und Einstellung der API-Module für das Supportende</block>
+  <block id="bd2055e6fb5a6ca7ecc6d9d52f394548" category="paragraph">Die API-Module „Capacity Forecast V2“ und „End of Support“ werden voraussichtlich nicht mehr unterstützt. Um auf die veralteten APIs zuzugreifen oder sich über die Zeitpläne für die Veraltung und alternative APIs zu informieren, navigieren Sie zu *API-Dienste -&gt; Durchsuchen -&gt; Veraltete APIs*.</block>
 </blocks>
